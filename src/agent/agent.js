@@ -14,6 +14,7 @@ import { handleTranslation, handleEnglishTranslation } from '../utils/translator
 import { addBrowserViewer } from './vision/browser_viewer.js';
 import { serverProxy, sendOutputToServer } from './mindserver_proxy.js';
 import settings from './settings.js';
+import * as timingStudy from '../../studies/communication-timing/control.js';
 import { Task } from './tasks/tasks.js';
 import { speak } from './speak.js';
 import { log, validateNameFormat, handleDisconnection } from './connection_handler.js';
@@ -119,6 +120,13 @@ export class Agent {
                 console.log(`${this.name} spawned.`);
                 this.clearBotLogs();
               
+                if (timingStudy.active) {
+                    this._setupEventHandlers(null, null);
+                    this.startEvents();
+                    await timingStudy.startEpisode(this);
+                    return;
+                }
+
                 this._setupEventHandlers(save_data, init_message);
                 this.startEvents();
               
@@ -535,6 +543,7 @@ export class Agent {
         process.exit(code);
     }
     async checkTaskDone() {
+        if (timingStudy.active) return;
         if (this.task.data) {
             let res = this.task.isDone();
             if (res) {

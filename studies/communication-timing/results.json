@@ -1,0 +1,236 @@
+[
+  {
+    "trial": "pair1-delayed",
+    "delay_s": 45,
+    "duration_s": 180,
+    "first_chat_s": 53.1,
+    "messages": 13,
+    "blocked_chat_attempts": 1,
+    "chat_gate_violations": 0,
+    "exploration_commands_first_45s": 9,
+    "first_45s_sampled_distance_blocks": {
+      "Andy_0": 19.2,
+      "Jill_0": 54.7
+    },
+    "first_45s_supplies_observed": {
+      "Andy_0": [
+        "cocoa_beans",
+        "wheat"
+      ],
+      "Jill_0": [
+        "sugar_cane"
+      ]
+    },
+    "first_45s_state_samples": {
+      "Andy_0": 40,
+      "Jill_0": 43
+    },
+    "objectives_observed_by_45s": [
+      "paper",
+      "cookie",
+      "bread"
+    ],
+    "first_possession_s": {
+      "paper": 18.6,
+      "cookie": 36.3,
+      "bread": 40.9,
+      "golden_apple": 65.7
+    },
+    "final_objectives": {
+      "bread": true,
+      "cookie": true,
+      "golden_apple": true,
+      "paper": true
+    },
+    "terminal_server_inventory": {
+      "Andy_0": [
+        "wheat",
+        "cocoa_beans",
+        "cookie",
+        "bread"
+      ],
+      "Jill_0": [
+        "sugar_cane",
+        "paper",
+        "golden_apple"
+      ]
+    },
+    "first_joint_completion_s": 65.7,
+    "server_timeouts": 0,
+    "protocol_read_errors": 2,
+    "agent_restarts": 0,
+    "api_connection_errors": 0
+  },
+  {
+    "trial": "pair1-immediate",
+    "delay_s": 0,
+    "duration_s": 180,
+    "first_chat_s": 4.4,
+    "messages": 14,
+    "blocked_chat_attempts": 0,
+    "chat_gate_violations": 0,
+    "exploration_commands_first_45s": 4,
+    "first_45s_sampled_distance_blocks": {
+      "Andy_0": 10.2,
+      "Jill_0": 19.4
+    },
+    "first_45s_supplies_observed": {
+      "Andy_0": [],
+      "Jill_0": [
+        "sugar_cane"
+      ]
+    },
+    "first_45s_state_samples": {
+      "Andy_0": 32,
+      "Jill_0": 44
+    },
+    "objectives_observed_by_45s": [
+      "paper"
+    ],
+    "first_possession_s": {
+      "paper": 18.4,
+      "bread": 137.7,
+      "cookie": 140.7,
+      "golden_apple": 151.6
+    },
+    "final_objectives": {
+      "bread": true,
+      "cookie": true,
+      "golden_apple": true,
+      "paper": true
+    },
+    "terminal_server_inventory": {
+      "Andy_0": [
+        "cookie",
+        "bread"
+      ],
+      "Jill_0": [
+        "sugar_cane",
+        "paper",
+        "golden_apple"
+      ]
+    },
+    "first_joint_completion_s": 151.6,
+    "server_timeouts": 0,
+    "protocol_read_errors": 3,
+    "agent_restarts": 1,
+    "api_connection_errors": 1
+  },
+  {
+    "trial": "pair2-delayed",
+    "delay_s": 45,
+    "duration_s": 180,
+    "first_chat_s": 46.3,
+    "messages": 22,
+    "blocked_chat_attempts": 0,
+    "chat_gate_violations": 0,
+    "exploration_commands_first_45s": 12,
+    "first_45s_sampled_distance_blocks": {
+      "Andy_0": 50.2,
+      "Jill_0": 31.6
+    },
+    "first_45s_supplies_observed": {
+      "Andy_0": [
+        "cocoa_beans",
+        "wheat"
+      ],
+      "Jill_0": [
+        "sugar_cane"
+      ]
+    },
+    "first_45s_state_samples": {
+      "Andy_0": 44,
+      "Jill_0": 44
+    },
+    "objectives_observed_by_45s": [
+      "paper",
+      "bread"
+    ],
+    "first_possession_s": {
+      "paper": 28.8,
+      "bread": 42.3,
+      "cookie": 45.3,
+      "golden_apple": 107.0
+    },
+    "final_objectives": {
+      "bread": true,
+      "cookie": true,
+      "golden_apple": true,
+      "paper": true
+    },
+    "terminal_server_inventory": {
+      "Andy_0": [
+        "wheat",
+        "cocoa_beans",
+        "bread",
+        "cookie"
+      ],
+      "Jill_0": [
+        "sugar_cane",
+        "paper",
+        "golden_apple"
+      ]
+    },
+    "first_joint_completion_s": 107.0,
+    "server_timeouts": 0,
+    "protocol_read_errors": 2,
+    "agent_restarts": 0,
+    "api_connection_errors": 0
+  },
+  {
+    "trial": "pair2-immediate",
+    "delay_s": 0,
+    "duration_s": 180,
+    "first_chat_s": 3.5,
+    "messages": 12,
+    "blocked_chat_attempts": 0,
+    "chat_gate_violations": 0,
+    "exploration_commands_first_45s": 7,
+    "first_45s_sampled_distance_blocks": {
+      "Andy_0": 19.2,
+      "Jill_0": 5.0
+    },
+    "first_45s_supplies_observed": {
+      "Andy_0": [
+        "cocoa_beans",
+        "wheat"
+      ],
+      "Jill_0": []
+    },
+    "first_45s_state_samples": {
+      "Andy_0": 43,
+      "Jill_0": 26
+    },
+    "objectives_observed_by_45s": [
+      "bread",
+      "cookie"
+    ],
+    "first_possession_s": {
+      "bread": 29.7,
+      "cookie": 38.7,
+      "paper": 75.1,
+      "golden_apple": 173.9
+    },
+    "final_objectives": {
+      "bread": true,
+      "cookie": true,
+      "golden_apple": true,
+      "paper": true
+    },
+    "terminal_server_inventory": {
+      "Andy_0": [
+        "cookie",
+        "bread"
+      ],
+      "Jill_0": [
+        "paper",
+        "golden_apple"
+      ]
+    },
+    "first_joint_completion_s": 173.9,
+    "server_timeouts": 0,
+    "protocol_read_errors": 8,
+    "agent_restarts": 6,
+    "api_connection_errors": 6
+  }
+]

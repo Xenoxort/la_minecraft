@@ -5,6 +5,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import * as mindcraft from './mindcraft.js';
 import { readFileSync } from 'fs';
+import * as timingStudy from '../../studies/communication-timing/control.js';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // Mindserver is:
@@ -201,6 +202,13 @@ export function createMindServer(host_public = false, port = 8080) {
             if (!agent_connections[agentName]) {
                 console.warn(`Agent ${agentName} tried to send a message but is not logged in`);
                 return;
+            }
+            if (!timingStudy.canChat()) {
+                timingStudy.record('chat_blocked', { sender: curAgentName, channel: 'server' });
+                return;
+            }
+            if (agent_connections[agentName]?.socket) {
+                timingStudy.record('chat', { sender: curAgentName, receiver: agentName, message: json.message });
             }
             console.log(`${curAgentName} sending message to ${agentName}: ${json.message}`);
             agent_connections[agentName]?.socket?.emit('chat-message', curAgentName, json);

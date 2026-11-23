@@ -351,12 +351,11 @@ export class Prompter {
 
     async _saveToFile(logFile, logEntry) {
         let task_id = this.agent.task.task_id;
-        let logDir;
-        if (task_id == null) {
-            logDir = path.join(__dirname, `../../bots/${this.agent.name}/logs`);
-        } else {
-            logDir = path.join(__dirname, `../../bots/${this.agent.name}/logs/${task_id}`);
-        }
+        const botsDir = process.env.MINECOLLAB_TIMING_STUDY === '1'
+            ? path.resolve('bots')
+            : path.join(__dirname, '../../bots');
+        const agentLogDir = path.join(botsDir, this.agent.name, 'logs');
+        const logDir = task_id == null ? agentLogDir : path.join(agentLogDir, task_id);
 
         await fs.mkdir(logDir, { recursive: true });
 

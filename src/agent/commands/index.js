@@ -1,5 +1,6 @@
 import { getBlockId, getItemId } from "../../utils/mcdata.js";
 import { actionsList } from './actions.js';
+import * as timingStudy from '../../../studies/communication-timing/control.js';
 import { queryList } from './queries.js';
 
 let suppressNoDomainWarning = true;
@@ -223,7 +224,15 @@ export async function executeCommand(agent, message) {
         if (numArgs !== numParams(command))
             return `Command ${command.name} was given ${numArgs} args, but requires ${numParams(command)} args.`;
         else {
-            const result = await command.perform(agent, ...parsed.args);
+            if (parsed.commandName === '!startConversation' && !timingStudy.canChat()) {
+            timingStudy.record('chat_blocked', { sender: agent.name, channel: 'command' });
+            return 'Bot chat is closed for the independent exploration phase. Try exploring or collecting ingredients now.';
+        }
+        if (timingStudy.active && parsed.commandName === '!searchForBlock') {
+            parsed.args[1] = Math.min(parsed.args[1], 32);
+        }
+        timingStudy.record('command', { agent: agent.name, command: parsed.commandName });
+        const result = await command.perform(agent, ...parsed.args);
             return result;
         }
     }
