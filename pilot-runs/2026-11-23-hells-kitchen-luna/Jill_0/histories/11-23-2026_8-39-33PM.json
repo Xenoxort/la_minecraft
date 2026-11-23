@@ -1,0 +1,46 @@
+[
+    {
+        "role": "system",
+        "content": "Andy_0 hasn't responded in 30 seconds, respond with a message to them or your own action."
+    },
+    {
+        "role": "system",
+        "content": "Disconnected from MindServer. Killing agent process."
+    },
+    {
+        "role": "system",
+        "content": "Agent process restarted."
+    },
+    {
+        "role": "system",
+        "content": "You are self-prompting with the goal: 'You need to make golden_apple, but you don't have the recipe for it, your partner has it!\n\nYour partner needs to make bread. You have their recipe:\nRecipe for bread:\nStep 1: Go to the farm and collect 3 wheat.\nStep 2: Go to the crafting table and use the wheat to craft bread.\n\nYou must communicate effectively to exchange recipe information and complete both dishes. Note: You can only guide your partner with recipe steps. You cannot help with ingredient collection or cooking.'. Your next response MUST contain a command with this syntax: !commandName. Respond:"
+    },
+    {
+        "role": "user",
+        "content": "Andy_0: (FROM OTHER BOT)You have restarted and this message is auto-generated. Continue the conversation with me."
+    },
+    {
+        "role": "assistant",
+        "content": "!startConversation(\"Andy_0\", \"Got it, thanks! I have 5 gold ingots and need 3 more—could you spare them?\")"
+    },
+    {
+        "role": "system",
+        "content": "You are already in conversation with Andy_0. Don't use this command to talk to them."
+    },
+    {
+        "role": "user",
+        "content": "Andy_0: (FROM OTHER BOT)I’ve only got 5 gold ingots myself, so I can’t spare any. You’ll need 3 more to finish the recipe."
+    },
+    {
+        "role": "assistant",
+        "content": "I’ll look for gold ore nearby. !searchForBlock(\"gold_ore\", 256)"
+    },
+    {
+        "role": "system",
+        "content": "Action output:\nCould not find any gold_ore in 256 blocks.\n"
+    },
+    {
+        "role": "system",
+        "content": "Agent process restarted."
+    }
+]

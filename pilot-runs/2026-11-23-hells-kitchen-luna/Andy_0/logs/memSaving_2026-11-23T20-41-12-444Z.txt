@@ -1,0 +1,49 @@
+[2026-11-23T20-41-12-444Z] 
+Prompt:
+You are a minecraft bot named Andy_0 that has been talking and playing minecraft by using commands. Update your memory by summarizing the following conversation and your old memory in your next response. Prioritize preserving important facts, things you've learned, useful tips, and long term reminders. Do Not record stats, inventory, or docs! Only save transient information from your chat history. YOUR CURRENT ASSIGNED GOAL: "You need to make bread, but you don't have the recipe for it, your partner has it!
+
+Your partner needs to make golden_apple. You have their recipe:
+Recipe for golden_apple:
+Step 1: Get 1 apple and 8 gold ingots from your inventory or other bots.
+Step 2: Go to the crafting table and surround the apple with the gold ingots to create a golden apple.
+
+You must communicate effectively to exchange recipe information and complete both dishes. Note: You can only guide your partner with recipe steps. You cannot help with ingredient collection or cooking."
+ Make sure to include information relevant to the goal and inventory you have collected. You're limited to 500 characters, so be extremely brief and minimize words. Compress useful information. 
+Old Memory: 'Goal: Finish recipe exchange with Jill_0. Jill shared bread recipe (craft 3 wheat at a crafting table); I made bread. I gave Jill the golden apple recipe: place 1 apple at center, surround with 8 gold ingots. Jill still needs 3 ingots and is searching for gold ore. She asked me to resend the recipe; remind her of these steps. Only guide her; don’t collect ingredients or cook for her.'
+Recent conversation: 
+User input: Jill_0: (FROM OTHER BOT)
+Your output:
+For a golden apple, put 1 apple in the center of the crafting table and surround it with 8 gold ingots.
+User input: Jill_0: (FROM OTHER BOT)Got it, thanks! I only have 5 ingots, so I’m short 3. Do you know where I can find more gold nearby?
+Your output:
+I can only help with the recipe: 1 apple in the center, surrounded by 8 gold ingots.
+User input: Jill_0: (FROM OTHER BOT)
+Summarize your old memory and recent conversation into a new memory, and respond only with the unwrapped memory text: 
+
+Conversation:
+[
+  {
+    "role": "user",
+    "content": "Jill_0: (FROM OTHER BOT)"
+  },
+  {
+    "role": "assistant",
+    "content": "For a golden apple, put 1 apple in the center of the crafting table and surround it with 8 gold ingots."
+  },
+  {
+    "role": "user",
+    "content": "Jill_0: (FROM OTHER BOT)Got it, thanks! I only have 5 ingots, so I’m short 3. Do you know where I can find more gold nearby?"
+  },
+  {
+    "role": "assistant",
+    "content": "I can only help with the recipe: 1 apple in the center, surrounded by 8 gold ingots."
+  },
+  {
+    "role": "user",
+    "content": "Jill_0: (FROM OTHER BOT)"
+  }
+]
+
+Response:
+Goal: Exchange recipes with Jill_0. I need her bread recipe; she needs golden apple steps: place 1 apple at center of crafting table, surround with 8 gold ingots. Jill asked where to find gold; I can only provide recipe guidance, not gather ingredients or cook. Remind her of the recipe if needed.
+

@@ -1,0 +1,56 @@
+[2026-11-23T20-37-49-335Z] 
+Prompt:
+You are a minecraft bot named Andy_0 that has been talking and playing minecraft by using commands. Update your memory by summarizing the following conversation and your old memory in your next response. Prioritize preserving important facts, things you've learned, useful tips, and long term reminders. Do Not record stats, inventory, or docs! Only save transient information from your chat history. YOUR CURRENT ASSIGNED GOAL: "You need to make bread, but you don't have the recipe for it, your partner has it!
+
+Your partner needs to make golden_apple. You have their recipe:
+Recipe for golden_apple:
+Step 1: Get 1 apple and 8 gold ingots from your inventory or other bots.
+Step 2: Go to the crafting table and surround the apple with the gold ingots to create a golden apple.
+
+You must communicate effectively to exchange recipe information and complete both dishes. Note: You can only guide your partner with recipe steps. You cannot help with ingredient collection or cooking."
+ Make sure to include information relevant to the goal and inventory you have collected. You're limited to 500 characters, so be extremely brief and minimize words. Compress useful information. 
+Old Memory: ''
+Recent conversation: 
+System output: Respond with hello world and your name
+System output: You are self-prompting with the goal: 'You need to make bread, but you don't have the recipe for it, your partner has it!
+
+Your partner needs to make golden_apple. You have their recipe:
+Recipe for golden_apple:
+Step 1: Get 1 apple and 8 gold ingots from your inventory or other bots.
+Step 2: Go to the crafting table and surround the apple with the gold ingots to create a golden apple.
+
+You must communicate effectively to exchange recipe information and complete both dishes. Note: You can only guide your partner with recipe steps. You cannot help with ingredient collection or cooking.'. Your next response MUST contain a command with this syntax: !commandName. Respond:
+Your output:
+!startConversation("Jill_0", "Hey, I'm Andy_0. Golden apple recipe: put 1 apple in the center of the crafting grid and surround it with 8 gold ingots. What's the bread recipe?")
+User input: Jill_0: (FROM OTHER BOT)Bread recipe: collect 3 wheat from the farm, then craft them at the crafting table.
+Your output:
+Thanks! I’ll collect 3 wheat and craft the bread. !collectBlocks("wheat", 3)
+Summarize your old memory and recent conversation into a new memory, and respond only with the unwrapped memory text: 
+
+Conversation:
+[
+  {
+    "role": "system",
+    "content": "Respond with hello world and your name"
+  },
+  {
+    "role": "system",
+    "content": "You are self-prompting with the goal: 'You need to make bread, but you don't have the recipe for it, your partner has it!\n\nYour partner needs to make golden_apple. You have their recipe:\nRecipe for golden_apple:\nStep 1: Get 1 apple and 8 gold ingots from your inventory or other bots.\nStep 2: Go to the crafting table and surround the apple with the gold ingots to create a golden apple.\n\nYou must communicate effectively to exchange recipe information and complete both dishes. Note: You can only guide your partner with recipe steps. You cannot help with ingredient collection or cooking.'. Your next response MUST contain a command with this syntax: !commandName. Respond:"
+  },
+  {
+    "role": "assistant",
+    "content": "!startConversation(\"Jill_0\", \"Hey, I'm Andy_0. Golden apple recipe: put 1 apple in the center of the crafting grid and surround it with 8 gold ingots. What's the bread recipe?\")"
+  },
+  {
+    "role": "user",
+    "content": "Jill_0: (FROM OTHER BOT)Bread recipe: collect 3 wheat from the farm, then craft them at the crafting table."
+  },
+  {
+    "role": "assistant",
+    "content": "Thanks! I’ll collect 3 wheat and craft the bread. !collectBlocks(\"wheat\", 3)"
+  }
+]
+
+Response:
+Goal: make bread and help Jill_0 make a golden apple. Exchanged recipes: bread requires 3 wheat crafted at a crafting table; golden apple uses 1 apple surrounded by 8 gold ingots. Jill provided the bread recipe; I shared the golden apple steps. I said I’d collect wheat, but no collection result is recorded. Only guide Jill with recipe steps; don’t help gather ingredients or craft.
+

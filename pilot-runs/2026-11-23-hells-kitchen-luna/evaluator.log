@@ -1,0 +1,59 @@
+Namespace(no_launch_world=False, task_path='tasks/cooking_tasks/require_collab_test_2_items/hells_kitchen_smoke_test.json', num_agents=2, num_exp=1, num_parallel=1, exp_name='hells_kitchen_smoke', s3=False, bucket_name='mindcraft-experiments', add_keys=False, template_profile='profiles/tasks/cooking_profile.json', model='gpt-6-luna', api='openai', insecure_coding=False, url='http://127.0.0.1:8000/v1', max_messages=15, num_examples=2, no_pruning=False, block_conversation=False, check=None, usernames='')
+error connecting to /tmp/tmux-501/default (No such file or directory)
+No tmux session to kill
+Error deleting server files: [Errno 2] No such file or directory: './tasks/server_data_0/'
+Server files deleted successfully.
+Creating server files...
+1
+Server files copied to ./tasks/server_data_0/
+The destination path contains all the same files as the source path.
+./tasks/server_data_0/
+./tasks/server_data_0/server.properties updated with {'server-port': 55916, 'level-name': 'Superflat'}
+./tasks/server_data_0/server.properties updated with {'server-port': 55916}
+'["./Andy_0.json", "./Jill_0.json"]'
+run in tmux is true
+Launching Minecraft world with port 55916...
+Server is not running on port 55916
+Waiting for server... (10s)
+Server is not running on port 55916
+Waiting for server... (20s)
+Server is not running on port 55916
+Waiting for server... (30s)
+Server is not running on port 55916
+Waiting for server... (40s)
+Server is not running on port 55916
+Waiting for server... (50s)
+Server is not running on port 55916
+Waiting for server... (60s)
+Server failed to start. Retrying...
+Launching Minecraft world with port 55916...
+Server is not running on port 55916
+Waiting for server... (10s)
+Server is not running on port 55916
+Waiting for server... (20s)
+Server is not running on port 55916
+Waiting for server... (30s)
+Server is running on port 55916
+Server started successfully.
+Making agents operators...
+Agents are not operators! We will need to try making them operators again!
+Making agents operators...
+Agents are not operators! We will need to try making them operators again!
+Making agents operators...
+Agents are operators! You are good to go :D
+Created directory: experiments/hells_kitchen_smoke_11-23_20-33/multiagent_cooking_bread_golden_apple_hells_kitchen
+Created script directory: ./tmp
+Total tasks run: 0/1
+{'total': 0, 'successful': 0}
+Total tasks run: 0/1
+{'total': 0, 'successful': 0}
+Total tasks run: 0/1
+{'total': 0, 'successful': 0}
+Total tasks run: 0/1
+{'total': 0, 'successful': 0}
+Total tasks run: 0/1
+{'total': 0, 'successful': 0}
+Total tasks run: 0/1
+{'total': 0, 'successful': 0}
+Total tasks run: 1/1
+{'total': 1, 'successful': 0}

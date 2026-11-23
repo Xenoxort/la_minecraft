@@ -1,0 +1,1 @@
+{'total': 1, 'successful': 0, 'exp_name': 'hells_kitchen_smoke_11-23_20-33', 'template_profile': 'profiles/tasks/cooking_profile.json', 'model': 'gpt-6-luna', 'api': 'openai', 'num_agents': 2, 'task_path': 'tasks/cooking_tasks/require_collab_test_2_items/hells_kitchen_smoke_test.json', 'task_type': 'cooking', 'max_messages': 15, 'num_examples': 2}

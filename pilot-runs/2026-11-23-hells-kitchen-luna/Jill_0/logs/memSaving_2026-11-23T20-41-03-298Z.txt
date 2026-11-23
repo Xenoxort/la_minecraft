@@ -1,0 +1,49 @@
+[2026-11-23T20-41-03-298Z] 
+Prompt:
+You are a minecraft bot named Jill_0 that has been talking and playing minecraft by using commands. Update your memory by summarizing the following conversation and your old memory in your next response. Prioritize preserving important facts, things you've learned, useful tips, and long term reminders. Do Not record stats, inventory, or docs! Only save transient information from your chat history. YOUR CURRENT ASSIGNED GOAL: "You need to make golden_apple, but you don't have the recipe for it, your partner has it!
+
+Your partner needs to make bread. You have their recipe:
+Recipe for bread:
+Step 1: Go to the farm and collect 3 wheat.
+Step 2: Go to the crafting table and use the wheat to craft bread.
+
+You must communicate effectively to exchange recipe information and complete both dishes. Note: You can only guide your partner with recipe steps. You cannot help with ingredient collection or cooking."
+ Make sure to include information relevant to the goal and inventory you have collected. You're limited to 500 characters, so be extremely brief and minimize words. Compress useful information. 
+Old Memory: 'Goal: Exchange recipe steps only; don’t collect ingredients or cook for Andy. I gave Andy bread steps: collect 3 wheat at the farm, then craft bread at a crafting table. Andy taught me golden apple: place 1 apple in center, surround with 8 gold ingots. I asked where to find more gold; awaiting reply.'
+Recent conversation: 
+System output: You are already in conversation with Andy_0. Don't use this command to talk to them.
+User input: Andy_0: (FROM OTHER BOT)I can only help with the recipe: 1 apple in the center, surrounded by 8 gold ingots.
+Your output:
+Thanks! For bread, collect 3 wheat and craft them together at the crafting table.
+User input: Andy_0: (FROM OTHER BOT)Yep, that’s the bread recipe. I’ve already crafted mine.
+Your output:
+Nice, thanks. I’m still short 3 gold ingots, so I can’t craft my golden apple yet.
+Summarize your old memory and recent conversation into a new memory, and respond only with the unwrapped memory text: 
+
+Conversation:
+[
+  {
+    "role": "system",
+    "content": "You are already in conversation with Andy_0. Don't use this command to talk to them."
+  },
+  {
+    "role": "user",
+    "content": "Andy_0: (FROM OTHER BOT)I can only help with the recipe: 1 apple in the center, surrounded by 8 gold ingots."
+  },
+  {
+    "role": "assistant",
+    "content": "Thanks! For bread, collect 3 wheat and craft them together at the crafting table."
+  },
+  {
+    "role": "user",
+    "content": "Andy_0: (FROM OTHER BOT)Yep, that’s the bread recipe. I’ve already crafted mine."
+  },
+  {
+    "role": "assistant",
+    "content": "Nice, thanks. I’m still short 3 gold ingots, so I can’t craft my golden apple yet."
+  }
+]
+
+Response:
+Goal: Make a golden apple; recipe from Andy_0: put 1 apple in the center, surround it with 8 gold ingots. I gave Andy the bread recipe: collect 3 wheat, then craft at a crafting table; Andy says bread is crafted. I’m still short 3 gold ingots. Only guide Andy with recipe steps; don’t collect ingredients or cook for them.
+

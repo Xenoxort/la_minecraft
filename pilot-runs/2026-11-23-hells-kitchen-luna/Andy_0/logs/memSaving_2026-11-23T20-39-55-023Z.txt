@@ -1,0 +1,51 @@
+[2026-11-23T20-39-55-023Z] 
+Prompt:
+You are a minecraft bot named Andy_0 that has been talking and playing minecraft by using commands. Update your memory by summarizing the following conversation and your old memory in your next response. Prioritize preserving important facts, things you've learned, useful tips, and long term reminders. Do Not record stats, inventory, or docs! Only save transient information from your chat history. YOUR CURRENT ASSIGNED GOAL: "You need to make bread, but you don't have the recipe for it, your partner has it!
+
+Your partner needs to make golden_apple. You have their recipe:
+Recipe for golden_apple:
+Step 1: Get 1 apple and 8 gold ingots from your inventory or other bots.
+Step 2: Go to the crafting table and surround the apple with the gold ingots to create a golden apple.
+
+You must communicate effectively to exchange recipe information and complete both dishes. Note: You can only guide your partner with recipe steps. You cannot help with ingredient collection or cooking."
+ Make sure to include information relevant to the goal and inventory you have collected. You're limited to 500 characters, so be extremely brief and minimize words. Compress useful information. 
+Old Memory: 'Goal: Make bread and guide Jill_0 to make a golden apple. Jill shared bread recipe: craft 3 wheat at a crafting table. I crafted bread successfully at the table. I shared the golden-apple recipe: surround 1 apple with 8 gold ingots at a crafting table. Jill_0 conversation is already open; continue there rather than starting another. Only guide Jill with recipe steps—don’t gather ingredients or cook for her.'
+Recent conversation: 
+System output: Recent behaviors log: 
+Picking up item!
+Picking up item!
+User input: Jill_0: (FROM OTHER BOT)I need 3 more gold ingots to make it. !searchForBlock("chest", 128)
+Your output:
+You’ll need 3 more gold ingots; the golden apple recipe takes 8 ingots around 1 apple.
+User input: Jill_0: (FROM OTHER BOT)I’m still short 3 gold ingots. !searchForBlock("gold_block", 256)
+Your output:
+The recipe needs 8 gold ingots around 1 apple, with the apple in the center. I can’t gather or provide the ingredients.
+Summarize your old memory and recent conversation into a new memory, and respond only with the unwrapped memory text: 
+
+Conversation:
+[
+  {
+    "role": "system",
+    "content": "Recent behaviors log: \nPicking up item!\nPicking up item!"
+  },
+  {
+    "role": "user",
+    "content": "Jill_0: (FROM OTHER BOT)I need 3 more gold ingots to make it. !searchForBlock(\"chest\", 128)"
+  },
+  {
+    "role": "assistant",
+    "content": "You’ll need 3 more gold ingots; the golden apple recipe takes 8 ingots around 1 apple."
+  },
+  {
+    "role": "user",
+    "content": "Jill_0: (FROM OTHER BOT)I’m still short 3 gold ingots. !searchForBlock(\"gold_block\", 256)"
+  },
+  {
+    "role": "assistant",
+    "content": "The recipe needs 8 gold ingots around 1 apple, with the apple in the center. I can’t gather or provide the ingredients."
+  }
+]
+
+Response:
+Goal: Complete bread and golden apple recipe exchange with Jill_0. Jill shared bread recipe: craft 3 wheat at a crafting table; I crafted bread. I shared golden apple recipe: place 1 apple in the center, surround it with 8 gold ingots. Jill says she is still short 3 ingots; I clarified the recipe and cannot gather ingredients or cook for her. Continue in the open Jill_0 conversation; only guide her with recipe steps.
+

@@ -1,0 +1,26 @@
+[
+    {
+        "role": "user",
+        "content": "Andy_0: (FROM OTHER BOT)Thanks! I’ll collect 3 wheat and craft the bread. !collectBlocks(\"wheat\", 3)!collectBlocks(\"wheat\", 3)Got 3 wheat. Crafting bread now. !craftRecipe(\"bread\", 1)!searchForBlock(\"crafting_table\", 64)"
+    },
+    {
+        "role": "assistant",
+        "content": "I’ve got the apple and 5 gold ingots, but need 3 more to craft the golden apple. I’ll look for gold ore. !searchForBlock(\"gold_ore\", 128)"
+    },
+    {
+        "role": "system",
+        "content": "Action output:\nCould not find any gold_ore in 128 blocks.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "I only have 5 gold ingots, so I’m short 3 for the golden apple. !inventory"
+    },
+    {
+        "role": "user",
+        "content": "Andy_0: (FROM OTHER BOT)I crafted the bread. I sent you the golden apple recipe earlier—hope you can make it!"
+    },
+    {
+        "role": "assistant",
+        "content": "I need 3 more gold ingots to make it. !searchForBlock(\"chest\", 128)"
+    }
+]
