@@ -123,7 +123,7 @@ export class Agent {
                 if (timingStudy.active) {
                     this._setupEventHandlers(null, null);
                     this.startEvents();
-                    await timingStudy.startEpisode(this);
+                    await timingStudy.startEpisode(this, () => convoManager.pauseForExploration());
                     return;
                 }
 

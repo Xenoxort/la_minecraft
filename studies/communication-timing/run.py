@@ -133,7 +133,7 @@ def events(log):
 
 
 def run(root, label, delay, duration, sign, server_port, mind_port, viewer,
-        *, study=None, configure_trial=configure, observe=None):
+        *, study=None, configure_trial=configure, observe=None, chat_windows=None):
     work = root / label
     work.mkdir()
     configure_trial(work, delay, duration)
@@ -184,6 +184,8 @@ def run(root, label, delay, duration, sign, server_port, mind_port, viewer,
         start = stamp() + 1800
         deadline = start + duration * 1000
         clock = {"startMs": start, "delayMs": delay * 1000, "deadlineMs": deadline, "mirror": sign}
+        if chat_windows is not None:
+            clock["chatWindowsMs"] = [[a * 1000, b * 1000] for a, b in chat_windows]
         temp = work / "start.tmp"
         temp.write_text(json.dumps(clock, indent=2))
         temp.rename(work / "start.json")
@@ -208,9 +210,13 @@ def run(root, label, delay, duration, sign, server_port, mind_port, viewer,
                 json.dump({"verifiedCompletionMs": finish, "endMs": min(stamp(), deadline)}, file)
         rows = [r for r in events(bot_log) if start <= r["ms"] <= deadline]
         (work / "events.jsonl").write_text("".join(json.dumps(r) + "\n" for r in rows))
-        early = [r for r in rows if r["event"] == "chat" and r["ms"] < start + delay * 1000]
-        if early:
-            raise RuntimeError(f"{label}: chat crossed the gate before it opened")
+        def allowed(elapsed):
+            if chat_windows is None:
+                return elapsed >= delay * 1000
+            return any(a <= elapsed < b for a, b in clock["chatWindowsMs"])
+
+        if any(r["event"] == "chat" and not allowed(r["ms"] - start) for r in rows):
+            raise RuntimeError(f"{label}: chat crossed a closed gate")
         print(f"{label}: terminal inventory sampled; events saved", flush=True)
     finally:
         stop_process(bot)

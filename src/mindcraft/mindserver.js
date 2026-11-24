@@ -203,12 +203,13 @@ export function createMindServer(host_public = false, port = 8080) {
                 console.warn(`Agent ${agentName} tried to send a message but is not logged in`);
                 return;
             }
-            if (!timingStudy.canChat()) {
-                timingStudy.record('chat_blocked', { sender: curAgentName, channel: 'server' });
+            const receivedAt = Date.now();
+            if (!timingStudy.canChat(receivedAt)) {
+                timingStudy.record('chat_blocked', { sender: curAgentName, channel: 'server' }, receivedAt);
                 return;
             }
             if (agent_connections[agentName]?.socket) {
-                timingStudy.record('chat', { sender: curAgentName, receiver: agentName, message: json.message });
+                timingStudy.record('chat', { sender: curAgentName, receiver: agentName, message: json.message }, receivedAt);
             }
             console.log(`${curAgentName} sending message to ${agentName}: ${json.message}`);
             agent_connections[agentName]?.socket?.emit('chat-message', curAgentName, json);

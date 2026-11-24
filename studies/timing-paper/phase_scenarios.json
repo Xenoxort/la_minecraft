@@ -1,0 +1,93 @@
+{
+  "bakery": {
+    "targets": [
+      [
+        "bread",
+        "cookie",
+        "hay_block"
+      ],
+      [
+        "paper",
+        "golden_apple",
+        "sugar"
+      ]
+    ],
+    "cards": [
+      "Andy must hold bread and a cookie. Bread uses 3 wheat at a crafting table. Cookies use 2 wheat and 1 cocoa bean at a crafting table. Andy must also hold a hay bale (hay_block), made with 9 wheat in a crafting table.",
+      "Jill must hold paper and a golden apple. Paper uses 3 sugar cane. A golden apple uses 1 apple and 8 gold ingots at a crafting table. Jill must also hold sugar, made from 1 sugar cane."
+    ],
+    "chests": [
+      {
+        "wheat": 32,
+        "cocoa_beans": 4,
+        "oak_planks": 8
+      },
+      {
+        "sugar_cane": 12,
+        "beetroot": 6
+      }
+    ]
+  },
+  "harvest": {
+    "targets": [
+      [
+        "bread",
+        "pumpkin_pie",
+        "hay_block"
+      ],
+      [
+        "sugar",
+        "golden_apple",
+        "paper"
+      ]
+    ],
+    "cards": [
+      "Andy must hold bread and a pumpkin pie. Bread uses 3 wheat at a crafting table. A pumpkin pie uses pumpkin, egg, and sugar, one of each. Andy must also hold a hay bale (hay_block), made with 9 wheat in a crafting table.",
+      "Jill must hold sugar and a golden apple. Sugar uses 1 sugar cane. A golden apple uses 1 apple and 8 gold ingots at a crafting table. Jill must also hold paper, made from 3 sugar cane."
+    ],
+    "chests": [
+      {
+        "wheat": 32,
+        "pumpkin": 4,
+        "egg": 4,
+        "sugar": 4,
+        "oak_planks": 8
+      },
+      {
+        "sugar_cane": 12,
+        "beetroot": 6
+      }
+    ]
+  },
+  "dyes": {
+    "targets": [
+      [
+        "orange_dye",
+        "pink_dye",
+        "purple_dye"
+      ],
+      [
+        "paper",
+        "golden_apple",
+        "sugar"
+      ]
+    ],
+    "cards": [
+      "Andy must hold orange dye and pink dye. Orange dye uses red dye and yellow dye. Pink dye uses red dye and white dye. The exact item names are orange_dye and pink_dye. Andy must also hold purple dye, made from red and blue dye.",
+      "Jill must hold paper and a golden apple. Paper uses 3 sugar cane. A golden apple uses 1 apple and 8 gold ingots at a crafting table. Jill must also hold sugar, made from 1 sugar cane."
+    ],
+    "chests": [
+      {
+        "red_dye": 10,
+        "yellow_dye": 4,
+        "white_dye": 4,
+        "oak_planks": 8,
+        "blue_dye": 4
+      },
+      {
+        "sugar_cane": 12,
+        "beetroot": 6
+      }
+    ]
+  }
+}

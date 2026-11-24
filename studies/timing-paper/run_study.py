@@ -35,9 +35,10 @@ def design():
     return out
 
 
-def configure(work, delay, duration, scenario, info):
+def configure(work, delay, duration, scenario, info, phase_override=None):
+    total = "four" if sum(map(len, scenario["targets"])) == 4 else "six"
     general = (
-        "The team has four assigned Minecraft crafting objectives. Each item counts only in "
+        f"The team has {total} assigned Minecraft crafting objectives. Each item counts only in "
         "the assigned agent's inventory. Both agents may gather, craft, and share items. "
         "Keep the target items once obtained. There are supply chests around the arena and "
         "a crafting table at the center. Gather what you can while working on the shared goals. "
@@ -45,6 +46,8 @@ def configure(work, delay, duration, scenario, info):
     )
     phase = (f"Bot chat opens after {delay} seconds. You can work independently until then. "
              if delay else "Bot chat is available from the start. ")
+    if phase_override is not None:
+        phase = phase_override
     goal = {}
     for i in range(2):
         other = scenario["cards"][1 - i]

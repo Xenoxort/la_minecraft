@@ -246,6 +246,16 @@ class ConversationManager {
         }
     }
 
+    pauseForExploration() {
+        for (const convo of Object.values(this.convos)) {
+            clearTimeout(convo.inMessageTimer);
+            convo.end();
+        }
+        this._stopMonitor();
+        this.activeConversation = null;
+        if (agent.self_prompter.isPaused()) _resumeSelfPrompter();
+    }
+
     forceEndCurrentConversation() {
         if (this.activeConversation) {
             let sender = this.activeConversation.name;
