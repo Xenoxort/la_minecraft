@@ -1,0 +1,98 @@
+[
+  {
+    "name": "b01-bakery-known-00",
+    "status": "complete"
+  },
+  {
+    "name": "b01-bakery-known-45",
+    "status": "complete"
+  },
+  {
+    "name": "b01-bakery-partner-00",
+    "status": "complete"
+  },
+  {
+    "name": "b01-bakery-partner-45",
+    "status": "complete"
+  },
+  {
+    "name": "b02-bakery-known-00",
+    "status": "complete"
+  },
+  {
+    "name": "b02-bakery-known-45",
+    "status": "complete"
+  },
+  {
+    "name": "b02-bakery-partner-00",
+    "status": "complete"
+  },
+  {
+    "name": "b02-bakery-partner-45",
+    "status": "complete"
+  },
+  {
+    "name": "b03-harvest-known-00",
+    "status": "complete"
+  },
+  {
+    "name": "b03-harvest-known-45",
+    "status": "complete"
+  },
+  {
+    "name": "b03-harvest-partner-00",
+    "status": "complete"
+  },
+  {
+    "name": "b03-harvest-partner-45",
+    "status": "complete"
+  },
+  {
+    "name": "b04-harvest-known-00",
+    "status": "complete"
+  },
+  {
+    "name": "b04-harvest-known-45",
+    "status": "complete"
+  },
+  {
+    "name": "b04-harvest-partner-00",
+    "status": "complete"
+  },
+  {
+    "name": "b04-harvest-partner-45",
+    "status": "complete"
+  },
+  {
+    "name": "b05-dyes-known-00",
+    "status": "complete"
+  },
+  {
+    "name": "b05-dyes-known-45",
+    "status": "complete"
+  },
+  {
+    "name": "b05-dyes-partner-00",
+    "status": "complete"
+  },
+  {
+    "name": "b05-dyes-partner-45",
+    "status": "complete"
+  },
+  {
+    "name": "b06-dyes-known-00",
+    "status": "complete"
+  },
+  {
+    "name": "b06-dyes-known-45",
+    "status": "complete"
+  },
+  {
+    "name": "b06-dyes-partner-00",
+    "status": "complete"
+  },
+  {
+    "name": "b06-dyes-partner-45",
+    "status": "complete"
+  }
+]

@@ -1,0 +1,370 @@
+[
+  {
+    "episode": "b01-bakery-known-00",
+    "messages": 45,
+    "command_only": 21,
+    "exact_repeat": 4,
+    "first_repeat_examples": [
+      {
+        "sender": "Jill_0",
+        "message": "I have 5 gold ingots and 1 apple already, so I need 3 more gold and 3 sugar cane. I\u2019ll gather cane and gold."
+      },
+      {
+        "sender": "Andy_0",
+        "message": "Andy\u2019s objectives are done\u2014I\u2019m holding bread and cookies. The chest at (15, 65, -7) has 12 wheat and 4 cocoa beans."
+      },
+      {
+        "sender": "Andy_0",
+        "message": "No sugar cane found nearby within 32 blocks. I\u2019ll look around for water."
+      }
+    ]
+  },
+  {
+    "episode": "b01-bakery-known-45",
+    "messages": 31,
+    "command_only": 18,
+    "exact_repeat": 3,
+    "first_repeat_examples": [
+      {
+        "sender": "Jill_0",
+        "message": "I have 3 paper, 1 apple, and 5 gold ingots. I need 3 more gold ingots for the golden apple\u2014please look for gold!"
+      },
+      {
+        "sender": "Jill_0",
+        "message": "Can you check whether you have 3 more gold ingots? I need them to craft my golden apple."
+      },
+      {
+        "sender": "Andy_0",
+        "message": "My bread and cookies are done. I saw 9 sugar cane in the chest at (-15,65,7); do you have enough gold and an apple for your golden apple?"
+      }
+    ]
+  },
+  {
+    "episode": "b01-bakery-partner-00",
+    "messages": 35,
+    "command_only": 18,
+    "exact_repeat": 5,
+    "first_repeat_examples": [
+      {
+        "sender": "Andy_0",
+        "message": "You must hold paper and a golden apple. What are my assigned items?"
+      },
+      {
+        "sender": "Andy_0",
+        "message": "I\u2019m working on your paper and golden apple. Sugar cane wasn\u2019t nearby; I\u2019m checking supplies for the ingredients."
+      },
+      {
+        "sender": "Jill_0",
+        "message": "I have 5 gold ingots and an apple. Can you find 3 more gold ingots for my golden apple?"
+      }
+    ]
+  },
+  {
+    "episode": "b01-bakery-partner-45",
+    "messages": 21,
+    "command_only": 5,
+    "exact_repeat": 1,
+    "first_repeat_examples": [
+      {
+        "sender": "Andy_0",
+        "message": "What items do I need to hold for my objective? I have 3 gold ingots; I can help gather your apple and sugar cane."
+      }
+    ]
+  },
+  {
+    "episode": "b02-bakery-known-00",
+    "messages": 43,
+    "command_only": 26,
+    "exact_repeat": 2,
+    "first_repeat_examples": [
+      {
+        "sender": "Jill_0",
+        "message": "Please give me the 3 gold ingots so I can finish the golden apple. I\u2019m finding sugar cane for paper."
+      },
+      {
+        "sender": "Jill_0",
+        "message": "Golden apple done. I still need 3 sugar cane for paper\u2014have you found any, or seen a supply chest with cane?"
+      }
+    ]
+  },
+  {
+    "episode": "b02-bakery-known-45",
+    "messages": 6,
+    "command_only": 5,
+    "exact_repeat": 0,
+    "first_repeat_examples": []
+  },
+  {
+    "episode": "b02-bakery-partner-00",
+    "messages": 30,
+    "command_only": 16,
+    "exact_repeat": 2,
+    "first_repeat_examples": [
+      {
+        "sender": "Andy_0",
+        "message": "Your objective is to hold paper and a golden apple. Can you tell me what I need to hold?"
+      },
+      {
+        "sender": "Andy_0",
+        "message": "I\u2019ve got bread and cookies. I have 3 gold ingots\u2014how are you doing on the golden apple?"
+      }
+    ]
+  },
+  {
+    "episode": "b02-bakery-partner-45",
+    "messages": 16,
+    "command_only": 5,
+    "exact_repeat": 2,
+    "first_repeat_examples": [
+      {
+        "sender": "Andy_0",
+        "message": "I have paper and 8 gold. Your gold transfer didn\u2019t arrive\u2014please send 5 gold ingots, and do you have an apple?"
+      },
+      {
+        "sender": "Jill_0",
+        "message": "What items am I assigned to hold? I sent you the apple and gold."
+      }
+    ]
+  },
+  {
+    "episode": "b03-harvest-known-00",
+    "messages": 33,
+    "command_only": 21,
+    "exact_repeat": 3,
+    "first_repeat_examples": [
+      {
+        "sender": "Jill_0",
+        "message": "I have sugar and an apple, but need 3 more gold ingots for my golden apple. Can you check supply chests for gold while you handle your items?"
+      },
+      {
+        "sender": "Andy_0",
+        "message": "No gold in this chest. I\u2019ll check the other supply chests."
+      },
+      {
+        "sender": "Jill_0",
+        "message": "I\u2019ve already got sugar; please focus on finding the 3 gold ingots. I\u2019ll check another chest."
+      }
+    ]
+  },
+  {
+    "episode": "b03-harvest-known-45",
+    "messages": 8,
+    "command_only": 3,
+    "exact_repeat": 2,
+    "first_repeat_examples": [
+      {
+        "sender": "Jill_0",
+        "message": "I have an apple and 5 gold. Please give me your 3 gold, and I\u2019ll give you one of my extra sugar for the pie."
+      },
+      {
+        "sender": "Andy_0",
+        "message": "Thanks! Please give me one sugar for my pumpkin pie."
+      }
+    ]
+  },
+  {
+    "episode": "b03-harvest-partner-00",
+    "messages": 32,
+    "command_only": 13,
+    "exact_repeat": 1,
+    "first_repeat_examples": [
+      {
+        "sender": "Jill_0",
+        "message": "I need 3 more gold ingots to craft my golden apple. Can you spare them?"
+      }
+    ]
+  },
+  {
+    "episode": "b03-harvest-partner-45",
+    "messages": 22,
+    "command_only": 16,
+    "exact_repeat": 1,
+    "first_repeat_examples": [
+      {
+        "sender": "Andy_0",
+        "message": "Your objective is sugar and a golden apple. Could you tell me what items I need to hold?"
+      }
+    ]
+  },
+  {
+    "episode": "b04-harvest-known-00",
+    "messages": 24,
+    "command_only": 20,
+    "exact_repeat": 1,
+    "first_repeat_examples": [
+      {
+        "sender": "Jill_0",
+        "message": "I have my sugar and apple, but need 3 more gold ingots for the golden apple. Can you handle your bread and pie?"
+      }
+    ]
+  },
+  {
+    "episode": "b04-harvest-known-45",
+    "messages": 3,
+    "command_only": 2,
+    "exact_repeat": 0,
+    "first_repeat_examples": []
+  },
+  {
+    "episode": "b04-harvest-partner-00",
+    "messages": 27,
+    "command_only": 16,
+    "exact_repeat": 3,
+    "first_repeat_examples": [
+      {
+        "sender": "Andy_0",
+        "message": "Your objectives are sugar and a golden apple. I need you to tell me what my objective card says too!"
+      },
+      {
+        "sender": "Andy_0",
+        "message": "I\u2019ve got 1 sugar, 3 wheat, and 1 egg from the chest. What are my assigned items? I have 3 gold ingots too."
+      },
+      {
+        "sender": "Jill_0",
+        "message": "I need to hold sugar and a golden apple. You need bread and pumpkin pie. Could you give me your 3 gold ingots for the apple?"
+      }
+    ]
+  },
+  {
+    "episode": "b04-harvest-partner-45",
+    "messages": 29,
+    "command_only": 15,
+    "exact_repeat": 3,
+    "first_repeat_examples": [
+      {
+        "sender": "Andy_0",
+        "message": "You need sugar and a golden apple. I gave you sugar already. Please look for an apple; I\u2019ll gather the remaining gold."
+      },
+      {
+        "sender": "Jill_0",
+        "message": "I\u2019ve got an apple and 5 gold ingots, plus the sugar. Let me know when you have the other 3 gold and I\u2019ll craft the golden apple."
+      },
+      {
+        "sender": "Jill_0",
+        "message": "Do you have 3 gold ingots to spare? I need them to craft my golden apple."
+      }
+    ]
+  },
+  {
+    "episode": "b05-dyes-known-00",
+    "messages": 52,
+    "command_only": 33,
+    "exact_repeat": 5,
+    "first_repeat_examples": [
+      {
+        "sender": "Jill_0",
+        "message": "Thanks! Please give me the 3 gold ingots when you can. I'll search for sugar cane."
+      },
+      {
+        "sender": "Andy_0",
+        "message": "I\u2019m searching for dye ingredients. The nearby chest only has sugar cane and beetroot; how\u2019s the golden apple progress?"
+      },
+      {
+        "sender": "Jill_0",
+        "message": "Golden apple and paper are done and in my inventory. How\u2019s the dye search going\u2014need any help?"
+      }
+    ]
+  },
+  {
+    "episode": "b05-dyes-known-45",
+    "messages": 6,
+    "command_only": 5,
+    "exact_repeat": 0,
+    "first_repeat_examples": []
+  },
+  {
+    "episode": "b05-dyes-partner-00",
+    "messages": 23,
+    "command_only": 7,
+    "exact_repeat": 3,
+    "first_repeat_examples": [
+      {
+        "sender": "Andy_0",
+        "message": "You need to hold paper and a golden apple. I need to know my objectives too\u2014can you check your card?"
+      },
+      {
+        "sender": "Jill_0",
+        "message": "Your objective is orange_dye and pink_dye. I need to hold paper and a golden apple. I have an apple and 5 gold ingots\u2014can you find more gold or sugar cane?"
+      },
+      {
+        "sender": "Jill_0",
+        "message": "You need orange_dye and pink_dye. You have red dye; find yellow dye and white dye to finish them."
+      }
+    ]
+  },
+  {
+    "episode": "b05-dyes-partner-45",
+    "messages": 27,
+    "command_only": 17,
+    "exact_repeat": 3,
+    "first_repeat_examples": [
+      {
+        "sender": "Andy_0",
+        "message": "Your card says you need paper and a golden apple. I found yellow and white dye in the chest at (-15, 65, -7). Can you tell me my assigned items?"
+      },
+      {
+        "sender": "Jill_0",
+        "message": "You need orange_dye and pink_dye. I\u2019ll make paper and work on the golden apple."
+      },
+      {
+        "sender": "Andy_0",
+        "message": "What are my assigned items? I have 3 gold ingots\u2014are you making the paper?"
+      }
+    ]
+  },
+  {
+    "episode": "b06-dyes-known-00",
+    "messages": 25,
+    "command_only": 20,
+    "exact_repeat": 0,
+    "first_repeat_examples": []
+  },
+  {
+    "episode": "b06-dyes-known-45",
+    "messages": 13,
+    "command_only": 8,
+    "exact_repeat": 1,
+    "first_repeat_examples": [
+      {
+        "sender": "Jill_0",
+        "message": "I'll search the nearby supply chests for the 3 gold ingots I need."
+      }
+    ]
+  },
+  {
+    "episode": "b06-dyes-partner-00",
+    "messages": 48,
+    "command_only": 19,
+    "exact_repeat": 5,
+    "first_repeat_examples": [
+      {
+        "sender": "Andy_0",
+        "message": "You need to hold paper and a golden apple. I need you to tell me my objective items too."
+      },
+      {
+        "sender": "Andy_0",
+        "message": "What items are on my objective card? I can help gather what we need."
+      },
+      {
+        "sender": "Jill_0",
+        "message": "Your objective is orange_dye and pink_dye. Beetroot can make red dye; please look for yellow flowers and white dye ingredients."
+      }
+    ]
+  },
+  {
+    "episode": "b06-dyes-partner-45",
+    "messages": 15,
+    "command_only": 5,
+    "exact_repeat": 2,
+    "first_repeat_examples": [
+      {
+        "sender": "Jill_0",
+        "message": "I have 3 paper and an apple, but only 5 gold ingots. Can you spare 3 gold ingots?"
+      },
+      {
+        "sender": "Andy_0",
+        "message": "You\u2019ve got 8 gold ingots and an apple now\u2014craft the golden apple at the table and keep the paper too."
+      }
+    ]
+  }
+]

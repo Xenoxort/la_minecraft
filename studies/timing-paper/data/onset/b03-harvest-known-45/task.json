@@ -1,0 +1,21 @@
+{
+  "two_station_timing_hells_kitchen": {
+    "type": "cooking",
+    "agent_count": 2,
+    "timeout": 180,
+    "goal": {
+      "0": "The team has four assigned Minecraft crafting objectives. Each item counts only in the assigned agent's inventory. Both agents may gather, craft, and share items. Keep the target items once obtained. There are supply chests around the arena and a crafting table at the center. Gather what you can while working on the shared goals. There are 180 seconds from the start. Bot chat opens after 45 seconds. You can work independently until then. Your objective card: Andy must hold bread and a pumpkin pie. Bread uses 3 wheat at a crafting table. A pumpkin pie uses pumpkin, egg, and sugar, one of each. Your partner's objective card: Jill must hold sugar and a golden apple. Sugar uses 1 sugar cane. A golden apple uses 1 apple and 8 gold ingots at a crafting table.",
+      "1": "The team has four assigned Minecraft crafting objectives. Each item counts only in the assigned agent's inventory. Both agents may gather, craft, and share items. Keep the target items once obtained. There are supply chests around the arena and a crafting table at the center. Gather what you can while working on the shared goals. There are 180 seconds from the start. Bot chat opens after 45 seconds. You can work independently until then. Your objective card: Jill must hold sugar and a golden apple. Sugar uses 1 sugar cane. A golden apple uses 1 apple and 8 gold ingots at a crafting table. Your partner's objective card: Andy must hold bread and a pumpkin pie. Bread uses 3 wheat at a crafting table. A pumpkin pie uses pumpkin, egg, and sugar, one of each."
+    },
+    "target": [
+      {
+        "bread": 1,
+        "pumpkin_pie": 1
+      },
+      {
+        "sugar": 1,
+        "golden_apple": 1
+      }
+    ]
+  }
+}

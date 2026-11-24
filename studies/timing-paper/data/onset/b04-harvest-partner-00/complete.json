@@ -1,0 +1,1 @@
+{"block": {"number": 4, "scenario": "harvest", "mirror": 1, "order": [{"info": "known", "delay": 0}, {"info": "partner", "delay": 45}, {"info": "partner", "delay": 0}, {"info": "known", "delay": 45}]}, "cell": {"info": "partner", "delay": 0}, "probe": false}

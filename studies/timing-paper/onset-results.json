@@ -1,0 +1,2901 @@
+{
+  "episodes": [
+    {
+      "episode": "b01-bakery-known-00",
+      "block": 1,
+      "scenario": "bakery",
+      "mirror": -1,
+      "information": "known",
+      "delay_s": 0,
+      "capped_completion_s": 180.0,
+      "success": false,
+      "first_verified_s": null,
+      "endpoint_inventory": {
+        "Andy_0": [
+          "bread",
+          "cookie"
+        ],
+        "Jill_0": [
+          "golden_apple"
+        ]
+      },
+      "endpoint_objectives": {
+        "Andy_0": {
+          "bread": true,
+          "cookie": true
+        },
+        "Jill_0": {
+          "paper": false,
+          "golden_apple": true
+        }
+      },
+      "goals_seen_by_45s": [
+        "Andy_0:bread",
+        "Andy_0:cookie"
+      ],
+      "chest_supplies_seen_by_45s": {
+        "Andy_0": [
+          "cocoa_beans",
+          "wheat"
+        ],
+        "Jill_0": []
+      },
+      "first_chat_s": 3.193,
+      "blocked_chat": 0,
+      "chat_count": 45,
+      "state_samples": {
+        "Andy_0": 178,
+        "Jill_0": 176
+      },
+      "model_responses": 68,
+      "model_errors": 0,
+      "model_ids": [
+        "gpt-6-luna"
+      ],
+      "model_elapsed_ms": [
+        2486,
+        3284,
+        2860,
+        1871,
+        1601,
+        1837,
+        1960,
+        1928,
+        1913,
+        2018,
+        2651,
+        1436,
+        3297,
+        2190,
+        2262,
+        2503,
+        2298,
+        1647,
+        3513,
+        2168,
+        2642,
+        4066,
+        1508,
+        4486,
+        3361,
+        3337,
+        2575,
+        1781,
+        2809,
+        2153,
+        3115,
+        3735,
+        3085,
+        1644,
+        1891,
+        4675,
+        2664,
+        2939,
+        1555,
+        2692,
+        1716,
+        2925,
+        1776,
+        2091,
+        3105,
+        2343,
+        3580,
+        1940,
+        2730,
+        2347,
+        2307,
+        3515,
+        2218,
+        1924,
+        2462,
+        2076,
+        3712,
+        2496,
+        1663,
+        1802,
+        2361,
+        2571,
+        2874,
+        1987,
+        3195,
+        2311,
+        2559,
+        3403
+      ],
+      "input_tokens": 178937,
+      "output_tokens": 10140,
+      "server_timeouts": 0,
+      "restarts": 0,
+      "protocol_errors": 2,
+      "process_exit_lines": []
+    },
+    {
+      "episode": "b01-bakery-known-45",
+      "block": 1,
+      "scenario": "bakery",
+      "mirror": -1,
+      "information": "known",
+      "delay_s": 45,
+      "capped_completion_s": 180.0,
+      "success": false,
+      "first_verified_s": null,
+      "endpoint_inventory": {
+        "Andy_0": [
+          "bread",
+          "cookie"
+        ],
+        "Jill_0": [
+          "apple",
+          "gold_ingot",
+          "paper"
+        ]
+      },
+      "endpoint_objectives": {
+        "Andy_0": {
+          "bread": true,
+          "cookie": true
+        },
+        "Jill_0": {
+          "paper": true,
+          "golden_apple": false
+        }
+      },
+      "goals_seen_by_45s": [
+        "Andy_0:bread",
+        "Andy_0:cookie",
+        "Jill_0:paper"
+      ],
+      "chest_supplies_seen_by_45s": {
+        "Andy_0": [
+          "cocoa_beans",
+          "wheat"
+        ],
+        "Jill_0": [
+          "sugar_cane"
+        ]
+      },
+      "first_chat_s": 52.635,
+      "blocked_chat": 1,
+      "chat_count": 31,
+      "state_samples": {
+        "Andy_0": 178,
+        "Jill_0": 177
+      },
+      "model_responses": 78,
+      "model_errors": 0,
+      "model_ids": [
+        "gpt-6-luna"
+      ],
+      "model_elapsed_ms": [
+        1714,
+        1926,
+        1505,
+        1779,
+        1447,
+        1490,
+        1634,
+        2052,
+        2063,
+        1991,
+        2162,
+        1372,
+        2055,
+        2778,
+        2334,
+        2351,
+        2942,
+        3993,
+        2580,
+        2625,
+        1818,
+        1886,
+        1470,
+        2316,
+        3340,
+        1988,
+        3444,
+        2682,
+        1987,
+        2457,
+        3796,
+        3472,
+        1769,
+        2021,
+        2307,
+        3393,
+        1947,
+        1611,
+        1704,
+        4207,
+        2932,
+        2860,
+        2870,
+        2975,
+        1857,
+        1715,
+        2750,
+        1880,
+        3781,
+        1677,
+        2774,
+        3502,
+        2559,
+        2084,
+        1760,
+        3191,
+        2373,
+        2557,
+        3557,
+        2799,
+        2624,
+        2515,
+        1464,
+        1663,
+        3812,
+        2116,
+        1297,
+        1468,
+        2545,
+        1148,
+        1549,
+        2971,
+        3304,
+        2962,
+        2968,
+        2126,
+        2368,
+        4129
+      ],
+      "input_tokens": 207712,
+      "output_tokens": 10515,
+      "server_timeouts": 0,
+      "restarts": 0,
+      "protocol_errors": 2,
+      "process_exit_lines": []
+    },
+    {
+      "episode": "b01-bakery-partner-00",
+      "block": 1,
+      "scenario": "bakery",
+      "mirror": -1,
+      "information": "partner",
+      "delay_s": 0,
+      "capped_completion_s": 180.0,
+      "success": false,
+      "first_verified_s": null,
+      "endpoint_inventory": {
+        "Andy_0": [
+          "bread",
+          "cookie"
+        ],
+        "Jill_0": [
+          "apple",
+          "gold_ingot",
+          "paper"
+        ]
+      },
+      "endpoint_objectives": {
+        "Andy_0": {
+          "bread": true,
+          "cookie": true
+        },
+        "Jill_0": {
+          "paper": true,
+          "golden_apple": false
+        }
+      },
+      "goals_seen_by_45s": [
+        "Andy_0:bread"
+      ],
+      "chest_supplies_seen_by_45s": {
+        "Andy_0": [
+          "cocoa_beans",
+          "wheat"
+        ],
+        "Jill_0": []
+      },
+      "first_chat_s": 2.575,
+      "blocked_chat": 0,
+      "chat_count": 35,
+      "state_samples": {
+        "Jill_0": 173,
+        "Andy_0": 168
+      },
+      "model_responses": 54,
+      "model_errors": 0,
+      "model_ids": [
+        "gpt-6-luna"
+      ],
+      "model_elapsed_ms": [
+        2078,
+        2231,
+        2664,
+        2833,
+        1851,
+        2136,
+        2047,
+        2098,
+        1931,
+        7068,
+        2939,
+        3195,
+        3276,
+        5772,
+        3758,
+        5201,
+        5948,
+        5774,
+        3278,
+        2239,
+        2208,
+        1946,
+        2284,
+        4316,
+        1888,
+        2685,
+        4060,
+        2310,
+        2986,
+        1612,
+        3082,
+        1732,
+        3618,
+        2040,
+        4107,
+        3650,
+        2520,
+        1426,
+        2225,
+        2053,
+        3929,
+        1586,
+        1577,
+        1780,
+        2471,
+        4734,
+        3011,
+        2482,
+        1500,
+        4048,
+        5985,
+        2058,
+        4677,
+        2614
+      ],
+      "input_tokens": 141472,
+      "output_tokens": 7531,
+      "server_timeouts": 0,
+      "restarts": 1,
+      "protocol_errors": 3,
+      "process_exit_lines": [
+        "Agent process exited with code 1 and signal null"
+      ]
+    },
+    {
+      "episode": "b01-bakery-partner-45",
+      "block": 1,
+      "scenario": "bakery",
+      "mirror": -1,
+      "information": "partner",
+      "delay_s": 45,
+      "capped_completion_s": 172.755,
+      "success": true,
+      "first_verified_s": 172.755,
+      "endpoint_inventory": {
+        "Andy_0": [
+          "bread",
+          "cookie"
+        ],
+        "Jill_0": [
+          "golden_apple",
+          "paper"
+        ]
+      },
+      "endpoint_objectives": {
+        "Andy_0": {
+          "bread": true,
+          "cookie": true
+        },
+        "Jill_0": {
+          "paper": true,
+          "golden_apple": true
+        }
+      },
+      "goals_seen_by_45s": [],
+      "chest_supplies_seen_by_45s": {
+        "Andy_0": [],
+        "Jill_0": []
+      },
+      "first_chat_s": 52.08,
+      "blocked_chat": 4,
+      "chat_count": 21,
+      "state_samples": {
+        "Andy_0": 167,
+        "Jill_0": 164
+      },
+      "model_responses": 62,
+      "model_errors": 0,
+      "model_ids": [
+        "gpt-6-luna"
+      ],
+      "model_elapsed_ms": [
+        2977,
+        3007,
+        1934,
+        1958,
+        1608,
+        1911,
+        1809,
+        2353,
+        2602,
+        2903,
+        1750,
+        1692,
+        2229,
+        2914,
+        3405,
+        2228,
+        1929,
+        1818,
+        4501,
+        2868,
+        2390,
+        4454,
+        2959,
+        1952,
+        3161,
+        3909,
+        2993,
+        1830,
+        3830,
+        2632,
+        2160,
+        2467,
+        2196,
+        1643,
+        2357,
+        3160,
+        2877,
+        1964,
+        1891,
+        3185,
+        4575,
+        5125,
+        3333,
+        4016,
+        6500,
+        3181,
+        3615,
+        2509,
+        2968,
+        3721,
+        2822,
+        3828,
+        2330,
+        3869,
+        2066,
+        2974,
+        2648,
+        2040,
+        3331,
+        3285,
+        2147,
+        1601
+      ],
+      "input_tokens": 166432,
+      "output_tokens": 10274,
+      "server_timeouts": 0,
+      "restarts": 0,
+      "protocol_errors": 2,
+      "process_exit_lines": []
+    },
+    {
+      "episode": "b02-bakery-known-00",
+      "block": 2,
+      "scenario": "bakery",
+      "mirror": 1,
+      "information": "known",
+      "delay_s": 0,
+      "capped_completion_s": 180.0,
+      "success": false,
+      "first_verified_s": null,
+      "endpoint_inventory": {
+        "Andy_0": [
+          "bread",
+          "cookie",
+          "sugar_cane"
+        ],
+        "Jill_0": [
+          "golden_apple",
+          "sugar_cane"
+        ]
+      },
+      "endpoint_objectives": {
+        "Andy_0": {
+          "bread": true,
+          "cookie": true
+        },
+        "Jill_0": {
+          "paper": false,
+          "golden_apple": true
+        }
+      },
+      "goals_seen_by_45s": [
+        "Andy_0:bread",
+        "Andy_0:cookie"
+      ],
+      "chest_supplies_seen_by_45s": {
+        "Andy_0": [
+          "cocoa_beans",
+          "wheat"
+        ],
+        "Jill_0": []
+      },
+      "first_chat_s": 2.862,
+      "blocked_chat": 0,
+      "chat_count": 43,
+      "state_samples": {
+        "Andy_0": 178,
+        "Jill_0": 173
+      },
+      "model_responses": 70,
+      "model_errors": 0,
+      "model_ids": [
+        "gpt-6-luna"
+      ],
+      "model_elapsed_ms": [
+        2231,
+        2309,
+        1906,
+        1500,
+        1848,
+        2346,
+        1873,
+        2075,
+        2437,
+        3078,
+        1747,
+        2929,
+        2486,
+        2486,
+        1627,
+        1561,
+        2109,
+        1764,
+        1725,
+        1891,
+        1727,
+        1719,
+        3168,
+        3253,
+        2574,
+        3400,
+        2475,
+        6163,
+        2782,
+        3285,
+        2174,
+        2205,
+        2689,
+        1494,
+        1695,
+        1798,
+        2584,
+        2791,
+        3596,
+        2342,
+        4912,
+        2244,
+        2688,
+        3985,
+        3241,
+        2296,
+        2856,
+        2255,
+        2572,
+        2274,
+        4090,
+        2269,
+        2614,
+        1640,
+        2695,
+        3757,
+        2039,
+        1963,
+        1909,
+        1760,
+        1302,
+        3627,
+        1446,
+        3360,
+        2288,
+        2365,
+        1445,
+        2560,
+        3982,
+        2671
+      ],
+      "input_tokens": 185303,
+      "output_tokens": 7578,
+      "server_timeouts": 0,
+      "restarts": 0,
+      "protocol_errors": 2,
+      "process_exit_lines": []
+    },
+    {
+      "episode": "b02-bakery-known-45",
+      "block": 2,
+      "scenario": "bakery",
+      "mirror": 1,
+      "information": "known",
+      "delay_s": 45,
+      "capped_completion_s": 77.956,
+      "success": true,
+      "first_verified_s": 77.956,
+      "endpoint_inventory": {
+        "Andy_0": [
+          "bread",
+          "cookie"
+        ],
+        "Jill_0": [
+          "golden_apple",
+          "paper"
+        ]
+      },
+      "endpoint_objectives": {
+        "Andy_0": {
+          "bread": true,
+          "cookie": true
+        },
+        "Jill_0": {
+          "paper": true,
+          "golden_apple": true
+        }
+      },
+      "goals_seen_by_45s": [
+        "Andy_0:bread",
+        "Andy_0:cookie",
+        "Jill_0:paper"
+      ],
+      "chest_supplies_seen_by_45s": {
+        "Andy_0": [
+          "cocoa_beans",
+          "wheat"
+        ],
+        "Jill_0": [
+          "sugar_cane"
+        ]
+      },
+      "first_chat_s": 49.437,
+      "blocked_chat": 2,
+      "chat_count": 6,
+      "state_samples": {
+        "Jill_0": 72,
+        "Andy_0": 73
+      },
+      "model_responses": 34,
+      "model_errors": 0,
+      "model_ids": [
+        "gpt-6-luna"
+      ],
+      "model_elapsed_ms": [
+        2203,
+        3468,
+        1477,
+        1905,
+        4529,
+        1750,
+        1561,
+        2069,
+        1486,
+        2181,
+        1679,
+        1569,
+        3027,
+        2029,
+        4190,
+        2054,
+        4295,
+        1444,
+        2183,
+        2725,
+        2381,
+        2426,
+        2399,
+        2221,
+        4958,
+        4161,
+        1880,
+        4152,
+        2632,
+        3603,
+        2116,
+        2464,
+        3004,
+        1767
+      ],
+      "input_tokens": 93262,
+      "output_tokens": 4114,
+      "server_timeouts": 0,
+      "restarts": 0,
+      "protocol_errors": 2,
+      "process_exit_lines": []
+    },
+    {
+      "episode": "b02-bakery-partner-00",
+      "block": 2,
+      "scenario": "bakery",
+      "mirror": 1,
+      "information": "partner",
+      "delay_s": 0,
+      "capped_completion_s": 114.22,
+      "success": true,
+      "first_verified_s": 114.22,
+      "endpoint_inventory": {
+        "Andy_0": [
+          "bread",
+          "cookie"
+        ],
+        "Jill_0": [
+          "golden_apple",
+          "paper"
+        ]
+      },
+      "endpoint_objectives": {
+        "Andy_0": {
+          "bread": true,
+          "cookie": true
+        },
+        "Jill_0": {
+          "paper": true,
+          "golden_apple": true
+        }
+      },
+      "goals_seen_by_45s": [
+        "Jill_0:paper"
+      ],
+      "chest_supplies_seen_by_45s": {
+        "Andy_0": [],
+        "Jill_0": [
+          "sugar_cane"
+        ]
+      },
+      "first_chat_s": 2.748,
+      "blocked_chat": 0,
+      "chat_count": 30,
+      "state_samples": {
+        "Jill_0": 113,
+        "Andy_0": 113
+      },
+      "model_responses": 46,
+      "model_errors": 0,
+      "model_ids": [
+        "gpt-6-luna"
+      ],
+      "model_elapsed_ms": [
+        1957,
+        2393,
+        2073,
+        2595,
+        2920,
+        2994,
+        1704,
+        1536,
+        1551,
+        2155,
+        2022,
+        2246,
+        2468,
+        2062,
+        2813,
+        2008,
+        3495,
+        2611,
+        2257,
+        3187,
+        1688,
+        2445,
+        1916,
+        2937,
+        2552,
+        1866,
+        1761,
+        3345,
+        2003,
+        3194,
+        1607,
+        4284,
+        2381,
+        4301,
+        2449,
+        2879,
+        2091,
+        1657,
+        1469,
+        3792,
+        1788,
+        2148,
+        1595,
+        1665,
+        3951,
+        1300
+      ],
+      "input_tokens": 125661,
+      "output_tokens": 5991,
+      "server_timeouts": 0,
+      "restarts": 0,
+      "protocol_errors": 2,
+      "process_exit_lines": []
+    },
+    {
+      "episode": "b02-bakery-partner-45",
+      "block": 2,
+      "scenario": "bakery",
+      "mirror": 1,
+      "information": "partner",
+      "delay_s": 45,
+      "capped_completion_s": 180.0,
+      "success": false,
+      "first_verified_s": null,
+      "endpoint_inventory": {
+        "Andy_0": [],
+        "Jill_0": [
+          "golden_apple",
+          "paper"
+        ]
+      },
+      "endpoint_objectives": {
+        "Andy_0": {
+          "bread": false,
+          "cookie": false
+        },
+        "Jill_0": {
+          "paper": true,
+          "golden_apple": true
+        }
+      },
+      "goals_seen_by_45s": [],
+      "chest_supplies_seen_by_45s": {
+        "Andy_0": [],
+        "Jill_0": []
+      },
+      "first_chat_s": 50.156,
+      "blocked_chat": 3,
+      "chat_count": 16,
+      "state_samples": {
+        "Andy_0": 179,
+        "Jill_0": 178
+      },
+      "model_responses": 55,
+      "model_errors": 0,
+      "model_ids": [
+        "gpt-6-luna"
+      ],
+      "model_elapsed_ms": [
+        1982,
+        3404,
+        1281,
+        1797,
+        2016,
+        1780,
+        2312,
+        1680,
+        2277,
+        1717,
+        2350,
+        1923,
+        2531,
+        2074,
+        4616,
+        2311,
+        3865,
+        2332,
+        2157,
+        2119,
+        1355,
+        1817,
+        2547,
+        3164,
+        3259,
+        1900,
+        1989,
+        2026,
+        1858,
+        2853,
+        2890,
+        3262,
+        2678,
+        2905,
+        2294,
+        2500,
+        1405,
+        3682,
+        3823,
+        3149,
+        2417,
+        1572,
+        3338,
+        2170,
+        1985,
+        2667,
+        2237,
+        2372,
+        1420,
+        2367,
+        3041,
+        2010,
+        2395,
+        3878,
+        3097
+      ],
+      "input_tokens": 146308,
+      "output_tokens": 7222,
+      "server_timeouts": 0,
+      "restarts": 0,
+      "protocol_errors": 2,
+      "process_exit_lines": []
+    },
+    {
+      "episode": "b03-harvest-known-00",
+      "block": 3,
+      "scenario": "harvest",
+      "mirror": -1,
+      "information": "known",
+      "delay_s": 0,
+      "capped_completion_s": 136.757,
+      "success": true,
+      "first_verified_s": 136.757,
+      "endpoint_inventory": {
+        "Andy_0": [
+          "bread",
+          "pumpkin_pie",
+          "sugar"
+        ],
+        "Jill_0": [
+          "golden_apple",
+          "sugar"
+        ]
+      },
+      "endpoint_objectives": {
+        "Andy_0": {
+          "bread": true,
+          "pumpkin_pie": true
+        },
+        "Jill_0": {
+          "sugar": true,
+          "golden_apple": true
+        }
+      },
+      "goals_seen_by_45s": [
+        "Andy_0:bread",
+        "Jill_0:sugar"
+      ],
+      "chest_supplies_seen_by_45s": {
+        "Andy_0": [
+          "egg",
+          "pumpkin",
+          "sugar",
+          "wheat"
+        ],
+        "Jill_0": [
+          "sugar_cane"
+        ]
+      },
+      "first_chat_s": 2.798,
+      "blocked_chat": 0,
+      "chat_count": 33,
+      "state_samples": {
+        "Jill_0": 137,
+        "Andy_0": 137
+      },
+      "model_responses": 51,
+      "model_errors": 0,
+      "model_ids": [
+        "gpt-6-luna"
+      ],
+      "model_elapsed_ms": [
+        2559,
+        2585,
+        1686,
+        2599,
+        1720,
+        2173,
+        1418,
+        1707,
+        3284,
+        1769,
+        1934,
+        1701,
+        1900,
+        1461,
+        1591,
+        2542,
+        2602,
+        3319,
+        2919,
+        1699,
+        2910,
+        2538,
+        3629,
+        2966,
+        3252,
+        2074,
+        2523,
+        2642,
+        2277,
+        2514,
+        2804,
+        2999,
+        3831,
+        3571,
+        3208,
+        3228,
+        1958,
+        1896,
+        2618,
+        2851,
+        3829,
+        3134,
+        2012,
+        2094,
+        2048,
+        2286,
+        2538,
+        2997,
+        1786,
+        2089,
+        1591
+      ],
+      "input_tokens": 138443,
+      "output_tokens": 6806,
+      "server_timeouts": 0,
+      "restarts": 0,
+      "protocol_errors": 2,
+      "process_exit_lines": []
+    },
+    {
+      "episode": "b03-harvest-known-45",
+      "block": 3,
+      "scenario": "harvest",
+      "mirror": -1,
+      "information": "known",
+      "delay_s": 45,
+      "capped_completion_s": 81.27,
+      "success": true,
+      "first_verified_s": 81.27,
+      "endpoint_inventory": {
+        "Andy_0": [
+          "bread",
+          "pumpkin_pie",
+          "sugar"
+        ],
+        "Jill_0": [
+          "golden_apple",
+          "sugar"
+        ]
+      },
+      "endpoint_objectives": {
+        "Andy_0": {
+          "bread": true,
+          "pumpkin_pie": true
+        },
+        "Jill_0": {
+          "sugar": true,
+          "golden_apple": true
+        }
+      },
+      "goals_seen_by_45s": [
+        "Andy_0:bread",
+        "Andy_0:pumpkin_pie",
+        "Jill_0:sugar"
+      ],
+      "chest_supplies_seen_by_45s": {
+        "Andy_0": [
+          "egg",
+          "pumpkin",
+          "sugar",
+          "wheat"
+        ],
+        "Jill_0": [
+          "sugar_cane"
+        ]
+      },
+      "first_chat_s": 54.437,
+      "blocked_chat": 0,
+      "chat_count": 8,
+      "state_samples": {
+        "Andy_0": 82,
+        "Jill_0": 81
+      },
+      "model_responses": 40,
+      "model_errors": 0,
+      "model_ids": [
+        "gpt-6-luna"
+      ],
+      "model_elapsed_ms": [
+        1976,
+        2185,
+        1466,
+        3288,
+        1966,
+        1737,
+        1592,
+        2768,
+        1862,
+        2335,
+        2405,
+        1753,
+        1655,
+        1737,
+        1751,
+        3365,
+        1748,
+        1523,
+        2983,
+        2767,
+        2210,
+        2249,
+        3292,
+        1605,
+        2296,
+        3276,
+        2534,
+        3103,
+        1935,
+        1489,
+        2585,
+        1602,
+        2699,
+        1632,
+        2185,
+        1602,
+        2168,
+        3559,
+        2069,
+        2684
+      ],
+      "input_tokens": 112639,
+      "output_tokens": 4434,
+      "server_timeouts": 0,
+      "restarts": 0,
+      "protocol_errors": 2,
+      "process_exit_lines": []
+    },
+    {
+      "episode": "b03-harvest-partner-00",
+      "block": 3,
+      "scenario": "harvest",
+      "mirror": -1,
+      "information": "partner",
+      "delay_s": 0,
+      "capped_completion_s": 123.905,
+      "success": true,
+      "first_verified_s": 123.905,
+      "endpoint_inventory": {
+        "Andy_0": [
+          "bread",
+          "pumpkin_pie"
+        ],
+        "Jill_0": [
+          "golden_apple",
+          "sugar",
+          "sugar_cane"
+        ]
+      },
+      "endpoint_objectives": {
+        "Andy_0": {
+          "bread": true,
+          "pumpkin_pie": true
+        },
+        "Jill_0": {
+          "sugar": true,
+          "golden_apple": true
+        }
+      },
+      "goals_seen_by_45s": [
+        "Jill_0:sugar"
+      ],
+      "chest_supplies_seen_by_45s": {
+        "Andy_0": [],
+        "Jill_0": [
+          "sugar_cane"
+        ]
+      },
+      "first_chat_s": 2.876,
+      "blocked_chat": 0,
+      "chat_count": 32,
+      "state_samples": {
+        "Andy_0": 124,
+        "Jill_0": 123
+      },
+      "model_responses": 51,
+      "model_errors": 0,
+      "model_ids": [
+        "gpt-6-luna"
+      ],
+      "model_elapsed_ms": [
+        2170,
+        2921,
+        1606,
+        3139,
+        2556,
+        1659,
+        2982,
+        2245,
+        2167,
+        2242,
+        3187,
+        2572,
+        2239,
+        2972,
+        2439,
+        2004,
+        2496,
+        2933,
+        2955,
+        3601,
+        4169,
+        2088,
+        2327,
+        3234,
+        3181,
+        2663,
+        3293,
+        1660,
+        2664,
+        2549,
+        2363,
+        2398,
+        4071,
+        1623,
+        2975,
+        2019,
+        3540,
+        3207,
+        2251,
+        2631,
+        1882,
+        2818,
+        2360,
+        3653,
+        1668,
+        2275,
+        3996,
+        3055,
+        2304,
+        1486,
+        1619
+      ],
+      "input_tokens": 136752,
+      "output_tokens": 8253,
+      "server_timeouts": 0,
+      "restarts": 0,
+      "protocol_errors": 2,
+      "process_exit_lines": []
+    },
+    {
+      "episode": "b03-harvest-partner-45",
+      "block": 3,
+      "scenario": "harvest",
+      "mirror": -1,
+      "information": "partner",
+      "delay_s": 45,
+      "capped_completion_s": 153.527,
+      "success": true,
+      "first_verified_s": 153.527,
+      "endpoint_inventory": {
+        "Andy_0": [
+          "bread",
+          "pumpkin_pie"
+        ],
+        "Jill_0": [
+          "golden_apple",
+          "sugar",
+          "sugar_cane"
+        ]
+      },
+      "endpoint_objectives": {
+        "Andy_0": {
+          "bread": true,
+          "pumpkin_pie": true
+        },
+        "Jill_0": {
+          "sugar": true,
+          "golden_apple": true
+        }
+      },
+      "goals_seen_by_45s": [
+        "Jill_0:sugar"
+      ],
+      "chest_supplies_seen_by_45s": {
+        "Andy_0": [
+          "sugar"
+        ],
+        "Jill_0": [
+          "sugar_cane"
+        ]
+      },
+      "first_chat_s": 50.696,
+      "blocked_chat": 4,
+      "chat_count": 22,
+      "state_samples": {
+        "Andy_0": 151,
+        "Jill_0": 152
+      },
+      "model_responses": 61,
+      "model_errors": 0,
+      "model_ids": [
+        "gpt-6-luna"
+      ],
+      "model_elapsed_ms": [
+        2605,
+        3001,
+        2289,
+        2157,
+        1635,
+        1487,
+        3244,
+        2052,
+        2630,
+        2674,
+        2588,
+        2175,
+        2667,
+        2698,
+        2862,
+        2336,
+        2527,
+        2865,
+        2800,
+        2547,
+        6126,
+        2804,
+        2949,
+        1909,
+        2799,
+        3783,
+        2885,
+        1818,
+        1676,
+        3526,
+        2699,
+        2761,
+        2765,
+        2761,
+        3703,
+        2466,
+        1758,
+        2850,
+        2686,
+        5235,
+        3066,
+        1921,
+        2831,
+        3322,
+        3779,
+        3628,
+        2591,
+        2570,
+        2792,
+        3516,
+        2241,
+        1701,
+        2626,
+        2183,
+        3979,
+        2991,
+        3576,
+        1749,
+        2967,
+        1810,
+        1578
+      ],
+      "input_tokens": 161198,
+      "output_tokens": 9497,
+      "server_timeouts": 0,
+      "restarts": 0,
+      "protocol_errors": 2,
+      "process_exit_lines": []
+    },
+    {
+      "episode": "b04-harvest-known-00",
+      "block": 4,
+      "scenario": "harvest",
+      "mirror": 1,
+      "information": "known",
+      "delay_s": 0,
+      "capped_completion_s": 84.899,
+      "success": true,
+      "first_verified_s": 84.899,
+      "endpoint_inventory": {
+        "Andy_0": [
+          "bread",
+          "pumpkin_pie",
+          "sugar"
+        ],
+        "Jill_0": [
+          "golden_apple",
+          "sugar"
+        ]
+      },
+      "endpoint_objectives": {
+        "Andy_0": {
+          "bread": true,
+          "pumpkin_pie": true
+        },
+        "Jill_0": {
+          "sugar": true,
+          "golden_apple": true
+        }
+      },
+      "goals_seen_by_45s": [
+        "Andy_0:bread"
+      ],
+      "chest_supplies_seen_by_45s": {
+        "Andy_0": [
+          "egg",
+          "pumpkin",
+          "sugar",
+          "wheat"
+        ],
+        "Jill_0": []
+      },
+      "first_chat_s": 2.394,
+      "blocked_chat": 0,
+      "chat_count": 24,
+      "state_samples": {
+        "Jill_0": 86,
+        "Andy_0": 85
+      },
+      "model_responses": 34,
+      "model_errors": 0,
+      "model_ids": [
+        "gpt-6-luna"
+      ],
+      "model_elapsed_ms": [
+        2046,
+        2123,
+        2069,
+        1685,
+        3179,
+        2199,
+        1873,
+        2413,
+        1884,
+        2340,
+        1970,
+        1625,
+        2226,
+        2006,
+        1914,
+        1888,
+        2109,
+        1653,
+        1739,
+        1923,
+        2153,
+        3210,
+        2856,
+        1705,
+        2546,
+        1621,
+        3112,
+        3318,
+        2768,
+        1502,
+        2765,
+        1334,
+        1858,
+        1777
+      ],
+      "input_tokens": 95252,
+      "output_tokens": 3383,
+      "server_timeouts": 0,
+      "restarts": 0,
+      "protocol_errors": 2,
+      "process_exit_lines": []
+    },
+    {
+      "episode": "b04-harvest-known-45",
+      "block": 4,
+      "scenario": "harvest",
+      "mirror": 1,
+      "information": "known",
+      "delay_s": 45,
+      "capped_completion_s": 75.695,
+      "success": true,
+      "first_verified_s": 75.695,
+      "endpoint_inventory": {
+        "Andy_0": [
+          "bread",
+          "pumpkin_pie"
+        ],
+        "Jill_0": [
+          "golden_apple",
+          "sugar"
+        ]
+      },
+      "endpoint_objectives": {
+        "Andy_0": {
+          "bread": true,
+          "pumpkin_pie": true
+        },
+        "Jill_0": {
+          "sugar": true,
+          "golden_apple": true
+        }
+      },
+      "goals_seen_by_45s": [
+        "Andy_0:bread",
+        "Andy_0:pumpkin_pie",
+        "Jill_0:sugar"
+      ],
+      "chest_supplies_seen_by_45s": {
+        "Andy_0": [
+          "egg",
+          "pumpkin",
+          "sugar",
+          "wheat"
+        ],
+        "Jill_0": [
+          "sugar_cane"
+        ]
+      },
+      "first_chat_s": 61.473,
+      "blocked_chat": 2,
+      "chat_count": 3,
+      "state_samples": {
+        "Jill_0": 76,
+        "Andy_0": 76
+      },
+      "model_responses": 39,
+      "model_errors": 0,
+      "model_ids": [
+        "gpt-6-luna"
+      ],
+      "model_elapsed_ms": [
+        1926,
+        1968,
+        2335,
+        2595,
+        1366,
+        2297,
+        1884,
+        1942,
+        1802,
+        2014,
+        1970,
+        1784,
+        2603,
+        2098,
+        2014,
+        4558,
+        2414,
+        3431,
+        3078,
+        2999,
+        3231,
+        3409,
+        1972,
+        1576,
+        1878,
+        2217,
+        3168,
+        3235,
+        2673,
+        2846,
+        1583,
+        2212,
+        3540,
+        4156,
+        1985,
+        1994,
+        2559,
+        1884,
+        3650
+      ],
+      "input_tokens": 106203,
+      "output_tokens": 5155,
+      "server_timeouts": 0,
+      "restarts": 0,
+      "protocol_errors": 2,
+      "process_exit_lines": []
+    },
+    {
+      "episode": "b04-harvest-partner-00",
+      "block": 4,
+      "scenario": "harvest",
+      "mirror": 1,
+      "information": "partner",
+      "delay_s": 0,
+      "capped_completion_s": 93.435,
+      "success": true,
+      "first_verified_s": 93.435,
+      "endpoint_inventory": {
+        "Andy_0": [
+          "bread",
+          "pumpkin_pie"
+        ],
+        "Jill_0": [
+          "golden_apple",
+          "sugar"
+        ]
+      },
+      "endpoint_objectives": {
+        "Andy_0": {
+          "bread": true,
+          "pumpkin_pie": true
+        },
+        "Jill_0": {
+          "sugar": true,
+          "golden_apple": true
+        }
+      },
+      "goals_seen_by_45s": [],
+      "chest_supplies_seen_by_45s": {
+        "Andy_0": [
+          "egg",
+          "pumpkin",
+          "sugar",
+          "wheat"
+        ],
+        "Jill_0": [
+          "sugar_cane"
+        ]
+      },
+      "first_chat_s": 2.577,
+      "blocked_chat": 0,
+      "chat_count": 27,
+      "state_samples": {
+        "Andy_0": 94,
+        "Jill_0": 94
+      },
+      "model_responses": 38,
+      "model_errors": 0,
+      "model_ids": [
+        "gpt-6-luna"
+      ],
+      "model_elapsed_ms": [
+        2370,
+        2284,
+        2588,
+        3994,
+        3211,
+        2064,
+        2522,
+        4290,
+        2185,
+        1771,
+        5076,
+        2402,
+        3416,
+        2505,
+        4367,
+        1888,
+        2201,
+        4018,
+        2675,
+        1824,
+        3668,
+        3507,
+        2563,
+        1898,
+        2419,
+        3698,
+        2143,
+        2110,
+        2620,
+        2216,
+        1984,
+        4001,
+        4289,
+        3273,
+        2190,
+        1838,
+        1900,
+        2255
+      ],
+      "input_tokens": 103333,
+      "output_tokens": 5949,
+      "server_timeouts": 0,
+      "restarts": 0,
+      "protocol_errors": 2,
+      "process_exit_lines": []
+    },
+    {
+      "episode": "b04-harvest-partner-45",
+      "block": 4,
+      "scenario": "harvest",
+      "mirror": 1,
+      "information": "partner",
+      "delay_s": 45,
+      "capped_completion_s": 180.0,
+      "success": false,
+      "first_verified_s": null,
+      "endpoint_inventory": {
+        "Andy_0": [],
+        "Jill_0": [
+          "golden_apple",
+          "sugar",
+          "sugar_cane"
+        ]
+      },
+      "endpoint_objectives": {
+        "Andy_0": {
+          "bread": false,
+          "pumpkin_pie": false
+        },
+        "Jill_0": {
+          "sugar": true,
+          "golden_apple": true
+        }
+      },
+      "goals_seen_by_45s": [
+        "Jill_0:sugar"
+      ],
+      "chest_supplies_seen_by_45s": {
+        "Andy_0": [
+          "sugar"
+        ],
+        "Jill_0": [
+          "sugar_cane"
+        ]
+      },
+      "first_chat_s": 55.809,
+      "blocked_chat": 3,
+      "chat_count": 29,
+      "state_samples": {
+        "Jill_0": 173,
+        "Andy_0": 174
+      },
+      "model_responses": 76,
+      "model_errors": 0,
+      "model_ids": [
+        "gpt-6-luna"
+      ],
+      "model_elapsed_ms": [
+        2029,
+        2756,
+        1485,
+        2247,
+        1752,
+        2854,
+        2281,
+        1955,
+        2009,
+        1563,
+        2548,
+        1973,
+        1691,
+        2612,
+        1402,
+        1674,
+        2168,
+        2295,
+        2281,
+        3472,
+        2808,
+        2546,
+        3063,
+        3764,
+        2225,
+        3511,
+        2789,
+        2609,
+        2331,
+        2492,
+        4317,
+        2111,
+        4079,
+        3566,
+        2186,
+        2155,
+        1962,
+        2546,
+        3987,
+        4309,
+        2525,
+        3035,
+        1313,
+        1663,
+        3118,
+        3482,
+        2158,
+        1993,
+        2860,
+        3400,
+        1573,
+        1914,
+        3809,
+        4177,
+        2889,
+        3369,
+        1637,
+        3182,
+        2197,
+        3514,
+        2091,
+        2720,
+        1659,
+        4019,
+        2547,
+        1571,
+        2571,
+        2925,
+        1597,
+        7505,
+        1646,
+        3612,
+        4812,
+        2623,
+        3493,
+        2752
+      ],
+      "input_tokens": 200857,
+      "output_tokens": 11905,
+      "server_timeouts": 0,
+      "restarts": 1,
+      "protocol_errors": 3,
+      "process_exit_lines": [
+        "Agent process exited with code 1 and signal null"
+      ]
+    },
+    {
+      "episode": "b05-dyes-known-00",
+      "block": 5,
+      "scenario": "dyes",
+      "mirror": 1,
+      "information": "known",
+      "delay_s": 0,
+      "capped_completion_s": 180.0,
+      "success": false,
+      "first_verified_s": null,
+      "endpoint_inventory": {
+        "Andy_0": [
+          "beetroot",
+          "orange_dye",
+          "yellow_dye"
+        ],
+        "Jill_0": [
+          "golden_apple",
+          "paper",
+          "white_dye"
+        ]
+      },
+      "endpoint_objectives": {
+        "Andy_0": {
+          "orange_dye": true,
+          "pink_dye": false
+        },
+        "Jill_0": {
+          "paper": true,
+          "golden_apple": true
+        }
+      },
+      "goals_seen_by_45s": [],
+      "chest_supplies_seen_by_45s": {
+        "Andy_0": [],
+        "Jill_0": [
+          "sugar_cane"
+        ]
+      },
+      "first_chat_s": 2.566,
+      "blocked_chat": 0,
+      "chat_count": 52,
+      "state_samples": {
+        "Andy_0": 178,
+        "Jill_0": 179
+      },
+      "model_responses": 76,
+      "model_errors": 0,
+      "model_ids": [
+        "gpt-6-luna"
+      ],
+      "model_elapsed_ms": [
+        2349,
+        2559,
+        2047,
+        1484,
+        1782,
+        2296,
+        2223,
+        1702,
+        1995,
+        2792,
+        2553,
+        1804,
+        1816,
+        2100,
+        1636,
+        2125,
+        2311,
+        3228,
+        1347,
+        1812,
+        2759,
+        3398,
+        2456,
+        2653,
+        1922,
+        1652,
+        2953,
+        2048,
+        2757,
+        1378,
+        1774,
+        3424,
+        2175,
+        2071,
+        1853,
+        3703,
+        2350,
+        1428,
+        2545,
+        1477,
+        2647,
+        2171,
+        2405,
+        3404,
+        2181,
+        2801,
+        1724,
+        1771,
+        3158,
+        2056,
+        2619,
+        2565,
+        2693,
+        2405,
+        1934,
+        2483,
+        1281,
+        1727,
+        2551,
+        3547,
+        2888,
+        2453,
+        2011,
+        1982,
+        2715,
+        3218,
+        2223,
+        1346,
+        1601,
+        1728,
+        2969,
+        1707,
+        2098,
+        1917,
+        3553,
+        1670
+      ],
+      "input_tokens": 199015,
+      "output_tokens": 9774,
+      "server_timeouts": 0,
+      "restarts": 0,
+      "protocol_errors": 2,
+      "process_exit_lines": []
+    },
+    {
+      "episode": "b05-dyes-known-45",
+      "block": 5,
+      "scenario": "dyes",
+      "mirror": 1,
+      "information": "known",
+      "delay_s": 45,
+      "capped_completion_s": 84.068,
+      "success": true,
+      "first_verified_s": 84.068,
+      "endpoint_inventory": {
+        "Andy_0": [
+          "orange_dye",
+          "pink_dye"
+        ],
+        "Jill_0": [
+          "golden_apple",
+          "paper"
+        ]
+      },
+      "endpoint_objectives": {
+        "Andy_0": {
+          "orange_dye": true,
+          "pink_dye": true
+        },
+        "Jill_0": {
+          "paper": true,
+          "golden_apple": true
+        }
+      },
+      "goals_seen_by_45s": [
+        "Andy_0:orange_dye",
+        "Andy_0:pink_dye",
+        "Jill_0:paper"
+      ],
+      "chest_supplies_seen_by_45s": {
+        "Andy_0": [
+          "red_dye",
+          "white_dye",
+          "yellow_dye"
+        ],
+        "Jill_0": [
+          "sugar_cane"
+        ]
+      },
+      "first_chat_s": 56.283,
+      "blocked_chat": 2,
+      "chat_count": 6,
+      "state_samples": {
+        "Jill_0": 85,
+        "Andy_0": 85
+      },
+      "model_responses": 39,
+      "model_errors": 0,
+      "model_ids": [
+        "gpt-6-luna"
+      ],
+      "model_elapsed_ms": [
+        1659,
+        1655,
+        1668,
+        1881,
+        1446,
+        1760,
+        1745,
+        1437,
+        1457,
+        2421,
+        1988,
+        1722,
+        3080,
+        3343,
+        1811,
+        2705,
+        2902,
+        2347,
+        4291,
+        2198,
+        2396,
+        2597,
+        2260,
+        3899,
+        2883,
+        1265,
+        2053,
+        2079,
+        2360,
+        3373,
+        7289,
+        3795,
+        2372,
+        1410,
+        3082,
+        2271,
+        2711,
+        1372,
+        1804
+      ],
+      "input_tokens": 107595,
+      "output_tokens": 5205,
+      "server_timeouts": 0,
+      "restarts": 0,
+      "protocol_errors": 2,
+      "process_exit_lines": []
+    },
+    {
+      "episode": "b05-dyes-partner-00",
+      "block": 5,
+      "scenario": "dyes",
+      "mirror": 1,
+      "information": "partner",
+      "delay_s": 0,
+      "capped_completion_s": 70.061,
+      "success": true,
+      "first_verified_s": 70.061,
+      "endpoint_inventory": {
+        "Andy_0": [
+          "orange_dye",
+          "pink_dye"
+        ],
+        "Jill_0": [
+          "golden_apple",
+          "paper"
+        ]
+      },
+      "endpoint_objectives": {
+        "Andy_0": {
+          "orange_dye": true,
+          "pink_dye": true
+        },
+        "Jill_0": {
+          "paper": true,
+          "golden_apple": true
+        }
+      },
+      "goals_seen_by_45s": [
+        "Jill_0:paper"
+      ],
+      "chest_supplies_seen_by_45s": {
+        "Andy_0": [
+          "red_dye",
+          "yellow_dye"
+        ],
+        "Jill_0": [
+          "sugar_cane"
+        ]
+      },
+      "first_chat_s": 2.808,
+      "blocked_chat": 0,
+      "chat_count": 23,
+      "state_samples": {
+        "Jill_0": 71,
+        "Andy_0": 70
+      },
+      "model_responses": 33,
+      "model_errors": 0,
+      "model_ids": [
+        "gpt-6-luna"
+      ],
+      "model_elapsed_ms": [
+        2302,
+        2347,
+        1998,
+        3226,
+        1571,
+        2555,
+        1744,
+        1582,
+        1710,
+        1647,
+        2017,
+        1626,
+        2095,
+        2935,
+        1894,
+        1943,
+        2693,
+        3008,
+        2717,
+        2068,
+        2923,
+        1811,
+        2794,
+        3160,
+        1745,
+        2794,
+        1959,
+        3365,
+        1998,
+        3422,
+        2980,
+        2047,
+        1914
+      ],
+      "input_tokens": 90174,
+      "output_tokens": 4546,
+      "server_timeouts": 0,
+      "restarts": 0,
+      "protocol_errors": 2,
+      "process_exit_lines": []
+    },
+    {
+      "episode": "b05-dyes-partner-45",
+      "block": 5,
+      "scenario": "dyes",
+      "mirror": 1,
+      "information": "partner",
+      "delay_s": 45,
+      "capped_completion_s": 165.714,
+      "success": true,
+      "first_verified_s": 165.714,
+      "endpoint_inventory": {
+        "Andy_0": [
+          "orange_dye",
+          "pink_dye"
+        ],
+        "Jill_0": [
+          "beetroot",
+          "golden_apple",
+          "orange_dye",
+          "paper",
+          "pink_dye"
+        ]
+      },
+      "endpoint_objectives": {
+        "Andy_0": {
+          "orange_dye": true,
+          "pink_dye": true
+        },
+        "Jill_0": {
+          "paper": true,
+          "golden_apple": true
+        }
+      },
+      "goals_seen_by_45s": [],
+      "chest_supplies_seen_by_45s": {
+        "Andy_0": [],
+        "Jill_0": [
+          "beetroot",
+          "sugar_cane"
+        ]
+      },
+      "first_chat_s": 50.574,
+      "blocked_chat": 4,
+      "chat_count": 27,
+      "state_samples": {
+        "Andy_0": 162,
+        "Jill_0": 164
+      },
+      "model_responses": 77,
+      "model_errors": 0,
+      "model_ids": [
+        "gpt-6-luna"
+      ],
+      "model_elapsed_ms": [
+        2667,
+        2398,
+        1683,
+        1987,
+        1224,
+        1976,
+        2001,
+        2893,
+        2275,
+        2619,
+        1635,
+        2020,
+        2252,
+        1502,
+        3225,
+        3389,
+        2565,
+        3524,
+        2183,
+        2569,
+        1597,
+        2462,
+        3246,
+        1776,
+        2261,
+        2585,
+        3456,
+        3627,
+        2684,
+        1564,
+        2193,
+        2994,
+        2920,
+        3104,
+        3589,
+        3063,
+        3094,
+        2265,
+        1853,
+        1882,
+        3441,
+        1580,
+        1774,
+        2088,
+        3678,
+        3080,
+        3235,
+        2468,
+        2568,
+        3211,
+        3249,
+        3729,
+        2209,
+        4956,
+        2809,
+        1474,
+        2667,
+        1981,
+        2941,
+        3672,
+        2946,
+        1792,
+        3201,
+        1763,
+        2345,
+        2230,
+        2248,
+        1797,
+        3715,
+        5066,
+        2233,
+        1742,
+        3894,
+        2276,
+        3541,
+        2381,
+        2515
+      ],
+      "input_tokens": 201107,
+      "output_tokens": 11739,
+      "server_timeouts": 0,
+      "restarts": 0,
+      "protocol_errors": 2,
+      "process_exit_lines": []
+    },
+    {
+      "episode": "b06-dyes-known-00",
+      "block": 6,
+      "scenario": "dyes",
+      "mirror": -1,
+      "information": "known",
+      "delay_s": 0,
+      "capped_completion_s": 100.153,
+      "success": true,
+      "first_verified_s": 100.153,
+      "endpoint_inventory": {
+        "Andy_0": [
+          "orange_dye",
+          "pink_dye"
+        ],
+        "Jill_0": [
+          "golden_apple",
+          "paper"
+        ]
+      },
+      "endpoint_objectives": {
+        "Andy_0": {
+          "orange_dye": true,
+          "pink_dye": true
+        },
+        "Jill_0": {
+          "paper": true,
+          "golden_apple": true
+        }
+      },
+      "goals_seen_by_45s": [
+        "Jill_0:paper"
+      ],
+      "chest_supplies_seen_by_45s": {
+        "Andy_0": [
+          "red_dye",
+          "white_dye",
+          "yellow_dye"
+        ],
+        "Jill_0": [
+          "sugar_cane"
+        ]
+      },
+      "first_chat_s": 2.561,
+      "blocked_chat": 0,
+      "chat_count": 25,
+      "state_samples": {
+        "Andy_0": 101,
+        "Jill_0": 101
+      },
+      "model_responses": 37,
+      "model_errors": 0,
+      "model_ids": [
+        "gpt-6-luna"
+      ],
+      "model_elapsed_ms": [
+        1674,
+        2297,
+        1764,
+        1954,
+        1614,
+        2370,
+        1617,
+        1236,
+        2536,
+        2257,
+        3006,
+        1872,
+        2132,
+        1609,
+        2555,
+        1639,
+        1703,
+        1551,
+        1536,
+        2838,
+        1927,
+        1901,
+        1636,
+        3494,
+        3495,
+        1864,
+        2545,
+        2090,
+        2464,
+        2505,
+        4462,
+        1945,
+        5697,
+        1404,
+        2033,
+        2670,
+        1641
+      ],
+      "input_tokens": 102992,
+      "output_tokens": 4446,
+      "server_timeouts": 0,
+      "restarts": 0,
+      "protocol_errors": 2,
+      "process_exit_lines": []
+    },
+    {
+      "episode": "b06-dyes-known-45",
+      "block": 6,
+      "scenario": "dyes",
+      "mirror": -1,
+      "information": "known",
+      "delay_s": 45,
+      "capped_completion_s": 116.186,
+      "success": true,
+      "first_verified_s": 116.186,
+      "endpoint_inventory": {
+        "Andy_0": [
+          "orange_dye",
+          "pink_dye",
+          "red_dye"
+        ],
+        "Jill_0": [
+          "golden_apple",
+          "paper",
+          "sugar_cane"
+        ]
+      },
+      "endpoint_objectives": {
+        "Andy_0": {
+          "orange_dye": true,
+          "pink_dye": true
+        },
+        "Jill_0": {
+          "paper": true,
+          "golden_apple": true
+        }
+      },
+      "goals_seen_by_45s": [
+        "Andy_0:orange_dye",
+        "Andy_0:pink_dye",
+        "Jill_0:paper"
+      ],
+      "chest_supplies_seen_by_45s": {
+        "Andy_0": [
+          "red_dye",
+          "white_dye",
+          "yellow_dye"
+        ],
+        "Jill_0": [
+          "sugar_cane"
+        ]
+      },
+      "first_chat_s": 52.375,
+      "blocked_chat": 1,
+      "chat_count": 13,
+      "state_samples": {
+        "Jill_0": 115,
+        "Andy_0": 116
+      },
+      "model_responses": 51,
+      "model_errors": 0,
+      "model_ids": [
+        "gpt-6-luna"
+      ],
+      "model_elapsed_ms": [
+        1658,
+        1926,
+        1204,
+        1303,
+        1508,
+        1804,
+        1737,
+        2059,
+        2037,
+        1672,
+        1166,
+        1249,
+        1990,
+        1982,
+        2625,
+        3681,
+        1651,
+        3547,
+        1584,
+        2006,
+        2008,
+        2425,
+        2341,
+        2419,
+        1924,
+        3584,
+        1490,
+        3760,
+        1740,
+        2021,
+        2534,
+        2920,
+        1922,
+        1342,
+        1932,
+        3458,
+        2906,
+        1590,
+        1746,
+        3252,
+        1779,
+        1893,
+        1835,
+        3390,
+        2247,
+        1460,
+        1785,
+        2258,
+        2372,
+        1753,
+        2849
+      ],
+      "input_tokens": 135020,
+      "output_tokens": 5940,
+      "server_timeouts": 0,
+      "restarts": 0,
+      "protocol_errors": 2,
+      "process_exit_lines": []
+    },
+    {
+      "episode": "b06-dyes-partner-00",
+      "block": 6,
+      "scenario": "dyes",
+      "mirror": -1,
+      "information": "partner",
+      "delay_s": 0,
+      "capped_completion_s": 180.0,
+      "success": false,
+      "first_verified_s": null,
+      "endpoint_inventory": {
+        "Andy_0": [
+          "gold_ingot",
+          "orange_dye",
+          "pink_dye"
+        ],
+        "Jill_0": [
+          "apple",
+          "gold_ingot",
+          "paper"
+        ]
+      },
+      "endpoint_objectives": {
+        "Andy_0": {
+          "orange_dye": true,
+          "pink_dye": true
+        },
+        "Jill_0": {
+          "paper": true,
+          "golden_apple": false
+        }
+      },
+      "goals_seen_by_45s": [
+        "Andy_0:orange_dye"
+      ],
+      "chest_supplies_seen_by_45s": {
+        "Andy_0": [
+          "red_dye",
+          "white_dye",
+          "yellow_dye"
+        ],
+        "Jill_0": []
+      },
+      "first_chat_s": 2.644,
+      "blocked_chat": 0,
+      "chat_count": 48,
+      "state_samples": {
+        "Jill_0": 176,
+        "Andy_0": 175
+      },
+      "model_responses": 72,
+      "model_errors": 0,
+      "model_ids": [
+        "gpt-6-luna"
+      ],
+      "model_elapsed_ms": [
+        2266,
+        2751,
+        2094,
+        1743,
+        1935,
+        1585,
+        2205,
+        1901,
+        1808,
+        1735,
+        1868,
+        2431,
+        2383,
+        3127,
+        3285,
+        1385,
+        1657,
+        3033,
+        2878,
+        2657,
+        1704,
+        2666,
+        3551,
+        2589,
+        2253,
+        3494,
+        1504,
+        3922,
+        2395,
+        1388,
+        2084,
+        1559,
+        3058,
+        3283,
+        1475,
+        2582,
+        1649,
+        3366,
+        1712,
+        2148,
+        2049,
+        2994,
+        2161,
+        2701,
+        4295,
+        2529,
+        3708,
+        1698,
+        2169,
+        2627,
+        1611,
+        2275,
+        3024,
+        2995,
+        2020,
+        3872,
+        2267,
+        2112,
+        3600,
+        2392,
+        2562,
+        3328,
+        4865,
+        1901,
+        2781,
+        1982,
+        1674,
+        2980,
+        3900,
+        1779,
+        3450,
+        2125
+      ],
+      "input_tokens": 186400,
+      "output_tokens": 10470,
+      "server_timeouts": 0,
+      "restarts": 0,
+      "protocol_errors": 2,
+      "process_exit_lines": []
+    },
+    {
+      "episode": "b06-dyes-partner-45",
+      "block": 6,
+      "scenario": "dyes",
+      "mirror": -1,
+      "information": "partner",
+      "delay_s": 45,
+      "capped_completion_s": 180.0,
+      "success": false,
+      "first_verified_s": null,
+      "endpoint_inventory": {
+        "Andy_0": [
+          "paper",
+          "sugar_cane"
+        ],
+        "Jill_0": [
+          "beetroot",
+          "golden_apple",
+          "paper"
+        ]
+      },
+      "endpoint_objectives": {
+        "Andy_0": {
+          "orange_dye": false,
+          "pink_dye": false
+        },
+        "Jill_0": {
+          "paper": true,
+          "golden_apple": true
+        }
+      },
+      "goals_seen_by_45s": [],
+      "chest_supplies_seen_by_45s": {
+        "Andy_0": [],
+        "Jill_0": []
+      },
+      "first_chat_s": 49.133,
+      "blocked_chat": 4,
+      "chat_count": 15,
+      "state_samples": {
+        "Jill_0": 171,
+        "Andy_0": 173
+      },
+      "model_responses": 64,
+      "model_errors": 0,
+      "model_ids": [
+        "gpt-6-luna"
+      ],
+      "model_elapsed_ms": [
+        1959,
+        2311,
+        1610,
+        2095,
+        1291,
+        1620,
+        1265,
+        1470,
+        2335,
+        2599,
+        2609,
+        2467,
+        1766,
+        1346,
+        2708,
+        2431,
+        3861,
+        2995,
+        2541,
+        2292,
+        2313,
+        1730,
+        2250,
+        3092,
+        3394,
+        1768,
+        1589,
+        2512,
+        3722,
+        2239,
+        3079,
+        4274,
+        1943,
+        1726,
+        1579,
+        2202,
+        2987,
+        3176,
+        2506,
+        1645,
+        2336,
+        1987,
+        1944,
+        1487,
+        2648,
+        3193,
+        3122,
+        4423,
+        2418,
+        3052,
+        2901,
+        2059,
+        3567,
+        3814,
+        2545,
+        1617,
+        2305,
+        2502,
+        3081,
+        1917,
+        1593,
+        2713,
+        2453,
+        2277
+      ],
+      "input_tokens": 175848,
+      "output_tokens": 9223,
+      "server_timeouts": 0,
+      "restarts": 2,
+      "protocol_errors": 4,
+      "process_exit_lines": [
+        "Agent process exited with code 1 and signal null",
+        "Agent process exited with code 1 and signal null"
+      ]
+    }
+  ],
+  "contrasts": [
+    {
+      "block": 1,
+      "scenario": "bakery",
+      "known_delay_penalty_s": 0.0,
+      "partner_delay_penalty_s": -7.245,
+      "interaction_s": -7.245
+    },
+    {
+      "block": 2,
+      "scenario": "bakery",
+      "known_delay_penalty_s": -102.044,
+      "partner_delay_penalty_s": 65.78,
+      "interaction_s": 167.824
+    },
+    {
+      "block": 3,
+      "scenario": "harvest",
+      "known_delay_penalty_s": -55.487,
+      "partner_delay_penalty_s": 29.622,
+      "interaction_s": 85.109
+    },
+    {
+      "block": 4,
+      "scenario": "harvest",
+      "known_delay_penalty_s": -9.204,
+      "partner_delay_penalty_s": 86.565,
+      "interaction_s": 95.769
+    },
+    {
+      "block": 5,
+      "scenario": "dyes",
+      "known_delay_penalty_s": -95.932,
+      "partner_delay_penalty_s": 95.653,
+      "interaction_s": 191.585
+    },
+    {
+      "block": 6,
+      "scenario": "dyes",
+      "known_delay_penalty_s": 16.033,
+      "partner_delay_penalty_s": 0.0,
+      "interaction_s": -16.033
+    }
+  ],
+  "effects": {
+    "known": {
+      "mean_s": -41.106,
+      "range_s": [
+        -102.044,
+        16.033
+      ],
+      "bootstrap_95_s": [
+        -77.793,
+        -5.438
+      ],
+      "sign_flip_p": 0.1875
+    },
+    "partner": {
+      "mean_s": 45.062,
+      "range_s": [
+        -7.245,
+        95.653
+      ],
+      "bootstrap_95_s": [
+        12.32,
+        76.681
+      ],
+      "sign_flip_p": 0.125
+    },
+    "interaction": {
+      "mean_s": 86.168,
+      "range_s": [
+        -16.033,
+        191.585
+      ],
+      "bootstrap_95_s": [
+        22.075,
+        149.949
+      ]
+    }
+  }
+}
