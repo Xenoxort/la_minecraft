@@ -2,6 +2,8 @@
 
 The [timing pilot](../communication-timing/RESULTS.md) motivated two studies. The [fixed protocol](PROTOCOL.md) specifies 24 episodes on chat onset and objective-card access. The [phase protocol](PHASES.md) specifies nine episodes on Greg’s 20-second chat, 40-second exploration cycle. Their units of analysis are matched world blocks. The two engineering preflights are excluded.
 
+The [six-minute extension](LONG_RESULTS.md) tests the communication schedules across six recipe sets with eight objectives per episode. Its [separate reproduction guide](LONG_REPRODUCE.md) covers all 18 episodes and the three-minute checkpoint.
+
 The goals, recipe cards, and supplies are in [scenarios.json](scenarios.json) for the four-objective study and [phase_scenarios.json](phase_scenarios.json) for the six-objective study. Each episode exports the exact task presented to the bots in its `task.json`. The pinned [schedule](design.json) determines the onset study order.
 
 ## Prepare the sandbox

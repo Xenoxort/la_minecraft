@@ -1,0 +1,21 @@
+{
+  "dueMs": 1795556142907,
+  "requestedMs": 1795556143293,
+  "observedMs": 1795556143544,
+  "inventory": {
+    "Andy_0": [
+      "granite",
+      "polished_andesite",
+      "smooth_stone",
+      "stone_bricks"
+    ],
+    "Jill_0": [
+      "bone",
+      "bone_meal",
+      "golden_apple",
+      "paper",
+      "sugar",
+      "sugar_cane"
+    ]
+  }
+}

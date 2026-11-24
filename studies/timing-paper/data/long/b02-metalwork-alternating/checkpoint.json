@@ -1,0 +1,21 @@
+{
+  "dueMs": 1795555222878,
+  "requestedMs": 1795555222967,
+  "observedMs": 1795555223218,
+  "inventory": {
+    "Andy_0": [
+      "bone_meal",
+      "copper_block",
+      "iron_block",
+      "sugar"
+    ],
+    "Jill_0": [
+      "bone_meal",
+      "golden_apple",
+      "heavy_weighted_pressure_plate",
+      "lightning_rod",
+      "paper",
+      "sugar"
+    ]
+  }
+}

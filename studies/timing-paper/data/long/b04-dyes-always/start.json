@@ -1,0 +1,12 @@
+{
+  "startMs": 1795556231123,
+  "delayMs": 0,
+  "deadlineMs": 1795556591123,
+  "mirror": -1,
+  "chatWindowsMs": [
+    [
+      0,
+      360000
+    ]
+  ]
+}

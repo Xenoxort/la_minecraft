@@ -1,0 +1,19 @@
+{
+  "dueMs": 1795556411123,
+  "requestedMs": 1795556411496,
+  "observedMs": 1795556411746,
+  "inventory": {
+    "Andy_0": [
+      "bone_meal",
+      "paper",
+      "red_dye",
+      "sugar"
+    ],
+    "Jill_0": [
+      "bone_meal",
+      "golden_apple",
+      "paper",
+      "sugar"
+    ]
+  }
+}

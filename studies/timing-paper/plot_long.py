@@ -30,7 +30,7 @@ def main():
         ax.step([0, *completed, 360], [0, *range(1, len(completed) + 1), len(completed)],
                 where="post", linewidth=2.2, linestyle=style, color=color, label=label)
     ax.axvline(180, linestyle=":", linewidth=1.1, color="#555555")
-    ax.text(184, 6.1, "Original deadline", fontsize=9, color="#555555")
+    ax.text(184, 6.1, "3-minute checkpoint", fontsize=9, color="#555555")
     ax.set_xlim(0, 360)
     ax.set_ylim(0, 6.45)
     ax.set_xticks(range(0, 361, 60))

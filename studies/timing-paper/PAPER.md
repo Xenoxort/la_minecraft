@@ -4,6 +4,8 @@
 
 We tested when two language-model agents should communicate during a time-limited crafting task. In 24 matched four-objective episodes, a 45-second opening without chat reduced mean capped completion time by 41.1 seconds when agents knew their own objectives, and increased it by 45.1 seconds when each agent's partner held its objective card. The estimated interaction was +86.2 seconds across six world blocks. In nine exploratory six-objective episodes, repeating 20 seconds of chat and 40 seconds of independent play completed three of three scenarios, compared with two of three for a single opening window with the same scheduled chat time and one of three for always-open chat. The alternating schedule was slower in one scenario and faster in two. These results motivate information-sensitive timing policies for the tested benchmark.
 
+The [six-minute extension](LONG_RESULTS.md) follows these two experiments with 18 additional episodes, six recipe sets, and eight objectives per episode.
+
 ## Introduction
 
 Two agents can share plans as soon as play begins, or collect resources independently and exchange knowledge later. The cost of waiting should depend on what each agent can usefully do alone. MineCollab gives us an embodied test of that question because an agent can discover supplies, craft, transfer items, and exchange information. The outcome depends on which agent actually holds the finished item.

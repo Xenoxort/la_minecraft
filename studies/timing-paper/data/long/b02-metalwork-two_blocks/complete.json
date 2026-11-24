@@ -1,0 +1,1 @@
+{"block": {"number": 2, "scenario": "metalwork", "mirror": -1, "order": ["always", "two_blocks", "alternating"]}, "cell": {"info": "partner", "delay": 0}, "schedule": "two_blocks", "probe": false}

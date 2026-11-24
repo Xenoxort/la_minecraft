@@ -1,0 +1,832 @@
+{
+  "episodes": [
+    {
+      "episode": "b01-woodwork-alternating",
+      "block": 1,
+      "scenario": "woodwork",
+      "schedule": "alternating",
+      "success_180": false,
+      "success_360": false,
+      "late_completion": false,
+      "first_verified_s": null,
+      "capped_180_s": 180,
+      "capped_360_s": 360,
+      "checkpoint_objectives": 4,
+      "checkpoint_missing_agents": [],
+      "checkpoint_lag_ms": 52,
+      "terminal_objectives": 4,
+      "terminal_inventory": {
+        "Andy_0": [
+          "bone_meal",
+          "oak_planks",
+          "paper",
+          "sugar"
+        ],
+        "Jill_0": [
+          "bone_meal",
+          "golden_apple",
+          "paper",
+          "sugar",
+          "sugar_cane"
+        ]
+      },
+      "chat_count": 19,
+      "blocked_chat": 9,
+      "model_responses": 184,
+      "model_errors": 0,
+      "model_ids": [
+        "gpt-6-luna"
+      ],
+      "restarts": 0,
+      "protocol_errors": 2
+    },
+    {
+      "episode": "b01-woodwork-always",
+      "block": 1,
+      "scenario": "woodwork",
+      "schedule": "always",
+      "success_180": false,
+      "success_360": false,
+      "late_completion": false,
+      "first_verified_s": null,
+      "capped_180_s": 180,
+      "capped_360_s": 360,
+      "checkpoint_objectives": 4,
+      "checkpoint_missing_agents": [],
+      "checkpoint_lag_ms": 129,
+      "terminal_objectives": 4,
+      "terminal_inventory": {
+        "Andy_0": [
+          "bone",
+          "bone_meal",
+          "sugar_cane"
+        ],
+        "Jill_0": [
+          "bone_meal",
+          "golden_apple",
+          "paper",
+          "sugar"
+        ]
+      },
+      "chat_count": 84,
+      "blocked_chat": 0,
+      "model_responses": 142,
+      "model_errors": 0,
+      "model_ids": [
+        "gpt-6-luna"
+      ],
+      "restarts": 0,
+      "protocol_errors": 2
+    },
+    {
+      "episode": "b01-woodwork-two_blocks",
+      "block": 1,
+      "scenario": "woodwork",
+      "schedule": "two_blocks",
+      "success_180": false,
+      "success_360": true,
+      "late_completion": true,
+      "first_verified_s": 306.107,
+      "capped_180_s": 180,
+      "capped_360_s": 306.107,
+      "checkpoint_objectives": 4,
+      "checkpoint_missing_agents": [],
+      "checkpoint_lag_ms": 396,
+      "terminal_objectives": 8,
+      "terminal_inventory": {
+        "Andy_0": [
+          "chest",
+          "crafting_table",
+          "oak_button",
+          "oak_planks",
+          "stick"
+        ],
+        "Jill_0": [
+          "bone_meal",
+          "golden_apple",
+          "oak_planks",
+          "paper",
+          "stick",
+          "sugar",
+          "sugar_cane"
+        ]
+      },
+      "chat_count": 27,
+      "blocked_chat": 2,
+      "model_responses": 139,
+      "model_errors": 0,
+      "model_ids": [
+        "gpt-6-luna"
+      ],
+      "restarts": 0,
+      "protocol_errors": 2
+    },
+    {
+      "episode": "b02-metalwork-alternating",
+      "block": 2,
+      "scenario": "metalwork",
+      "schedule": "alternating",
+      "success_180": false,
+      "success_360": true,
+      "late_completion": true,
+      "first_verified_s": 246.571,
+      "capped_180_s": 180,
+      "capped_360_s": 246.571,
+      "checkpoint_objectives": 6,
+      "checkpoint_missing_agents": [],
+      "checkpoint_lag_ms": 89,
+      "terminal_objectives": 8,
+      "terminal_inventory": {
+        "Andy_0": [
+          "bone_meal",
+          "copper_block",
+          "heavy_weighted_pressure_plate",
+          "iron_block",
+          "lightning_rod"
+        ],
+        "Jill_0": [
+          "bone_meal",
+          "golden_apple",
+          "paper",
+          "sugar"
+        ]
+      },
+      "chat_count": 11,
+      "blocked_chat": 5,
+      "model_responses": 123,
+      "model_errors": 0,
+      "model_ids": [
+        "gpt-6-luna"
+      ],
+      "restarts": 0,
+      "protocol_errors": 2
+    },
+    {
+      "episode": "b02-metalwork-always",
+      "block": 2,
+      "scenario": "metalwork",
+      "schedule": "always",
+      "success_180": false,
+      "success_360": true,
+      "late_completion": true,
+      "first_verified_s": 228.111,
+      "capped_180_s": 180,
+      "capped_360_s": 228.111,
+      "checkpoint_objectives": 7,
+      "checkpoint_missing_agents": [],
+      "checkpoint_lag_ms": 32,
+      "terminal_objectives": 8,
+      "terminal_inventory": {
+        "Andy_0": [
+          "copper_block",
+          "heavy_weighted_pressure_plate",
+          "iron_block",
+          "lightning_rod"
+        ],
+        "Jill_0": [
+          "bone_meal",
+          "golden_apple",
+          "paper",
+          "sugar",
+          "sugar_cane"
+        ]
+      },
+      "chat_count": 53,
+      "blocked_chat": 0,
+      "model_responses": 90,
+      "model_errors": 0,
+      "model_ids": [
+        "gpt-6-luna"
+      ],
+      "restarts": 0,
+      "protocol_errors": 2
+    },
+    {
+      "episode": "b02-metalwork-two_blocks",
+      "block": 2,
+      "scenario": "metalwork",
+      "schedule": "two_blocks",
+      "success_180": true,
+      "success_360": true,
+      "late_completion": false,
+      "first_verified_s": 172.572,
+      "capped_180_s": 172.572,
+      "capped_360_s": 172.572,
+      "checkpoint_objectives": 8,
+      "checkpoint_missing_agents": [],
+      "checkpoint_lag_ms": null,
+      "terminal_objectives": 8,
+      "terminal_inventory": {
+        "Andy_0": [
+          "copper_block",
+          "heavy_weighted_pressure_plate",
+          "iron_block",
+          "lightning_rod",
+          "sugar_cane"
+        ],
+        "Jill_0": [
+          "bone_meal",
+          "golden_apple",
+          "paper",
+          "sugar"
+        ]
+      },
+      "chat_count": 14,
+      "blocked_chat": 1,
+      "model_responses": 76,
+      "model_errors": 0,
+      "model_ids": [
+        "gpt-6-luna"
+      ],
+      "restarts": 0,
+      "protocol_errors": 2
+    },
+    {
+      "episode": "b03-harvest-alternating",
+      "block": 3,
+      "scenario": "harvest",
+      "schedule": "alternating",
+      "success_180": true,
+      "success_360": true,
+      "late_completion": false,
+      "first_verified_s": 143.649,
+      "capped_180_s": 143.649,
+      "capped_360_s": 143.649,
+      "checkpoint_objectives": 8,
+      "checkpoint_missing_agents": [],
+      "checkpoint_lag_ms": null,
+      "terminal_objectives": 8,
+      "terminal_inventory": {
+        "Andy_0": [
+          "bread",
+          "hay_block",
+          "melon_seeds",
+          "melon_slice",
+          "pumpkin_pie",
+          "sugar"
+        ],
+        "Jill_0": [
+          "bone_meal",
+          "golden_apple",
+          "paper",
+          "sugar"
+        ]
+      },
+      "chat_count": 9,
+      "blocked_chat": 3,
+      "model_responses": 70,
+      "model_errors": 0,
+      "model_ids": [
+        "gpt-6-luna"
+      ],
+      "restarts": 1,
+      "protocol_errors": 3
+    },
+    {
+      "episode": "b03-harvest-always",
+      "block": 3,
+      "scenario": "harvest",
+      "schedule": "always",
+      "success_180": false,
+      "success_360": true,
+      "late_completion": true,
+      "first_verified_s": 206.972,
+      "capped_180_s": 180,
+      "capped_360_s": 206.972,
+      "checkpoint_objectives": 5,
+      "checkpoint_missing_agents": [],
+      "checkpoint_lag_ms": 118,
+      "terminal_objectives": 8,
+      "terminal_inventory": {
+        "Andy_0": [
+          "bread",
+          "hay_block",
+          "melon_seeds",
+          "melon_slice",
+          "pumpkin",
+          "pumpkin_pie",
+          "wheat"
+        ],
+        "Jill_0": [
+          "bone",
+          "bone_meal",
+          "golden_apple",
+          "paper",
+          "sugar",
+          "sugar_cane"
+        ]
+      },
+      "chat_count": 54,
+      "blocked_chat": 0,
+      "model_responses": 91,
+      "model_errors": 0,
+      "model_ids": [
+        "gpt-6-luna"
+      ],
+      "restarts": 0,
+      "protocol_errors": 2
+    },
+    {
+      "episode": "b03-harvest-two_blocks",
+      "block": 3,
+      "scenario": "harvest",
+      "schedule": "two_blocks",
+      "success_180": false,
+      "success_360": true,
+      "late_completion": true,
+      "first_verified_s": 349.791,
+      "capped_180_s": 180,
+      "capped_360_s": 349.791,
+      "checkpoint_objectives": 4,
+      "checkpoint_missing_agents": [],
+      "checkpoint_lag_ms": 46,
+      "terminal_objectives": 8,
+      "terminal_inventory": {
+        "Andy_0": [
+          "bone_meal",
+          "bread",
+          "hay_block",
+          "melon_seeds",
+          "paper",
+          "pumpkin_pie"
+        ],
+        "Jill_0": [
+          "bone_meal",
+          "golden_apple",
+          "paper",
+          "sugar"
+        ]
+      },
+      "chat_count": 34,
+      "blocked_chat": 1,
+      "model_responses": 160,
+      "model_errors": 0,
+      "model_ids": [
+        "gpt-6-luna"
+      ],
+      "restarts": 2,
+      "protocol_errors": 4
+    },
+    {
+      "episode": "b04-dyes-alternating",
+      "block": 4,
+      "scenario": "dyes",
+      "schedule": "alternating",
+      "success_180": true,
+      "success_360": true,
+      "late_completion": false,
+      "first_verified_s": 84.996,
+      "capped_180_s": 84.996,
+      "capped_360_s": 84.996,
+      "checkpoint_objectives": 8,
+      "checkpoint_missing_agents": [],
+      "checkpoint_lag_ms": null,
+      "terminal_objectives": 8,
+      "terminal_inventory": {
+        "Andy_0": [
+          "lime_dye",
+          "orange_dye",
+          "pink_dye",
+          "purple_dye",
+          "white_dye",
+          "yellow_dye"
+        ],
+        "Jill_0": [
+          "bone",
+          "bone_meal",
+          "golden_apple",
+          "paper",
+          "sugar"
+        ]
+      },
+      "chat_count": 10,
+      "blocked_chat": 1,
+      "model_responses": 50,
+      "model_errors": 0,
+      "model_ids": [
+        "gpt-6-luna"
+      ],
+      "restarts": 0,
+      "protocol_errors": 2
+    },
+    {
+      "episode": "b04-dyes-always",
+      "block": 4,
+      "scenario": "dyes",
+      "schedule": "always",
+      "success_180": false,
+      "success_360": false,
+      "late_completion": false,
+      "first_verified_s": null,
+      "capped_180_s": 180,
+      "capped_360_s": 360,
+      "checkpoint_objectives": 4,
+      "checkpoint_missing_agents": [],
+      "checkpoint_lag_ms": 373,
+      "terminal_objectives": 3,
+      "terminal_inventory": {
+        "Andy_0": [
+          "bone_meal",
+          "paper",
+          "red_dye"
+        ],
+        "Jill_0": [
+          "golden_apple",
+          "paper",
+          "sugar"
+        ]
+      },
+      "chat_count": 88,
+      "blocked_chat": 0,
+      "model_responses": 156,
+      "model_errors": 0,
+      "model_ids": [
+        "gpt-6-luna"
+      ],
+      "restarts": 0,
+      "protocol_errors": 2
+    },
+    {
+      "episode": "b04-dyes-two_blocks",
+      "block": 4,
+      "scenario": "dyes",
+      "schedule": "two_blocks",
+      "success_180": false,
+      "success_360": false,
+      "late_completion": false,
+      "first_verified_s": null,
+      "capped_180_s": 180,
+      "capped_360_s": 360,
+      "checkpoint_objectives": 1,
+      "checkpoint_missing_agents": [],
+      "checkpoint_lag_ms": 5,
+      "terminal_objectives": 3,
+      "terminal_inventory": {
+        "Andy_0": [
+          "blue_dye",
+          "green_dye",
+          "orange_dye",
+          "pink_dye",
+          "red_dye",
+          "white_dye",
+          "yellow_dye"
+        ],
+        "Jill_0": [
+          "apple",
+          "bone",
+          "gold_ingot",
+          "paper"
+        ]
+      },
+      "chat_count": 32,
+      "blocked_chat": 8,
+      "model_responses": 188,
+      "model_errors": 0,
+      "model_ids": [
+        "gpt-6-luna"
+      ],
+      "restarts": 0,
+      "protocol_errors": 2
+    },
+    {
+      "episode": "b05-masonry-alternating",
+      "block": 5,
+      "scenario": "masonry",
+      "schedule": "alternating",
+      "success_180": true,
+      "success_360": true,
+      "late_completion": false,
+      "first_verified_s": 147.764,
+      "capped_180_s": 147.764,
+      "capped_360_s": 147.764,
+      "checkpoint_objectives": 8,
+      "checkpoint_missing_agents": [],
+      "checkpoint_lag_ms": null,
+      "terminal_objectives": 8,
+      "terminal_inventory": {
+        "Andy_0": [
+          "granite_slab",
+          "polished_andesite",
+          "smooth_stone_slab",
+          "stone_bricks"
+        ],
+        "Jill_0": [
+          "bone_meal",
+          "golden_apple",
+          "paper",
+          "sugar"
+        ]
+      },
+      "chat_count": 15,
+      "blocked_chat": 1,
+      "model_responses": 72,
+      "model_errors": 0,
+      "model_ids": [
+        "gpt-6-luna"
+      ],
+      "restarts": 0,
+      "protocol_errors": 2
+    },
+    {
+      "episode": "b05-masonry-always",
+      "block": 5,
+      "scenario": "masonry",
+      "schedule": "always",
+      "success_180": false,
+      "success_360": false,
+      "late_completion": false,
+      "first_verified_s": null,
+      "capped_180_s": 180,
+      "capped_360_s": 360,
+      "checkpoint_objectives": 6,
+      "checkpoint_missing_agents": [],
+      "checkpoint_lag_ms": 268,
+      "terminal_objectives": 7,
+      "terminal_inventory": {
+        "Andy_0": [
+          "bone_meal",
+          "granite_slab",
+          "polished_andesite",
+          "smooth_stone",
+          "stone_bricks"
+        ],
+        "Jill_0": [
+          "bone_meal",
+          "golden_apple",
+          "granite_slab",
+          "paper",
+          "polished_andesite",
+          "smooth_stone",
+          "stone_bricks",
+          "sugar"
+        ]
+      },
+      "chat_count": 72,
+      "blocked_chat": 0,
+      "model_responses": 120,
+      "model_errors": 0,
+      "model_ids": [
+        "gpt-6-luna"
+      ],
+      "restarts": 0,
+      "protocol_errors": 2
+    },
+    {
+      "episode": "b05-masonry-two_blocks",
+      "block": 5,
+      "scenario": "masonry",
+      "schedule": "two_blocks",
+      "success_180": false,
+      "success_360": true,
+      "late_completion": true,
+      "first_verified_s": 198.749,
+      "capped_180_s": 180,
+      "capped_360_s": 198.749,
+      "checkpoint_objectives": 6,
+      "checkpoint_missing_agents": [],
+      "checkpoint_lag_ms": 386,
+      "terminal_objectives": 8,
+      "terminal_inventory": {
+        "Andy_0": [
+          "granite",
+          "granite_slab",
+          "polished_andesite",
+          "smooth_stone",
+          "smooth_stone_slab",
+          "stone_bricks"
+        ],
+        "Jill_0": [
+          "bone",
+          "bone_meal",
+          "golden_apple",
+          "paper",
+          "sugar",
+          "sugar_cane"
+        ]
+      },
+      "chat_count": 22,
+      "blocked_chat": 3,
+      "model_responses": 115,
+      "model_errors": 0,
+      "model_ids": [
+        "gpt-6-luna"
+      ],
+      "restarts": 0,
+      "protocol_errors": 2
+    },
+    {
+      "episode": "b06-bakery-alternating",
+      "block": 6,
+      "scenario": "bakery",
+      "schedule": "alternating",
+      "success_180": false,
+      "success_360": true,
+      "late_completion": true,
+      "first_verified_s": 301.582,
+      "capped_180_s": 180,
+      "capped_360_s": 301.582,
+      "checkpoint_objectives": 5,
+      "checkpoint_missing_agents": [],
+      "checkpoint_lag_ms": 397,
+      "terminal_objectives": 8,
+      "terminal_inventory": {
+        "Andy_0": [
+          "bone_meal",
+          "bread",
+          "cookie",
+          "hay_block",
+          "mud",
+          "packed_mud",
+          "paper",
+          "sugar"
+        ],
+        "Jill_0": [
+          "bone_meal",
+          "bread",
+          "cocoa_beans",
+          "cookie",
+          "golden_apple",
+          "paper",
+          "sugar",
+          "sugar_cane",
+          "wheat"
+        ]
+      },
+      "chat_count": 11,
+      "blocked_chat": 5,
+      "model_responses": 158,
+      "model_errors": 0,
+      "model_ids": [
+        "gpt-6-luna"
+      ],
+      "restarts": 0,
+      "protocol_errors": 2
+    },
+    {
+      "episode": "b06-bakery-always",
+      "block": 6,
+      "scenario": "bakery",
+      "schedule": "always",
+      "success_180": true,
+      "success_360": true,
+      "late_completion": false,
+      "first_verified_s": 135.087,
+      "capped_180_s": 135.087,
+      "capped_360_s": 135.087,
+      "checkpoint_objectives": 8,
+      "checkpoint_missing_agents": [],
+      "checkpoint_lag_ms": null,
+      "terminal_objectives": 8,
+      "terminal_inventory": {
+        "Andy_0": [
+          "bread",
+          "cocoa_beans",
+          "cookie",
+          "hay_block",
+          "packed_mud",
+          "wheat"
+        ],
+        "Jill_0": [
+          "bone",
+          "bone_meal",
+          "golden_apple",
+          "paper",
+          "sugar"
+        ]
+      },
+      "chat_count": 40,
+      "blocked_chat": 0,
+      "model_responses": 59,
+      "model_errors": 0,
+      "model_ids": [
+        "gpt-6-luna"
+      ],
+      "restarts": 0,
+      "protocol_errors": 2
+    },
+    {
+      "episode": "b06-bakery-two_blocks",
+      "block": 6,
+      "scenario": "bakery",
+      "schedule": "two_blocks",
+      "success_180": true,
+      "success_360": true,
+      "late_completion": false,
+      "first_verified_s": 148.907,
+      "capped_180_s": 148.907,
+      "capped_360_s": 148.907,
+      "checkpoint_objectives": 8,
+      "checkpoint_missing_agents": [],
+      "checkpoint_lag_ms": null,
+      "terminal_objectives": 8,
+      "terminal_inventory": {
+        "Andy_0": [
+          "bread",
+          "cocoa_beans",
+          "cookie",
+          "hay_block",
+          "packed_mud"
+        ],
+        "Jill_0": [
+          "bone",
+          "bone_meal",
+          "golden_apple",
+          "paper",
+          "sugar",
+          "sugar_cane"
+        ]
+      },
+      "chat_count": 17,
+      "blocked_chat": 2,
+      "model_responses": 76,
+      "model_errors": 0,
+      "model_ids": [
+        "gpt-6-luna"
+      ],
+      "restarts": 0,
+      "protocol_errors": 2
+    }
+  ],
+  "groups": {
+    "always": {
+      "n": 6,
+      "success_180": 1,
+      "success_360": 3,
+      "late_completions": 2,
+      "unfinished_at_180": 5,
+      "mean_capped_180_s": 172.514,
+      "mean_capped_360_s": 275.028,
+      "median_verification_s_successes_only": 206.972
+    },
+    "two_blocks": {
+      "n": 6,
+      "success_180": 2,
+      "success_360": 5,
+      "late_completions": 3,
+      "unfinished_at_180": 4,
+      "mean_capped_180_s": 173.58,
+      "mean_capped_360_s": 256.021,
+      "median_verification_s_successes_only": 198.749
+    },
+    "alternating": {
+      "n": 6,
+      "success_180": 3,
+      "success_360": 5,
+      "late_completions": 2,
+      "unfinished_at_180": 3,
+      "mean_capped_180_s": 152.735,
+      "mean_capped_360_s": 214.094,
+      "median_verification_s_successes_only": 147.764
+    }
+  },
+  "contrasts": [
+    {
+      "block": 1,
+      "scenario": "woodwork",
+      "alternating_minus_two_blocks_360_s": 53.893,
+      "alternating_minus_always_360_s": 0
+    },
+    {
+      "block": 2,
+      "scenario": "metalwork",
+      "alternating_minus_two_blocks_360_s": 73.999,
+      "alternating_minus_always_360_s": 18.46
+    },
+    {
+      "block": 3,
+      "scenario": "harvest",
+      "alternating_minus_two_blocks_360_s": -206.142,
+      "alternating_minus_always_360_s": -63.323
+    },
+    {
+      "block": 4,
+      "scenario": "dyes",
+      "alternating_minus_two_blocks_360_s": -275.004,
+      "alternating_minus_always_360_s": -275.004
+    },
+    {
+      "block": 5,
+      "scenario": "masonry",
+      "alternating_minus_two_blocks_360_s": -50.985,
+      "alternating_minus_always_360_s": -212.236
+    },
+    {
+      "block": 6,
+      "scenario": "bakery",
+      "alternating_minus_two_blocks_360_s": 152.675,
+      "alternating_minus_always_360_s": 166.495
+    }
+  ],
+  "primary": {
+    "mean_s": -41.927,
+    "range_s": [
+      -275.004,
+      152.675
+    ],
+    "bootstrap_95_s": [
+      -168.023,
+      76.043
+    ],
+    "sign_flip_p": 0.625
+  }
+}
