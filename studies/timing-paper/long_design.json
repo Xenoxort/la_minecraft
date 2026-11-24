@@ -1,0 +1,62 @@
+[
+  {
+    "number": 1,
+    "scenario": "woodwork",
+    "mirror": 1,
+    "order": [
+      "two_blocks",
+      "alternating",
+      "always"
+    ]
+  },
+  {
+    "number": 2,
+    "scenario": "metalwork",
+    "mirror": -1,
+    "order": [
+      "always",
+      "two_blocks",
+      "alternating"
+    ]
+  },
+  {
+    "number": 3,
+    "scenario": "harvest",
+    "mirror": 1,
+    "order": [
+      "always",
+      "alternating",
+      "two_blocks"
+    ]
+  },
+  {
+    "number": 4,
+    "scenario": "dyes",
+    "mirror": -1,
+    "order": [
+      "alternating",
+      "two_blocks",
+      "always"
+    ]
+  },
+  {
+    "number": 5,
+    "scenario": "masonry",
+    "mirror": 1,
+    "order": [
+      "alternating",
+      "always",
+      "two_blocks"
+    ]
+  },
+  {
+    "number": 6,
+    "scenario": "bakery",
+    "mirror": -1,
+    "order": [
+      "two_blocks",
+      "always",
+      "alternating"
+    ]
+  }
+]

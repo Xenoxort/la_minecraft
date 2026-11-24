@@ -1,0 +1,199 @@
+{
+  "bakery": {
+    "targets": [
+      [
+        "bread",
+        "cookie",
+        "hay_block",
+        "packed_mud"
+      ],
+      [
+        "paper",
+        "golden_apple",
+        "sugar",
+        "bone_meal"
+      ]
+    ],
+    "cards": [
+      "Andy must hold bread and a cookie. Bread uses 3 wheat at a crafting table. Cookies use 2 wheat and 1 cocoa bean at a crafting table. Andy must also hold a hay bale (hay_block), made with 9 wheat in a crafting table. Andy must also hold packed_mud, which you make as follows: packed mud uses 1 mud and 1 wheat.",
+      "Jill must hold paper and a golden apple. Paper uses 3 sugar cane. A golden apple uses 1 apple and 8 gold ingots at a crafting table. Jill must also hold sugar, made from 1 sugar cane. Jill must also hold bone_meal, crafted from 1 bone."
+    ],
+    "chests": [
+      {
+        "wheat": 32,
+        "cocoa_beans": 4,
+        "oak_planks": 8,
+        "mud": 4
+      },
+      {
+        "sugar_cane": 12,
+        "beetroot": 6,
+        "bone": 4
+      }
+    ]
+  },
+  "harvest": {
+    "targets": [
+      [
+        "bread",
+        "pumpkin_pie",
+        "hay_block",
+        "melon_seeds"
+      ],
+      [
+        "sugar",
+        "golden_apple",
+        "paper",
+        "bone_meal"
+      ]
+    ],
+    "cards": [
+      "Andy must hold bread and a pumpkin pie. Bread uses 3 wheat at a crafting table. A pumpkin pie uses pumpkin, egg, and sugar, one of each. Andy must also hold a hay bale (hay_block), made with 9 wheat in a crafting table. Andy must also hold melon_seeds, which you make as follows: melon seeds use 1 melon slice.",
+      "Jill must hold sugar and a golden apple. Sugar uses 1 sugar cane. A golden apple uses 1 apple and 8 gold ingots at a crafting table. Jill must also hold paper, made from 3 sugar cane. Jill must also hold bone_meal, crafted from 1 bone."
+    ],
+    "chests": [
+      {
+        "wheat": 32,
+        "pumpkin": 4,
+        "egg": 4,
+        "sugar": 4,
+        "oak_planks": 8,
+        "melon_slice": 6
+      },
+      {
+        "sugar_cane": 12,
+        "beetroot": 6,
+        "bone": 4
+      }
+    ]
+  },
+  "dyes": {
+    "targets": [
+      [
+        "orange_dye",
+        "pink_dye",
+        "purple_dye",
+        "lime_dye"
+      ],
+      [
+        "paper",
+        "golden_apple",
+        "sugar",
+        "bone_meal"
+      ]
+    ],
+    "cards": [
+      "Andy must hold orange dye and pink dye. Orange dye uses red dye and yellow dye. Pink dye uses red dye and white dye. The exact item names are orange_dye and pink_dye. Andy must also hold purple dye, made from red and blue dye. Andy must also hold lime_dye, which you make as follows: lime dye uses 1 green dye and 1 white dye.",
+      "Jill must hold paper and a golden apple. Paper uses 3 sugar cane. A golden apple uses 1 apple and 8 gold ingots at a crafting table. Jill must also hold sugar, made from 1 sugar cane. Jill must also hold bone_meal, crafted from 1 bone."
+    ],
+    "chests": [
+      {
+        "red_dye": 10,
+        "yellow_dye": 4,
+        "white_dye": 4,
+        "oak_planks": 8,
+        "blue_dye": 4,
+        "green_dye": 5
+      },
+      {
+        "sugar_cane": 12,
+        "beetroot": 6,
+        "bone": 4
+      }
+    ]
+  },
+  "woodwork": {
+    "targets": [
+      [
+        "stick",
+        "crafting_table",
+        "chest",
+        "oak_button"
+      ],
+      [
+        "paper",
+        "golden_apple",
+        "sugar",
+        "bone_meal"
+      ]
+    ],
+    "cards": [
+      "Andy must hold a stick, crafting table, chest, and oak button. Sticks use 2 oak planks, the table uses 4, a chest uses 8, and the button uses 1.",
+      "Jill must hold paper and a golden apple. Paper uses 3 sugar cane. A golden apple uses 1 apple and 8 gold ingots at a crafting table. Jill must also hold sugar, made from 1 sugar cane. Jill must also hold bone_meal, crafted from 1 bone."
+    ],
+    "chests": [
+      {
+        "oak_planks": 32
+      },
+      {
+        "sugar_cane": 12,
+        "beetroot": 6,
+        "bone": 4
+      }
+    ]
+  },
+  "masonry": {
+    "targets": [
+      [
+        "stone_bricks",
+        "polished_andesite",
+        "granite_slab",
+        "smooth_stone_slab"
+      ],
+      [
+        "paper",
+        "golden_apple",
+        "sugar",
+        "bone_meal"
+      ]
+    ],
+    "cards": [
+      "Andy must hold stone_bricks, polished_andesite, granite_slab, and smooth_stone_slab. The first takes 4 stone, the second 4 andesite, and the slabs use 3 granite and 3 smooth stone respectively.",
+      "Jill must hold paper and a golden apple. Paper uses 3 sugar cane. A golden apple uses 1 apple and 8 gold ingots at a crafting table. Jill must also hold sugar, made from 1 sugar cane. Jill must also hold bone_meal, crafted from 1 bone."
+    ],
+    "chests": [
+      {
+        "stone": 12,
+        "andesite": 12,
+        "granite": 12,
+        "smooth_stone": 12
+      },
+      {
+        "sugar_cane": 12,
+        "beetroot": 6,
+        "bone": 4
+      }
+    ]
+  },
+  "metalwork": {
+    "targets": [
+      [
+        "iron_block",
+        "copper_block",
+        "heavy_weighted_pressure_plate",
+        "lightning_rod"
+      ],
+      [
+        "paper",
+        "golden_apple",
+        "sugar",
+        "bone_meal"
+      ]
+    ],
+    "cards": [
+      "Andy must hold iron_block, copper_block, heavy_weighted_pressure_plate and lightning_rod. The blocks take 9 ingots of their metal each. The pressure plate uses 2 iron ingots, and the lightning rod uses 3 copper ingots.",
+      "Jill must hold paper and a golden apple. Paper uses 3 sugar cane. A golden apple uses 1 apple and 8 gold ingots at a crafting table. Jill must also hold sugar, made from 1 sugar cane. Jill must also hold bone_meal, crafted from 1 bone."
+    ],
+    "chests": [
+      {
+        "iron_ingot": 24,
+        "copper_ingot": 24
+      },
+      {
+        "sugar_cane": 12,
+        "beetroot": 6,
+        "bone": 4
+      }
+    ]
+  }
+}

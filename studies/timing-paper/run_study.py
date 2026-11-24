@@ -36,7 +36,7 @@ def design():
 
 
 def configure(work, delay, duration, scenario, info, phase_override=None):
-    total = "four" if sum(map(len, scenario["targets"])) == 4 else "six"
+    total = {4: "four", 6: "six", 8: "eight"}[sum(map(len, scenario["targets"]))]
     general = (
         f"The team has {total} assigned Minecraft crafting objectives. Each item counts only in "
         "the assigned agent's inventory. Both agents may gather, craft, and share items. "
