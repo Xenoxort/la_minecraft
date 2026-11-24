@@ -65,7 +65,7 @@ def stop_process(process, minecraft=False):
         process.wait()
 
 
-def arena(sign):
+def arena(sign, chests=None):
     def chest(x, z, items):
         slots = ",".join(
             f'{{Slot:{i}b,id:"minecraft:{item}",count:{count}}}'
@@ -73,6 +73,8 @@ def arena(sign):
         )
         return f"setblock {x} 65 {z} chest{{Items:[{slots}]}}"
 
+    if chests is None:
+        chests = ({"wheat": 12, "cocoa_beans": 4}, {"sugar_cane": 12})
     return [
         "gamerule spawnRadius 0", "gamerule doMobSpawning false", "gamerule doDaylightCycle false",
         "gamerule doWeatherCycle false", "difficulty peaceful", "time set noon", "weather clear",
@@ -87,8 +89,8 @@ def arena(sign):
         "setblock 0 65 0 crafting_table",
         f"setblock {sign * -10} 64 0 blue_concrete",
         f"setblock {sign * 10} 64 0 red_concrete",
-        chest(sign * -15, -7, {"wheat": 12, "cocoa_beans": 4}),
-        chest(sign * 15, 7, {"sugar_cane": 12}),
+        chest(sign * -15, -7, chests[0]),
+        chest(sign * 15, 7, chests[1]),
         "say STUDY_ARENA_READY",
     ]
 
@@ -130,10 +132,11 @@ def events(log):
                 continue  # The writer may still be appending the last line.
 
 
-def run(root, label, delay, duration, sign, server_port, mind_port, viewer):
+def run(root, label, delay, duration, sign, server_port, mind_port, viewer,
+        *, study=None, configure_trial=configure, observe=None):
     work = root / label
     work.mkdir()
-    configure(work, delay, duration)
+    configure_trial(work, delay, duration)
     world = work / "server"
     shutil.copytree(APP / "tasks/server_data", world,
                     ignore=shutil.ignore_patterns("logs", "crash-reports", "session.lock", "playerdata",
@@ -155,6 +158,8 @@ def run(root, label, delay, duration, sign, server_port, mind_port, viewer):
                    "max_messages": 15, "num_examples": 2,
                    "blocked_actions": ["!newAction", "!searchForEntity"],
                }))
+    if study is not None:
+        env["MINECOLLAB_TIMING_MEASURED"] = "1"
     server_log = work / "minecraft.log"
     bot_log = work / "agents.log"
     server = bot = None
@@ -162,7 +167,7 @@ def run(root, label, delay, duration, sign, server_port, mind_port, viewer):
         server = start_process(["java", "-Xms256m", "-Xmx1100m", "-XX:ActiveProcessorCount=2",
                                 "-jar", "server.jar", "nogui"], world, server_log)
         wait_for(server, server_log, lambda s: 'For help, type "help"' in s, 100)
-        send(server, arena(sign))
+        send(server, arena(sign, study["chests"] if study else None))
         wait_for(server, server_log, lambda s: "[Server] STUDY_ARENA_READY" in s, 20)
         bot = start_process(["node", str(APP / "main.js"), "--task_path", "task.json",
                              "--task_id", TASK_ID], work, bot_log, env)
@@ -183,16 +188,24 @@ def run(root, label, delay, duration, sign, server_port, mind_port, viewer):
         temp.write_text(json.dumps(clock, indent=2))
         temp.rename(work / "start.json")
         print(f"{label}: {duration}s trial started, chat opens at +{delay}s", flush=True)
+        finish = None
         while stamp() < deadline:
             if bot.poll() is not None or server.poll() is not None:
                 raise RuntimeError(f"Trial process exited early: {work}")
             if "Error during message generation or file writing" in bot_log.read_text(errors="replace")[-24000:]:
                 raise RuntimeError(f"Agent prompt pipeline failed: {bot_log}")
+            if observe:
+                finish = observe(server, server_log, bot_log, start, deadline)
+                if finish is not None:
+                    break
             time.sleep(0.4)
         with (work / "terminal-inventory-request.txt").open("w") as f:
             f.write(str(stamp()))
         send(server, [f"data get entity {name} Inventory" for name in NAMES])
         time.sleep(0.8)
+        if study:
+            with (work / "finish.json").open("w") as file:
+                json.dump({"verifiedCompletionMs": finish, "endMs": min(stamp(), deadline)}, file)
         rows = [r for r in events(bot_log) if start <= r["ms"] <= deadline]
         (work / "events.jsonl").write_text("".join(json.dumps(r) + "\n" for r in rows))
         early = [r for r in rows if r["event"] == "chat" and r["ms"] < start + delay * 1000]
@@ -202,6 +215,10 @@ def run(root, label, delay, duration, sign, server_port, mind_port, viewer):
     finally:
         stop_process(bot)
         stop_process(server, minecraft=True)
+        if study and world.exists():
+            shutil.rmtree(world)
+        if study and (work / "keys.json").is_symlink():
+            (work / "keys.json").unlink()
 
 
 def main():

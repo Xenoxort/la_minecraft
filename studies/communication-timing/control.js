@@ -3,6 +3,7 @@ import { existsSync, readFileSync } from 'node:fs';
 import { setTimeout as wait } from 'node:timers/promises';
 
 export const active = process.env.MINECOLLAB_TIMING_STUDY === '1';
+export const measured = process.env.MINECOLLAB_TIMING_MEASURED === '1';
 let schedule;
 
 function getSchedule() {

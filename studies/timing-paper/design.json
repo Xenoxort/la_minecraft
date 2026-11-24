@@ -1,0 +1,140 @@
+[
+  {
+    "number": 1,
+    "scenario": "bakery",
+    "mirror": -1,
+    "order": [
+      {
+        "info": "partner",
+        "delay": 0
+      },
+      {
+        "info": "partner",
+        "delay": 45
+      },
+      {
+        "info": "known",
+        "delay": 0
+      },
+      {
+        "info": "known",
+        "delay": 45
+      }
+    ]
+  },
+  {
+    "number": 2,
+    "scenario": "bakery",
+    "mirror": 1,
+    "order": [
+      {
+        "info": "known",
+        "delay": 0
+      },
+      {
+        "info": "known",
+        "delay": 45
+      },
+      {
+        "info": "partner",
+        "delay": 0
+      },
+      {
+        "info": "partner",
+        "delay": 45
+      }
+    ]
+  },
+  {
+    "number": 3,
+    "scenario": "harvest",
+    "mirror": -1,
+    "order": [
+      {
+        "info": "known",
+        "delay": 45
+      },
+      {
+        "info": "known",
+        "delay": 0
+      },
+      {
+        "info": "partner",
+        "delay": 45
+      },
+      {
+        "info": "partner",
+        "delay": 0
+      }
+    ]
+  },
+  {
+    "number": 4,
+    "scenario": "harvest",
+    "mirror": 1,
+    "order": [
+      {
+        "info": "known",
+        "delay": 0
+      },
+      {
+        "info": "partner",
+        "delay": 45
+      },
+      {
+        "info": "partner",
+        "delay": 0
+      },
+      {
+        "info": "known",
+        "delay": 45
+      }
+    ]
+  },
+  {
+    "number": 5,
+    "scenario": "dyes",
+    "mirror": 1,
+    "order": [
+      {
+        "info": "partner",
+        "delay": 45
+      },
+      {
+        "info": "partner",
+        "delay": 0
+      },
+      {
+        "info": "known",
+        "delay": 0
+      },
+      {
+        "info": "known",
+        "delay": 45
+      }
+    ]
+  },
+  {
+    "number": 6,
+    "scenario": "dyes",
+    "mirror": -1,
+    "order": [
+      {
+        "info": "partner",
+        "delay": 0
+      },
+      {
+        "info": "known",
+        "delay": 45
+      },
+      {
+        "info": "partner",
+        "delay": 45
+      },
+      {
+        "info": "known",
+        "delay": 0
+      }
+    ]
+  }
+]

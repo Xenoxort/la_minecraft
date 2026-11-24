@@ -1,0 +1,26 @@
+{
+  "bakery": {
+    "targets": [["bread", "cookie"], ["paper", "golden_apple"]],
+    "cards": [
+      "Andy must hold bread and a cookie. Bread uses 3 wheat at a crafting table. Cookies use 2 wheat and 1 cocoa bean at a crafting table.",
+      "Jill must hold paper and a golden apple. Paper uses 3 sugar cane. A golden apple uses 1 apple and 8 gold ingots at a crafting table."
+    ],
+    "chests": [{"wheat": 12, "cocoa_beans": 4, "oak_planks": 8}, {"sugar_cane": 12, "beetroot": 6}]
+  },
+  "harvest": {
+    "targets": [["bread", "pumpkin_pie"], ["sugar", "golden_apple"]],
+    "cards": [
+      "Andy must hold bread and a pumpkin pie. Bread uses 3 wheat at a crafting table. A pumpkin pie uses pumpkin, egg, and sugar, one of each.",
+      "Jill must hold sugar and a golden apple. Sugar uses 1 sugar cane. A golden apple uses 1 apple and 8 gold ingots at a crafting table."
+    ],
+    "chests": [{"wheat": 12, "pumpkin": 4, "egg": 4, "sugar": 4, "oak_planks": 8}, {"sugar_cane": 12, "beetroot": 6}]
+  },
+  "dyes": {
+    "targets": [["orange_dye", "pink_dye"], ["paper", "golden_apple"]],
+    "cards": [
+      "Andy must hold orange dye and pink dye. Orange dye uses red dye and yellow dye. Pink dye uses red dye and white dye. The exact item names are orange_dye and pink_dye.",
+      "Jill must hold paper and a golden apple. Paper uses 3 sugar cane. A golden apple uses 1 apple and 8 gold ingots at a crafting table."
+    ],
+    "chests": [{"red_dye": 6, "yellow_dye": 4, "white_dye": 4, "oak_planks": 8}, {"sugar_cane": 12, "beetroot": 6}]
+  }
+}

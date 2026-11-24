@@ -84,7 +84,9 @@ export class Prompter {
                 embedding_model_profile = null;
             }
         }
-        if (embedding_model_profile) {
+        if (this.profile.embedding === 'word-overlap') {
+            this.embedding_model = null;
+        } else if (embedding_model_profile) {
             this.embedding_model = createModel(embedding_model_profile);
         }
         else {

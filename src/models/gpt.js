@@ -1,6 +1,7 @@
 import OpenAIApi from 'openai';
 import { getKey, hasKey } from '../utils/keys.js';
 import { strictFormat } from '../utils/text.js';
+import * as timingStudy from '../../studies/communication-timing/control.js';
 
 export class GPT {
     static prefix = 'openai';
@@ -9,7 +10,7 @@ export class GPT {
         this.params = params;
         this.url = url; // store so that we know whether a custom URL has been set
 
-        let config = {};
+        let config = timingStudy.measured ? { timeout: 10000, maxRetries: 2 } : {};
         if (url)
             config.baseURL = url;
 
@@ -30,6 +31,7 @@ export class GPT {
         let model = this.model_name || "gpt-5.4-mini";
 
         let res = null;
+        const started = Date.now();
 
         try {
             console.log('Awaiting openai api response from model', model);
@@ -67,12 +69,27 @@ export class GPT {
                     ...(this.params || {})
                 });
                 console.log('Received.');
+                if (timingStudy.measured) {
+                    timingStudy.record('model_response', {
+                        model: response.model, elapsedMs: Date.now() - started,
+                        inputTokens: response.usage?.input_tokens,
+                        outputTokens: response.usage?.output_tokens,
+                        status: response.status
+                    });
+                }
                 res = response.output_text;
                 let stop_seq_index = res.indexOf(stop_seq);
                 res = stop_seq_index !== -1 ? res.slice(0, stop_seq_index) : res;
             }
         }
         catch (err) {
+            if (timingStudy.measured) {
+                timingStudy.record('model_error', {
+                    name: err.name, status: err.status, code: err.code,
+                    elapsedMs: Date.now() - started
+                });
+                return '';
+            }
             if ((err.message == 'Context length exceeded' || err.code == 'context_length_exceeded') && turns.length > 1) {
                 console.log('Context length exceeded, trying again with shorter context.');
                 return await this.sendRequest(turns.slice(1), systemMessage, stop_seq);
