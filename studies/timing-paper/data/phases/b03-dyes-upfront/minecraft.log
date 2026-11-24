@@ -1,0 +1,71 @@
+Starting net.minecraft.server.Main
+[20:51:34] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[20:51:37] [ServerMain/INFO]: Loaded 1290 recipes
+[20:51:38] [ServerMain/INFO]: Loaded 1399 advancements
+[20:51:39] [Server thread/INFO]: Starting minecraft server version 1.21.1
+[20:51:39] [Server thread/INFO]: Loading properties
+[20:51:39] [Server thread/INFO]: Default game type: SURVIVAL
+[20:51:39] [Server thread/INFO]: Generating keypair
+[20:51:39] [Server thread/INFO]: Starting Minecraft server on 127.0.0.1:55976
+[20:51:39] [Server thread/INFO]: Using epoll channel type
+[20:51:39] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[20:51:39] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[20:51:39] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[20:51:39] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[20:51:39] [Server thread/INFO]: Preparing level "Superflat"
+[20:51:39] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[20:51:40] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[20:51:40] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[20:51:40] [Server thread/INFO]: Time elapsed: 915 ms
+[20:51:40] [Server thread/INFO]: Done (1.256s)! For help, type "help"
+[20:51:41] [Server thread/INFO]: Gamerule spawnRadius is now set to: 0
+[20:51:41] [Server thread/INFO]: Gamerule doMobSpawning is now set to: false
+[20:51:41] [Server thread/INFO]: Gamerule doDaylightCycle is now set to: false
+[20:51:41] [Server thread/INFO]: Gamerule doWeatherCycle is now set to: false
+[20:51:41] [Server thread/INFO]: The difficulty did not change; it is already set to peaceful
+[20:51:41] [Server thread/INFO]: Set the time to 6000
+[20:51:41] [Server thread/INFO]: Set the weather to clear
+[20:51:41] [Server thread/INFO]: Set the world spawn point to 0, 65, 0 [0.0]
+[20:51:41] [Server thread/INFO]: Marked 16 chunks in minecraft:overworld from [-2, -2] to [1, 1] to be force loaded
+[20:51:41] [Server thread/INFO]: Successfully filled 2009 block(s)
+[20:51:41] [Server thread/INFO]: No blocks were filled
+[20:51:41] [Server thread/INFO]: Successfully filled 98 block(s)
+[20:51:41] [Server thread/INFO]: Successfully filled 98 block(s)
+[20:51:41] [Server thread/INFO]: Successfully filled 78 block(s)
+[20:51:41] [Server thread/INFO]: Successfully filled 78 block(s)
+[20:51:41] [Server thread/INFO]: Changed the block at 0, 65, 0
+[20:51:41] [Server thread/INFO]: Changed the block at -10, 64, 0
+[20:51:41] [Server thread/INFO]: Changed the block at 10, 64, 0
+[20:51:41] [Server thread/INFO]: Changed the block at -15, 65, -7
+[20:51:41] [Server thread/INFO]: Changed the block at 15, 65, 7
+[20:51:41] [Server thread/INFO]: [Not Secure] [Server] STUDY_ARENA_READY
+[20:51:48] [Server thread/INFO]: Andy_0[/127.0.0.1:48900] logged in with entity id 10 at (0.5, 66.0, 0.5)
+[20:51:48] [Server thread/INFO]: Andy_0 joined the game
+[20:51:48] [Server thread/INFO]: Jill_0[/127.0.0.1:48922] logged in with entity id 11 at (0.5, 66.0, 0.5)
+[20:51:48] [Server thread/INFO]: Jill_0 joined the game
+[20:51:49] [Server thread/INFO]: No items were found on player Andy_0
+[20:51:49] [Server thread/INFO]: Teleported Andy_0 to -9.500000, 65.000000, 0.500000
+[20:51:49] [Server thread/INFO]: Gave 3 [Gold Ingot] to Andy_0
+[20:51:49] [Server thread/INFO]: No items were found on player Jill_0
+[20:51:49] [Server thread/INFO]: Teleported Jill_0 to 10.500000, 65.000000, 0.500000
+[20:51:49] [Server thread/INFO]: Gave 5 [Gold Ingot] to Jill_0
+[20:51:49] [Server thread/INFO]: Gave 1 [Apple] to Jill_0
+[20:51:49] [Server thread/INFO]: [Not Secure] [Server] STUDY_INVENTORIES_READY
+[20:51:49] [Server thread/WARN]: Jill_0 moved too quickly! 10.0,-1.0,0.0
+[20:54:52] [Server thread/INFO]: Andy_0 has the following entity data: [{count: 3, Slot: 0b, id: "minecraft:gold_ingot"}, {count: 6, Slot: 1b, id: "minecraft:beetroot"}, {count: 2, Slot: 9b, id: "minecraft:orange_dye"}, {count: 2, Slot: 10b, id: "minecraft:pink_dye"}, {count: 1, Slot: 11b, id: "minecraft:sugar"}, {count: 2, Slot: 12b, id: "minecraft:purple_dye"}, {count: 3, Slot: 13b, id: "minecraft:paper"}]
+[20:54:52] [Server thread/INFO]: Jill_0 has the following entity data: [{count: 5, Slot: 0b, id: "minecraft:gold_ingot"}, {count: 1, Slot: 1b, id: "minecraft:apple"}, {count: 3, Slot: 2b, id: "minecraft:paper"}, {count: 1, Slot: 3b, id: "minecraft:sugar"}, {count: 2, Slot: 4b, id: "minecraft:orange_dye"}, {count: 2, Slot: 12b, id: "minecraft:pink_dye"}, {count: 2, Slot: 13b, id: "minecraft:purple_dye"}]
+[20:54:53] [Server thread/INFO]: Andy_0 lost connection: Disconnected
+[20:54:53] [Server thread/INFO]: Andy_0 left the game
+[20:54:53] [Server thread/INFO]: Jill_0 lost connection: Disconnected
+[20:54:53] [Server thread/INFO]: Jill_0 left the game
+[20:54:53] [Server thread/INFO]: Stopping the server
+[20:54:53] [Server thread/INFO]: Stopping server
+[20:54:53] [Server thread/INFO]: Saving players
+[20:54:53] [Server thread/INFO]: Saving worlds
+[20:54:53] [Server thread/INFO]: Saving chunks for level 'ServerLevel[SuperflatSave]'/minecraft:overworld
+[20:54:53] [Server thread/INFO]: Saving chunks for level 'ServerLevel[SuperflatSave]'/minecraft:the_nether
+[20:54:53] [Server thread/INFO]: Saving chunks for level 'ServerLevel[SuperflatSave]'/minecraft:the_end
+[20:54:53] [Server thread/INFO]: ThreadedAnvilChunkStorage (Superflat): All chunks are saved
+[20:54:53] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[20:54:53] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[20:54:53] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved

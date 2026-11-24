@@ -1,0 +1,1 @@
+{"block": {"number": 2, "scenario": "harvest", "mirror": -1, "order": ["upfront", "always", "alternating"]}, "cell": {"info": "partner", "delay": 0}, "schedule": "always", "probe": false}

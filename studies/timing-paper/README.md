@@ -84,3 +84,14 @@ docker rm "$container"
 ```
 
 To regenerate the published summaries without running Luna, point the analysis script at the corresponding evidence directory with Python 3.11. The exact design and raw evidence define the reproducible record. A new run evaluates the same hypotheses with new model samples.
+
+```bash
+python3 studies/timing-paper/analyze.py studies/timing-paper/data/onset > onset-results.json
+python3 studies/timing-paper/analyze.py studies/timing-paper/data/phases --phases > phase-results.json
+cmp onset-results.json studies/timing-paper/onset-results.json
+cmp phase-results.json studies/timing-paper/phase-results.json
+# With Matplotlib available, also regenerate the PNG and PDF figure.
+python3 studies/timing-paper/plot.py onset-results.json phase-results.json minecollab-timing
+```
+
+The [manuscript draft](PAPER.md) contains the methods, results, and limits. The `data` directory contains the evidence used to produce all numerical comparisons. An exact-repeat audit is supplied separately and does not label which messages are off topic.

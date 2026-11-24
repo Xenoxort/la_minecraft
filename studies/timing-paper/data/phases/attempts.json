@@ -1,0 +1,38 @@
+[
+  {
+    "name": "b01-bakery-alternating",
+    "status": "complete"
+  },
+  {
+    "name": "b01-bakery-always",
+    "status": "complete"
+  },
+  {
+    "name": "b01-bakery-upfront",
+    "status": "complete"
+  },
+  {
+    "name": "b02-harvest-alternating",
+    "status": "complete"
+  },
+  {
+    "name": "b02-harvest-always",
+    "status": "complete"
+  },
+  {
+    "name": "b02-harvest-upfront",
+    "status": "complete"
+  },
+  {
+    "name": "b03-dyes-alternating",
+    "status": "complete"
+  },
+  {
+    "name": "b03-dyes-always",
+    "status": "complete"
+  },
+  {
+    "name": "b03-dyes-upfront",
+    "status": "complete"
+  }
+]

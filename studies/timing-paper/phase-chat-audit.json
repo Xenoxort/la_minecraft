@@ -1,0 +1,162 @@
+[
+  {
+    "episode": "b01-bakery-alternating",
+    "messages": 7,
+    "command_only": 2,
+    "exact_repeat": 2,
+    "first_repeat_examples": [
+      {
+        "sender": "Jill_0",
+        "message": "Your objectives are bread, a cookie, and a hay bale (hay_block). Mine are paper, a golden apple, and sugar. I have 1 apple and 5 gold ingots, so I still need 3 gold ingots and sugar cane."
+      },
+      {
+        "sender": "Andy_0",
+        "message": "I'll gather wheat for bread and a hay bale, and look for cocoa beans and wheat for the cookie."
+      }
+    ]
+  },
+  {
+    "episode": "b01-bakery-always",
+    "messages": 35,
+    "command_only": 18,
+    "exact_repeat": 4,
+    "first_repeat_examples": [
+      {
+        "sender": "Jill_0",
+        "message": "You need bread, a cookie, and a hay bale. Your 3 gold plus my 5 covers the golden apple\u2014please tell me my assigned items too!"
+      },
+      {
+        "sender": "Andy_0",
+        "message": "Your card says you need paper, a golden apple, and sugar. I need bread, a cookie, and a hay bale."
+      },
+      {
+        "sender": "Jill_0",
+        "message": "Your objective is bread, cookie, and a hay bale. I\u2019ll gather wheat and cocoa beans for you."
+      }
+    ]
+  },
+  {
+    "episode": "b01-bakery-upfront",
+    "messages": 17,
+    "command_only": 11,
+    "exact_repeat": 2,
+    "first_repeat_examples": [
+      {
+        "sender": "Andy_0",
+        "message": "Your items are paper, a golden apple, and sugar. I need bread, a cookie, and a hay bale\u2014please gather wheat and cocoa beans for those."
+      },
+      {
+        "sender": "Jill_0",
+        "message": "I have paper and sugar, plus an apple and 5 gold ingots. Have you found wheat/cocoa or any gold?"
+      }
+    ]
+  },
+  {
+    "episode": "b02-harvest-alternating",
+    "messages": 10,
+    "command_only": 4,
+    "exact_repeat": 2,
+    "first_repeat_examples": [
+      {
+        "sender": "Andy_0",
+        "message": "You need to hold sugar, a golden apple, and paper. I need bread, pumpkin pie, and a hay bale."
+      },
+      {
+        "sender": "Jill_0",
+        "message": "I have 5 gold and an apple; please give me your 3 gold ingots so I can craft the golden apple. I\u2019ve got my sugar and paper."
+      }
+    ]
+  },
+  {
+    "episode": "b02-harvest-always",
+    "messages": 49,
+    "command_only": 29,
+    "exact_repeat": 3,
+    "first_repeat_examples": [
+      {
+        "sender": "Andy_0",
+        "message": "You need sugar, a golden apple, and paper. I have 3 gold ingots; the golden apple needs 8. I need bread, pumpkin pie, and a hay bale."
+      },
+      {
+        "sender": "Jill_0",
+        "message": "I have 5 gold ingots and an apple, so I just need 3 more gold for my golden apple. I\u2019ll find sugar and paper."
+      },
+      {
+        "sender": "Andy_0",
+        "message": "I\u2019ll work on bread, pumpkin pie, and a hay bale. Do you have any wheat, pumpkins, eggs, or sugar to spare?"
+      }
+    ]
+  },
+  {
+    "episode": "b02-harvest-upfront",
+    "messages": 19,
+    "command_only": 10,
+    "exact_repeat": 3,
+    "first_repeat_examples": [
+      {
+        "sender": "Andy_0",
+        "message": "You need sugar, a golden apple, and paper. I have 3 gold ingots; can you find an apple and more gold? Please tell me my objective too."
+      },
+      {
+        "sender": "Jill_0",
+        "message": "Your objective is bread, pumpkin pie, and a hay bale. I have an apple and 5 gold ingots, so I\u2019ll work on my golden apple."
+      },
+      {
+        "sender": "Jill_0",
+        "message": "I need wheat for bread and a hay bale, plus pumpkin, egg, and sugar for pie. Please pass over any wheat, pumpkin, egg, or sugar you find."
+      }
+    ]
+  },
+  {
+    "episode": "b03-dyes-alternating",
+    "messages": 11,
+    "command_only": 3,
+    "exact_repeat": 3,
+    "first_repeat_examples": [
+      {
+        "sender": "Andy_0",
+        "message": "You need paper, a golden apple, and sugar. Paper needs 3 sugar cane; sugar needs 1, and the apple needs 8 gold ingots plus an apple. I have 3 gold ingots so far."
+      },
+      {
+        "sender": "Jill_0",
+        "message": "I have 5 gold ingots and an apple, so I need 3 more ingots plus sugar cane for paper and sugar. I'll check supply chests."
+      },
+      {
+        "sender": "Jill_0",
+        "message": "I have 8 sugar cane, 1 apple, and 5 gold ingots. Could you pass me your 3 gold ingots so I can make the golden apple?"
+      }
+    ]
+  },
+  {
+    "episode": "b03-dyes-always",
+    "messages": 52,
+    "command_only": 25,
+    "exact_repeat": 2,
+    "first_repeat_examples": [
+      {
+        "sender": "Jill_0",
+        "message": "I need paper, sugar, and a golden apple. I have an apple and 5 gold ingots; could you look for 3 more gold ingots while I find sugarcane?"
+      },
+      {
+        "sender": "Jill_0",
+        "message": "I have paper and golden apple; still need sugar. Can you check nearby chests for sugar or sugar cane?"
+      }
+    ]
+  },
+  {
+    "episode": "b03-dyes-upfront",
+    "messages": 18,
+    "command_only": 7,
+    "exact_repeat": 2,
+    "first_repeat_examples": [
+      {
+        "sender": "Andy_0",
+        "message": "You need to hold paper, a golden apple, and sugar. Paper takes 3 sugar cane; golden apple takes 1 apple and 8 gold ingots; sugar takes 1 sugar cane. What are my objectives?"
+      },
+      {
+        "sender": "Jill_0",
+        "message": "Your objectives are orange_dye, pink_dye, and purple_dye. I\u2019ll gather sugar cane for mine."
+      }
+    ]
+  }
+]

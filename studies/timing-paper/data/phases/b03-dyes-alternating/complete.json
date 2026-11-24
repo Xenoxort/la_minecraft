@@ -1,0 +1,1 @@
+{"block": {"number": 3, "scenario": "dyes", "mirror": 1, "order": ["always", "alternating", "upfront"]}, "cell": {"info": "partner", "delay": 0}, "schedule": "alternating", "probe": false}

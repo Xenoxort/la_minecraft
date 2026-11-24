@@ -1,0 +1,23 @@
+{
+  "two_station_timing_hells_kitchen": {
+    "type": "cooking",
+    "agent_count": 2,
+    "timeout": 180,
+    "goal": {
+      "0": "The team has six assigned Minecraft crafting objectives. Each item counts only in the assigned agent's inventory. Both agents may gather, craft, and share items. Keep the target items once obtained. There are supply chests around the arena and a crafting table at the center. Gather what you can while working on the shared goals. There are 180 seconds from the start. Bot chat is open during these seconds after the episode starts: 0\u2013180. Use open windows to ask for or pass along objective information. When chat is closed, explore, gather, and craft on your own. Your partner has your objective card. Ask them to tell you what items you must hold. Your partner's objective card: Jill must hold paper and a golden apple. Paper uses 3 sugar cane. A golden apple uses 1 apple and 8 gold ingots at a crafting table. Jill must also hold sugar, made from 1 sugar cane.",
+      "1": "The team has six assigned Minecraft crafting objectives. Each item counts only in the assigned agent's inventory. Both agents may gather, craft, and share items. Keep the target items once obtained. There are supply chests around the arena and a crafting table at the center. Gather what you can while working on the shared goals. There are 180 seconds from the start. Bot chat is open during these seconds after the episode starts: 0\u2013180. Use open windows to ask for or pass along objective information. When chat is closed, explore, gather, and craft on your own. Your partner has your objective card. Ask them to tell you what items you must hold. Your partner's objective card: Andy must hold bread and a cookie. Bread uses 3 wheat at a crafting table. Cookies use 2 wheat and 1 cocoa bean at a crafting table. Andy must also hold a hay bale (hay_block), made with 9 wheat in a crafting table."
+    },
+    "target": [
+      {
+        "bread": 1,
+        "cookie": 1,
+        "hay_block": 1
+      },
+      {
+        "paper": 1,
+        "golden_apple": 1,
+        "sugar": 1
+      }
+    ]
+  }
+}
