@@ -1,0 +1,74 @@
+[
+  {
+    "name": "b01-woodwork-alternating",
+    "status": "complete"
+  },
+  {
+    "name": "b01-woodwork-always",
+    "status": "complete"
+  },
+  {
+    "name": "b01-woodwork-two_blocks",
+    "status": "complete"
+  },
+  {
+    "name": "b02-metalwork-alternating",
+    "status": "complete"
+  },
+  {
+    "name": "b02-metalwork-always",
+    "status": "complete"
+  },
+  {
+    "name": "b02-metalwork-two_blocks",
+    "status": "complete"
+  },
+  {
+    "name": "b03-harvest-alternating",
+    "status": "complete"
+  },
+  {
+    "name": "b03-harvest-always",
+    "status": "complete"
+  },
+  {
+    "name": "b03-harvest-two_blocks",
+    "status": "complete"
+  },
+  {
+    "name": "b04-dyes-alternating",
+    "status": "complete"
+  },
+  {
+    "name": "b04-dyes-always",
+    "status": "complete"
+  },
+  {
+    "name": "b04-dyes-two_blocks",
+    "status": "complete"
+  },
+  {
+    "name": "b05-masonry-alternating",
+    "status": "complete"
+  },
+  {
+    "name": "b05-masonry-always",
+    "status": "complete"
+  },
+  {
+    "name": "b05-masonry-two_blocks",
+    "status": "complete"
+  },
+  {
+    "name": "b06-bakery-alternating",
+    "status": "complete"
+  },
+  {
+    "name": "b06-bakery-always",
+    "status": "complete"
+  },
+  {
+    "name": "b06-bakery-two_blocks",
+    "status": "complete"
+  }
+]

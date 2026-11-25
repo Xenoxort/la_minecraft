@@ -6,6 +6,8 @@ We tested when two language-model agents should communicate during a time-limite
 
 The [six-minute extension](LONG_RESULTS.md) follows these two experiments with 18 additional episodes, six recipe sets, and eight objectives per episode.
 
+A [twelve-minute follow-up](EXTENDED_RESULTS.md) repeats the same recipe sets and eight objectives. Three of the seven runs still unfinished at six minutes completed by twelve minutes.
+
 ## Introduction
 
 Two agents can share plans as soon as play begins, or collect resources independently and exchange knowledge later. The cost of waiting should depend on what each agent can usefully do alone. MineCollab gives us an embodied test of that question because an agent can discover supplies, craft, transfer items, and exchange information. The outcome depends on which agent actually holds the finished item.

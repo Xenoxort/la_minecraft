@@ -4,6 +4,10 @@ The [timing pilot](../communication-timing/RESULTS.md) motivated two studies. Th
 
 The [six-minute extension](LONG_RESULTS.md) tests the communication schedules across six recipe sets with eight objectives per episode. Its [separate reproduction guide](LONG_REPRODUCE.md) covers all 18 episodes and the three-minute checkpoint.
 
+The [twelve-minute follow-up](EXTENDED_RESULTS.md) repeats those six sets and records both three- and six-minute checkpoints. [Follow-up reproduction guide](EXTENDED_REPRODUCE.md)
+
+The 25 November meeting slides cover the study through the six-minute experiment. [PowerPoint](MineCollab-Research-Update-2026-11-25.pptx) · [PDF](MineCollab-Research-Update-2026-11-25.pdf)
+
 The goals, recipe cards, and supplies are in [scenarios.json](scenarios.json) for the four-objective study and [phase_scenarios.json](phase_scenarios.json) for the six-objective study. Each episode exports the exact task presented to the bots in its `task.json`. The pinned [schedule](design.json) determines the onset study order.
 
 ## Prepare the sandbox

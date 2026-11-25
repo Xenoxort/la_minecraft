@@ -1,0 +1,670 @@
+{"event": "state", "ms": 1795589767570, "agent": "Andy_0", "position": [10.5, 65, 0.5], "inventory": {"gold_ingot": 3}}
+{"event": "command", "ms": 1795589767575, "agent": "Andy_0", "command": "!goal"}
+{"event": "state", "ms": 1795589767632, "agent": "Jill_0", "position": [-9.5, 65, 0.5], "inventory": {"gold_ingot": 5, "apple": 1}}
+{"event": "command", "ms": 1795589767652, "agent": "Jill_0", "command": "!goal"}
+{"event": "state", "ms": 1795589768573, "agent": "Andy_0", "position": [10.5, 65, 0.5], "inventory": {"gold_ingot": 3}}
+{"event": "state", "ms": 1795589768634, "agent": "Jill_0", "position": [-9.5, 65, 0.5], "inventory": {"gold_ingot": 5, "apple": 1}}
+{"event": "state", "ms": 1795589769574, "agent": "Andy_0", "position": [10.5, 65, 0.5], "inventory": {"gold_ingot": 3}}
+{"event": "state", "ms": 1795589769634, "agent": "Jill_0", "position": [-9.5, 65, 0.5], "inventory": {"gold_ingot": 5, "apple": 1}}
+{"event": "state", "ms": 1795589770585, "agent": "Andy_0", "position": [10.5, 65, 0.5], "inventory": {"gold_ingot": 3}}
+{"event": "state", "ms": 1795589770633, "agent": "Jill_0", "position": [-9.5, 65, 0.5], "inventory": {"gold_ingot": 5, "apple": 1}}
+{"event": "model_response", "ms": 1795589771033, "model": "gpt-6-luna", "elapsedMs": 2761, "inputTokens": 3184, "outputTokens": 103, "status": "completed"}
+{"event": "command", "ms": 1795589771174, "agent": "Jill_0", "command": "!startConversation"}
+{"event": "chat", "ms": 1795589771181, "sender": "Jill_0", "receiver": "Andy_0", "message": "What items are on my objective card? I\u2019ll help gather materials for your iron and copper items too."}
+{"event": "state", "ms": 1795589771634, "agent": "Jill_0", "position": [-9.5, 65, 0.5], "inventory": {"gold_ingot": 5, "apple": 1}}
+{"event": "state", "ms": 1795589771782, "agent": "Andy_0", "position": [10.5, 65, 0.5], "inventory": {"gold_ingot": 3}}
+{"event": "model_response", "ms": 1795589772155, "model": "gpt-6-luna", "elapsedMs": 3948, "inputTokens": 3196, "outputTokens": 104, "status": "completed"}
+{"event": "state", "ms": 1795589772634, "agent": "Jill_0", "position": [-9.5, 65, 0.5], "inventory": {"gold_ingot": 5, "apple": 1}}
+{"event": "state", "ms": 1795589772781, "agent": "Andy_0", "position": [10.5, 65, 0.5], "inventory": {"gold_ingot": 3}}
+{"event": "state", "ms": 1795589773635, "agent": "Jill_0", "position": [-9.5, 65, 0.5], "inventory": {"gold_ingot": 5, "apple": 1}}
+{"event": "state", "ms": 1795589773782, "agent": "Andy_0", "position": [10.5, 65, 0.5], "inventory": {"gold_ingot": 3}}
+{"event": "model_response", "ms": 1795589774450, "model": "gpt-6-luna", "elapsedMs": 2687, "inputTokens": 3259, "outputTokens": 145, "status": "completed"}
+{"event": "chat", "ms": 1795589774453, "sender": "Andy_0", "receiver": "Jill_0", "message": "!startConversation(\"Jill_0\", \"Your card says to hold paper, a golden apple, sugar, and bone meal. I have 3 gold ingots so far.\")"}
+{"event": "command", "ms": 1795589774455, "agent": "Andy_0", "command": "!startConversation"}
+{"event": "chat", "ms": 1795589774456, "sender": "Andy_0", "receiver": "Jill_0", "message": "Your card says to hold paper, a golden apple, sugar, and bone meal. I have 3 gold ingots so far."}
+{"event": "state", "ms": 1795589774636, "agent": "Jill_0", "position": [-9.5, 65, 0.5], "inventory": {"gold_ingot": 5, "apple": 1}}
+{"event": "state", "ms": 1795589774783, "agent": "Andy_0", "position": [10.5, 65, 0.5], "inventory": {"gold_ingot": 3}}
+{"event": "state", "ms": 1795589775636, "agent": "Jill_0", "position": [-9.5, 65, 0.5], "inventory": {"gold_ingot": 5, "apple": 1}}
+{"event": "state", "ms": 1795589775783, "agent": "Andy_0", "position": [10.5, 65, 0.5], "inventory": {"gold_ingot": 3}}
+{"event": "state", "ms": 1795589776699, "agent": "Jill_0", "position": [-9.5, 65, 0.5], "inventory": {"gold_ingot": 5, "apple": 1}}
+{"event": "state", "ms": 1795589776783, "agent": "Andy_0", "position": [10.5, 65, 0.5], "inventory": {"gold_ingot": 3}}
+{"event": "model_response", "ms": 1795589777621, "model": "gpt-6-luna", "elapsedMs": 2530, "inputTokens": 3262, "outputTokens": 224, "status": "completed"}
+{"event": "chat", "ms": 1795589777624, "sender": "Jill_0", "receiver": "Andy_0", "message": "!startConversation(\"Andy_0\", \"I need paper, a golden apple, sugar, and bone meal. I have 5 gold ingots; could you give me your 3 so I can make the golden apple? I\u2019ll search for sugar cane and bones.\")"}
+{"event": "command", "ms": 1795589777626, "agent": "Jill_0", "command": "!startConversation"}
+{"event": "chat", "ms": 1795589777627, "sender": "Jill_0", "receiver": "Andy_0", "message": "I need paper, a golden apple, sugar, and bone meal. I have 5 gold ingots; could you give me your 3 so I can make the golden apple? I\u2019ll search for sugar cane and bones."}
+{"event": "state", "ms": 1795589777698, "agent": "Jill_0", "position": [-9.5, 65, 0.5], "inventory": {"gold_ingot": 5, "apple": 1}}
+{"event": "state", "ms": 1795589777784, "agent": "Andy_0", "position": [10.5, 65, 0.5], "inventory": {"gold_ingot": 3}}
+{"event": "state", "ms": 1795589778699, "agent": "Jill_0", "position": [-9.5, 65, 0.5], "inventory": {"gold_ingot": 5, "apple": 1}}
+{"event": "state", "ms": 1795589778790, "agent": "Andy_0", "position": [10.5, 65, 0.5], "inventory": {"gold_ingot": 3}}
+{"event": "model_response", "ms": 1795589779484, "model": "gpt-6-luna", "elapsedMs": 1446, "inputTokens": 3442, "outputTokens": 47, "status": "completed"}
+{"event": "chat", "ms": 1795589779488, "sender": "Andy_0", "receiver": "Jill_0", "message": "!givePlayer(\"Jill_0\", \"gold_ingot\", 3)"}
+{"event": "command", "ms": 1795589779489, "agent": "Andy_0", "command": "!givePlayer"}
+{"event": "state", "ms": 1795589779800, "agent": "Andy_0", "position": [9.418021463723942, 65, 0.5000000000000622], "inventory": {"gold_ingot": 3}}
+{"event": "state", "ms": 1795589779812, "agent": "Jill_0", "position": [-9.5, 65, 0.5], "inventory": {"gold_ingot": 5, "apple": 1}}
+{"event": "state", "ms": 1795589780800, "agent": "Andy_0", "position": [3.9799533563248066, 65, 0.11175077538873718], "inventory": {"gold_ingot": 3}}
+{"event": "state", "ms": 1795589780813, "agent": "Jill_0", "position": [-9.5, 65, 0.5], "inventory": {"gold_ingot": 5, "apple": 1}}
+{"event": "model_response", "ms": 1795589781597, "model": "gpt-6-luna", "elapsedMs": 1877, "inputTokens": 3369, "outputTokens": 103, "status": "completed"}
+{"event": "state", "ms": 1795589781801, "agent": "Andy_0", "position": [-1.1745981295751091, 65, -0.07040380486341052], "inventory": {"gold_ingot": 3}}
+{"event": "state", "ms": 1795589781813, "agent": "Jill_0", "position": [-9.5, 65, 0.5], "inventory": {"gold_ingot": 5, "apple": 1}}
+{"event": "state", "ms": 1795589782848, "agent": "Jill_0", "position": [-9.5, 65, 0.5], "inventory": {"gold_ingot": 5, "apple": 1}}
+{"event": "state", "ms": 1795589782986, "agent": "Andy_0", "position": [-6.341849661818468, 65, 0.4981000727665028], "inventory": {"gold_ingot": 3}}
+{"event": "state", "ms": 1795589783860, "agent": "Jill_0", "position": [-9.5, 65, 0.5], "inventory": {"gold_ingot": 5, "apple": 1}}
+{"event": "state", "ms": 1795589783987, "agent": "Andy_0", "position": [-6.341849661818468, 65, 0.4981000727665028], "inventory": {}}
+{"event": "model_response", "ms": 1795589784854, "model": "gpt-6-luna", "elapsedMs": 1881, "inputTokens": 3488, "outputTokens": 104, "status": "completed"}
+{"event": "chat", "ms": 1795589784857, "sender": "Andy_0", "receiver": "Jill_0", "message": "!searchForBlock(\"chest\", 128)"}
+{"event": "command", "ms": 1795589784857, "agent": "Andy_0", "command": "!searchForBlock"}
+{"event": "state", "ms": 1795589784968, "agent": "Jill_0", "position": [-9.5, 65, 0.5], "inventory": {"gold_ingot": 5, "apple": 1}}
+{"event": "state", "ms": 1795589784988, "agent": "Andy_0", "position": [-6.341849661818468, 65, 0.4981000727665028], "inventory": {}}
+{"event": "state", "ms": 1795589785968, "agent": "Jill_0", "position": [-9.5, 65, 0.5], "inventory": {"gold_ingot": 8, "apple": 1}}
+{"event": "state", "ms": 1795589785988, "agent": "Andy_0", "position": [-9.390793542036079, 65, 2.569814366550574], "inventory": {}}
+{"event": "model_response", "ms": 1795589786520, "model": "gpt-6-luna", "elapsedMs": 1616, "inputTokens": 3419, "outputTokens": 51, "status": "completed"}
+{"event": "state", "ms": 1795589786971, "agent": "Jill_0", "position": [-9.5, 65, 0.5], "inventory": {"gold_ingot": 8, "apple": 1}}
+{"event": "state", "ms": 1795589787071, "agent": "Andy_0", "position": [-12.364548548311262, 65, 5.3691456448791754], "inventory": {}}
+{"event": "phase", "ms": 1795589787570, "agent": "Jill_0", "chatOpen": false, "scheduledMs": 1795589787569}
+{"event": "phase", "ms": 1795589787571, "agent": "Andy_0", "chatOpen": false, "scheduledMs": 1795589787569}
+{"event": "state", "ms": 1795589787970, "agent": "Jill_0", "position": [-9.5, 65, 0.5], "inventory": {"gold_ingot": 8, "apple": 1}}
+{"event": "state", "ms": 1795589788072, "agent": "Andy_0", "position": [-12.364548548311262, 65, 5.3691456448791754], "inventory": {}}
+{"event": "model_response", "ms": 1795589788723, "model": "gpt-6-luna", "elapsedMs": 1734, "inputTokens": 3540, "outputTokens": 18, "status": "completed"}
+{"event": "command", "ms": 1795589788729, "agent": "Andy_0", "command": "!viewChest"}
+{"event": "state", "ms": 1795589788971, "agent": "Jill_0", "position": [-9.5, 65, 0.5], "inventory": {"gold_ingot": 8, "apple": 1}}
+{"event": "state", "ms": 1795589789071, "agent": "Andy_0", "position": [-13.325061639062287, 65, 6.325113077225774], "inventory": {}}
+{"event": "state", "ms": 1795589789972, "agent": "Jill_0", "position": [-9.5, 65, 0.5], "inventory": {"gold_ingot": 8, "apple": 1}}
+{"event": "state", "ms": 1795589790072, "agent": "Andy_0", "position": [-13.325061639062287, 65, 6.325113077225774], "inventory": {}}
+{"event": "state", "ms": 1795589791017, "agent": "Jill_0", "position": [-9.5, 65, 0.5], "inventory": {"gold_ingot": 8, "apple": 1}}
+{"event": "state", "ms": 1795589791071, "agent": "Andy_0", "position": [-13.325061639062287, 65, 6.325113077225774], "inventory": {}}
+{"event": "state", "ms": 1795589792018, "agent": "Jill_0", "position": [-9.5, 65, 0.5], "inventory": {"gold_ingot": 8, "apple": 1}}
+{"event": "state", "ms": 1795589792071, "agent": "Andy_0", "position": [-13.325061639062287, 65, 6.325113077225774], "inventory": {}}
+{"event": "state", "ms": 1795589793018, "agent": "Jill_0", "position": [-9.5, 65, 0.5], "inventory": {"gold_ingot": 8, "apple": 1}}
+{"event": "state", "ms": 1795589793152, "agent": "Andy_0", "position": [-13.325061639062287, 65, 6.325113077225774], "inventory": {}}
+{"event": "model_response", "ms": 1795589793158, "model": "gpt-6-luna", "elapsedMs": 3150, "inputTokens": 3597, "outputTokens": 177, "status": "completed"}
+{"event": "state", "ms": 1795589794086, "agent": "Jill_0", "position": [-9.5, 65, 0.5], "inventory": {"gold_ingot": 8, "apple": 1}}
+{"event": "state", "ms": 1795589794152, "agent": "Andy_0", "position": [-13.325061639062287, 65, 6.325113077225774], "inventory": {}}
+{"event": "model_response", "ms": 1795589794870, "model": "gpt-6-luna", "elapsedMs": 2090, "inputTokens": 4022, "outputTokens": 98, "status": "completed"}
+{"event": "command", "ms": 1795589794874, "agent": "Jill_0", "command": "!searchForBlock"}
+{"event": "state", "ms": 1795589795152, "agent": "Andy_0", "position": [-13.325061639062287, 65, 6.325113077225774], "inventory": {}}
+{"event": "state", "ms": 1795589795510, "agent": "Jill_0", "position": [-9.5, 65, 0.5], "inventory": {"gold_ingot": 8, "apple": 1}}
+{"event": "model_response", "ms": 1795589795674, "model": "gpt-6-luna", "elapsedMs": 2597, "inputTokens": 4177, "outputTokens": 94, "status": "completed"}
+{"event": "command", "ms": 1795589795680, "agent": "Andy_0", "command": "!takeFromChest"}
+{"event": "state", "ms": 1795589796152, "agent": "Andy_0", "position": [-13.325061639062287, 65, 6.325113077225774], "inventory": {}}
+{"event": "state", "ms": 1795589796511, "agent": "Jill_0", "position": [-9.5, 65, 0.5], "inventory": {"gold_ingot": 8, "apple": 1}}
+{"event": "state", "ms": 1795589797152, "agent": "Andy_0", "position": [-13.325061639062287, 65, 6.325113077225774], "inventory": {"sugar_cane": 4}}
+{"event": "state", "ms": 1795589797511, "agent": "Jill_0", "position": [-9.5, 65, 0.5], "inventory": {"gold_ingot": 8, "apple": 1}}
+{"event": "model_response", "ms": 1795589797854, "model": "gpt-6-luna", "elapsedMs": 1944, "inputTokens": 4064, "outputTokens": 51, "status": "completed"}
+{"event": "command", "ms": 1795589797872, "agent": "Jill_0", "command": "!inventory"}
+{"event": "state", "ms": 1795589798193, "agent": "Andy_0", "position": [-13.325061639062287, 65, 6.325113077225774], "inventory": {"sugar_cane": 4}}
+{"event": "state", "ms": 1795589798511, "agent": "Jill_0", "position": [-9.5, 65, 0.5], "inventory": {"gold_ingot": 8, "apple": 1}}
+{"event": "model_response", "ms": 1795589798800, "model": "gpt-6-luna", "elapsedMs": 1882, "inputTokens": 4243, "outputTokens": 102, "status": "completed"}
+{"event": "command", "ms": 1795589798810, "agent": "Andy_0", "command": "!givePlayer"}
+{"event": "state", "ms": 1795589799194, "agent": "Andy_0", "position": [-12.449570181811191, 65, 5.329766482446471], "inventory": {"sugar_cane": 4}}
+{"event": "state", "ms": 1795589799531, "agent": "Jill_0", "position": [-9.5, 65, 0.5], "inventory": {"gold_ingot": 8, "apple": 1}}
+{"event": "state", "ms": 1795589800193, "agent": "Andy_0", "position": [-11.427400109179473, 65, 2.5665326501249672], "inventory": {}}
+{"event": "state", "ms": 1795589800531, "agent": "Jill_0", "position": [-9.5, 65, 0.5], "inventory": {"gold_ingot": 8, "apple": 1}}
+{"event": "model_response", "ms": 1795589800689, "model": "gpt-6-luna", "elapsedMs": 1890, "inputTokens": 3645, "outputTokens": 75, "status": "completed"}
+{"event": "command", "ms": 1795589800693, "agent": "Jill_0", "command": "!searchForBlock"}
+{"event": "state", "ms": 1795589801193, "agent": "Andy_0", "position": [-11.427400109179473, 65, 2.5665326501249672], "inventory": {}}
+{"event": "state", "ms": 1795589801532, "agent": "Jill_0", "position": [-11.560035572680027, 65, 3.6254546350011614], "inventory": {"gold_ingot": 8, "apple": 1}}
+{"event": "state", "ms": 1795589802194, "agent": "Andy_0", "position": [-11.427400109179473, 65, 2.5665326501249672], "inventory": {}}
+{"event": "state", "ms": 1795589802532, "agent": "Jill_0", "position": [-12.153715409073776, 65, 4.148662295759858], "inventory": {"gold_ingot": 8, "apple": 1}}
+{"event": "model_response", "ms": 1795589802677, "model": "gpt-6-luna", "elapsedMs": 4103, "inputTokens": 846, "outputTokens": 288, "status": "completed"}
+{"event": "model_response", "ms": 1795589802948, "model": "gpt-6-luna", "elapsedMs": 3446, "inputTokens": 885, "outputTokens": 348, "status": "completed"}
+{"event": "state", "ms": 1795589803427, "agent": "Andy_0", "position": [-11.427400109179473, 65, 2.5665326501249672], "inventory": {}}
+{"event": "model_response", "ms": 1795589803440, "model": "gpt-6-luna", "elapsedMs": 1408, "inputTokens": 3710, "outputTokens": 18, "status": "completed"}
+{"event": "state", "ms": 1795589803533, "agent": "Jill_0", "position": [-10.429352859169738, 65, 1.6083815716190155], "inventory": {"gold_ingot": 8, "apple": 1, "sugar_cane": 4}}
+{"event": "state", "ms": 1795589804428, "agent": "Andy_0", "position": [-11.427400109179473, 65, 2.5665326501249672], "inventory": {}}
+{"event": "state", "ms": 1795589804534, "agent": "Jill_0", "position": [-10.429352859169738, 65, 1.6083815716190155], "inventory": {"gold_ingot": 8, "apple": 1, "sugar_cane": 4}}
+{"event": "state", "ms": 1795589805428, "agent": "Andy_0", "position": [-11.427400109179473, 65, 2.5665326501249672], "inventory": {}}
+{"event": "state", "ms": 1795589805534, "agent": "Jill_0", "position": [-10.429352859169738, 65, 1.6083815716190155], "inventory": {"gold_ingot": 8, "apple": 1, "sugar_cane": 4}}
+{"event": "model_response", "ms": 1795589805604, "model": "gpt-6-luna", "elapsedMs": 2188, "inputTokens": 3837, "outputTokens": 57, "status": "completed"}
+{"event": "command", "ms": 1795589805608, "agent": "Andy_0", "command": "!takeFromChest"}
+{"event": "state", "ms": 1795589806429, "agent": "Andy_0", "position": [-13.536100795833278, 65, 5.524403378806416], "inventory": {}}
+{"event": "state", "ms": 1795589806535, "agent": "Jill_0", "position": [-10.429352859169738, 65, 1.6083815716190155], "inventory": {"gold_ingot": 8, "apple": 1, "sugar_cane": 4}}
+{"event": "state", "ms": 1795589807430, "agent": "Andy_0", "position": [-13.555525392183336, 65, 6.5344677852884585], "inventory": {"bone": 1}}
+{"event": "state", "ms": 1795589807535, "agent": "Jill_0", "position": [-10.429352859169738, 65, 1.6083815716190155], "inventory": {"gold_ingot": 8, "apple": 1, "sugar_cane": 4}}
+{"event": "state", "ms": 1795589808430, "agent": "Andy_0", "position": [-13.555525392183336, 65, 6.5344677852884585], "inventory": {"bone": 1}}
+{"event": "state", "ms": 1795589808536, "agent": "Jill_0", "position": [-10.429352859169738, 65, 1.6083815716190155], "inventory": {"gold_ingot": 8, "apple": 1, "sugar_cane": 4}}
+{"event": "state", "ms": 1795589809430, "agent": "Andy_0", "position": [-13.555525392183336, 65, 6.5344677852884585], "inventory": {"bone": 1}}
+{"event": "model_response", "ms": 1795589809519, "model": "gpt-6-luna", "elapsedMs": 2172, "inputTokens": 3896, "outputTokens": 59, "status": "completed"}
+{"event": "command", "ms": 1795589809523, "agent": "Andy_0", "command": "!givePlayer"}
+{"event": "state", "ms": 1795589809536, "agent": "Jill_0", "position": [-10.429352859169738, 65, 1.6083815716190155], "inventory": {"gold_ingot": 8, "apple": 1, "sugar_cane": 4}}
+{"event": "model_response", "ms": 1795589810049, "model": "gpt-6-luna", "elapsedMs": 2533, "inputTokens": 598, "outputTokens": 200, "status": "completed"}
+{"event": "state", "ms": 1795589810431, "agent": "Andy_0", "position": [-11.573976143834338, 65, 3.5927940156648956], "inventory": {"bone": 1}}
+{"event": "state", "ms": 1795589810866, "agent": "Jill_0", "position": [-10.429352859169738, 65, 1.6083815716190155], "inventory": {"gold_ingot": 8, "apple": 1, "sugar_cane": 4}}
+{"event": "state", "ms": 1795589811431, "agent": "Andy_0", "position": [-11.573976143834338, 65, 3.5927940156648956], "inventory": {}}
+{"event": "state", "ms": 1795589811866, "agent": "Jill_0", "position": [-10.429352859169738, 65, 1.6083815716190155], "inventory": {"gold_ingot": 8, "apple": 1, "sugar_cane": 4}}
+{"event": "state", "ms": 1795589812432, "agent": "Andy_0", "position": [-11.573976143834338, 65, 3.5927940156648956], "inventory": {}}
+{"event": "model_response", "ms": 1795589812447, "model": "gpt-6-luna", "elapsedMs": 1584, "inputTokens": 4022, "outputTokens": 49, "status": "completed"}
+{"event": "command", "ms": 1795589812449, "agent": "Jill_0", "command": "!viewChest"}
+{"event": "state", "ms": 1795589812867, "agent": "Jill_0", "position": [-11.67553226307069, 65, 2.6610188387108495], "inventory": {"gold_ingot": 8, "apple": 1, "sugar_cane": 4, "bone": 1}}
+{"event": "state", "ms": 1795589813435, "agent": "Andy_0", "position": [-11.573976143834338, 65, 3.5927940156648956], "inventory": {}}
+{"event": "state", "ms": 1795589813989, "agent": "Jill_0", "position": [-13.38216749097569, 65, 6.491289177362271], "inventory": {"gold_ingot": 8, "apple": 1, "sugar_cane": 4, "bone": 1}}
+{"event": "state", "ms": 1795589814436, "agent": "Andy_0", "position": [-11.573976143834338, 65, 3.5927940156648956], "inventory": {}}
+{"event": "model_response", "ms": 1795589814944, "model": "gpt-6-luna", "elapsedMs": 2202, "inputTokens": 3952, "outputTokens": 131, "status": "completed"}
+{"event": "command", "ms": 1795589814949, "agent": "Andy_0", "command": "!viewChest"}
+{"event": "state", "ms": 1795589814989, "agent": "Jill_0", "position": [-13.38216749097569, 65, 6.491289177362271], "inventory": {"gold_ingot": 8, "apple": 1, "sugar_cane": 4, "bone": 1}}
+{"event": "state", "ms": 1795589815437, "agent": "Andy_0", "position": [-12.934583832626865, 65, 4.933396990814937], "inventory": {}}
+{"event": "state", "ms": 1795589815989, "agent": "Jill_0", "position": [-13.38216749097569, 65, 6.491289177362271], "inventory": {"gold_ingot": 8, "apple": 1, "sugar_cane": 4, "bone": 1}}
+{"event": "model_response", "ms": 1795589816310, "model": "gpt-6-luna", "elapsedMs": 2325, "inputTokens": 4082, "outputTokens": 80, "status": "completed"}
+{"event": "command", "ms": 1795589816314, "agent": "Jill_0", "command": "!takeFromChest"}
+{"event": "state", "ms": 1795589816438, "agent": "Andy_0", "position": [-14.519755659804638, 65, 6.519296506330627], "inventory": {}}
+{"event": "state", "ms": 1795589816989, "agent": "Jill_0", "position": [-13.38216749097569, 65, 6.491289177362271], "inventory": {"gold_ingot": 8, "apple": 1, "sugar_cane": 12, "bone": 1}}
+{"event": "state", "ms": 1795589817437, "agent": "Andy_0", "position": [-14.519755659804638, 65, 6.519296506330627], "inventory": {}}
+{"event": "state", "ms": 1795589818005, "agent": "Jill_0", "position": [-13.38216749097569, 65, 6.491289177362271], "inventory": {"gold_ingot": 8, "apple": 1, "sugar_cane": 12, "bone": 1}}
+{"event": "model_response", "ms": 1795589818279, "model": "gpt-6-luna", "elapsedMs": 2742, "inputTokens": 634, "outputTokens": 178, "status": "completed"}
+{"event": "state", "ms": 1795589818439, "agent": "Andy_0", "position": [-14.519755659804638, 65, 6.519296506330627], "inventory": {}}
+{"event": "state", "ms": 1795589819006, "agent": "Jill_0", "position": [-13.38216749097569, 65, 6.491289177362271], "inventory": {"gold_ingot": 8, "apple": 1, "sugar_cane": 12, "bone": 1}}
+{"event": "model_response", "ms": 1795589819156, "model": "gpt-6-luna", "elapsedMs": 2209, "inputTokens": 4142, "outputTokens": 136, "status": "completed"}
+{"event": "command", "ms": 1795589819159, "agent": "Jill_0", "command": "!craftRecipe"}
+{"event": "state", "ms": 1795589819440, "agent": "Andy_0", "position": [-14.519755659804638, 65, 6.519296506330627], "inventory": {}}
+{"event": "state", "ms": 1795589820058, "agent": "Jill_0", "position": [-13.38216749097569, 65, 6.491289177362271], "inventory": {"bone_meal": 3, "gold_ingot": 8, "apple": 1, "sugar_cane": 12}}
+{"event": "state", "ms": 1795589820507, "agent": "Andy_0", "position": [-14.519755659804638, 65, 6.519296506330627], "inventory": {}}
+{"event": "model_response", "ms": 1795589820896, "model": "gpt-6-luna", "elapsedMs": 2018, "inputTokens": 3581, "outputTokens": 81, "status": "completed"}
+{"event": "chat_blocked", "ms": 1795589820899, "sender": "Andy_0", "channel": "command"}
+{"event": "state", "ms": 1795589821059, "agent": "Jill_0", "position": [-13.38216749097569, 65, 6.491289177362271], "inventory": {"bone_meal": 3, "gold_ingot": 8, "apple": 1, "sugar_cane": 12}}
+{"event": "state", "ms": 1795589821509, "agent": "Andy_0", "position": [-14.519755659804638, 65, 6.519296506330627], "inventory": {}}
+{"event": "state", "ms": 1795589822059, "agent": "Jill_0", "position": [-13.38216749097569, 65, 6.491289177362271], "inventory": {"bone_meal": 3, "gold_ingot": 8, "apple": 1, "sugar_cane": 12}}
+{"event": "model_response", "ms": 1795589822501, "model": "gpt-6-luna", "elapsedMs": 2539, "inputTokens": 3805, "outputTokens": 146, "status": "completed"}
+{"event": "command", "ms": 1795589822505, "agent": "Jill_0", "command": "!craftRecipe"}
+{"event": "state", "ms": 1795589822510, "agent": "Andy_0", "position": [-14.519755659804638, 65, 6.519296506330627], "inventory": {}}
+{"event": "state", "ms": 1795589823058, "agent": "Jill_0", "position": [-11.499113928181117, 65, 5.427445772906666], "inventory": {"bone_meal": 3, "gold_ingot": 8, "apple": 1, "sugar_cane": 12}}
+{"event": "state", "ms": 1795589823510, "agent": "Andy_0", "position": [-14.519755659804638, 65, 6.519296506330627], "inventory": {}}
+{"event": "model_response", "ms": 1795589823549, "model": "gpt-6-luna", "elapsedMs": 3786, "inputTokens": 872, "outputTokens": 312, "status": "completed"}
+{"event": "state", "ms": 1795589824061, "agent": "Jill_0", "position": [-7.338303735177551, 65, 2.444870735366745], "inventory": {"bone_meal": 3, "gold_ingot": 8, "apple": 1, "sugar_cane": 12}}
+{"event": "state", "ms": 1795589824567, "agent": "Andy_0", "position": [-14.519755659804638, 65, 6.519296506330627], "inventory": {}}
+{"event": "state", "ms": 1795589825061, "agent": "Jill_0", "position": [-2.5771989499366392, 65, 2.500252106483237], "inventory": {"bone_meal": 3, "gold_ingot": 8, "apple": 1, "sugar_cane": 12}}
+{"event": "model_response", "ms": 1795589825224, "model": "gpt-6-luna", "elapsedMs": 3430, "inputTokens": 3645, "outputTokens": 203, "status": "completed"}
+{"event": "command", "ms": 1795589825226, "agent": "Andy_0", "command": "!searchForBlock"}
+{"event": "state", "ms": 1795589825568, "agent": "Andy_0", "position": [-14.519755659804638, 65, 6.519296506330627], "inventory": {}}
+{"event": "state", "ms": 1795589826088, "agent": "Jill_0", "position": [-2.5771989499366392, 65, 2.500252106483237], "inventory": {"bone_meal": 3, "sugar_cane": 9, "paper": 3, "gold_ingot": 8, "apple": 1}}
+{"event": "state", "ms": 1795589826567, "agent": "Andy_0", "position": [-14.519755659804638, 65, 6.519296506330627], "inventory": {}}
+{"event": "model_response", "ms": 1795589827023, "model": "gpt-6-luna", "elapsedMs": 1685, "inputTokens": 3893, "outputTokens": 63, "status": "completed"}
+{"event": "command", "ms": 1795589827026, "agent": "Jill_0", "command": "!craftRecipe"}
+{"event": "state", "ms": 1795589827088, "agent": "Jill_0", "position": [-2.5771989499366392, 65, 2.500252106483237], "inventory": {"bone_meal": 3, "sugar_cane": 8, "paper": 3, "sugar": 1, "gold_ingot": 8, "apple": 1}}
+{"event": "state", "ms": 1795589827584, "agent": "Andy_0", "position": [-14.519755659804638, 65, 6.519296506330627], "inventory": {}}
+{"event": "phase", "ms": 1795589827585, "agent": "Andy_0", "chatOpen": true, "scheduledMs": 1795589827569}
+{"event": "phase", "ms": 1795589827585, "agent": "Jill_0", "chatOpen": true, "scheduledMs": 1795589827569}
+{"event": "state", "ms": 1795589828089, "agent": "Jill_0", "position": [-2.5771989499366392, 65, 2.500252106483237], "inventory": {"bone_meal": 3, "sugar_cane": 8, "paper": 3, "sugar": 1, "gold_ingot": 8, "apple": 1}}
+{"event": "model_response", "ms": 1795589828186, "model": "gpt-6-luna", "elapsedMs": 2920, "inputTokens": 926, "outputTokens": 245, "status": "completed"}
+{"event": "state", "ms": 1795589828585, "agent": "Andy_0", "position": [-14.519755659804638, 65, 6.519296506330627], "inventory": {}}
+{"event": "state", "ms": 1795589829091, "agent": "Jill_0", "position": [-2.5771989499366392, 65, 2.500252106483237], "inventory": {"bone_meal": 3, "sugar_cane": 8, "paper": 3, "sugar": 1, "gold_ingot": 8, "apple": 1}}
+{"event": "state", "ms": 1795589829585, "agent": "Andy_0", "position": [-14.519755659804638, 65, 6.519296506330627], "inventory": {}}
+{"event": "state", "ms": 1795589830091, "agent": "Jill_0", "position": [-2.5771989499366392, 65, 2.500252106483237], "inventory": {"bone_meal": 3, "sugar_cane": 8, "paper": 3, "sugar": 1, "gold_ingot": 8, "apple": 1}}
+{"event": "state", "ms": 1795589830628, "agent": "Andy_0", "position": [-14.519755659804638, 65, 6.519296506330627], "inventory": {}}
+{"event": "model_response", "ms": 1795589830991, "model": "gpt-6-luna", "elapsedMs": 2590, "inputTokens": 3934, "outputTokens": 170, "status": "completed"}
+{"event": "command", "ms": 1795589830994, "agent": "Jill_0", "command": "!searchForBlock"}
+{"event": "state", "ms": 1795589831153, "agent": "Jill_0", "position": [-2.7973751178489414, 65, 2.7384373430247364], "inventory": {"bone_meal": 3, "sugar_cane": 8, "paper": 3, "sugar": 1, "gold_ingot": 8, "apple": 1}}
+{"event": "model_response", "ms": 1795589831390, "model": "gpt-6-luna", "elapsedMs": 2935, "inputTokens": 3192, "outputTokens": 52, "status": "completed"}
+{"event": "command", "ms": 1795589831394, "agent": "Andy_0", "command": "!viewChest"}
+{"event": "state", "ms": 1795589831629, "agent": "Andy_0", "position": [-14.519755659804638, 65, 6.519296506330627], "inventory": {}}
+{"event": "state", "ms": 1795589832154, "agent": "Jill_0", "position": [-6.857967143900644, 65, 5.57018296460682], "inventory": {"bone_meal": 3, "sugar_cane": 8, "paper": 3, "sugar": 1, "gold_ingot": 8, "apple": 1}}
+{"event": "state", "ms": 1795589832630, "agent": "Andy_0", "position": [-14.519755659804638, 65, 6.519296506330627], "inventory": {}}
+{"event": "state", "ms": 1795589833154, "agent": "Jill_0", "position": [-11.584212985312133, 65, 5.499184319630841], "inventory": {"bone_meal": 3, "sugar_cane": 8, "paper": 3, "sugar": 1, "gold_ingot": 8, "apple": 1}}
+{"event": "state", "ms": 1795589833629, "agent": "Andy_0", "position": [-14.519755659804638, 65, 6.519296506330627], "inventory": {}}
+{"event": "state", "ms": 1795589834154, "agent": "Jill_0", "position": [-11.584212985312133, 65, 5.499184319630841], "inventory": {"bone_meal": 3, "sugar_cane": 8, "paper": 3, "sugar": 1, "gold_ingot": 8, "apple": 1}}
+{"event": "state", "ms": 1795589834629, "agent": "Andy_0", "position": [-14.519755659804638, 65, 6.519296506330627], "inventory": {}}
+{"event": "model_response", "ms": 1795589834824, "model": "gpt-6-luna", "elapsedMs": 3642, "inputTokens": 859, "outputTokens": 291, "status": "completed"}
+{"event": "state", "ms": 1795589835154, "agent": "Jill_0", "position": [-11.584212985312133, 65, 5.499184319630841], "inventory": {"bone_meal": 3, "sugar_cane": 8, "paper": 3, "sugar": 1, "gold_ingot": 8, "apple": 1}}
+{"event": "model_response", "ms": 1795589835453, "model": "gpt-6-luna", "elapsedMs": 3497, "inputTokens": 3241, "outputTokens": 265, "status": "completed"}
+{"event": "command", "ms": 1795589835454, "agent": "Andy_0", "command": "!takeFromChest"}
+{"event": "state", "ms": 1795589835630, "agent": "Andy_0", "position": [-14.519755659804638, 65, 6.519296506330627], "inventory": {}}
+{"event": "state", "ms": 1795589836155, "agent": "Jill_0", "position": [-11.584212985312133, 65, 5.499184319630841], "inventory": {"bone_meal": 3, "sugar_cane": 8, "paper": 3, "sugar": 1, "gold_ingot": 8, "apple": 1}}
+{"event": "state", "ms": 1795589836631, "agent": "Andy_0", "position": [-14.519755659804638, 65, 6.519296506330627], "inventory": {"bone": 1}}
+{"event": "model_response", "ms": 1795589836806, "model": "gpt-6-luna", "elapsedMs": 2366, "inputTokens": 3319, "outputTokens": 130, "status": "completed"}
+{"event": "command", "ms": 1795589836808, "agent": "Jill_0", "command": "!startConversation"}
+{"event": "chat", "ms": 1795589836810, "sender": "Jill_0", "receiver": "Andy_0", "message": "I've got my targets: paper, golden apple, sugar, and bone meal. How are your iron and copper items coming along?"}
+{"event": "state", "ms": 1795589837156, "agent": "Jill_0", "position": [-11.584212985312133, 65, 5.499184319630841], "inventory": {"bone_meal": 3, "sugar_cane": 8, "paper": 3, "sugar": 1, "gold_ingot": 8, "apple": 1}}
+{"event": "state", "ms": 1795589837634, "agent": "Andy_0", "position": [-14.519755659804638, 65, 6.519296506330627], "inventory": {"bone": 1}}
+{"event": "state", "ms": 1795589838156, "agent": "Jill_0", "position": [-11.584212985312133, 65, 5.499184319630841], "inventory": {"bone_meal": 3, "sugar_cane": 8, "paper": 3, "sugar": 1, "gold_ingot": 8, "apple": 1}}
+{"event": "state", "ms": 1795589838634, "agent": "Andy_0", "position": [-14.519755659804638, 65, 6.519296506330627], "inventory": {"bone": 1}}
+{"event": "model_response", "ms": 1795589838672, "model": "gpt-6-luna", "elapsedMs": 2312, "inputTokens": 3329, "outputTokens": 145, "status": "completed"}
+{"event": "state", "ms": 1795589839156, "agent": "Jill_0", "position": [-11.584212985312133, 65, 5.499184319630841], "inventory": {"bone_meal": 3, "sugar_cane": 8, "paper": 3, "sugar": 1, "gold_ingot": 8, "apple": 1}}
+{"event": "state", "ms": 1795589839635, "agent": "Andy_0", "position": [-14.519755659804638, 65, 6.519296506330627], "inventory": {"bone": 1}}
+{"event": "state", "ms": 1795589840156, "agent": "Jill_0", "position": [-11.584212985312133, 65, 5.499184319630841], "inventory": {"bone_meal": 3, "sugar_cane": 8, "paper": 3, "sugar": 1, "gold_ingot": 8, "apple": 1}}
+{"event": "state", "ms": 1795589840649, "agent": "Andy_0", "position": [-14.519755659804638, 65, 6.519296506330627], "inventory": {"bone": 1}}
+{"event": "state", "ms": 1795589841156, "agent": "Jill_0", "position": [-11.584212985312133, 65, 5.499184319630841], "inventory": {"bone_meal": 3, "sugar_cane": 8, "paper": 3, "sugar": 1, "gold_ingot": 8, "apple": 1}}
+{"event": "state", "ms": 1795589841649, "agent": "Andy_0", "position": [-14.519755659804638, 65, 6.519296506330627], "inventory": {"bone": 1}}
+{"event": "model_response", "ms": 1795589841761, "model": "gpt-6-luna", "elapsedMs": 2424, "inputTokens": 3422, "outputTokens": 137, "status": "completed"}
+{"event": "chat", "ms": 1795589841766, "sender": "Andy_0", "receiver": "Jill_0", "message": "!craftRecipe(\"bone_meal\", 1)"}
+{"event": "command", "ms": 1795589841766, "agent": "Andy_0", "command": "!craftRecipe"}
+{"event": "state", "ms": 1795589842156, "agent": "Jill_0", "position": [-11.584212985312133, 65, 5.499184319630841], "inventory": {"bone_meal": 3, "sugar_cane": 8, "paper": 3, "sugar": 1, "gold_ingot": 8, "apple": 1}}
+{"event": "state", "ms": 1795589842649, "agent": "Andy_0", "position": [-14.519755659804638, 65, 6.519296506330627], "inventory": {"bone_meal": 3}}
+{"event": "state", "ms": 1795589843156, "agent": "Jill_0", "position": [-11.584212985312133, 65, 5.499184319630841], "inventory": {"bone_meal": 3, "sugar_cane": 8, "paper": 3, "sugar": 1, "gold_ingot": 8, "apple": 1}}
+{"event": "state", "ms": 1795589843685, "agent": "Andy_0", "position": [-14.519755659804638, 65, 6.519296506330627], "inventory": {"bone_meal": 3}}
+{"event": "state", "ms": 1795589844156, "agent": "Jill_0", "position": [-11.584212985312133, 65, 5.499184319630841], "inventory": {"bone_meal": 3, "sugar_cane": 8, "paper": 3, "sugar": 1, "gold_ingot": 8, "apple": 1}}
+{"event": "state", "ms": 1795589844685, "agent": "Andy_0", "position": [-14.519755659804638, 65, 6.519296506330627], "inventory": {"bone_meal": 3}}
+{"event": "state", "ms": 1795589845156, "agent": "Jill_0", "position": [-11.584212985312133, 65, 5.499184319630841], "inventory": {"bone_meal": 3, "sugar_cane": 8, "paper": 3, "sugar": 1, "gold_ingot": 8, "apple": 1}}
+{"event": "model_response", "ms": 1795589845274, "model": "gpt-6-luna", "elapsedMs": 3094, "inputTokens": 679, "outputTokens": 222, "status": "completed"}
+{"event": "state", "ms": 1795589845845, "agent": "Andy_0", "position": [-14.519755659804638, 65, 6.519296506330627], "inventory": {"bone_meal": 3}}
+{"event": "model_response", "ms": 1795589846136, "model": "gpt-6-luna", "elapsedMs": 3766, "inputTokens": 3275, "outputTokens": 291, "status": "completed"}
+{"event": "command", "ms": 1795589846140, "agent": "Andy_0", "command": "!givePlayer"}
+{"event": "chat", "ms": 1795589846141, "sender": "Andy_0", "receiver": "Jill_0", "message": "!givePlayer(\"Jill_0\", \"bone_meal\", 3)"}
+{"event": "state", "ms": 1795589846156, "agent": "Jill_0", "position": [-11.584212985312133, 65, 5.499184319630841], "inventory": {"bone_meal": 3, "sugar_cane": 8, "paper": 3, "sugar": 1, "gold_ingot": 8, "apple": 1}}
+{"event": "state", "ms": 1795589846846, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {}}
+{"event": "state", "ms": 1795589847166, "agent": "Jill_0", "position": [-11.584212985312133, 65, 5.499184319630841], "inventory": {"bone_meal": 3, "sugar_cane": 8, "paper": 3, "sugar": 1, "gold_ingot": 8, "apple": 1}}
+{"event": "phase", "ms": 1795589847569, "agent": "Andy_0", "chatOpen": false, "scheduledMs": 1795589847569}
+{"event": "phase", "ms": 1795589847569, "agent": "Jill_0", "chatOpen": false, "scheduledMs": 1795589847569}
+{"event": "state", "ms": 1795589847847, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {}}
+{"event": "state", "ms": 1795589848166, "agent": "Jill_0", "position": [-11.584212985312133, 65, 5.499184319630841], "inventory": {"bone_meal": 3, "sugar_cane": 8, "paper": 3, "sugar": 1, "gold_ingot": 8, "apple": 1}}
+{"event": "state", "ms": 1795589848987, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {}}
+{"event": "state", "ms": 1795589849166, "agent": "Jill_0", "position": [-11.584212985312133, 65, 5.499184319630841], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "gold_ingot": 8, "apple": 1}}
+{"event": "state", "ms": 1795589849987, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {}}
+{"event": "state", "ms": 1795589850167, "agent": "Jill_0", "position": [-11.584212985312133, 65, 5.499184319630841], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "gold_ingot": 8, "apple": 1}}
+{"event": "state", "ms": 1795589850987, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {}}
+{"event": "state", "ms": 1795589851167, "agent": "Jill_0", "position": [-11.584212985312133, 65, 5.499184319630841], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "gold_ingot": 8, "apple": 1}}
+{"event": "model_response", "ms": 1795589851437, "model": "gpt-6-luna", "elapsedMs": 2523, "inputTokens": 3319, "outputTokens": 163, "status": "completed"}
+{"event": "command", "ms": 1795589851439, "agent": "Andy_0", "command": "!viewChest"}
+{"event": "state", "ms": 1795589851987, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {}}
+{"event": "state", "ms": 1795589852168, "agent": "Jill_0", "position": [-11.584212985312133, 65, 5.499184319630841], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "gold_ingot": 8, "apple": 1}}
+{"event": "state", "ms": 1795589853057, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {}}
+{"event": "state", "ms": 1795589853216, "agent": "Jill_0", "position": [-11.584212985312133, 65, 5.499184319630841], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "gold_ingot": 8, "apple": 1}}
+{"event": "state", "ms": 1795589854058, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {}}
+{"event": "state", "ms": 1795589854216, "agent": "Jill_0", "position": [-11.584212985312133, 65, 5.499184319630841], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "gold_ingot": 8, "apple": 1}}
+{"event": "model_response", "ms": 1795589854833, "model": "gpt-6-luna", "elapsedMs": 1982, "inputTokens": 4007, "outputTokens": 75, "status": "completed"}
+{"event": "command", "ms": 1795589854837, "agent": "Jill_0", "command": "!craftRecipe"}
+{"event": "state", "ms": 1795589855125, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {}}
+{"event": "model_response", "ms": 1795589855129, "model": "gpt-6-luna", "elapsedMs": 2496, "inputTokens": 3388, "outputTokens": 187, "status": "completed"}
+{"event": "command", "ms": 1795589855132, "agent": "Andy_0", "command": "!searchForBlock"}
+{"event": "state", "ms": 1795589855217, "agent": "Jill_0", "position": [-10.229053884051629, 65, 5.499851383971014], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "gold_ingot": 8, "apple": 1}}
+{"event": "state", "ms": 1795589856185, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {}}
+{"event": "state", "ms": 1795589856218, "agent": "Jill_0", "position": [-5.552614280972533, 65, 3.6411620828688105], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "gold_ingot": 8, "apple": 1}}
+{"event": "state", "ms": 1795589857185, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {}}
+{"event": "state", "ms": 1795589857219, "agent": "Jill_0", "position": [-2.5951235843230402, 65, 1.428333966299235], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1}}
+{"event": "model_response", "ms": 1795589857434, "model": "gpt-6-luna", "elapsedMs": 1664, "inputTokens": 3880, "outputTokens": 53, "status": "completed"}
+{"event": "command", "ms": 1795589857438, "agent": "Andy_0", "command": "!searchForBlock"}
+{"event": "state", "ms": 1795589858186, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {}}
+{"event": "state", "ms": 1795589858219, "agent": "Jill_0", "position": [-2.5951235843230402, 65, 1.428333966299235], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1}}
+{"event": "model_response", "ms": 1795589858840, "model": "gpt-6-luna", "elapsedMs": 3267, "inputTokens": 655, "outputTokens": 240, "status": "completed"}
+{"event": "state", "ms": 1795589859219, "agent": "Jill_0", "position": [-2.5951235843230402, 65, 1.428333966299235], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1}}
+{"event": "state", "ms": 1795589859224, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {}}
+{"event": "model_response", "ms": 1795589859305, "model": "gpt-6-luna", "elapsedMs": 3478, "inputTokens": 640, "outputTokens": 282, "status": "completed"}
+{"event": "state", "ms": 1795589860220, "agent": "Jill_0", "position": [-2.5951235843230402, 65, 1.428333966299235], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1}}
+{"event": "state", "ms": 1795589860224, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {}}
+{"event": "state", "ms": 1795589861226, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {}}
+{"event": "state", "ms": 1795589861275, "agent": "Jill_0", "position": [-2.5951235843230402, 65, 1.428333966299235], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1}}
+{"event": "model_response", "ms": 1795589861477, "model": "gpt-6-luna", "elapsedMs": 2703, "inputTokens": 3925, "outputTokens": 113, "status": "completed"}
+{"event": "command", "ms": 1795589861482, "agent": "Jill_0", "command": "!viewChest"}
+{"event": "model_response", "ms": 1795589861712, "model": "gpt-6-luna", "elapsedMs": 2557, "inputTokens": 3921, "outputTokens": 82, "status": "completed"}
+{"event": "state", "ms": 1795589862275, "agent": "Jill_0", "position": [-5.206368417468093, 65, 3.618865925429087], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1}}
+{"event": "state", "ms": 1795589862305, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {}}
+{"event": "state", "ms": 1795589863275, "agent": "Jill_0", "position": [-9.693122104432312, 65, 5.5502531483143915], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1}}
+{"event": "state", "ms": 1795589863305, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {}}
+{"event": "model_response", "ms": 1795589864306, "model": "gpt-6-luna", "elapsedMs": 2099, "inputTokens": 4502, "outputTokens": 78, "status": "completed"}
+{"event": "state", "ms": 1795589864307, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {}}
+{"event": "command", "ms": 1795589864308, "agent": "Andy_0", "command": "!viewChest"}
+{"event": "state", "ms": 1795589864430, "agent": "Jill_0", "position": [-12.381547524188354, 65, 7.398609110844545], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1}}
+{"event": "state", "ms": 1795589865348, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {}}
+{"event": "state", "ms": 1795589865431, "agent": "Jill_0", "position": [-12.381547524188354, 65, 7.398609110844545], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1}}
+{"event": "state", "ms": 1795589866470, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {}}
+{"event": "state", "ms": 1795589866492, "agent": "Jill_0", "position": [-12.381547524188354, 65, 7.398609110844545], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1}}
+{"event": "model_response", "ms": 1795589867182, "model": "gpt-6-luna", "elapsedMs": 2756, "inputTokens": 3967, "outputTokens": 205, "status": "completed"}
+{"event": "chat_blocked", "ms": 1795589867187, "sender": "Jill_0", "channel": "command"}
+{"event": "state", "ms": 1795589867471, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {}}
+{"event": "state", "ms": 1795589867493, "agent": "Jill_0", "position": [-12.381547524188354, 65, 7.398609110844545], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1}}
+{"event": "model_response", "ms": 1795589868383, "model": "gpt-6-luna", "elapsedMs": 3456, "inputTokens": 639, "outputTokens": 285, "status": "completed"}
+{"event": "state", "ms": 1795589868493, "agent": "Jill_0", "position": [-12.381547524188354, 65, 7.398609110844545], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1}}
+{"event": "state", "ms": 1795589868511, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {}}
+{"event": "state", "ms": 1795589869493, "agent": "Jill_0", "position": [-12.381547524188354, 65, 7.398609110844545], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1}}
+{"event": "state", "ms": 1795589869510, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {}}
+{"event": "model_response", "ms": 1795589870013, "model": "gpt-6-luna", "elapsedMs": 2629, "inputTokens": 4050, "outputTokens": 147, "status": "completed"}
+{"event": "command", "ms": 1795589870015, "agent": "Jill_0", "command": "!searchForBlock"}
+{"event": "state", "ms": 1795589870511, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {}}
+{"event": "state", "ms": 1795589870870, "agent": "Jill_0", "position": [-12.381547524188354, 65, 7.398609110844545], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1}}
+{"event": "model_response", "ms": 1795589871364, "model": "gpt-6-luna", "elapsedMs": 3216, "inputTokens": 4373, "outputTokens": 172, "status": "completed"}
+{"event": "command", "ms": 1795589871365, "agent": "Andy_0", "command": "!searchForBlock"}
+{"event": "state", "ms": 1795589871869, "agent": "Jill_0", "position": [-12.381547524188354, 65, 7.398609110844545], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1}}
+{"event": "state", "ms": 1795589872160, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {}}
+{"event": "state", "ms": 1795589872871, "agent": "Jill_0", "position": [-12.381547524188354, 65, 7.398609110844545], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1}}
+{"event": "state", "ms": 1795589873160, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {}}
+{"event": "model_response", "ms": 1795589873471, "model": "gpt-6-luna", "elapsedMs": 2686, "inputTokens": 3878, "outputTokens": 142, "status": "completed"}
+{"event": "command", "ms": 1795589873472, "agent": "Jill_0", "command": "!searchForBlock"}
+{"event": "state", "ms": 1795589874161, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {}}
+{"event": "state", "ms": 1795589874205, "agent": "Jill_0", "position": [-12.381547524188354, 65, 7.398609110844545], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1}}
+{"event": "model_response", "ms": 1795589874614, "model": "gpt-6-luna", "elapsedMs": 2512, "inputTokens": 4428, "outputTokens": 193, "status": "completed"}
+{"event": "command", "ms": 1795589874618, "agent": "Andy_0", "command": "!searchForBlock"}
+{"event": "model_response", "ms": 1795589874906, "model": "gpt-6-luna", "elapsedMs": 4045, "inputTokens": 690, "outputTokens": 306, "status": "completed"}
+{"event": "state", "ms": 1795589875204, "agent": "Jill_0", "position": [-12.381547524188354, 65, 7.398609110844545], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1}}
+{"event": "state", "ms": 1795589875374, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {}}
+{"event": "state", "ms": 1795589876205, "agent": "Jill_0", "position": [-12.381547524188354, 65, 7.398609110844545], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1}}
+{"event": "state", "ms": 1795589876374, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {}}
+{"event": "model_response", "ms": 1795589876410, "model": "gpt-6-luna", "elapsedMs": 2273, "inputTokens": 3920, "outputTokens": 121, "status": "completed"}
+{"event": "command", "ms": 1795589876412, "agent": "Jill_0", "command": "!viewChest"}
+{"event": "state", "ms": 1795589877264, "agent": "Jill_0", "position": [-12.381547524188354, 65, 7.398609110844545], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1}}
+{"event": "state", "ms": 1795589877423, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {}}
+{"event": "model_response", "ms": 1795589878176, "model": "gpt-6-luna", "elapsedMs": 2930, "inputTokens": 912, "outputTokens": 231, "status": "completed"}
+{"event": "state", "ms": 1795589878263, "agent": "Jill_0", "position": [-12.381547524188354, 65, 7.398609110844545], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1}}
+{"event": "state", "ms": 1795589878525, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {}}
+{"event": "state", "ms": 1795589879265, "agent": "Jill_0", "position": [-12.381547524188354, 65, 7.398609110844545], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1}}
+{"event": "state", "ms": 1795589879525, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {}}
+{"event": "model_response", "ms": 1795589879856, "model": "gpt-6-luna", "elapsedMs": 2656, "inputTokens": 3971, "outputTokens": 141, "status": "completed"}
+{"event": "command", "ms": 1795589879860, "agent": "Jill_0", "command": "!searchForBlock"}
+{"event": "state", "ms": 1795589880266, "agent": "Jill_0", "position": [-12.381547524188354, 65, 7.398609110844545], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1}}
+{"event": "state", "ms": 1795589880525, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {}}
+{"event": "state", "ms": 1795589881266, "agent": "Jill_0", "position": [-12.381547524188354, 65, 7.398609110844545], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1}}
+{"event": "model_response", "ms": 1795589881361, "model": "gpt-6-luna", "elapsedMs": 2904, "inputTokens": 3725, "outputTokens": 202, "status": "completed"}
+{"event": "chat_blocked", "ms": 1795589881362, "sender": "Andy_0", "channel": "command"}
+{"event": "state", "ms": 1795589881798, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {}}
+{"event": "state", "ms": 1795589882265, "agent": "Jill_0", "position": [-12.381547524188354, 65, 7.398609110844545], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1}}
+{"event": "model_response", "ms": 1795589882544, "model": "gpt-6-luna", "elapsedMs": 2394, "inputTokens": 3257, "outputTokens": 150, "status": "completed"}
+{"event": "command", "ms": 1795589882547, "agent": "Jill_0", "command": "!moveAway"}
+{"event": "state", "ms": 1795589882800, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {}}
+{"event": "model_response", "ms": 1795589883022, "model": "gpt-6-luna", "elapsedMs": 3039, "inputTokens": 904, "outputTokens": 272, "status": "completed"}
+{"event": "state", "ms": 1795589883266, "agent": "Jill_0", "position": [-10.475907064241962, 65, 6.477272944035077], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1}}
+{"event": "state", "ms": 1795589883836, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {}}
+{"event": "state", "ms": 1795589884267, "agent": "Jill_0", "position": [-5.872747203787328, 65, 4.510478780073926], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1}}
+{"event": "model_response", "ms": 1795589884345, "model": "gpt-6-luna", "elapsedMs": 2705, "inputTokens": 3818, "outputTokens": 158, "status": "completed"}
+{"event": "command", "ms": 1795589884348, "agent": "Andy_0", "command": "!takeFromChest"}
+{"event": "state", "ms": 1795589884879, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {"bone": 2}}
+{"event": "state", "ms": 1795589885266, "agent": "Jill_0", "position": [-0.2966762828246204, 65, 4.411960824971604], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1}}
+{"event": "state", "ms": 1795589885878, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {"bone": 2}}
+{"event": "state", "ms": 1795589886266, "agent": "Jill_0", "position": [3.59760065712867, 65, 0.5144246855718573], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1}}
+{"event": "state", "ms": 1795589886879, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {"bone": 2}}
+{"event": "state", "ms": 1795589887266, "agent": "Jill_0", "position": [6.338978465927751, 65, 0.5095899521176643], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1}}
+{"event": "phase", "ms": 1795589887569, "agent": "Andy_0", "chatOpen": true, "scheduledMs": 1795589887569}
+{"event": "phase", "ms": 1795589887569, "agent": "Jill_0", "chatOpen": true, "scheduledMs": 1795589887569}
+{"event": "model_response", "ms": 1795589887681, "model": "gpt-6-luna", "elapsedMs": 2891, "inputTokens": 3877, "outputTokens": 197, "status": "completed"}
+{"event": "command", "ms": 1795589887687, "agent": "Andy_0", "command": "!searchForBlock"}
+{"event": "state", "ms": 1795589888188, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {"bone": 2}}
+{"event": "state", "ms": 1795589888267, "agent": "Jill_0", "position": [6.338978465927751, 65, 0.5095899521176643], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1}}
+{"event": "state", "ms": 1795589889188, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {"bone": 2}}
+{"event": "state", "ms": 1795589889266, "agent": "Jill_0", "position": [6.338978465927751, 65, 0.5095899521176643], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1}}
+{"event": "model_response", "ms": 1795589889349, "model": "gpt-6-luna", "elapsedMs": 2437, "inputTokens": 3377, "outputTokens": 130, "status": "completed"}
+{"event": "command", "ms": 1795589889353, "agent": "Jill_0", "command": "!searchForBlock"}
+{"event": "state", "ms": 1795589890187, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {"bone": 2}}
+{"event": "state", "ms": 1795589890266, "agent": "Jill_0", "position": [10.215408197986061, 65, -1.5226015200901217], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1}}
+{"event": "model_response", "ms": 1795589890938, "model": "gpt-6-luna", "elapsedMs": 2812, "inputTokens": 853, "outputTokens": 208, "status": "completed"}
+{"event": "state", "ms": 1795589891224, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {"bone": 2}}
+{"event": "state", "ms": 1795589891266, "agent": "Jill_0", "position": [13.369208000250211, 65, -4.373970285694231], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1}}
+{"event": "state", "ms": 1795589892225, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {"bone": 2}}
+{"event": "state", "ms": 1795589892284, "agent": "Jill_0", "position": [13.369208000250211, 65, -4.373970285694231], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1}}
+{"event": "state", "ms": 1795589893226, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {"bone": 2}}
+{"event": "state", "ms": 1795589893285, "agent": "Jill_0", "position": [13.369208000250211, 65, -4.373970285694231], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1}}
+{"event": "model_response", "ms": 1795589893773, "model": "gpt-6-luna", "elapsedMs": 2912, "inputTokens": 3174, "outputTokens": 99, "status": "completed"}
+{"event": "command", "ms": 1795589893776, "agent": "Andy_0", "command": "!viewChest"}
+{"event": "state", "ms": 1795589894226, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {"bone": 2}}
+{"event": "state", "ms": 1795589894285, "agent": "Jill_0", "position": [13.369208000250211, 65, -4.373970285694231], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1}}
+{"event": "model_response", "ms": 1795589895024, "model": "gpt-6-luna", "elapsedMs": 3952, "inputTokens": 682, "outputTokens": 343, "status": "completed"}
+{"event": "state", "ms": 1795589895226, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {"bone": 2}}
+{"event": "state", "ms": 1795589895302, "agent": "Jill_0", "position": [13.369208000250211, 65, -4.373970285694231], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1}}
+{"event": "model_response", "ms": 1795589896106, "model": "gpt-6-luna", "elapsedMs": 1855, "inputTokens": 3216, "outputTokens": 34, "status": "completed"}
+{"event": "command", "ms": 1795589896108, "agent": "Jill_0", "command": "!viewChest"}
+{"event": "state", "ms": 1795589896227, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {"bone": 2}}
+{"event": "state", "ms": 1795589896303, "agent": "Jill_0", "position": [13.765727551083707, 65, -4.768419081507801], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1}}
+{"event": "state", "ms": 1795589897324, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {"bone": 2}}
+{"event": "model_response", "ms": 1795589897325, "model": "gpt-6-luna", "elapsedMs": 2599, "inputTokens": 3214, "outputTokens": 106, "status": "completed"}
+{"event": "command", "ms": 1795589897333, "agent": "Andy_0", "command": "!craftRecipe"}
+{"event": "state", "ms": 1795589897453, "agent": "Jill_0", "position": [14.329721091001046, 65, -5.329937718041016], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1}}
+{"event": "state", "ms": 1795589898325, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {"bone": 1, "bone_meal": 3}}
+{"event": "state", "ms": 1795589898467, "agent": "Jill_0", "position": [14.329721091001046, 65, -5.329937718041016], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1}}
+{"event": "state", "ms": 1795589899351, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {"bone": 1, "bone_meal": 3}}
+{"event": "state", "ms": 1795589899465, "agent": "Jill_0", "position": [14.329721091001046, 65, -5.329937718041016], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1}}
+{"event": "model_response", "ms": 1795589899523, "model": "gpt-6-luna", "elapsedMs": 1784, "inputTokens": 3154, "outputTokens": 59, "status": "completed"}
+{"event": "command", "ms": 1795589899526, "agent": "Andy_0", "command": "!searchForBlock"}
+{"event": "model_response", "ms": 1795589900087, "model": "gpt-6-luna", "elapsedMs": 2637, "inputTokens": 3274, "outputTokens": 174, "status": "completed"}
+{"event": "command", "ms": 1795589900090, "agent": "Jill_0", "command": "!takeFromChest"}
+{"event": "state", "ms": 1795589900371, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {"bone": 1, "bone_meal": 3}}
+{"event": "state", "ms": 1795589900465, "agent": "Jill_0", "position": [14.329721091001046, 65, -5.329937718041016], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1}}
+{"event": "model_response", "ms": 1795589900925, "model": "gpt-6-luna", "elapsedMs": 3369, "inputTokens": 634, "outputTokens": 244, "status": "completed"}
+{"event": "state", "ms": 1795589901371, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {"bone": 1, "bone_meal": 3}}
+{"event": "state", "ms": 1795589901465, "agent": "Jill_0", "position": [14.329721091001046, 65, -5.329937718041016], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "iron_ingot": 11}}
+{"event": "state", "ms": 1795589902384, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {"bone": 1, "bone_meal": 3}}
+{"event": "state", "ms": 1795589902466, "agent": "Jill_0", "position": [14.329721091001046, 65, -5.329937718041016], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "iron_ingot": 11}}
+{"event": "model_response", "ms": 1795589902750, "model": "gpt-6-luna", "elapsedMs": 1884, "inputTokens": 3381, "outputTokens": 55, "status": "completed"}
+{"event": "command", "ms": 1795589902755, "agent": "Jill_0", "command": "!takeFromChest"}
+{"event": "state", "ms": 1795589903385, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {"bone": 1, "bone_meal": 3}}
+{"event": "state", "ms": 1795589903466, "agent": "Jill_0", "position": [14.329721091001046, 65, -5.329937718041016], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "iron_ingot": 11, "copper_ingot": 12}}
+{"event": "state", "ms": 1795589904385, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {"bone": 1, "bone_meal": 3}}
+{"event": "state", "ms": 1795589904467, "agent": "Jill_0", "position": [14.329721091001046, 65, -5.329937718041016], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "iron_ingot": 11, "copper_ingot": 12}}
+{"event": "model_response", "ms": 1795589904923, "model": "gpt-6-luna", "elapsedMs": 4135, "inputTokens": 3149, "outputTokens": 195, "status": "completed"}
+{"event": "command", "ms": 1795589904925, "agent": "Andy_0", "command": "!searchForBlock"}
+{"event": "state", "ms": 1795589905386, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {"bone": 1, "bone_meal": 3}}
+{"event": "state", "ms": 1795589905467, "agent": "Jill_0", "position": [14.329721091001046, 65, -5.329937718041016], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "iron_ingot": 11, "copper_ingot": 12}}
+{"event": "state", "ms": 1795589906406, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {"bone": 1, "bone_meal": 3}}
+{"event": "state", "ms": 1795589906468, "agent": "Jill_0", "position": [14.329721091001046, 65, -5.329937718041016], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "iron_ingot": 11, "copper_ingot": 12}}
+{"event": "model_response", "ms": 1795589906744, "model": "gpt-6-luna", "elapsedMs": 2936, "inputTokens": 3315, "outputTokens": 186, "status": "completed"}
+{"event": "command", "ms": 1795589906747, "agent": "Jill_0", "command": "!craftRecipe"}
+{"event": "model_response", "ms": 1795589906945, "model": "gpt-6-luna", "elapsedMs": 3135, "inputTokens": 646, "outputTokens": 262, "status": "completed"}
+{"event": "state", "ms": 1795589907406, "agent": "Andy_0", "position": [-13.438095660522206, 65, 6.503289341724203], "inventory": {"bone": 1, "bone_meal": 3}}
+{"event": "state", "ms": 1795589907468, "agent": "Jill_0", "position": [11.7141848418778, 65, -3.8711172422614366], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "iron_ingot": 11, "copper_ingot": 12}}
+{"event": "model_response", "ms": 1795589907542, "model": "gpt-6-luna", "elapsedMs": 2395, "inputTokens": 3247, "outputTokens": 176, "status": "completed"}
+{"event": "command", "ms": 1795589907545, "agent": "Andy_0", "command": "!moveAway"}
+{"event": "phase", "ms": 1795589907569, "agent": "Jill_0", "chatOpen": false, "scheduledMs": 1795589907569}
+{"event": "phase", "ms": 1795589907779, "agent": "Andy_0", "chatOpen": false, "scheduledMs": 1795589907569}
+{"event": "state", "ms": 1795589908425, "agent": "Andy_0", "position": [-14.61131312262624, 65, 4.354072787532247], "inventory": {"bone": 1, "bone_meal": 3}}
+{"event": "state", "ms": 1795589908468, "agent": "Jill_0", "position": [6.9330397409473585, 65, -1.5138537338958866], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "iron_ingot": 11, "copper_ingot": 12}}
+{"event": "state", "ms": 1795589909488, "agent": "Andy_0", "position": [-14.711614549456742, 65, 4.761376138890568], "inventory": {"bone": 1, "bone_meal": 3}}
+{"event": "state", "ms": 1795589909698, "agent": "Jill_0", "position": [3.566460450350112, 65, -1.5001798018486845], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "iron_ingot": 2, "copper_ingot": 12, "iron_block": 1}}
+{"event": "state", "ms": 1795589910488, "agent": "Andy_0", "position": [-10.932473866493424, 65, 5.062829314253057], "inventory": {"bone": 1, "bone_meal": 3}}
+{"event": "state", "ms": 1795589910698, "agent": "Jill_0", "position": [3.566460450350112, 65, -1.5001798018486845], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "iron_ingot": 2, "copper_ingot": 12, "iron_block": 1}}
+{"event": "state", "ms": 1795589911491, "agent": "Andy_0", "position": [-5.824100908555458, 65, 3.5054964079199378], "inventory": {"bone": 1, "bone_meal": 3}}
+{"event": "state", "ms": 1795589911698, "agent": "Jill_0", "position": [3.566460450350112, 65, -1.5001798018486845], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "iron_ingot": 2, "copper_ingot": 12, "iron_block": 1}}
+{"event": "model_response", "ms": 1795589911800, "model": "gpt-6-luna", "elapsedMs": 2155, "inputTokens": 3445, "outputTokens": 112, "status": "completed"}
+{"event": "command", "ms": 1795589911803, "agent": "Jill_0", "command": "!craftRecipe"}
+{"event": "state", "ms": 1795589912491, "agent": "Andy_0", "position": [-0.49252122900065437, 65, 3.5001599869208393], "inventory": {"bone": 1, "bone_meal": 3}}
+{"event": "state", "ms": 1795589912699, "agent": "Jill_0", "position": [3.566460450350112, 65, -1.5001798018486845], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "iron_ingot": 2, "copper_ingot": 3, "iron_block": 1, "copper_block": 1}}
+{"event": "state", "ms": 1795589913491, "agent": "Andy_0", "position": [5.119815768593594, 65, 3.5001599869200932], "inventory": {"bone": 1, "bone_meal": 3}}
+{"event": "state", "ms": 1795589913747, "agent": "Jill_0", "position": [3.566460450350112, 65, -1.5001798018486845], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "iron_ingot": 2, "copper_ingot": 3, "iron_block": 1, "copper_block": 1}}
+{"event": "state", "ms": 1795589914492, "agent": "Andy_0", "position": [9.98764766406324, 65, 2.2779198699899856], "inventory": {"bone": 1, "bone_meal": 3}}
+{"event": "model_response", "ms": 1795589914662, "model": "gpt-6-luna", "elapsedMs": 2170, "inputTokens": 3493, "outputTokens": 77, "status": "completed"}
+{"event": "command", "ms": 1795589914665, "agent": "Jill_0", "command": "!craftRecipe"}
+{"event": "state", "ms": 1795589914747, "agent": "Jill_0", "position": [3.566460450350112, 65, -1.5001798018486845], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "heavy_weighted_pressure_plate": 1, "copper_ingot": 3, "iron_block": 1, "copper_block": 1}}
+{"event": "state", "ms": 1795589915492, "agent": "Andy_0", "position": [14.321015542348881, 65, -0.11561429131802575], "inventory": {"bone": 1, "bone_meal": 3}}
+{"event": "state", "ms": 1795589915747, "agent": "Jill_0", "position": [3.566460450350112, 65, -1.5001798018486845], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "heavy_weighted_pressure_plate": 1, "copper_ingot": 3, "iron_block": 1, "copper_block": 1}}
+{"event": "state", "ms": 1795589916493, "agent": "Andy_0", "position": [18.360954419637903, 65, -4.360247007574879], "inventory": {"bone": 1, "bone_meal": 3}}
+{"event": "state", "ms": 1795589916756, "agent": "Jill_0", "position": [3.566460450350112, 65, -1.5001798018486845], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "heavy_weighted_pressure_plate": 1, "copper_ingot": 3, "iron_block": 1, "copper_block": 1}}
+{"event": "model_response", "ms": 1795589917375, "model": "gpt-6-luna", "elapsedMs": 1886, "inputTokens": 3306, "outputTokens": 35, "status": "completed"}
+{"event": "command", "ms": 1795589917379, "agent": "Jill_0", "command": "!craftRecipe"}
+{"event": "state", "ms": 1795589917494, "agent": "Andy_0", "position": [22.13104340982762, 65, -8.13034869942594], "inventory": {"bone": 1, "bone_meal": 3}}
+{"event": "state", "ms": 1795589917757, "agent": "Jill_0", "position": [3.566460450350112, 65, -1.5001798018486845], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "heavy_weighted_pressure_plate": 1, "copper_ingot": 3, "iron_block": 1, "copper_block": 1}}
+{"event": "model_response", "ms": 1795589918245, "model": "gpt-6-luna", "elapsedMs": 2923, "inputTokens": 734, "outputTokens": 296, "status": "completed"}
+{"event": "state", "ms": 1795589918495, "agent": "Andy_0", "position": [23.519789803133936, 65, -9.519566778578632], "inventory": {"bone": 1, "bone_meal": 3}}
+{"event": "state", "ms": 1795589918756, "agent": "Jill_0", "position": [3.566460450350112, 65, -1.5001798018486845], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "heavy_weighted_pressure_plate": 1, "lightning_rod": 1, "iron_block": 1, "copper_block": 1}}
+{"event": "state", "ms": 1795589919495, "agent": "Andy_0", "position": [23.519789803133936, 65, -9.519566778578632], "inventory": {"bone": 1, "bone_meal": 3}}
+{"event": "state", "ms": 1795589919756, "agent": "Jill_0", "position": [3.566460450350112, 65, -1.5001798018486845], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "heavy_weighted_pressure_plate": 1, "lightning_rod": 1, "iron_block": 1, "copper_block": 1}}
+{"event": "model_response", "ms": 1795589920466, "model": "gpt-6-luna", "elapsedMs": 1981, "inputTokens": 3350, "outputTokens": 99, "status": "completed"}
+{"event": "command", "ms": 1795589920470, "agent": "Jill_0", "command": "!givePlayer"}
+{"event": "model_response", "ms": 1795589920474, "model": "gpt-6-luna", "elapsedMs": 2674, "inputTokens": 626, "outputTokens": 233, "status": "completed"}
+{"event": "state", "ms": 1795589920496, "agent": "Andy_0", "position": [23.519789803133936, 65, -9.519566778578632], "inventory": {"bone": 1, "bone_meal": 3}}
+{"event": "state", "ms": 1795589920826, "agent": "Jill_0", "position": [4.648438986626171, 65, -1.500179801848871], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "heavy_weighted_pressure_plate": 1, "lightning_rod": 1, "iron_block": 1, "copper_block": 1}}
+{"event": "state", "ms": 1795589921495, "agent": "Andy_0", "position": [23.519789803133936, 65, -9.519566778578632], "inventory": {"bone": 1, "bone_meal": 3}}
+{"event": "state", "ms": 1795589921827, "agent": "Jill_0", "position": [10.257097385499895, 65, -2.1010787608338024], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "heavy_weighted_pressure_plate": 1, "lightning_rod": 1, "iron_block": 1, "copper_block": 1}}
+{"event": "state", "ms": 1795589922536, "agent": "Andy_0", "position": [23.519789803133936, 65, -9.519566778578632], "inventory": {"bone": 1, "bone_meal": 3}}
+{"event": "state", "ms": 1795589922828, "agent": "Jill_0", "position": [14.269677832220243, 65, -5.641243099503585], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "heavy_weighted_pressure_plate": 1, "lightning_rod": 1, "iron_block": 1, "copper_block": 1}}
+{"event": "model_response", "ms": 1795589923337, "model": "gpt-6-luna", "elapsedMs": 2367, "inputTokens": 3186, "outputTokens": 143, "status": "completed"}
+{"event": "chat_blocked", "ms": 1795589923339, "sender": "Andy_0", "channel": "command"}
+{"event": "state", "ms": 1795589923535, "agent": "Andy_0", "position": [23.519789803133936, 65, -9.519566778578632], "inventory": {"bone": 1, "bone_meal": 3}}
+{"event": "state", "ms": 1795589923829, "agent": "Jill_0", "position": [19.250915676095282, 65, -6.518538292125537], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "heavy_weighted_pressure_plate": 1, "lightning_rod": 1, "iron_block": 1, "copper_block": 1}}
+{"event": "state", "ms": 1795589924536, "agent": "Andy_0", "position": [23.519789803133936, 65, -9.519566778578632], "inventory": {"bone": 1, "bone_meal": 3}}
+{"event": "state", "ms": 1795589924829, "agent": "Jill_0", "position": [21.5512926996058, 65, -7.5295539609434785], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "heavy_weighted_pressure_plate": 1, "lightning_rod": 1, "copper_block": 1}}
+{"event": "model_response", "ms": 1795589925362, "model": "gpt-6-luna", "elapsedMs": 1399, "inputTokens": 3325, "outputTokens": 32, "status": "completed"}
+{"event": "command", "ms": 1795589925365, "agent": "Andy_0", "command": "!searchForBlock"}
+{"event": "state", "ms": 1795589925827, "agent": "Jill_0", "position": [21.5512926996058, 65, -7.5295539609434785], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "heavy_weighted_pressure_plate": 1, "lightning_rod": 1, "copper_block": 1}}
+{"event": "state", "ms": 1795589925891, "agent": "Andy_0", "position": [23.519789803133936, 65, -9.519566778578632], "inventory": {"bone": 1, "bone_meal": 3}}
+{"event": "state", "ms": 1795589926829, "agent": "Jill_0", "position": [21.5512926996058, 65, -7.5295539609434785], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "heavy_weighted_pressure_plate": 1, "lightning_rod": 1, "copper_block": 1}}
+{"event": "state", "ms": 1795589926979, "agent": "Andy_0", "position": [23.519789803133936, 65, -9.519566778578632], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1}}
+{"event": "state", "ms": 1795589927837, "agent": "Jill_0", "position": [21.5512926996058, 65, -7.5295539609434785], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "heavy_weighted_pressure_plate": 1, "lightning_rod": 1, "copper_block": 1}}
+{"event": "state", "ms": 1795589927996, "agent": "Andy_0", "position": [23.519789803133936, 65, -9.519566778578632], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1}}
+{"event": "model_response", "ms": 1795589928216, "model": "gpt-6-luna", "elapsedMs": 1681, "inputTokens": 3408, "outputTokens": 48, "status": "completed"}
+{"event": "command", "ms": 1795589928219, "agent": "Jill_0", "command": "!givePlayer"}
+{"event": "state", "ms": 1795589928835, "agent": "Jill_0", "position": [21.5512926996058, 65, -7.5295539609434785], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "heavy_weighted_pressure_plate": 1, "lightning_rod": 1}}
+{"event": "state", "ms": 1795589928996, "agent": "Andy_0", "position": [23.519789803133936, 65, -9.519566778578632], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1}}
+{"event": "model_response", "ms": 1795589929129, "model": "gpt-6-luna", "elapsedMs": 2152, "inputTokens": 3374, "outputTokens": 93, "status": "completed"}
+{"event": "command", "ms": 1795589929134, "agent": "Andy_0", "command": "!moveAway"}
+{"event": "state", "ms": 1795589929836, "agent": "Jill_0", "position": [21.5512926996058, 65, -7.5295539609434785], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "heavy_weighted_pressure_plate": 1, "lightning_rod": 1}}
+{"event": "state", "ms": 1795589929997, "agent": "Andy_0", "position": [21.613637876739634, 65, -9.583082704828978], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1}}
+{"event": "state", "ms": 1795589930837, "agent": "Jill_0", "position": [21.5512926996058, 65, -7.5295539609434785], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "heavy_weighted_pressure_plate": 1, "lightning_rod": 1}}
+{"event": "state", "ms": 1795589930997, "agent": "Andy_0", "position": [16.57227525633589, 65, -8.425174993485388], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1}}
+{"event": "state", "ms": 1795589931837, "agent": "Jill_0", "position": [21.5512926996058, 65, -7.5295539609434785], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "heavy_weighted_pressure_plate": 1, "lightning_rod": 1}}
+{"event": "state", "ms": 1795589931998, "agent": "Andy_0", "position": [11.759360042798427, 65, -6.912656234629216], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1}}
+{"event": "state", "ms": 1795589932838, "agent": "Jill_0", "position": [21.5512926996058, 65, -7.5295539609434785], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "heavy_weighted_pressure_plate": 1, "lightning_rod": 1}}
+{"event": "state", "ms": 1795589933000, "agent": "Andy_0", "position": [7.607952264206061, 65, -4.5853215192723376], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1}}
+{"event": "state", "ms": 1795589933838, "agent": "Jill_0", "position": [22.498639979954547, 65, -8.4985692336076], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "heavy_weighted_pressure_plate": 1, "lightning_rod": 1}}
+{"event": "model_response", "ms": 1795589933888, "model": "gpt-6-luna", "elapsedMs": 2597, "inputTokens": 706, "outputTokens": 293, "status": "completed"}
+{"event": "state", "ms": 1795589934000, "agent": "Andy_0", "position": [2.9200558064099638, 65, -2.5143881098336345], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1}}
+{"event": "state", "ms": 1795589934838, "agent": "Jill_0", "position": [23.483938982334827, 65, -9.485464125287272], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "heavy_weighted_pressure_plate": 1, "lightning_rod": 1, "copper_block": 1}}
+{"event": "state", "ms": 1795589935017, "agent": "Andy_0", "position": [-2.9720259553769606, 65, -2.5000473557434337], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1}}
+{"event": "state", "ms": 1795589935839, "agent": "Jill_0", "position": [23.483938982334827, 65, -9.485464125287272], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "heavy_weighted_pressure_plate": 1, "lightning_rod": 1, "copper_block": 1}}
+{"event": "state", "ms": 1795589936016, "agent": "Andy_0", "position": [-7.328889904033965, 65, 0.31454195015929076], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1}}
+{"event": "model_response", "ms": 1795589936116, "model": "gpt-6-luna", "elapsedMs": 1669, "inputTokens": 3278, "outputTokens": 83, "status": "completed"}
+{"event": "state", "ms": 1795589936838, "agent": "Jill_0", "position": [23.483938982334827, 65, -9.485464125287272], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "heavy_weighted_pressure_plate": 1, "lightning_rod": 1, "copper_block": 1}}
+{"event": "state", "ms": 1795589937017, "agent": "Andy_0", "position": [-11.289890696883138, 65, 4.289888912542606], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1}}
+{"event": "state", "ms": 1795589937840, "agent": "Jill_0", "position": [23.483938982334827, 65, -9.485464125287272], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "heavy_weighted_pressure_plate": 1, "lightning_rod": 1, "copper_block": 1}}
+{"event": "state", "ms": 1795589938017, "agent": "Andy_0", "position": [-15.29158770221933, 65, 6.8763155596240475], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1}}
+{"event": "state", "ms": 1795589938841, "agent": "Jill_0", "position": [23.483938982334827, 65, -9.485464125287272], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "heavy_weighted_pressure_plate": 1, "lightning_rod": 1, "copper_block": 1}}
+{"event": "state", "ms": 1795589939018, "agent": "Andy_0", "position": [-18.842695526918995, 65, 10.844317578927795], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1}}
+{"event": "state", "ms": 1795589939842, "agent": "Jill_0", "position": [23.483938982334827, 65, -9.485464125287272], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "heavy_weighted_pressure_plate": 1, "lightning_rod": 1, "copper_block": 1}}
+{"event": "state", "ms": 1795589940018, "agent": "Andy_0", "position": [-21.451673146521582, 65, 12.573554549208172], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1}}
+{"event": "state", "ms": 1795589940841, "agent": "Jill_0", "position": [23.483938982334827, 65, -9.485464125287272], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "heavy_weighted_pressure_plate": 1, "lightning_rod": 1, "copper_block": 1}}
+{"event": "state", "ms": 1795589941020, "agent": "Andy_0", "position": [-21.451673146521582, 65, 12.573554549208172], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1}}
+{"event": "state", "ms": 1795589941984, "agent": "Jill_0", "position": [23.483938982334827, 65, -9.485464125287272], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "heavy_weighted_pressure_plate": 1, "lightning_rod": 1, "copper_block": 1}}
+{"event": "state", "ms": 1795589942183, "agent": "Andy_0", "position": [-21.451673146521582, 65, 12.573554549208172], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1}}
+{"event": "model_response", "ms": 1795589942203, "model": "gpt-6-luna", "elapsedMs": 1629, "inputTokens": 3903, "outputTokens": 36, "status": "completed"}
+{"event": "command", "ms": 1795589942205, "agent": "Jill_0", "command": "!inventory"}
+{"event": "state", "ms": 1795589942985, "agent": "Jill_0", "position": [23.483938982334827, 65, -9.485464125287272], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "heavy_weighted_pressure_plate": 1, "lightning_rod": 1, "copper_block": 1}}
+{"event": "state", "ms": 1795589943202, "agent": "Andy_0", "position": [-21.451673146521582, 65, 12.573554549208172], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1}}
+{"event": "model_response", "ms": 1795589943324, "model": "gpt-6-luna", "elapsedMs": 3774, "inputTokens": 640, "outputTokens": 334, "status": "completed"}
+{"event": "state", "ms": 1795589943988, "agent": "Jill_0", "position": [23.483938982334827, 65, -9.485464125287272], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "heavy_weighted_pressure_plate": 1, "lightning_rod": 1, "copper_block": 1}}
+{"event": "state", "ms": 1795589944203, "agent": "Andy_0", "position": [-21.451673146521582, 65, 12.573554549208172], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1}}
+{"event": "state", "ms": 1795589944989, "agent": "Jill_0", "position": [23.483938982334827, 65, -9.485464125287272], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "heavy_weighted_pressure_plate": 1, "lightning_rod": 1, "copper_block": 1}}
+{"event": "model_response", "ms": 1795589945041, "model": "gpt-6-luna", "elapsedMs": 2293, "inputTokens": 3228, "outputTokens": 70, "status": "completed"}
+{"event": "command", "ms": 1795589945042, "agent": "Andy_0", "command": "!searchForBlock"}
+{"event": "state", "ms": 1795589945210, "agent": "Andy_0", "position": [-21.367172084303782, 65, 12.47821125763714], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1}}
+{"event": "model_response", "ms": 1795589945216, "model": "gpt-6-luna", "elapsedMs": 1624, "inputTokens": 3987, "outputTokens": 73, "status": "completed"}
+{"event": "command", "ms": 1795589945219, "agent": "Jill_0", "command": "!givePlayer"}
+{"event": "state", "ms": 1795589945990, "agent": "Jill_0", "position": [20.31783548353138, 65, -8.507954407261842], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "heavy_weighted_pressure_plate": 1, "lightning_rod": 1, "copper_block": 1}}
+{"event": "state", "ms": 1795589946511, "agent": "Andy_0", "position": [-17.555826300089166, 65, 9.426652418256854], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1}}
+{"event": "state", "ms": 1795589946990, "agent": "Jill_0", "position": [16.030923741818366, 65, -5.361241536896638], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "heavy_weighted_pressure_plate": 1, "lightning_rod": 1, "copper_block": 1}}
+{"event": "state", "ms": 1795589947514, "agent": "Andy_0", "position": [-17.555826300089166, 65, 9.426652418256854], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1}}
+{"event": "phase", "ms": 1795589947568, "agent": "Jill_0", "chatOpen": true, "scheduledMs": 1795589947569}
+{"event": "phase", "ms": 1795589947568, "agent": "Andy_0", "chatOpen": true, "scheduledMs": 1795589947569}
+{"event": "state", "ms": 1795589947995, "agent": "Jill_0", "position": [10.77232454998417, 65, -5.500510716790598], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "heavy_weighted_pressure_plate": 1, "lightning_rod": 1, "copper_block": 1}}
+{"event": "model_response", "ms": 1795589948317, "model": "gpt-6-luna", "elapsedMs": 1811, "inputTokens": 3293, "outputTokens": 29, "status": "completed"}
+{"event": "command", "ms": 1795589948396, "agent": "Andy_0", "command": "!viewChest"}
+{"event": "state", "ms": 1795589948515, "agent": "Andy_0", "position": [-17.555826300089166, 65, 9.426652418256854], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1}}
+{"event": "state", "ms": 1795589948995, "agent": "Jill_0", "position": [5.466417314665029, 65, -4.502548914951069], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "heavy_weighted_pressure_plate": 1, "lightning_rod": 1, "copper_block": 1}}
+{"event": "state", "ms": 1795589949515, "agent": "Andy_0", "position": [-15.512265334891945, 65, 8.4358171731306], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1}}
+{"event": "state", "ms": 1795589949995, "agent": "Jill_0", "position": [1.4138208593117028, 65, -1.4101059325771568], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "heavy_weighted_pressure_plate": 1, "lightning_rod": 1, "copper_block": 1}}
+{"event": "model_response", "ms": 1795589950006, "model": "gpt-6-luna", "elapsedMs": 3701, "inputTokens": 644, "outputTokens": 291, "status": "completed"}
+{"event": "state", "ms": 1795589950522, "agent": "Andy_0", "position": [-15.512265334891945, 65, 8.4358171731306], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1}}
+{"event": "state", "ms": 1795589950996, "agent": "Jill_0", "position": [-2.0081973107130944, 65, 0.9326903225545973], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "heavy_weighted_pressure_plate": 1, "lightning_rod": 1, "copper_block": 1}}
+{"event": "state", "ms": 1795589951523, "agent": "Andy_0", "position": [-15.512265334891945, 65, 8.4358171731306], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1}}
+{"event": "state", "ms": 1795589951996, "agent": "Jill_0", "position": [-5.796500334297996, 65, 3.759306203682957], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "heavy_weighted_pressure_plate": 1, "lightning_rod": 1, "copper_block": 1}}
+{"event": "model_response", "ms": 1795589952118, "model": "gpt-6-luna", "elapsedMs": 2617, "inputTokens": 3346, "outputTokens": 114, "status": "completed"}
+{"event": "command", "ms": 1795589952120, "agent": "Andy_0", "command": "!searchForBlock"}
+{"event": "state", "ms": 1795589952921, "agent": "Andy_0", "position": [-15.512265334891945, 65, 8.4358171731306], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1}}
+{"event": "state", "ms": 1795589952997, "agent": "Jill_0", "position": [-10.161288554345079, 65, 7.167386615260863], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "heavy_weighted_pressure_plate": 1, "lightning_rod": 1, "copper_block": 1}}
+{"event": "state", "ms": 1795589953922, "agent": "Andy_0", "position": [-15.512265334891945, 65, 8.4358171731306], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1}}
+{"event": "state", "ms": 1795589953997, "agent": "Jill_0", "position": [-12.382247422035238, 65, 8.569184371315162], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "heavy_weighted_pressure_plate": 1, "lightning_rod": 1}}
+{"event": "state", "ms": 1795589954922, "agent": "Andy_0", "position": [-15.512265334891945, 65, 8.4358171731306], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1}}
+{"event": "state", "ms": 1795589954997, "agent": "Jill_0", "position": [-12.382247422035238, 65, 8.569184371315162], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "heavy_weighted_pressure_plate": 1, "lightning_rod": 1}}
+{"event": "state", "ms": 1795589955999, "agent": "Jill_0", "position": [-12.382247422035238, 65, 8.569184371315162], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "heavy_weighted_pressure_plate": 1, "lightning_rod": 1}}
+{"event": "state", "ms": 1795589956176, "agent": "Andy_0", "position": [-15.512265334891945, 65, 8.4358171731306], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1, "copper_block": 1}}
+{"event": "model_response", "ms": 1795589956480, "model": "gpt-6-luna", "elapsedMs": 3661, "inputTokens": 714, "outputTokens": 321, "status": "completed"}
+{"event": "state", "ms": 1795589957000, "agent": "Jill_0", "position": [-12.382247422035238, 65, 8.569184371315162], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "heavy_weighted_pressure_plate": 1, "lightning_rod": 1}}
+{"event": "state", "ms": 1795589957176, "agent": "Andy_0", "position": [-15.512265334891945, 65, 8.4358171731306], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1, "copper_block": 1}}
+{"event": "model_response", "ms": 1795589957886, "model": "gpt-6-luna", "elapsedMs": 1978, "inputTokens": 3881, "outputTokens": 76, "status": "completed"}
+{"event": "command", "ms": 1795589957889, "agent": "Jill_0", "command": "!givePlayer"}
+{"event": "state", "ms": 1795589958000, "agent": "Jill_0", "position": [-12.382247422035238, 65, 8.569184371315162], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "lightning_rod": 1}}
+{"event": "state", "ms": 1795589958177, "agent": "Andy_0", "position": [-15.512265334891945, 65, 8.4358171731306], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1, "copper_block": 1}}
+{"event": "model_response", "ms": 1795589958207, "model": "gpt-6-luna", "elapsedMs": 2096, "inputTokens": 3178, "outputTokens": 107, "status": "completed"}
+{"event": "command", "ms": 1795589958210, "agent": "Andy_0", "command": "!startConversation"}
+{"event": "chat", "ms": 1795589958213, "sender": "Andy_0", "receiver": "Jill_0", "message": "I still can't find sugar cane nearby. Have you found any? I have bone meal and a bone if you need them."}
+{"event": "state", "ms": 1795589959136, "agent": "Jill_0", "position": [-12.382247422035238, 65, 8.569184371315162], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "lightning_rod": 1}}
+{"event": "state", "ms": 1795589959219, "agent": "Andy_0", "position": [-15.512265334891945, 65, 8.4358171731306], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1, "copper_block": 1}}
+{"event": "state", "ms": 1795589960136, "agent": "Jill_0", "position": [-12.382247422035238, 65, 8.569184371315162], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "lightning_rod": 1}}
+{"event": "state", "ms": 1795589960219, "agent": "Andy_0", "position": [-15.512265334891945, 65, 8.4358171731306], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1, "copper_block": 1, "heavy_weighted_pressure_plate": 1}}
+{"event": "state", "ms": 1795589961138, "agent": "Jill_0", "position": [-12.382247422035238, 65, 8.569184371315162], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "lightning_rod": 1}}
+{"event": "state", "ms": 1795589961219, "agent": "Andy_0", "position": [-15.512265334891945, 65, 8.4358171731306], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1, "copper_block": 1, "heavy_weighted_pressure_plate": 1}}
+{"event": "state", "ms": 1795589962220, "agent": "Jill_0", "position": [-12.382247422035238, 65, 8.569184371315162], "inventory": {"bone_meal": 6, "sugar_cane": 8, "paper": 3, "sugar": 1, "golden_apple": 1, "lightning_rod": 1}}
+{"event": "state", "ms": 1795589962300, "agent": "Andy_0", "position": [-15.512265334891945, 65, 8.4358171731306], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1, "copper_block": 1, "heavy_weighted_pressure_plate": 1}}
+{"event": "model_response", "ms": 1795589962531, "model": "gpt-6-luna", "elapsedMs": 3487, "inputTokens": 3935, "outputTokens": 223, "status": "completed"}
+{"event": "command", "ms": 1795589962569, "agent": "Jill_0", "command": "!givePlayer"}
+{"event": "chat", "ms": 1795589962569, "sender": "Jill_0", "receiver": "Andy_0", "message": "I have 8 sugar cane. I\u2019ll give you 3. !givePlayer(\"Andy_0\", \"sugar_cane\", 3)"}
+{"event": "state", "ms": 1795589963220, "agent": "Jill_0", "position": [-12.382247422035238, 65, 8.569184371315162], "inventory": {"bone_meal": 6, "sugar_cane": 5, "paper": 3, "sugar": 1, "golden_apple": 1, "lightning_rod": 1}}
+{"event": "state", "ms": 1795589963311, "agent": "Andy_0", "position": [-15.512265334891945, 65, 8.4358171731306], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1, "copper_block": 1, "heavy_weighted_pressure_plate": 1}}
+{"event": "state", "ms": 1795589964220, "agent": "Jill_0", "position": [-12.382247422035238, 65, 8.569184371315162], "inventory": {"bone_meal": 6, "sugar_cane": 5, "paper": 3, "sugar": 1, "golden_apple": 1, "lightning_rod": 1}}
+{"event": "state", "ms": 1795589964399, "agent": "Andy_0", "position": [-15.512265334891945, 65, 8.4358171731306], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1, "copper_block": 1, "heavy_weighted_pressure_plate": 1}}
+{"event": "state", "ms": 1795589965220, "agent": "Jill_0", "position": [-12.382247422035238, 65, 8.569184371315162], "inventory": {"bone_meal": 6, "sugar_cane": 5, "paper": 3, "sugar": 1, "golden_apple": 1, "lightning_rod": 1}}
+{"event": "state", "ms": 1795589965400, "agent": "Andy_0", "position": [-15.512265334891945, 65, 8.4358171731306], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1, "copper_block": 1, "heavy_weighted_pressure_plate": 1, "sugar_cane": 3}}
+{"event": "state", "ms": 1795589966221, "agent": "Jill_0", "position": [-12.382247422035238, 65, 8.569184371315162], "inventory": {"bone_meal": 6, "sugar_cane": 5, "paper": 3, "sugar": 1, "golden_apple": 1, "lightning_rod": 1}}
+{"event": "state", "ms": 1795589966437, "agent": "Andy_0", "position": [-15.512265334891945, 65, 8.4358171731306], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1, "copper_block": 1, "heavy_weighted_pressure_plate": 1, "sugar_cane": 3}}
+{"event": "model_response", "ms": 1795589967031, "model": "gpt-6-luna", "elapsedMs": 2002, "inputTokens": 4014, "outputTokens": 96, "status": "completed"}
+{"event": "command", "ms": 1795589967033, "agent": "Jill_0", "command": "!givePlayer"}
+{"event": "chat", "ms": 1795589967034, "sender": "Jill_0", "receiver": "Andy_0", "message": "!givePlayer(\"Andy_0\", \"heavy_weighted_pressure_plate\", 1)"}
+{"event": "state", "ms": 1795589967221, "agent": "Jill_0", "position": [-12.382247422035238, 65, 8.569184371315162], "inventory": {"bone_meal": 6, "sugar_cane": 5, "paper": 3, "sugar": 1, "golden_apple": 1, "lightning_rod": 1}}
+{"event": "state", "ms": 1795589967433, "agent": "Andy_0", "position": [-15.512265334891945, 65, 8.4358171731306], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1, "copper_block": 1, "heavy_weighted_pressure_plate": 1, "sugar_cane": 3}}
+{"event": "phase", "ms": 1795589967569, "agent": "Jill_0", "chatOpen": false, "scheduledMs": 1795589967569}
+{"event": "phase", "ms": 1795589967706, "agent": "Andy_0", "chatOpen": false, "scheduledMs": 1795589967569}
+{"event": "state", "ms": 1795589968221, "agent": "Jill_0", "position": [-12.382247422035238, 65, 8.569184371315162], "inventory": {"bone_meal": 6, "sugar_cane": 5, "paper": 3, "sugar": 1, "golden_apple": 1, "lightning_rod": 1}}
+{"event": "state", "ms": 1795589968433, "agent": "Andy_0", "position": [-15.512265334891945, 65, 8.4358171731306], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1, "copper_block": 1, "heavy_weighted_pressure_plate": 1, "sugar_cane": 3}}
+{"event": "state", "ms": 1795589969222, "agent": "Jill_0", "position": [-12.382247422035238, 65, 8.569184371315162], "inventory": {"bone_meal": 6, "sugar_cane": 5, "paper": 3, "sugar": 1, "golden_apple": 1, "lightning_rod": 1}}
+{"event": "state", "ms": 1795589969481, "agent": "Andy_0", "position": [-15.512265334891945, 65, 8.4358171731306], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1, "copper_block": 1, "heavy_weighted_pressure_plate": 1, "sugar_cane": 3}}
+{"event": "state", "ms": 1795589970359, "agent": "Jill_0", "position": [-12.382247422035238, 65, 8.569184371315162], "inventory": {"bone_meal": 6, "sugar_cane": 5, "paper": 3, "sugar": 1, "golden_apple": 1, "lightning_rod": 1}}
+{"event": "state", "ms": 1795589970481, "agent": "Andy_0", "position": [-15.512265334891945, 65, 8.4358171731306], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1, "copper_block": 1, "heavy_weighted_pressure_plate": 1, "sugar_cane": 3}}
+{"event": "model_response", "ms": 1795589971147, "model": "gpt-6-luna", "elapsedMs": 3467, "inputTokens": 625, "outputTokens": 234, "status": "completed"}
+{"event": "state", "ms": 1795589971461, "agent": "Jill_0", "position": [-12.382247422035238, 65, 8.569184371315162], "inventory": {"bone_meal": 6, "sugar_cane": 5, "paper": 3, "sugar": 1, "golden_apple": 1, "lightning_rod": 1}}
+{"event": "state", "ms": 1795589971575, "agent": "Andy_0", "position": [-15.512265334891945, 65, 8.4358171731306], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1, "copper_block": 1, "heavy_weighted_pressure_plate": 1, "sugar_cane": 3}}
+{"event": "state", "ms": 1795589972462, "agent": "Jill_0", "position": [-12.382247422035238, 65, 8.569184371315162], "inventory": {"bone_meal": 6, "sugar_cane": 5, "paper": 3, "sugar": 1, "golden_apple": 1, "lightning_rod": 1}}
+{"event": "state", "ms": 1795589972581, "agent": "Andy_0", "position": [-15.512265334891945, 65, 8.4358171731306], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1, "copper_block": 1, "heavy_weighted_pressure_plate": 1, "sugar_cane": 3}}
+{"event": "state", "ms": 1795589973581, "agent": "Andy_0", "position": [-15.512265334891945, 65, 8.4358171731306], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1, "copper_block": 1, "heavy_weighted_pressure_plate": 1, "sugar_cane": 3}}
+{"event": "state", "ms": 1795589973586, "agent": "Jill_0", "position": [-12.382247422035238, 65, 8.569184371315162], "inventory": {"bone_meal": 6, "sugar_cane": 5, "paper": 3, "sugar": 1, "golden_apple": 1, "lightning_rod": 1}}
+{"event": "model_response", "ms": 1795589973616, "model": "gpt-6-luna", "elapsedMs": 2581, "inputTokens": 3681, "outputTokens": 148, "status": "completed"}
+{"event": "state", "ms": 1795589974638, "agent": "Andy_0", "position": [-15.512265334891945, 65, 8.4358171731306], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1, "copper_block": 1, "heavy_weighted_pressure_plate": 1, "sugar_cane": 3}}
+{"event": "state", "ms": 1795589974693, "agent": "Jill_0", "position": [-12.382247422035238, 65, 8.569184371315162], "inventory": {"bone_meal": 6, "sugar_cane": 5, "paper": 3, "sugar": 1, "golden_apple": 1, "lightning_rod": 1}}
+{"event": "model_response", "ms": 1795589975330, "model": "gpt-6-luna", "elapsedMs": 2236, "inputTokens": 3976, "outputTokens": 111, "status": "completed"}
+{"event": "command", "ms": 1795589975333, "agent": "Andy_0", "command": "!inventory"}
+{"event": "state", "ms": 1795589975695, "agent": "Andy_0", "position": [-15.512265334891945, 65, 8.4358171731306], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1, "copper_block": 1, "heavy_weighted_pressure_plate": 1, "sugar_cane": 3}}
+{"event": "state", "ms": 1795589976377, "agent": "Jill_0", "position": [-12.382247422035238, 65, 8.569184371315162], "inventory": {"bone_meal": 6, "sugar_cane": 5, "paper": 3, "sugar": 1, "golden_apple": 1, "lightning_rod": 1}}
+{"event": "state", "ms": 1795589976836, "agent": "Andy_0", "position": [-15.512265334891945, 65, 8.4358171731306], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1, "copper_block": 1, "heavy_weighted_pressure_plate": 1, "sugar_cane": 3}}
+{"event": "model_response", "ms": 1795589977180, "model": "gpt-6-luna", "elapsedMs": 2676, "inputTokens": 4254, "outputTokens": 127, "status": "completed"}
+{"event": "chat_blocked", "ms": 1795589977183, "sender": "Jill_0", "channel": "command"}
+{"event": "state", "ms": 1795589977505, "agent": "Jill_0", "position": [-12.382247422035238, 65, 8.569184371315162], "inventory": {"bone_meal": 6, "sugar_cane": 5, "paper": 3, "sugar": 1, "golden_apple": 1, "lightning_rod": 1}}
+{"event": "state", "ms": 1795589977836, "agent": "Andy_0", "position": [-15.512265334891945, 65, 8.4358171731306], "inventory": {"bone": 1, "bone_meal": 3, "iron_block": 1, "copper_block": 1, "heavy_weighted_pressure_plate": 1, "sugar_cane": 3}}
+{"event": "model_response", "ms": 1795589978464, "model": "gpt-6-luna", "elapsedMs": 1782, "inputTokens": 4045, "outputTokens": 45, "status": "completed"}
+{"event": "command", "ms": 1795589978468, "agent": "Andy_0", "command": "!craftRecipe"}
+{"event": "state", "ms": 1795589978506, "agent": "Jill_0", "position": [-12.382247422035238, 65, 8.569184371315162], "inventory": {"bone_meal": 6, "sugar_cane": 5, "paper": 3, "sugar": 1, "golden_apple": 1, "lightning_rod": 1}}
+{"event": "state", "ms": 1795589978869, "agent": "Andy_0", "position": [-15.512265334891945, 65, 8.4358171731306], "inventory": {"bone": 1, "bone_meal": 3, "sugar_cane": 2, "sugar": 1, "iron_block": 1, "copper_block": 1, "heavy_weighted_pressure_plate": 1}}
+{"event": "state", "ms": 1795589979506, "agent": "Jill_0", "position": [-12.382247422035238, 65, 8.569184371315162], "inventory": {"bone_meal": 6, "sugar_cane": 5, "paper": 3, "sugar": 1, "golden_apple": 1, "lightning_rod": 1}}
+{"event": "state", "ms": 1795589979868, "agent": "Andy_0", "position": [-15.512265334891945, 65, 8.4358171731306], "inventory": {"bone": 1, "bone_meal": 3, "sugar_cane": 2, "sugar": 1, "iron_block": 1, "copper_block": 1, "heavy_weighted_pressure_plate": 1}}
+{"event": "state", "ms": 1795589980511, "agent": "Jill_0", "position": [-12.382247422035238, 65, 8.569184371315162], "inventory": {"bone_meal": 6, "sugar_cane": 5, "paper": 3, "sugar": 1, "golden_apple": 1, "lightning_rod": 1}}
+{"event": "model_response", "ms": 1795589980814, "model": "gpt-6-luna", "elapsedMs": 3377, "inputTokens": 4330, "outputTokens": 265, "status": "completed"}
+{"event": "command", "ms": 1795589980816, "agent": "Jill_0", "command": "!inventory"}
+{"event": "state", "ms": 1795589980870, "agent": "Andy_0", "position": [-15.512265334891945, 65, 8.4358171731306], "inventory": {"bone": 1, "bone_meal": 3, "sugar_cane": 2, "sugar": 1, "iron_block": 1, "copper_block": 1, "heavy_weighted_pressure_plate": 1}}
+{"event": "state", "ms": 1795589981511, "agent": "Jill_0", "position": [-12.382247422035238, 65, 8.569184371315162], "inventory": {"bone_meal": 6, "sugar_cane": 5, "paper": 3, "sugar": 1, "golden_apple": 1, "lightning_rod": 1}}
+{"event": "model_response", "ms": 1795589981749, "model": "gpt-6-luna", "elapsedMs": 2181, "inputTokens": 3927, "outputTokens": 58, "status": "completed"}
+{"event": "command", "ms": 1795589981752, "agent": "Andy_0", "command": "!craftRecipe"}
+{"event": "state", "ms": 1795589981871, "agent": "Andy_0", "position": [-15.512265334891945, 65, 8.4358171731306], "inventory": {"bone": 1, "bone_meal": 3, "sugar_cane": 2, "sugar": 1, "iron_block": 1, "copper_block": 1, "heavy_weighted_pressure_plate": 1}}
+{"event": "model_response", "ms": 1795589982259, "model": "gpt-6-luna", "elapsedMs": 2970, "inputTokens": 662, "outputTokens": 280, "status": "completed"}
+{"event": "state", "ms": 1795589982511, "agent": "Jill_0", "position": [-12.382247422035238, 65, 8.569184371315162], "inventory": {"bone_meal": 6, "sugar_cane": 5, "paper": 3, "sugar": 1, "golden_apple": 1, "lightning_rod": 1}}
+{"event": "state", "ms": 1795589982871, "agent": "Andy_0", "position": [-15.512265334891945, 65, 8.4358171731306], "inventory": {"bone": 1, "bone_meal": 3, "sugar_cane": 2, "sugar": 1, "iron_block": 1, "copper_block": 1, "heavy_weighted_pressure_plate": 1}}
+{"event": "state", "ms": 1795589983511, "agent": "Jill_0", "position": [-12.382247422035238, 65, 8.569184371315162], "inventory": {"bone_meal": 6, "sugar_cane": 5, "paper": 3, "sugar": 1, "golden_apple": 1, "lightning_rod": 1}}
+{"event": "state", "ms": 1795589983872, "agent": "Andy_0", "position": [-15.512265334891945, 65, 8.4358171731306], "inventory": {"bone": 1, "bone_meal": 3, "sugar_cane": 2, "sugar": 1, "iron_block": 1, "copper_block": 1, "heavy_weighted_pressure_plate": 1}}
+{"event": "model_response", "ms": 1795589984013, "model": "gpt-6-luna", "elapsedMs": 3196, "inputTokens": 958, "outputTokens": 197, "status": "completed"}
+{"event": "state", "ms": 1795589984512, "agent": "Jill_0", "position": [-12.382247422035238, 65, 8.569184371315162], "inventory": {"bone_meal": 6, "sugar_cane": 5, "paper": 3, "sugar": 1, "golden_apple": 1, "lightning_rod": 1}}
+{"event": "state", "ms": 1795589984876, "agent": "Andy_0", "position": [-15.512265334891945, 65, 8.4358171731306], "inventory": {"bone": 1, "bone_meal": 3, "sugar_cane": 2, "sugar": 1, "iron_block": 1, "copper_block": 1, "heavy_weighted_pressure_plate": 1}}
+{"event": "model_response", "ms": 1795589985437, "model": "gpt-6-luna", "elapsedMs": 1438, "inputTokens": 3934, "outputTokens": 55, "status": "completed"}
+{"event": "command", "ms": 1795589985440, "agent": "Jill_0", "command": "!viewChest"}
+{"event": "state", "ms": 1795589985512, "agent": "Jill_0", "position": [-12.382247422035238, 65, 8.569184371315162], "inventory": {"bone_meal": 6, "sugar_cane": 5, "paper": 3, "sugar": 1, "golden_apple": 1, "lightning_rod": 1}}
+{"event": "state", "ms": 1795589985876, "agent": "Andy_0", "position": [-15.512265334891945, 65, 8.4358171731306], "inventory": {"bone": 1, "bone_meal": 3, "sugar_cane": 2, "sugar": 1, "iron_block": 1, "copper_block": 1, "heavy_weighted_pressure_plate": 1}}
+{"event": "state", "ms": 1795589986573, "agent": "Jill_0", "position": [-13.462160441685521, 65, 8.502374951382588], "inventory": {"bone_meal": 6, "sugar_cane": 5, "paper": 3, "sugar": 1, "golden_apple": 1, "lightning_rod": 1}}
+{"event": "model_response", "ms": 1795589986632, "model": "gpt-6-luna", "elapsedMs": 4093, "inputTokens": 3975, "outputTokens": 155, "status": "completed"}
+{"event": "chat_blocked", "ms": 1795589986635, "sender": "Andy_0", "channel": "command"}
+{"event": "state", "ms": 1795589986908, "agent": "Andy_0", "position": [-15.512265334891945, 65, 8.4358171731306], "inventory": {"bone": 1, "bone_meal": 3, "sugar_cane": 2, "sugar": 1, "iron_block": 1, "copper_block": 1, "heavy_weighted_pressure_plate": 1}}
+{"event": "state", "ms": 1795589987573, "agent": "Jill_0", "position": [-13.462160441685521, 65, 8.502374951382588], "inventory": {"bone_meal": 6, "sugar_cane": 5, "paper": 3, "sugar": 1, "golden_apple": 1, "lightning_rod": 1}}
+{"event": "state", "ms": 1795589987908, "agent": "Andy_0", "position": [-15.512265334891945, 65, 8.4358171731306], "inventory": {"bone": 1, "bone_meal": 3, "sugar_cane": 2, "sugar": 1, "iron_block": 1, "copper_block": 1, "heavy_weighted_pressure_plate": 1}}
+{"event": "state", "ms": 1795589988573, "agent": "Jill_0", "position": [-13.462160441685521, 65, 8.502374951382588], "inventory": {"bone_meal": 6, "sugar_cane": 5, "paper": 3, "sugar": 1, "golden_apple": 1, "lightning_rod": 1}}
+{"event": "model_response", "ms": 1795589988819, "model": "gpt-6-luna", "elapsedMs": 1978, "inputTokens": 4057, "outputTokens": 88, "status": "completed"}
+{"event": "command", "ms": 1795589988822, "agent": "Andy_0", "command": "!searchForBlock"}
+{"event": "state", "ms": 1795589989322, "agent": "Andy_0", "position": [-15.512265334891945, 65, 8.4358171731306], "inventory": {"bone": 1, "bone_meal": 3, "sugar_cane": 2, "sugar": 1, "iron_block": 1, "copper_block": 1, "heavy_weighted_pressure_plate": 1}}
+{"event": "model_response", "ms": 1795589989359, "model": "gpt-6-luna", "elapsedMs": 2272, "inputTokens": 3983, "outputTokens": 99, "status": "completed"}
+{"event": "command", "ms": 1795589989363, "agent": "Jill_0", "command": "!givePlayer"}
+{"event": "state", "ms": 1795589989573, "agent": "Jill_0", "position": [-13.462160441685521, 65, 8.502374951382588], "inventory": {"bone_meal": 6, "sugar_cane": 5, "paper": 3, "sugar": 1, "golden_apple": 1, "lightning_rod": 1}}
+{"event": "state", "ms": 1795589990433, "agent": "Andy_0", "position": [-15.512265334891945, 65, 8.4358171731306], "inventory": {"bone": 1, "bone_meal": 3, "sugar_cane": 2, "sugar": 1, "iron_block": 1, "copper_block": 1, "heavy_weighted_pressure_plate": 1}}
+{"event": "state", "ms": 1795589990575, "agent": "Jill_0", "position": [-13.462160441685521, 65, 8.502374951382588], "inventory": {"bone_meal": 6, "sugar_cane": 5, "paper": 3, "sugar": 1, "golden_apple": 1}}
+{"event": "state", "ms": 1795589991495, "agent": "Andy_0", "position": [-15.512265334891945, 65, 8.4358171731306], "inventory": {"bone": 1, "bone_meal": 3, "sugar_cane": 2, "sugar": 1, "iron_block": 1, "copper_block": 1, "heavy_weighted_pressure_plate": 1}}
+{"event": "state", "ms": 1795589991576, "agent": "Jill_0", "position": [-13.462160441685521, 65, 8.502374951382588], "inventory": {"bone_meal": 6, "sugar_cane": 5, "paper": 3, "sugar": 1, "golden_apple": 1}}
+{"event": "model_response", "ms": 1795589991677, "model": "gpt-6-luna", "elapsedMs": 1797, "inputTokens": 3623, "outputTokens": 50, "status": "completed"}
+{"event": "command", "ms": 1795589991681, "agent": "Andy_0", "command": "!viewChest"}
+{"event": "model_response", "ms": 1795589992475, "model": "gpt-6-luna", "elapsedMs": 2803, "inputTokens": 697, "outputTokens": 224, "status": "completed"}
+{"event": "state", "ms": 1795589992495, "agent": "Andy_0", "position": [-15.512265334891945, 65, 8.4358171731306], "inventory": {"bone": 1, "bone_meal": 3, "sugar_cane": 2, "sugar": 1, "iron_block": 1, "copper_block": 1, "heavy_weighted_pressure_plate": 1, "lightning_rod": 1}}
+{"event": "state", "ms": 1795589992576, "agent": "Jill_0", "position": [-13.462160441685521, 65, 8.502374951382588], "inventory": {"bone_meal": 6, "sugar_cane": 5, "paper": 3, "sugar": 1, "golden_apple": 1}}
+{"event": "state", "ms": 1795589993495, "agent": "Andy_0", "position": [-15.512265334891945, 65, 8.4358171731306], "inventory": {"bone": 1, "bone_meal": 3, "sugar_cane": 2, "sugar": 1, "iron_block": 1, "copper_block": 1, "heavy_weighted_pressure_plate": 1, "lightning_rod": 1}}
+{"event": "state", "ms": 1795589993577, "agent": "Jill_0", "position": [-13.462160441685521, 65, 8.502374951382588], "inventory": {"bone_meal": 6, "sugar_cane": 5, "paper": 3, "sugar": 1, "golden_apple": 1}}

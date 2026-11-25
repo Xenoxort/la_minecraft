@@ -1,0 +1,7 @@
+{
+  "restarts": 1,
+  "protocol_errors": 3,
+  "process_exit_lines": [
+    "Agent process exited with code 1 and signal null"
+  ]
+}

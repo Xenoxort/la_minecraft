@@ -1,0 +1,1 @@
+{"block": {"number": 6, "scenario": "bakery", "mirror": -1, "order": ["two_blocks", "always", "alternating"]}, "cell": {"info": "partner", "delay": 0}, "schedule": "always", "probe": false}

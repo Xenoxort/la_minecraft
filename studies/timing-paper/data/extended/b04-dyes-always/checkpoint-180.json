@@ -1,0 +1,21 @@
+{
+  "dueMs": 1795590909656,
+  "requestedMs": 1795590910002,
+  "observedMs": 1795590910253,
+  "inventory": {
+    "Andy_0": [
+      "blue_dye",
+      "green_dye",
+      "red_dye",
+      "white_dye",
+      "yellow_dye"
+    ],
+    "Jill_0": [
+      "apple",
+      "bone_meal",
+      "gold_ingot",
+      "paper",
+      "sugar"
+    ]
+  }
+}

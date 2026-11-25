@@ -1,0 +1,25 @@
+{
+  "two_station_timing_hells_kitchen": {
+    "type": "cooking",
+    "agent_count": 2,
+    "timeout": 720,
+    "goal": {
+      "0": "The team has eight assigned Minecraft crafting objectives. Each item counts only in the assigned agent's inventory. Both agents may gather, craft, and share items. Keep the target items once obtained. There are supply chests around the arena and a crafting table at the center. Gather what you can while working on the shared goals. There are 720 seconds from the start. Bot chat is open during these seconds after the episode starts: 0\u201320, 60\u201380, 120\u2013140, 180\u2013200, 240\u2013260, 300\u2013320, 360\u2013380, 420\u2013440, 480\u2013500, 540\u2013560, 600\u2013620, 660\u2013680. Use open windows to exchange objective cards and coordinate handoffs. When chat is closed, explore, gather, craft, or physically transfer items.Your partner has your objective card. Ask them to tell you what items you must hold. Your partner's objective card: Jill must hold sugar and a golden apple. Sugar uses 1 sugar cane. A golden apple uses 1 apple and 8 gold ingots at a crafting table. Jill must also hold paper, made from 3 sugar cane. Jill must also hold bone_meal, crafted from 1 bone.",
+      "1": "The team has eight assigned Minecraft crafting objectives. Each item counts only in the assigned agent's inventory. Both agents may gather, craft, and share items. Keep the target items once obtained. There are supply chests around the arena and a crafting table at the center. Gather what you can while working on the shared goals. There are 720 seconds from the start. Bot chat is open during these seconds after the episode starts: 0\u201320, 60\u201380, 120\u2013140, 180\u2013200, 240\u2013260, 300\u2013320, 360\u2013380, 420\u2013440, 480\u2013500, 540\u2013560, 600\u2013620, 660\u2013680. Use open windows to exchange objective cards and coordinate handoffs. When chat is closed, explore, gather, craft, or physically transfer items.Your partner has your objective card. Ask them to tell you what items you must hold. Your partner's objective card: Andy must hold bread and a pumpkin pie. Bread uses 3 wheat at a crafting table. A pumpkin pie uses pumpkin, egg, and sugar, one of each. Andy must also hold a hay bale (hay_block), made with 9 wheat in a crafting table. Andy must also hold melon_seeds, which you make as follows: melon seeds use 1 melon slice."
+    },
+    "target": [
+      {
+        "bread": 1,
+        "pumpkin_pie": 1,
+        "hay_block": 1,
+        "melon_seeds": 1
+      },
+      {
+        "sugar": 1,
+        "golden_apple": 1,
+        "paper": 1,
+        "bone_meal": 1
+      }
+    ]
+  }
+}
