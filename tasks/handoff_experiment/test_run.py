@@ -5,7 +5,8 @@ from pathlib import Path
 import unittest
 from unittest.mock import patch
 
-from run import evaluation_schedule, openai_headers, read_events, score, summarize, summarize_pairs, tasks, write_profiles
+from run import (evaluation_assignments, evaluation_schedule, openai_headers, read_events, recorded_episode,
+                 score, summarize, summarize_pairs, tasks, write_json, write_profiles)
 
 
 def inventory(time_ms, agent, has_target):
@@ -46,6 +47,32 @@ class DesignTests(unittest.TestCase):
         for first, second in zip(schedule[::2], schedule[1::2]):
             self.assertEqual(first[:2], second[:2])
             self.assertEqual({first[2], second[2]}, {"baseline", "learned"})
+
+    def test_workers_preserve_pairs_and_cover_the_frozen_schedule(self):
+        schedule = evaluation_schedule(tasks()["held_out"], 5, 42)
+        workers = [evaluation_assignments(schedule, worker, 3) for worker in range(3)]
+        self.assertEqual(sorted(trial for worker in workers for trial in worker), list(enumerate(schedule, 1)))
+        for worker in workers:
+            self.assertEqual(len(worker), 10)
+            for (_, first), (_, second) in zip(worker[::2], worker[1::2]):
+                self.assertEqual(first[:2], second[:2])
+
+    def test_resume_keeps_a_prior_failure_and_reuses_a_scoreable_attempt(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            initial = Path(temporary) / "trial"
+            initial.mkdir()
+            write_json(initial / "result.json", {"status": "error"})
+
+            def finish(path, *_args, **_kwargs):
+                path.mkdir()
+                return {"status": "timeout", "objectives": 1}
+
+            with patch("run.run_episode", side_effect=finish) as execute:
+                first = recorded_episode(initial, "test", {}, "model", None)
+                self.assertEqual(first[0].name, "trial-attempt2")
+                self.assertEqual(recorded_episode(initial, "test", {}, "model", None), first)
+                execute.assert_called_once()
+            self.assertEqual(json.loads((initial / "result.json").read_text())["status"], "error")
 
     def test_report_keeps_errors_and_timeouts_distinct(self):
         planned = [("s", 1, "baseline"), ("s", 2, "baseline"), ("s", 3, "baseline")]

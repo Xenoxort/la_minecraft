@@ -1,0 +1,95 @@
+{"type":"spawned","time_ms":1795625237960,"agent":0}
+{"type":"inventory","time_ms":1795625237968,"agent":0,"items":{},"has_target":false}
+{"type":"spawned","time_ms":1795625238146,"agent":1}
+{"type":"inventory","time_ms":1795625238147,"agent":1,"items":{},"has_target":false}
+{"type":"inventory","time_ms":1795625238443,"agent":1,"items":{"brown_mushroom":1,"bowl":1},"has_target":false}
+{"type":"ready","time_ms":1795625238443,"agent":1}
+{"type":"inventory","time_ms":1795625238445,"agent":0,"items":{"red_mushroom":1,"beetroot":6,"bowl":1},"has_target":false}
+{"type":"ready","time_ms":1795625238446,"agent":0}
+{"type":"model_call","time_ms":1795625241421,"model":"gpt-6-luna","elapsed_ms":2337,"input_tokens":2281,"output_tokens":66}
+{"type":"command","time_ms":1795625241444,"agent":1,"name":"!craftable"}
+{"type":"model_call","time_ms":1795625243725,"model":"gpt-6-luna","elapsed_ms":4561,"input_tokens":2271,"output_tokens":342}
+{"type":"command","time_ms":1795625243731,"agent":0,"name":"!startConversation"}
+{"type":"message","time_ms":1795625243733,"from":"HandoffAndy","to":"HandoffJill","text":"I have your 6 beetroot and 1 bowl, plus 1 red mushroom. I’ll give you the beetroot and bowl; I need another bowl and a brown mushroom for my stew."}
+{"type":"model_call","time_ms":1795625243848,"model":"gpt-6-luna","elapsed_ms":2151,"input_tokens":2304,"output_tokens":114}
+{"type":"model_call","time_ms":1795625247682,"model":"gpt-6-luna","elapsed_ms":2984,"input_tokens":2410,"output_tokens":163}
+{"type":"message","time_ms":1795625247685,"from":"HandoffJill","to":"HandoffAndy","text":"!startConversation(\"HandoffAndy\", \"I have the brown mushroom for you. Please give me the 6 beetroot and bowl, then I’ll hand over the brown mushroom.\")"}
+{"type":"command","time_ms":1795625247685,"agent":1,"name":"!startConversation"}
+{"type":"message","time_ms":1795625247685,"from":"HandoffJill","to":"HandoffAndy","text":"I have the brown mushroom for you. Please give me the 6 beetroot and bowl, then I’ll hand over the brown mushroom."}
+{"type":"model_call","time_ms":1795625252244,"model":"gpt-6-luna","elapsed_ms":4197,"input_tokens":2371,"output_tokens":41}
+{"type":"message","time_ms":1795625252246,"from":"HandoffAndy","to":"HandoffJill","text":"!givePlayer(\"HandoffJill\", \"beetroot\", 6)"}
+{"type":"inventory","time_ms":1795625253275,"agent":0,"items":{"red_mushroom":1,"bowl":1},"has_target":false}
+{"type":"model_call","time_ms":1795625254468,"model":"gpt-6-luna","elapsed_ms":1616,"input_tokens":2413,"output_tokens":32}
+{"type":"message","time_ms":1795625254470,"from":"HandoffAndy","to":"HandoffJill","text":"!givePlayer(\"HandoffJill\", \"bowl\", 1)"}
+{"type":"command","time_ms":1795625254790,"agent":0,"name":"!givePlayer"}
+{"type":"inventory","time_ms":1795625255143,"agent":0,"items":{"red_mushroom":1},"has_target":false}
+{"type":"inventory","time_ms":1795625255719,"agent":1,"items":{"brown_mushroom":1,"bowl":1,"beetroot":6},"has_target":false}
+{"type":"command","time_ms":1795625256147,"agent":0,"name":"!givePlayer"}
+{"type":"inventory","time_ms":1795625257143,"agent":1,"items":{"brown_mushroom":1,"bowl":2,"beetroot":6},"has_target":false}
+{"type":"model_call","time_ms":1795625259905,"model":"gpt-6-luna","elapsed_ms":3596,"input_tokens":2468,"output_tokens":227}
+{"type":"message","time_ms":1795625259908,"from":"HandoffAndy","to":"HandoffJill","text":"!startConversation(\"HandoffJill\", \"Thanks—please hand over the brown mushroom when you can. I’ll need another bowl for my stew after you use yours; let me know if you can spare one.\")"}
+{"type":"command","time_ms":1795625259911,"agent":0,"name":"!startConversation"}
+{"type":"message","time_ms":1795625259914,"from":"HandoffAndy","to":"HandoffJill","text":"Thanks—please hand over the brown mushroom when you can. I’ll need another bowl for my stew after you use yours; let me know if you can spare one."}
+{"type":"model_call","time_ms":1795625261123,"model":"gpt-6-luna","elapsed_ms":1493,"input_tokens":2590,"output_tokens":45}
+{"type":"model_call","time_ms":1795625264942,"model":"gpt-6-luna","elapsed_ms":2255,"input_tokens":2676,"output_tokens":98}
+{"type":"model_call","time_ms":1795625267975,"model":"gpt-6-luna","elapsed_ms":2367,"input_tokens":2694,"output_tokens":85}
+{"type":"message","time_ms":1795625267978,"from":"HandoffJill","to":"HandoffAndy","text":"!givePlayer(\"HandoffAndy\", \"brown_mushroom\", 1)"}
+{"type":"inventory","time_ms":1795625271080,"agent":1,"items":{"bowl":2,"beetroot":6},"has_target":false}
+{"type":"inventory","time_ms":1795625274041,"agent":0,"items":{"red_mushroom":1,"brown_mushroom":1},"has_target":false}
+{"type":"command","time_ms":1795625274090,"agent":1,"name":"!givePlayer"}
+{"type":"model_call","time_ms":1795625275683,"model":"gpt-6-luna","elapsed_ms":2561,"input_tokens":2599,"output_tokens":19}
+{"type":"message","time_ms":1795625275685,"from":"HandoffAndy","to":"HandoffJill","text":"!inventory"}
+{"type":"command","time_ms":1795625275685,"agent":0,"name":"!inventory"}
+{"type":"model_call","time_ms":1795625277583,"model":"gpt-6-luna","elapsed_ms":3120,"input_tokens":2753,"output_tokens":31}
+{"type":"model_call","time_ms":1795625278477,"model":"gpt-6-luna","elapsed_ms":2310,"input_tokens":2649,"output_tokens":96}
+{"type":"message","time_ms":1795625278478,"from":"HandoffAndy","to":"HandoffJill","text":"!getCraftingPlan(\"mushroom_stew\", 1)"}
+{"type":"command","time_ms":1795625278481,"agent":0,"name":"!getCraftingPlan"}
+{"type":"model_call","time_ms":1795625281279,"model":"gpt-6-luna","elapsed_ms":2058,"input_tokens":2764,"output_tokens":65}
+{"type":"message","time_ms":1795625281290,"from":"HandoffAndy","to":"HandoffJill","text":"!searchForBlock(\"oak_log\", 32)"}
+{"type":"command","time_ms":1795625281560,"agent":0,"name":"!searchForBlock"}
+{"type":"model_call","time_ms":1795625283821,"model":"gpt-6-luna","elapsed_ms":1638,"input_tokens":2532,"output_tokens":31}
+{"type":"message","time_ms":1795625283823,"from":"HandoffAndy","to":"HandoffJill","text":"!searchForBlock(\"oak_log\", 64)"}
+{"type":"command","time_ms":1795625284977,"agent":0,"name":"!searchForBlock"}
+{"type":"model_call","time_ms":1795625285919,"model":"gpt-6-luna","elapsed_ms":3733,"input_tokens":488,"output_tokens":224}
+{"type":"model_call","time_ms":1795625287029,"model":"gpt-6-luna","elapsed_ms":1660,"input_tokens":2571,"output_tokens":64}
+{"type":"message","time_ms":1795625287031,"from":"HandoffAndy","to":"HandoffJill","text":"!searchForBlock(\"birch_log\", 64)"}
+{"type":"command","time_ms":1795625288483,"agent":0,"name":"!searchForBlock"}
+{"type":"model_call","time_ms":1795625292215,"model":"gpt-6-luna","elapsed_ms":3593,"input_tokens":2683,"output_tokens":131}
+{"type":"message","time_ms":1795625292217,"from":"HandoffAndy","to":"HandoffJill","text":"!searchForBlock(\"spruce_log\", 64)"}
+{"type":"command","time_ms":1795625293450,"agent":0,"name":"!searchForBlock"}
+{"type":"model_call","time_ms":1795625295226,"model":"gpt-6-luna","elapsed_ms":3192,"input_tokens":518,"output_tokens":238}
+{"type":"model_call","time_ms":1795625296962,"model":"gpt-6-luna","elapsed_ms":3514,"input_tokens":458,"output_tokens":266}
+{"type":"model_call","time_ms":1795625299152,"model":"gpt-6-luna","elapsed_ms":3798,"input_tokens":2535,"output_tokens":224}
+{"type":"message","time_ms":1795625299154,"from":"HandoffAndy","to":"HandoffJill","text":"!startConversation(\"HandoffJill\", \"I have both mushrooms but no bowl. Please craft your beetroot soup with the bowl I gave you, then pass me the bowl if it’s returned—or let me know if you can spare one.\")"}
+{"type":"command","time_ms":1795625299157,"agent":0,"name":"!startConversation"}
+{"type":"message","time_ms":1795625299157,"from":"HandoffAndy","to":"HandoffJill","text":"I have both mushrooms but no bowl. Please craft your beetroot soup with the bowl I gave you, then pass me the bowl if it’s returned—or let me know if you can spare one."}
+{"type":"model_call","time_ms":1795625299549,"model":"gpt-6-luna","elapsed_ms":2176,"input_tokens":2665,"output_tokens":94}
+{"type":"model_call","time_ms":1795625302568,"model":"gpt-6-luna","elapsed_ms":2225,"input_tokens":2763,"output_tokens":104}
+{"type":"message","time_ms":1795625302571,"from":"HandoffJill","to":"HandoffAndy","text":"!craftRecipe(\"beetroot_soup\", 1)"}
+{"type":"inventory","time_ms":1795625303692,"agent":1,"items":{"beetroot_soup":1,"bowl":2,"beetroot":6},"has_target":true}
+{"type":"inventory","time_ms":1795625303692,"agent":1,"items":{"beetroot_soup":1,"beetroot":6},"has_target":true}
+{"type":"inventory","time_ms":1795625303692,"agent":1,"items":{"beetroot_soup":1,"bowl":1},"has_target":true}
+{"type":"command","time_ms":1795625303695,"agent":1,"name":"!craftRecipe"}
+{"type":"model_call","time_ms":1795625306366,"model":"gpt-6-luna","elapsed_ms":2223,"input_tokens":2847,"output_tokens":34}
+{"type":"model_call","time_ms":1795625309281,"model":"gpt-6-luna","elapsed_ms":2410,"input_tokens":2866,"output_tokens":24}
+{"type":"message","time_ms":1795625309282,"from":"HandoffJill","to":"HandoffAndy","text":"!inventory"}
+{"type":"command","time_ms":1795625309282,"agent":1,"name":"!inventory"}
+{"type":"model_call","time_ms":1795625310957,"model":"gpt-6-luna","elapsed_ms":3383,"input_tokens":493,"output_tokens":320}
+{"type":"model_call","time_ms":1795625312196,"model":"gpt-6-luna","elapsed_ms":2353,"input_tokens":2647,"output_tokens":34}
+{"type":"message","time_ms":1795625312198,"from":"HandoffJill","to":"HandoffAndy","text":"!givePlayer(\"HandoffAndy\", \"bowl\", 1)"}
+{"type":"inventory","time_ms":1795625313138,"agent":1,"items":{"beetroot_soup":1},"has_target":true}
+{"type":"model_call","time_ms":1795625313707,"model":"gpt-6-luna","elapsed_ms":3856,"input_tokens":495,"output_tokens":221}
+{"type":"inventory","time_ms":1795625315146,"agent":0,"items":{"red_mushroom":1,"brown_mushroom":1,"bowl":1},"has_target":false}
+{"type":"command","time_ms":1795625315643,"agent":1,"name":"!givePlayer"}
+{"type":"model_call","time_ms":1795625318298,"model":"gpt-6-luna","elapsed_ms":2502,"input_tokens":2676,"output_tokens":90}
+{"type":"message","time_ms":1795625318299,"from":"HandoffJill","to":"HandoffAndy","text":"!startConversation(\"HandoffAndy\", \"I gave you the bowl. I’m holding my beetroot_soup—please craft your mushroom_stew now and confirm when you have it.\")"}
+{"type":"command","time_ms":1795625318303,"agent":1,"name":"!startConversation"}
+{"type":"message","time_ms":1795625318306,"from":"HandoffJill","to":"HandoffAndy","text":"I gave you the bowl. I’m holding my beetroot_soup—please craft your mushroom_stew now and confirm when you have it."}
+{"type":"model_call","time_ms":1795625319577,"model":"gpt-6-luna","elapsed_ms":2234,"input_tokens":2555,"output_tokens":46}
+{"type":"model_call","time_ms":1795625321941,"model":"gpt-6-luna","elapsed_ms":1616,"input_tokens":2633,"output_tokens":45}
+{"type":"message","time_ms":1795625321943,"from":"HandoffAndy","to":"HandoffJill","text":"!craftRecipe(\"mushroom_stew\", 1)"}
+{"type":"inventory","time_ms":1795625321951,"agent":0,"items":{"red_mushroom":1,"bowl":1},"has_target":false}
+{"type":"inventory","time_ms":1795625321964,"agent":0,"items":{"bowl":1},"has_target":false}
+{"type":"inventory","time_ms":1795625321978,"agent":0,"items":{},"has_target":false}
+{"type":"inventory","time_ms":1795625321985,"agent":0,"items":{"mushroom_stew":1},"has_target":true}
+{"type":"command","time_ms":1795625321987,"agent":0,"name":"!craftRecipe"}

@@ -1,0 +1,202 @@
+{"type":"spawned","time_ms":1795623927115,"agent":1}
+{"type":"inventory","time_ms":1795623927116,"agent":1,"items":{},"has_target":false}
+{"type":"spawned","time_ms":1795623927234,"agent":0}
+{"type":"inventory","time_ms":1795623927235,"agent":0,"items":{},"has_target":false}
+{"type":"inventory","time_ms":1795623927523,"agent":0,"items":{"wheat":2,"apple":1,"gold_ingot":6},"has_target":false}
+{"type":"inventory","time_ms":1795623927531,"agent":1,"items":{"wheat":1,"gold_ingot":2},"has_target":false}
+{"type":"ready","time_ms":1795623927531,"agent":0}
+{"type":"ready","time_ms":1795623927531,"agent":1}
+{"type":"model_call","time_ms":1795623931074,"model":"gpt-6-luna","elapsed_ms":2655,"input_tokens":2265,"output_tokens":150}
+{"type":"command","time_ms":1795623931077,"agent":0,"name":"!startConversation"}
+{"type":"message","time_ms":1795623931079,"from":"HandoffAndy","to":"HandoffJill","text":"I have 1 apple and 6 gold_ingot for your golden_apple, plus 2 wheat. I’ll need 1 more wheat for bread. Please gather or arrange the remaining 2 gold_ingot; I can give you the apple and gold I have."}
+{"type":"model_call","time_ms":1795623931123,"model":"gpt-6-luna","elapsed_ms":2890,"input_tokens":2246,"output_tokens":94}
+{"type":"model_call","time_ms":1795623934218,"model":"gpt-6-luna","elapsed_ms":2824,"input_tokens":2336,"output_tokens":163}
+{"type":"message","time_ms":1795623934221,"from":"HandoffJill","to":"HandoffAndy","text":"!startConversation(\"HandoffAndy\", \"I have 2 gold ingots and 1 wheat. Please give me the apple and your 6 gold ingots so I can craft the golden apple; I’ll give you my wheat for your bread.\")"}
+{"type":"command","time_ms":1795623934223,"agent":1,"name":"!startConversation"}
+{"type":"message","time_ms":1795623934224,"from":"HandoffJill","to":"HandoffAndy","text":"I have 2 gold ingots and 1 wheat. Please give me the apple and your 6 gold ingots so I can craft the golden apple; I’ll give you my wheat for your bread."}
+{"type":"model_call","time_ms":1795623936633,"model":"gpt-6-luna","elapsed_ms":2078,"input_tokens":2394,"output_tokens":49}
+{"type":"message","time_ms":1795623936634,"from":"HandoffAndy","to":"HandoffJill","text":"!givePlayer(\"HandoffJill\", \"apple\", 1)"}
+{"type":"inventory","time_ms":1795623937122,"agent":0,"items":{"wheat":2,"gold_ingot":6},"has_target":false}
+{"type":"inventory","time_ms":1795623939092,"agent":1,"items":{"wheat":1,"gold_ingot":2,"apple":1},"has_target":false}
+{"type":"command","time_ms":1795623939128,"agent":0,"name":"!givePlayer"}
+{"type":"model_call","time_ms":1795623941107,"model":"gpt-6-luna","elapsed_ms":1834,"input_tokens":2450,"output_tokens":34}
+{"type":"model_call","time_ms":1795623943657,"model":"gpt-6-luna","elapsed_ms":1892,"input_tokens":2473,"output_tokens":69}
+{"type":"message","time_ms":1795623943659,"from":"HandoffJill","to":"HandoffAndy","text":"!inventory"}
+{"type":"command","time_ms":1795623943660,"agent":1,"name":"!inventory"}
+{"type":"model_call","time_ms":1795623943938,"model":"gpt-6-luna","elapsed_ms":1689,"input_tokens":2471,"output_tokens":65}
+{"type":"model_call","time_ms":1795623947807,"model":"gpt-6-luna","elapsed_ms":3047,"input_tokens":2516,"output_tokens":170}
+{"type":"message","time_ms":1795623947808,"from":"HandoffJill","to":"HandoffAndy","text":"!givePlayer(\"HandoffAndy\", \"wheat\", 1)"}
+{"type":"inventory","time_ms":1795623948541,"agent":1,"items":{"gold_ingot":2,"apple":1},"has_target":false}
+{"type":"inventory","time_ms":1795623950544,"agent":1,"items":{"wheat":1,"gold_ingot":2,"apple":1},"has_target":false}
+{"type":"command","time_ms":1795623951551,"agent":1,"name":"!givePlayer"}
+{"type":"model_call","time_ms":1795623955099,"model":"gpt-6-luna","elapsed_ms":2166,"input_tokens":2526,"output_tokens":70}
+{"type":"message","time_ms":1795623955101,"from":"HandoffAndy","to":"HandoffJill","text":"!craftRecipe(\"bread\", 1)"}
+{"type":"command","time_ms":1795623955103,"agent":0,"name":"!craftRecipe"}
+{"type":"model_call","time_ms":1795623955235,"model":"gpt-6-luna","elapsed_ms":3554,"input_tokens":2584,"output_tokens":205}
+{"type":"model_call","time_ms":1795623958390,"model":"gpt-6-luna","elapsed_ms":2451,"input_tokens":2571,"output_tokens":137}
+{"type":"message","time_ms":1795623958392,"from":"HandoffAndy","to":"HandoffJill","text":"!inventory"}
+{"type":"command","time_ms":1795623958393,"agent":0,"name":"!inventory"}
+{"type":"model_call","time_ms":1795623962211,"model":"gpt-6-luna","elapsed_ms":3265,"input_tokens":2608,"output_tokens":222}
+{"type":"message","time_ms":1795623962213,"from":"HandoffAndy","to":"HandoffJill","text":"!givePlayer(\"HandoffJill\", \"gold_ingot\", 6)"}
+{"type":"inventory","time_ms":1795623962843,"agent":0,"items":{"wheat":2},"has_target":false}
+{"type":"inventory","time_ms":1795623964840,"agent":0,"items":{"wheat":2,"gold_ingot":6},"has_target":false}
+{"type":"command","time_ms":1795623965849,"agent":0,"name":"!givePlayer"}
+{"type":"model_call","time_ms":1795623968738,"model":"gpt-6-luna","elapsed_ms":2761,"input_tokens":2684,"output_tokens":194}
+{"type":"message","time_ms":1795623968740,"from":"HandoffAndy","to":"HandoffJill","text":"!startConversation(\"HandoffJill\", \"I still have 2 wheat, so I need 1 more to craft bread. Please give me your wheat when you can. I gave you my apple; my 6 gold_ingot transfer failed and seems to have discarded them, so please check your inventory for the 8 gold needed.\")"}
+{"type":"command","time_ms":1795623968741,"agent":0,"name":"!startConversation"}
+{"type":"message","time_ms":1795623968742,"from":"HandoffAndy","to":"HandoffJill","text":"I still have 2 wheat, so I need 1 more to craft bread. Please give me your wheat when you can. I gave you my apple; my 6 gold_ingot transfer failed and seems to have discarded them, so please check your inventory for the 8 gold needed."}
+{"type":"model_call","time_ms":1795623969647,"model":"gpt-6-luna","elapsed_ms":2302,"input_tokens":2643,"output_tokens":83}
+{"type":"model_call","time_ms":1795623972398,"model":"gpt-6-luna","elapsed_ms":2053,"input_tokens":2780,"output_tokens":77}
+{"type":"message","time_ms":1795623972399,"from":"HandoffJill","to":"HandoffAndy","text":"!inventory"}
+{"type":"command","time_ms":1795623972400,"agent":1,"name":"!inventory"}
+{"type":"model_call","time_ms":1795623972999,"model":"gpt-6-luna","elapsed_ms":4147,"input_tokens":515,"output_tokens":340}
+{"type":"model_call","time_ms":1795623976597,"model":"gpt-6-luna","elapsed_ms":3243,"input_tokens":2529,"output_tokens":218}
+{"type":"model_call","time_ms":1795623977750,"model":"gpt-6-luna","elapsed_ms":4516,"input_tokens":487,"output_tokens":458}
+{"type":"model_call","time_ms":1795623979815,"model":"gpt-6-luna","elapsed_ms":3463,"input_tokens":2549,"output_tokens":195}
+{"type":"message","time_ms":1795623979817,"from":"HandoffJill","to":"HandoffAndy","text":"!startConversation(\"HandoffAndy\", \"My inventory still shows 1 wheat, 2 gold_ingots, and 1 apple. I need 8 gold_ingots for my golden apple, so I can't spare the gold you need. I'll try to get you the wheat; please gather gold if you can.\")"}
+{"type":"command","time_ms":1795623979818,"agent":1,"name":"!startConversation"}
+{"type":"message","time_ms":1795623979819,"from":"HandoffJill","to":"HandoffAndy","text":"My inventory still shows 1 wheat, 2 gold_ingots, and 1 apple. I need 8 gold_ingots for my golden apple, so I can't spare the gold you need. I'll try to get you the wheat; please gather gold if you can."}
+{"type":"model_call","time_ms":1795623981835,"model":"gpt-6-luna","elapsed_ms":4302,"input_tokens":2563,"output_tokens":367}
+{"type":"model_call","time_ms":1795623982578,"model":"gpt-6-luna","elapsed_ms":2045,"input_tokens":2695,"output_tokens":94}
+{"type":"message","time_ms":1795623982580,"from":"HandoffAndy","to":"HandoffJill","text":"!collectBlocks(\"wheat\", 1)"}
+{"type":"command","time_ms":1795623983331,"agent":0,"name":"!collectBlocks"}
+{"type":"model_call","time_ms":1795623985251,"model":"gpt-6-luna","elapsed_ms":1701,"input_tokens":2609,"output_tokens":75}
+{"type":"model_call","time_ms":1795623986251,"model":"gpt-6-luna","elapsed_ms":2828,"input_tokens":398,"output_tokens":252}
+{"type":"model_call","time_ms":1795623988396,"model":"gpt-6-luna","elapsed_ms":1842,"input_tokens":2643,"output_tokens":56}
+{"type":"message","time_ms":1795623988398,"from":"HandoffAndy","to":"HandoffJill","text":"!searchForBlock(\"wheat\", 32)"}
+{"type":"command","time_ms":1795623988651,"agent":0,"name":"!searchForBlock"}
+{"type":"model_call","time_ms":1795623992474,"model":"gpt-6-luna","elapsed_ms":4772,"input_tokens":2754,"output_tokens":369}
+{"type":"model_call","time_ms":1795623992724,"model":"gpt-6-luna","elapsed_ms":3158,"input_tokens":2681,"output_tokens":151}
+{"type":"message","time_ms":1795623992726,"from":"HandoffAndy","to":"HandoffJill","text":"!searchForBlock(\"wheat\", 128)"}
+{"type":"model_call","time_ms":1795623995029,"model":"gpt-6-luna","elapsed_ms":2554,"input_tokens":442,"output_tokens":235}
+{"type":"command","time_ms":1795623996452,"agent":0,"name":"!searchForBlock"}
+{"type":"model_call","time_ms":1795623999133,"model":"gpt-6-luna","elapsed_ms":2562,"input_tokens":2719,"output_tokens":130}
+{"type":"message","time_ms":1795623999135,"from":"HandoffAndy","to":"HandoffJill","text":"!craftable"}
+{"type":"command","time_ms":1795623999171,"agent":0,"name":"!craftable"}
+{"type":"model_call","time_ms":1795624000188,"model":"gpt-6-luna","elapsed_ms":2301,"input_tokens":2627,"output_tokens":106}
+{"type":"model_call","time_ms":1795624002536,"model":"gpt-6-luna","elapsed_ms":2953,"input_tokens":2549,"output_tokens":130}
+{"type":"message","time_ms":1795624002537,"from":"HandoffAndy","to":"HandoffJill","text":"!startConversation(\"HandoffJill\", \"I couldn't find wheat within 128 blocks. Please let me know if you find any; I currently have 2 wheat and need 1 more to craft bread.\")"}
+{"type":"command","time_ms":1795624002538,"agent":0,"name":"!startConversation"}
+{"type":"message","time_ms":1795624002539,"from":"HandoffAndy","to":"HandoffJill","text":"I couldn't find wheat within 128 blocks. Please let me know if you find any; I currently have 2 wheat and need 1 more to craft bread."}
+{"type":"model_call","time_ms":1795624004578,"model":"gpt-6-luna","elapsed_ms":5124,"input_tokens":496,"output_tokens":347}
+{"type":"model_call","time_ms":1795624004944,"model":"gpt-6-luna","elapsed_ms":2087,"input_tokens":2696,"output_tokens":102}
+{"type":"message","time_ms":1795624004945,"from":"HandoffJill","to":"HandoffAndy","text":"!givePlayer(\"HandoffAndy\", \"wheat\", 1)"}
+{"type":"inventory","time_ms":1795624005776,"agent":1,"items":{"gold_ingot":2,"apple":1},"has_target":false}
+{"type":"inventory","time_ms":1795624007741,"agent":1,"items":{"wheat":1,"gold_ingot":2,"apple":1},"has_target":false}
+{"type":"command","time_ms":1795624008784,"agent":1,"name":"!givePlayer"}
+{"type":"model_call","time_ms":1795624010192,"model":"gpt-6-luna","elapsed_ms":2534,"input_tokens":2729,"output_tokens":123}
+{"type":"model_call","time_ms":1795624011890,"model":"gpt-6-luna","elapsed_ms":1825,"input_tokens":2697,"output_tokens":23}
+{"type":"message","time_ms":1795624011892,"from":"HandoffAndy","to":"HandoffJill","text":"!inventory"}
+{"type":"command","time_ms":1795624011892,"agent":0,"name":"!inventory"}
+{"type":"model_call","time_ms":1795624013539,"model":"gpt-6-luna","elapsed_ms":2878,"input_tokens":2504,"output_tokens":189}
+{"type":"model_call","time_ms":1795624013988,"model":"gpt-6-luna","elapsed_ms":3446,"input_tokens":516,"output_tokens":238}
+{"type":"model_call","time_ms":1795624016025,"model":"gpt-6-luna","elapsed_ms":3076,"input_tokens":468,"output_tokens":248}
+{"type":"model_call","time_ms":1795624018136,"model":"gpt-6-luna","elapsed_ms":5066,"input_tokens":2509,"output_tokens":442}
+{"type":"message","time_ms":1795624018137,"from":"HandoffAndy","to":"HandoffJill","text":"!endConversation(\"HandoffJill\")"}
+{"type":"command","time_ms":1795624018139,"agent":0,"name":"!endConversation"}
+{"type":"model_call","time_ms":1795624019434,"model":"gpt-6-luna","elapsed_ms":2396,"input_tokens":2559,"output_tokens":127}
+{"type":"model_call","time_ms":1795624020758,"model":"gpt-6-luna","elapsed_ms":2501,"input_tokens":2530,"output_tokens":136}
+{"type":"command","time_ms":1795624020760,"agent":0,"name":"!startConversation"}
+{"type":"message","time_ms":1795624020760,"from":"HandoffAndy","to":"HandoffJill","text":"Could you give me 1 wheat for bread? I have 2 wheat, and need 3 total."}
+{"type":"model_call","time_ms":1795624023819,"model":"gpt-6-luna","elapsed_ms":2717,"input_tokens":2604,"output_tokens":174}
+{"type":"model_call","time_ms":1795624026086,"model":"gpt-6-luna","elapsed_ms":2001,"input_tokens":2623,"output_tokens":94}
+{"type":"message","time_ms":1795624026087,"from":"HandoffJill","to":"HandoffAndy","text":"!inventory"}
+{"type":"command","time_ms":1795624026087,"agent":1,"name":"!inventory"}
+{"type":"model_call","time_ms":1795624030216,"model":"gpt-6-luna","elapsed_ms":3239,"input_tokens":408,"output_tokens":279}
+{"type":"model_call","time_ms":1795624030479,"model":"gpt-6-luna","elapsed_ms":3384,"input_tokens":2537,"output_tokens":228}
+{"type":"message","time_ms":1795624030481,"from":"HandoffJill","to":"HandoffAndy","text":"!startConversation"}
+{"type":"command","time_ms":1795624030481,"agent":1,"name":"!startConversation"}
+{"type":"model_call","time_ms":1795624033042,"model":"gpt-6-luna","elapsed_ms":2435,"input_tokens":2559,"output_tokens":128}
+{"type":"message","time_ms":1795624033044,"from":"HandoffJill","to":"HandoffAndy","text":"!startConversation(\"HandoffAndy\", \"I still have 1 wheat. I'll try giving it to you now; please check your inventory afterward.\")"}
+{"type":"command","time_ms":1795624033045,"agent":1,"name":"!startConversation"}
+{"type":"message","time_ms":1795624033046,"from":"HandoffJill","to":"HandoffAndy","text":"I still have 1 wheat. I'll try giving it to you now; please check your inventory afterward."}
+{"type":"model_call","time_ms":1795624035612,"model":"gpt-6-luna","elapsed_ms":2202,"input_tokens":2605,"output_tokens":20}
+{"type":"message","time_ms":1795624035614,"from":"HandoffAndy","to":"HandoffJill","text":"!inventory"}
+{"type":"command","time_ms":1795624035614,"agent":0,"name":"!inventory"}
+{"type":"model_call","time_ms":1795624036178,"model":"gpt-6-luna","elapsed_ms":2696,"input_tokens":431,"output_tokens":205}
+{"type":"model_call","time_ms":1795624039163,"model":"gpt-6-luna","elapsed_ms":2768,"input_tokens":446,"output_tokens":190}
+{"type":"model_call","time_ms":1795624040235,"model":"gpt-6-luna","elapsed_ms":3841,"input_tokens":2490,"output_tokens":267}
+{"type":"model_call","time_ms":1795624041816,"model":"gpt-6-luna","elapsed_ms":2293,"input_tokens":2523,"output_tokens":128}
+{"type":"message","time_ms":1795624041817,"from":"HandoffAndy","to":"HandoffJill","text":"!startConversation(\"HandoffJill\", \"I still have only 2 wheat. Please retry giving me 1 wheat, then I'll craft the bread.\")"}
+{"type":"command","time_ms":1795624041818,"agent":0,"name":"!startConversation"}
+{"type":"message","time_ms":1795624041819,"from":"HandoffAndy","to":"HandoffJill","text":"I still have only 2 wheat. Please retry giving me 1 wheat, then I'll craft the bread."}
+{"type":"model_call","time_ms":1795624042335,"model":"gpt-6-luna","elapsed_ms":1583,"input_tokens":2459,"output_tokens":30}
+{"type":"model_call","time_ms":1795624045371,"model":"gpt-6-luna","elapsed_ms":1624,"input_tokens":2523,"output_tokens":32}
+{"type":"message","time_ms":1795624045373,"from":"HandoffJill","to":"HandoffAndy","text":"!givePlayer(\"HandoffAndy\", \"wheat\", 1)"}
+{"type":"inventory","time_ms":1795624045470,"agent":1,"items":{"gold_ingot":2,"apple":1},"has_target":false}
+{"type":"inventory","time_ms":1795624047444,"agent":1,"items":{"wheat":1,"gold_ingot":2,"apple":1},"has_target":false}
+{"type":"command","time_ms":1795624048479,"agent":1,"name":"!givePlayer"}
+{"type":"model_call","time_ms":1795624049078,"model":"gpt-6-luna","elapsed_ms":2132,"input_tokens":2556,"output_tokens":144}
+{"type":"model_call","time_ms":1795624051912,"model":"gpt-6-luna","elapsed_ms":1408,"input_tokens":2638,"output_tokens":18}
+{"type":"message","time_ms":1795624051913,"from":"HandoffAndy","to":"HandoffJill","text":"!inventory"}
+{"type":"command","time_ms":1795624051914,"agent":0,"name":"!inventory"}
+{"type":"model_call","time_ms":1795624052690,"model":"gpt-6-luna","elapsed_ms":2741,"input_tokens":2554,"output_tokens":177}
+{"type":"model_call","time_ms":1795624056040,"model":"gpt-6-luna","elapsed_ms":2530,"input_tokens":2546,"output_tokens":134}
+{"type":"command","time_ms":1795624056043,"agent":0,"name":"!entities"}
+{"type":"message","time_ms":1795624056045,"from":"HandoffAndy","to":"HandoffJill","text":"!entities"}
+{"type":"model_call","time_ms":1795624057227,"model":"gpt-6-luna","elapsed_ms":3846,"input_tokens":421,"output_tokens":276}
+{"type":"model_call","time_ms":1795624059267,"model":"gpt-6-luna","elapsed_ms":2747,"input_tokens":2576,"output_tokens":147}
+{"type":"message","time_ms":1795624059268,"from":"HandoffAndy","to":"HandoffJill","text":"!searchForBlock(\"hay_block\", 128)"}
+{"type":"command","time_ms":1795624062905,"agent":0,"name":"!searchForBlock"}
+{"type":"model_call","time_ms":1795624063769,"model":"gpt-6-luna","elapsed_ms":13946,"input_tokens":372,"output_tokens":252}
+{"type":"model_call","time_ms":1795624065379,"model":"gpt-6-luna","elapsed_ms":2471,"input_tokens":439,"output_tokens":206}
+{"type":"model_call","time_ms":1795624068382,"model":"gpt-6-luna","elapsed_ms":3991,"input_tokens":2586,"output_tokens":144}
+{"type":"message","time_ms":1795624068385,"from":"HandoffJill","to":"HandoffAndy","text":"!inventory"}
+{"type":"command","time_ms":1795624068386,"agent":1,"name":"!inventory"}
+{"type":"model_call","time_ms":1795624069098,"model":"gpt-6-luna","elapsed_ms":3054,"input_tokens":2453,"output_tokens":115}
+{"type":"model_call","time_ms":1795624073770,"model":"gpt-6-luna","elapsed_ms":5079,"input_tokens":2629,"output_tokens":426}
+{"type":"message","time_ms":1795624073772,"from":"HandoffJill","to":"HandoffAndy","text":"!goToPlayer(\"HandoffAndy\", 1)"}
+{"type":"command","time_ms":1795624074480,"agent":1,"name":"!goToPlayer"}
+{"type":"model_call","time_ms":1795624076604,"model":"gpt-6-luna","elapsed_ms":3086,"input_tokens":2503,"output_tokens":104}
+{"type":"model_call","time_ms":1795624078714,"model":"gpt-6-luna","elapsed_ms":1838,"input_tokens":2531,"output_tokens":68}
+{"type":"message","time_ms":1795624078715,"from":"HandoffJill","to":"HandoffAndy","text":"!givePlayer(\"HandoffAndy\", \"wheat\", 1)"}
+{"type":"model_call","time_ms":1795624081256,"model":"gpt-6-luna","elapsed_ms":7461,"input_tokens":409,"output_tokens":253}
+{"type":"inventory","time_ms":1795624081534,"agent":1,"items":{"gold_ingot":2,"apple":1},"has_target":false}
+{"type":"inventory","time_ms":1795624084143,"agent":0,"items":{"wheat":3,"gold_ingot":6},"has_target":false}
+{"type":"command","time_ms":1795624084543,"agent":1,"name":"!givePlayer"}
+{"type":"model_call","time_ms":1795624086545,"model":"gpt-6-luna","elapsed_ms":2702,"input_tokens":2554,"output_tokens":82}
+{"type":"command","time_ms":1795624086547,"agent":0,"name":"!inventory"}
+{"type":"message","time_ms":1795624086547,"from":"HandoffAndy","to":"HandoffJill","text":"!inventory"}
+{"type":"model_call","time_ms":1795624086749,"model":"gpt-6-luna","elapsed_ms":2066,"input_tokens":2589,"output_tokens":131}
+{"type":"model_call","time_ms":1795624088401,"model":"gpt-6-luna","elapsed_ms":1554,"input_tokens":2448,"output_tokens":49}
+{"type":"message","time_ms":1795624088402,"from":"HandoffAndy","to":"HandoffJill","text":"!craftRecipe(\"bread\", 1)"}
+{"type":"inventory","time_ms":1795624089317,"agent":0,"items":{"bread":1,"wheat":3,"gold_ingot":6},"has_target":true}
+{"type":"inventory","time_ms":1795624089318,"agent":0,"items":{"bread":1,"gold_ingot":6},"has_target":true}
+{"type":"command","time_ms":1795624089321,"agent":0,"name":"!craftRecipe"}
+{"type":"model_call","time_ms":1795624089863,"model":"gpt-6-luna","elapsed_ms":3143,"input_tokens":405,"output_tokens":236}
+{"type":"model_call","time_ms":1795624092055,"model":"gpt-6-luna","elapsed_ms":2201,"input_tokens":2485,"output_tokens":118}
+{"type":"message","time_ms":1795624092057,"from":"HandoffAndy","to":"HandoffJill","text":"!startConversation(\"HandoffJill\", \"I have my bread. I have 6 gold ingots; do you still need gold for the golden apple?\")"}
+{"type":"command","time_ms":1795624092058,"agent":0,"name":"!startConversation"}
+{"type":"message","time_ms":1795624092059,"from":"HandoffAndy","to":"HandoffJill","text":"I have my bread. I have 6 gold ingots; do you still need gold for the golden apple?"}
+{"type":"model_call","time_ms":1795624095110,"model":"gpt-6-luna","elapsed_ms":2847,"input_tokens":425,"output_tokens":190}
+{"type":"model_call","time_ms":1795624095757,"model":"gpt-6-luna","elapsed_ms":3034,"input_tokens":409,"output_tokens":218}
+{"type":"model_call","time_ms":1795624097587,"model":"gpt-6-luna","elapsed_ms":2212,"input_tokens":2440,"output_tokens":115}
+{"type":"model_call","time_ms":1795624100541,"model":"gpt-6-luna","elapsed_ms":2148,"input_tokens":2459,"output_tokens":110}
+{"type":"message","time_ms":1795624100543,"from":"HandoffJill","to":"HandoffAndy","text":"!startConversation(\"HandoffAndy\", \"Yes, I need 6 more gold ingots. Please give me 6 so I can craft the golden apple; I have the apple and 2 ingots.\")"}
+{"type":"command","time_ms":1795624100543,"agent":1,"name":"!startConversation"}
+{"type":"message","time_ms":1795624100545,"from":"HandoffJill","to":"HandoffAndy","text":"Yes, I need 6 more gold ingots. Please give me 6 so I can craft the golden apple; I have the apple and 2 ingots."}
+{"type":"model_call","time_ms":1795624102819,"model":"gpt-6-luna","elapsed_ms":1930,"input_tokens":2544,"output_tokens":49}
+{"type":"message","time_ms":1795624102821,"from":"HandoffAndy","to":"HandoffJill","text":"!givePlayer(\"HandoffJill\", \"gold_ingot\", 6)"}
+{"type":"inventory","time_ms":1795624103802,"agent":0,"items":{"bread":1},"has_target":true}
+{"type":"inventory","time_ms":1795624105793,"agent":1,"items":{"gold_ingot":8,"apple":1},"has_target":false}
+{"type":"command","time_ms":1795624105807,"agent":0,"name":"!givePlayer"}
+{"type":"model_call","time_ms":1795624107372,"model":"gpt-6-luna","elapsed_ms":1700,"input_tokens":2578,"output_tokens":55}
+{"type":"model_call","time_ms":1795624112069,"model":"gpt-6-luna","elapsed_ms":3399,"input_tokens":2654,"output_tokens":258}
+{"type":"message","time_ms":1795624112071,"from":"HandoffAndy","to":"HandoffJill","text":"!inventory"}
+{"type":"command","time_ms":1795624112071,"agent":0,"name":"!inventory"}
+{"type":"model_call","time_ms":1795624112262,"model":"gpt-6-luna","elapsed_ms":4319,"input_tokens":2586,"output_tokens":54}
+{"type":"model_call","time_ms":1795624114576,"model":"gpt-6-luna","elapsed_ms":2505,"input_tokens":418,"output_tokens":167}
+{"type":"model_call","time_ms":1795624119383,"model":"gpt-6-luna","elapsed_ms":4196,"input_tokens":2562,"output_tokens":181}
+{"type":"message","time_ms":1795624119385,"from":"HandoffAndy","to":"HandoffJill","text":"!stay(10)"}
+{"type":"model_call","time_ms":1795624119602,"model":"gpt-6-luna","elapsed_ms":2528,"input_tokens":427,"output_tokens":151}
+{"type":"model_call","time_ms":1795624126080,"model":"gpt-6-luna","elapsed_ms":1561,"input_tokens":2511,"output_tokens":35}
+{"type":"command","time_ms":1795624126082,"agent":1,"name":"!inventory"}
+{"type":"message","time_ms":1795624126082,"from":"HandoffJill","to":"HandoffAndy","text":"!inventory"}
+{"type":"command","time_ms":1795624129424,"agent":0,"name":"!stay"}
+{"type":"model_call","time_ms":1795624129822,"model":"gpt-6-luna","elapsed_ms":3414,"input_tokens":2592,"output_tokens":252}
+{"type":"model_call","time_ms":1795624129938,"model":"gpt-6-luna","elapsed_ms":2416,"input_tokens":2548,"output_tokens":132}
+{"type":"message","time_ms":1795624129940,"from":"HandoffJill","to":"HandoffAndy","text":"!craftRecipe(\"golden_apple\", 1)"}
+{"type":"inventory","time_ms":1795624131091,"agent":1,"items":{"golden_apple":1,"gold_ingot":8,"apple":1},"has_target":true}
+{"type":"inventory","time_ms":1795624131092,"agent":1,"items":{"golden_apple":1,"apple":1},"has_target":true}
+{"type":"inventory","time_ms":1795624131092,"agent":1,"items":{"golden_apple":1},"has_target":true}
+{"type":"command","time_ms":1795624131093,"agent":1,"name":"!craftRecipe"}

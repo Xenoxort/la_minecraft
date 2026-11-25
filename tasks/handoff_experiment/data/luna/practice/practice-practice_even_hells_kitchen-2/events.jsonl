@@ -1,0 +1,98 @@
+{"type":"spawned","time_ms":1795624175741,"agent":0}
+{"type":"inventory","time_ms":1795624175742,"agent":0,"items":{},"has_target":false}
+{"type":"spawned","time_ms":1795624175864,"agent":1}
+{"type":"inventory","time_ms":1795624175864,"agent":1,"items":{},"has_target":false}
+{"type":"inventory","time_ms":1795624176123,"agent":0,"items":{"wheat":2,"apple":1,"gold_ingot":6},"has_target":false}
+{"type":"ready","time_ms":1795624176123,"agent":0}
+{"type":"inventory","time_ms":1795624176134,"agent":1,"items":{"wheat":1,"gold_ingot":2},"has_target":false}
+{"type":"ready","time_ms":1795624176135,"agent":1}
+{"type":"model_call","time_ms":1795624179793,"model":"gpt-6-luna","elapsed_ms":2747,"input_tokens":2265,"output_tokens":114}
+{"type":"command","time_ms":1795624179796,"agent":0,"name":"!startConversation"}
+{"type":"message","time_ms":1795624179798,"from":"HandoffAndy","to":"HandoffJill","text":"I have 1 apple, 6 gold_ingot, and 2 wheat. Your golden_apple needs 8 gold_ingot; I need 1 more wheat for bread. Can you get the missing ingredients?"}
+{"type":"model_call","time_ms":1795624180171,"model":"gpt-6-luna","elapsed_ms":3233,"input_tokens":2246,"output_tokens":103}
+{"type":"model_call","time_ms":1795624185846,"model":"gpt-6-luna","elapsed_ms":5719,"input_tokens":2353,"output_tokens":508}
+{"type":"message","time_ms":1795624185848,"from":"HandoffJill","to":"HandoffAndy","text":"!startConversation(\"HandoffAndy\", \"I have 1 wheat and 2 gold_ingot. I'll give you both so you can craft bread and golden_apple; please hold the golden_apple for me or hand it over once crafted.\")"}
+{"type":"command","time_ms":1795624185851,"agent":1,"name":"!startConversation"}
+{"type":"message","time_ms":1795624185852,"from":"HandoffJill","to":"HandoffAndy","text":"I have 1 wheat and 2 gold_ingot. I'll give you both so you can craft bread and golden_apple; please hold the golden_apple for me or hand it over once crafted."}
+{"type":"model_call","time_ms":1795624188505,"model":"gpt-6-luna","elapsed_ms":2322,"input_tokens":2383,"output_tokens":148}
+{"type":"message","time_ms":1795624188508,"from":"HandoffAndy","to":"HandoffJill","text":"!startConversation(\"HandoffJill\", \"Thanks! Please give me the 1 wheat and 2 gold_ingot. I’ll craft the bread and golden_apple, then hand you the golden_apple.\")"}
+{"type":"command","time_ms":1795624188512,"agent":0,"name":"!startConversation"}
+{"type":"message","time_ms":1795624188514,"from":"HandoffAndy","to":"HandoffJill","text":"Thanks! Please give me the 1 wheat and 2 gold_ingot. I’ll craft the bread and golden_apple, then hand you the golden_apple."}
+{"type":"model_call","time_ms":1795624190639,"model":"gpt-6-luna","elapsed_ms":1787,"input_tokens":2523,"output_tokens":38}
+{"type":"message","time_ms":1795624190641,"from":"HandoffJill","to":"HandoffAndy","text":"!givePlayer(\"HandoffAndy\", \"wheat\", 1)"}
+{"type":"inventory","time_ms":1795624191539,"agent":1,"items":{"gold_ingot":2},"has_target":false}
+{"type":"model_call","time_ms":1795624193223,"model":"gpt-6-luna","elapsed_ms":2193,"input_tokens":2510,"output_tokens":99}
+{"type":"message","time_ms":1795624193225,"from":"HandoffAndy","to":"HandoffJill","text":"!inventory"}
+{"type":"command","time_ms":1795624193226,"agent":0,"name":"!inventory"}
+{"type":"inventory","time_ms":1795624193515,"agent":0,"items":{"wheat":3,"apple":1,"gold_ingot":6},"has_target":false}
+{"type":"command","time_ms":1795624193652,"agent":1,"name":"!givePlayer"}
+{"type":"model_call","time_ms":1795624195314,"model":"gpt-6-luna","elapsed_ms":1669,"input_tokens":2553,"output_tokens":39}
+{"type":"model_call","time_ms":1795624198113,"model":"gpt-6-luna","elapsed_ms":4131,"input_tokens":2553,"output_tokens":225}
+{"type":"model_call","time_ms":1795624198648,"model":"gpt-6-luna","elapsed_ms":2022,"input_tokens":2618,"output_tokens":34}
+{"type":"message","time_ms":1795624198650,"from":"HandoffJill","to":"HandoffAndy","text":"!givePlayer(\"HandoffAndy\", \"gold_ingot\", 2)"}
+{"type":"inventory","time_ms":1795624198713,"agent":1,"items":{},"has_target":false}
+{"type":"command","time_ms":1795624200719,"agent":1,"name":"!givePlayer"}
+{"type":"inventory","time_ms":1795624200725,"agent":0,"items":{"wheat":3,"apple":1,"gold_ingot":8},"has_target":false}
+{"type":"model_call","time_ms":1795624201025,"model":"gpt-6-luna","elapsed_ms":4044,"input_tokens":2575,"output_tokens":173}
+{"type":"model_call","time_ms":1795624204172,"model":"gpt-6-luna","elapsed_ms":3327,"input_tokens":2677,"output_tokens":185}
+{"type":"message","time_ms":1795624204174,"from":"HandoffJill","to":"HandoffAndy","text":"!inventory"}
+{"type":"command","time_ms":1795624204174,"agent":1,"name":"!inventory"}
+{"type":"model_call","time_ms":1795624206767,"model":"gpt-6-luna","elapsed_ms":2483,"input_tokens":2702,"output_tokens":146}
+{"type":"message","time_ms":1795624206768,"from":"HandoffJill","to":"HandoffAndy","text":"!inventory"}
+{"type":"command","time_ms":1795624206769,"agent":1,"name":"!inventory"}
+{"type":"model_call","time_ms":1795624207492,"model":"gpt-6-luna","elapsed_ms":3719,"input_tokens":2615,"output_tokens":251}
+{"type":"model_call","time_ms":1795624210214,"model":"gpt-6-luna","elapsed_ms":2912,"input_tokens":2727,"output_tokens":176}
+{"type":"message","time_ms":1795624210216,"from":"HandoffJill","to":"HandoffAndy","text":"!goToPlayer(\"HandoffAndy\", 2)"}
+{"type":"command","time_ms":1795624210447,"agent":1,"name":"!goToPlayer"}
+{"type":"model_call","time_ms":1795624213693,"model":"gpt-6-luna","elapsed_ms":3459,"input_tokens":522,"output_tokens":355}
+{"type":"model_call","time_ms":1795624216204,"model":"gpt-6-luna","elapsed_ms":2867,"input_tokens":2369,"output_tokens":100}
+{"type":"message","time_ms":1795624216206,"from":"HandoffJill","to":"HandoffAndy","text":"!startConversation(\"HandoffAndy\", \"I need a golden apple (1 apple + 8 gold ingots). Do you have ingredients or can you help find them? I have no items currently.\")"}
+{"type":"command","time_ms":1795624216207,"agent":1,"name":"!startConversation"}
+{"type":"message","time_ms":1795624216208,"from":"HandoffJill","to":"HandoffAndy","text":"I need a golden apple (1 apple + 8 gold ingots). Do you have ingredients or can you help find them? I have no items currently."}
+{"type":"model_call","time_ms":1795624217488,"model":"gpt-6-luna","elapsed_ms":2143,"input_tokens":2664,"output_tokens":94}
+{"type":"model_call","time_ms":1795624220401,"model":"gpt-6-luna","elapsed_ms":2042,"input_tokens":2749,"output_tokens":59}
+{"type":"message","time_ms":1795624220404,"from":"HandoffAndy","to":"HandoffJill","text":"!inventory"}
+{"type":"command","time_ms":1795624220405,"agent":0,"name":"!inventory"}
+{"type":"model_call","time_ms":1795624224299,"model":"gpt-6-luna","elapsed_ms":2941,"input_tokens":2491,"output_tokens":99}
+{"type":"message","time_ms":1795624224301,"from":"HandoffAndy","to":"HandoffJill","text":"!craftRecipe(\"bread\", 1)"}
+{"type":"inventory","time_ms":1795624224426,"agent":0,"items":{"bread":1,"wheat":3,"apple":1,"gold_ingot":8},"has_target":true}
+{"type":"inventory","time_ms":1795624224426,"agent":0,"items":{"bread":1,"apple":1,"gold_ingot":8},"has_target":true}
+{"type":"command","time_ms":1795624224428,"agent":0,"name":"!craftRecipe"}
+{"type":"model_call","time_ms":1795624226060,"model":"gpt-6-luna","elapsed_ms":4698,"input_tokens":519,"output_tokens":291}
+{"type":"model_call","time_ms":1795624226723,"model":"gpt-6-luna","elapsed_ms":2135,"input_tokens":2528,"output_tokens":105}
+{"type":"message","time_ms":1795624226724,"from":"HandoffAndy","to":"HandoffJill","text":"!givePlayer(\"HandoffJill\", \"apple\", 1)"}
+{"type":"inventory","time_ms":1795624229645,"agent":0,"items":{"bread":1,"gold_ingot":8},"has_target":true}
+{"type":"model_call","time_ms":1795624230510,"model":"gpt-6-luna","elapsed_ms":3080,"input_tokens":402,"output_tokens":251}
+{"type":"inventory","time_ms":1795624232463,"agent":1,"items":{"apple":1},"has_target":false}
+{"type":"command","time_ms":1795624232657,"agent":0,"name":"!givePlayer"}
+{"type":"model_call","time_ms":1795624234746,"model":"gpt-6-luna","elapsed_ms":2910,"input_tokens":2602,"output_tokens":159}
+{"type":"message","time_ms":1795624234747,"from":"HandoffJill","to":"HandoffAndy","text":"!inventory"}
+{"type":"command","time_ms":1795624234748,"agent":1,"name":"!inventory"}
+{"type":"model_call","time_ms":1795624235381,"model":"gpt-6-luna","elapsed_ms":2598,"input_tokens":2564,"output_tokens":72}
+{"type":"model_call","time_ms":1795624237874,"model":"gpt-6-luna","elapsed_ms":3126,"input_tokens":434,"output_tokens":249}
+{"type":"model_call","time_ms":1795624242559,"model":"gpt-6-luna","elapsed_ms":4694,"input_tokens":2482,"output_tokens":484}
+{"type":"message","time_ms":1795624242561,"from":"HandoffJill","to":"HandoffAndy","text":"!endConversation(\"HandoffAndy\")"}
+{"type":"command","time_ms":1795624242562,"agent":1,"name":"!endConversation"}
+{"type":"model_call","time_ms":1795624243182,"model":"gpt-6-luna","elapsed_ms":3317,"input_tokens":2604,"output_tokens":80}
+{"type":"model_call","time_ms":1795624245340,"model":"gpt-6-luna","elapsed_ms":2666,"input_tokens":2502,"output_tokens":142}
+{"type":"command","time_ms":1795624245341,"agent":1,"name":"!startConversation"}
+{"type":"message","time_ms":1795624245341,"from":"HandoffJill","to":"HandoffAndy","text":"I have the apple now, but need 8 gold ingots to craft my golden apple. How is the bread coming, and do you have gold?"}
+{"type":"model_call","time_ms":1795624250677,"model":"gpt-6-luna","elapsed_ms":5134,"input_tokens":442,"output_tokens":450}
+{"type":"model_call","time_ms":1795624252408,"model":"gpt-6-luna","elapsed_ms":3736,"input_tokens":2522,"output_tokens":127}
+{"type":"model_call","time_ms":1795624253634,"model":"gpt-6-luna","elapsed_ms":1964,"input_tokens":2525,"output_tokens":72}
+{"type":"message","time_ms":1795624253635,"from":"HandoffAndy","to":"HandoffJill","text":"!givePlayer(\"HandoffJill\", \"gold_ingot\", 8)"}
+{"type":"inventory","time_ms":1795624253725,"agent":0,"items":{"bread":1},"has_target":true}
+{"type":"inventory","time_ms":1795624255715,"agent":1,"items":{"apple":1,"gold_ingot":8},"has_target":false}
+{"type":"command","time_ms":1795624255730,"agent":0,"name":"!givePlayer"}
+{"type":"model_call","time_ms":1795624258793,"model":"gpt-6-luna","elapsed_ms":2946,"input_tokens":2585,"output_tokens":89}
+{"type":"message","time_ms":1795624258794,"from":"HandoffAndy","to":"HandoffJill","text":"!startConversation(\"HandoffJill\", \"I have bread and just gave you 1 apple and 8 gold ingots. Please craft and hold your golden apple now; I’m holding my bread.\")"}
+{"type":"command","time_ms":1795624258795,"agent":0,"name":"!startConversation"}
+{"type":"message","time_ms":1795624258797,"from":"HandoffAndy","to":"HandoffJill","text":"I have bread and just gave you 1 apple and 8 gold ingots. Please craft and hold your golden apple now; I’m holding my bread."}
+{"type":"model_call","time_ms":1795624261595,"model":"gpt-6-luna","elapsed_ms":2957,"input_tokens":425,"output_tokens":238}
+{"type":"model_call","time_ms":1795624262374,"model":"gpt-6-luna","elapsed_ms":3579,"input_tokens":416,"output_tokens":339}
+{"type":"model_call","time_ms":1795624263459,"model":"gpt-6-luna","elapsed_ms":1702,"input_tokens":2575,"output_tokens":38}
+{"type":"message","time_ms":1795624263461,"from":"HandoffJill","to":"HandoffAndy","text":"!craftRecipe(\"golden_apple\", 1)"}
+{"type":"inventory","time_ms":1795624264159,"agent":1,"items":{"golden_apple":1,"apple":1,"gold_ingot":8},"has_target":true}
+{"type":"inventory","time_ms":1795624264160,"agent":1,"items":{"golden_apple":1,"gold_ingot":8},"has_target":true}
+{"type":"inventory","time_ms":1795624264160,"agent":1,"items":{"golden_apple":1},"has_target":true}
+{"type":"command","time_ms":1795624264162,"agent":1,"name":"!craftRecipe"}

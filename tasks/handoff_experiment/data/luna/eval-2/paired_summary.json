@@ -1,0 +1,52 @@
+{
+  "overall": {
+    "planned_pairs": 5,
+    "valid_pairs": 5,
+    "both_complete": 5,
+    "learned_only": 0,
+    "baseline_only": 0,
+    "neither_complete": 0,
+    "error": 0,
+    "unpaired": 0,
+    "learned_minus_baseline_completion_rate": 0.0,
+    "mean_learned_minus_baseline_capped_seconds": -7.474
+  },
+  "scenarios": {
+    "held_out_cross_hells_kitchen": {
+      "planned_pairs": 2,
+      "valid_pairs": 2,
+      "both_complete": 2,
+      "learned_only": 0,
+      "baseline_only": 0,
+      "neither_complete": 0,
+      "error": 0,
+      "unpaired": 0,
+      "learned_minus_baseline_completion_rate": 0.0,
+      "mean_learned_minus_baseline_capped_seconds": -7.918
+    },
+    "held_out_role_hells_kitchen": {
+      "planned_pairs": 2,
+      "valid_pairs": 2,
+      "both_complete": 2,
+      "learned_only": 0,
+      "baseline_only": 0,
+      "neither_complete": 0,
+      "error": 0,
+      "unpaired": 0,
+      "learned_minus_baseline_completion_rate": 0.0,
+      "mean_learned_minus_baseline_capped_seconds": -26.86
+    },
+    "held_out_new_hells_kitchen": {
+      "planned_pairs": 1,
+      "valid_pairs": 1,
+      "both_complete": 1,
+      "learned_only": 0,
+      "baseline_only": 0,
+      "neither_complete": 0,
+      "error": 0,
+      "unpaired": 0,
+      "learned_minus_baseline_completion_rate": 0.0,
+      "mean_learned_minus_baseline_capped_seconds": 32.188
+    }
+  }
+}

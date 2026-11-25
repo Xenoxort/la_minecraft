@@ -1,0 +1,26 @@
+{
+  "held_out_new_hells_kitchen": {
+    "type": "cooking",
+    "agent_count": 2,
+    "goal": {
+      "0": "You are HandoffAndy. Your assigned dish is cookie. HandoffJill's assigned dish is pumpkin_pie. Their recipe needs 1 pumpkin, 1 egg, 1 sugar. Use the crafting table between you. You may share recipes, ingredients and finished dishes. The team completes the task when each agent holds their own assigned dish at the same time.",
+      "1": "You are HandoffJill. Your assigned dish is pumpkin_pie. HandoffAndy's assigned dish is cookie. Their recipe needs 2 wheat, 1 cocoa_beans. Use the crafting table between you. You may share recipes, ingredients and finished dishes. The team completes the task when each agent holds their own assigned dish at the same time."
+    },
+    "target": [
+      "cookie",
+      "pumpkin_pie"
+    ],
+    "initial_inventory": {
+      "0": {
+        "wheat": 2,
+        "sugar": 1
+      },
+      "1": {
+        "cocoa_beans": 1,
+        "pumpkin": 1,
+        "egg": 1
+      }
+    },
+    "handoff_experiment": true
+  }
+}

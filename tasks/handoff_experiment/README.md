@@ -1,5 +1,7 @@
 # MineCollab coordination handoff experiment
 
+The [live GPT-6 Luna results](LUNA_RESULTS.md) include all 15 matched pairs and the frozen practice note. [Reproduction and offline replay](REPRODUCE.md)
+
 The runner collects eight practice episodes, updates one team note after each, and freezes it before evaluation. Fresh teams play the same three held-out scenarios with and without that note. The default is five repetitions per condition per scenario (30 evaluation episodes).
 
 Each episode starts in a clean, deterministic Minecraft kitchen with one crafting table and split inventories. Each agent sees its own target and the other agent's recipe. Both can share ingredients, recipes, and dishes. The benchmark measures transfer of coordination procedures. Vanilla recipes may already be familiar to the bots' model.

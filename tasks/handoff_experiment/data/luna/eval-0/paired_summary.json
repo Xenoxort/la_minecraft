@@ -1,0 +1,40 @@
+{
+  "overall": {
+    "planned_pairs": 5,
+    "valid_pairs": 5,
+    "both_complete": 5,
+    "learned_only": 0,
+    "baseline_only": 0,
+    "neither_complete": 0,
+    "error": 0,
+    "unpaired": 0,
+    "learned_minus_baseline_completion_rate": 0.0,
+    "mean_learned_minus_baseline_capped_seconds": 4.204
+  },
+  "scenarios": {
+    "held_out_new_hells_kitchen": {
+      "planned_pairs": 4,
+      "valid_pairs": 4,
+      "both_complete": 4,
+      "learned_only": 0,
+      "baseline_only": 0,
+      "neither_complete": 0,
+      "error": 0,
+      "unpaired": 0,
+      "learned_minus_baseline_completion_rate": 0.0,
+      "mean_learned_minus_baseline_capped_seconds": 1.122
+    },
+    "held_out_role_hells_kitchen": {
+      "planned_pairs": 1,
+      "valid_pairs": 1,
+      "both_complete": 1,
+      "learned_only": 0,
+      "baseline_only": 0,
+      "neither_complete": 0,
+      "error": 0,
+      "unpaired": 0,
+      "learned_minus_baseline_completion_rate": 0.0,
+      "mean_learned_minus_baseline_capped_seconds": 16.533
+    }
+  }
+}

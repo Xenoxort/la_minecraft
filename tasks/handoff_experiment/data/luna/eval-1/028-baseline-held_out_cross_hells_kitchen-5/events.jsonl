@@ -1,0 +1,68 @@
+{"type":"spawned","time_ms":1795625544455,"agent":1}
+{"type":"inventory","time_ms":1795625544456,"agent":1,"items":{},"has_target":false}
+{"type":"spawned","time_ms":1795625544704,"agent":0}
+{"type":"inventory","time_ms":1795625544705,"agent":0,"items":{},"has_target":false}
+{"type":"inventory","time_ms":1795625545081,"agent":0,"items":{"red_mushroom":1,"beetroot":6,"bowl":1},"has_target":false}
+{"type":"ready","time_ms":1795625545081,"agent":0}
+{"type":"inventory","time_ms":1795625545087,"agent":1,"items":{"brown_mushroom":1,"bowl":1},"has_target":false}
+{"type":"ready","time_ms":1795625545088,"agent":1}
+{"type":"model_call","time_ms":1795625551706,"model":"gpt-6-luna","elapsed_ms":5750,"input_tokens":2281,"output_tokens":107}
+{"type":"command","time_ms":1795625551712,"agent":1,"name":"!startConversation"}
+{"type":"message","time_ms":1795625551715,"from":"HandoffJill","to":"HandoffAndy","text":"I have 1 brown_mushroom and 1 bowl for your mushroom_stew. I need 6 beetroot to make beetroot_soup. Can you share beetroot if you have any?"}
+{"type":"model_call","time_ms":1795625556888,"model":"gpt-6-luna","elapsed_ms":4794,"input_tokens":2374,"output_tokens":129}
+{"type":"message","time_ms":1795625556890,"from":"HandoffAndy","to":"HandoffJill","text":"!givePlayer(\"HandoffJill\", \"beetroot\", 6)"}
+{"type":"inventory","time_ms":1795625557841,"agent":0,"items":{"red_mushroom":1,"bowl":1},"has_target":false}
+{"type":"inventory","time_ms":1795625559861,"agent":0,"items":{"red_mushroom":1,"beetroot":6,"bowl":1},"has_target":false}
+{"type":"command","time_ms":1795625560875,"agent":0,"name":"!givePlayer"}
+{"type":"model_call","time_ms":1795625564354,"model":"gpt-6-luna","elapsed_ms":3341,"input_tokens":2448,"output_tokens":248}
+{"type":"message","time_ms":1795625564355,"from":"HandoffAndy","to":"HandoffJill","text":"!startConversation(\"HandoffJill\", \"The beetroot handoff failed and my 6 beetroot were discarded. I have a bowl and red mushroom; please give me your brown mushroom so I can make the stew.\")"}
+{"type":"command","time_ms":1795625564356,"agent":0,"name":"!startConversation"}
+{"type":"message","time_ms":1795625564357,"from":"HandoffAndy","to":"HandoffJill","text":"The beetroot handoff failed and my 6 beetroot were discarded. I have a bowl and red mushroom; please give me your brown mushroom so I can make the stew."}
+{"type":"model_call","time_ms":1795625565606,"model":"gpt-6-luna","elapsed_ms":3582,"input_tokens":2369,"output_tokens":259}
+{"type":"model_call","time_ms":1795625567548,"model":"gpt-6-luna","elapsed_ms":2524,"input_tokens":2460,"output_tokens":69}
+{"type":"message","time_ms":1795625567551,"from":"HandoffJill","to":"HandoffAndy","text":"!givePlayer(\"HandoffAndy\", \"brown_mushroom\", 1)"}
+{"type":"inventory","time_ms":1795625567904,"agent":1,"items":{"bowl":1},"has_target":false}
+{"type":"inventory","time_ms":1795625569907,"agent":1,"items":{"brown_mushroom":1,"bowl":1},"has_target":false}
+{"type":"command","time_ms":1795625571089,"agent":1,"name":"!givePlayer"}
+{"type":"model_call","time_ms":1795625571181,"model":"gpt-6-luna","elapsed_ms":1604,"input_tokens":2492,"output_tokens":47}
+{"type":"model_call","time_ms":1795625574608,"model":"gpt-6-luna","elapsed_ms":2010,"input_tokens":2581,"output_tokens":84}
+{"type":"message","time_ms":1795625574610,"from":"HandoffAndy","to":"HandoffJill","text":"!inventory"}
+{"type":"command","time_ms":1795625574610,"agent":0,"name":"!inventory"}
+{"type":"model_call","time_ms":1795625576203,"model":"gpt-6-luna","elapsed_ms":3805,"input_tokens":2593,"output_tokens":285}
+{"type":"model_call","time_ms":1795625579459,"model":"gpt-6-luna","elapsed_ms":3857,"input_tokens":2626,"output_tokens":158}
+{"type":"message","time_ms":1795625579461,"from":"HandoffAndy","to":"HandoffJill","text":"!goToPlayer(\"HandoffJill\", 2)"}
+{"type":"command","time_ms":1795625580232,"agent":0,"name":"!goToPlayer"}
+{"type":"model_call","time_ms":1795625581821,"model":"gpt-6-luna","elapsed_ms":35726,"input_tokens":2271,"output_tokens":4017}
+{"type":"model_call","time_ms":1795625581992,"model":"gpt-6-luna","elapsed_ms":1633,"input_tokens":2670,"output_tokens":50}
+{"type":"message","time_ms":1795625581993,"from":"HandoffAndy","to":"HandoffJill","text":"!givePlayer(\"HandoffJill\", \"beetroot\", 6)"}
+{"type":"inventory","time_ms":1795625584926,"agent":0,"items":{"red_mushroom":1,"bowl":1},"has_target":false}
+{"type":"inventory","time_ms":1795625587829,"agent":1,"items":{"brown_mushroom":1,"bowl":1,"beetroot":6},"has_target":false}
+{"type":"command","time_ms":1795625587931,"agent":0,"name":"!givePlayer"}
+{"type":"model_call","time_ms":1795625589541,"model":"gpt-6-luna","elapsed_ms":2429,"input_tokens":2687,"output_tokens":72}
+{"type":"message","time_ms":1795625589542,"from":"HandoffJill","to":"HandoffAndy","text":"!inventory"}
+{"type":"command","time_ms":1795625589543,"agent":1,"name":"!inventory"}
+{"type":"model_call","time_ms":1795625590134,"model":"gpt-6-luna","elapsed_ms":2072,"input_tokens":2725,"output_tokens":96}
+{"type":"model_call","time_ms":1795625592039,"model":"gpt-6-luna","elapsed_ms":1924,"input_tokens":2739,"output_tokens":112}
+{"type":"message","time_ms":1795625592041,"from":"HandoffJill","to":"HandoffAndy","text":"!craftRecipe(\"beetroot_soup\", 1)"}
+{"type":"inventory","time_ms":1795625592828,"agent":1,"items":{"beetroot_soup":1,"brown_mushroom":1,"bowl":1,"beetroot":6},"has_target":true}
+{"type":"inventory","time_ms":1795625592829,"agent":1,"items":{"beetroot_soup":1,"brown_mushroom":1,"beetroot":6},"has_target":true}
+{"type":"inventory","time_ms":1795625592829,"agent":1,"items":{"beetroot_soup":1,"brown_mushroom":1},"has_target":true}
+{"type":"command","time_ms":1795625592831,"agent":1,"name":"!craftRecipe"}
+{"type":"model_call","time_ms":1795625595094,"model":"gpt-6-luna","elapsed_ms":1976,"input_tokens":2782,"output_tokens":97}
+{"type":"message","time_ms":1795625595096,"from":"HandoffJill","to":"HandoffAndy","text":"!givePlayer(\"HandoffAndy\", \"brown_mushroom\", 1)"}
+{"type":"inventory","time_ms":1795625596089,"agent":1,"items":{"beetroot_soup":1},"has_target":true}
+{"type":"inventory","time_ms":1795625598077,"agent":0,"items":{"red_mushroom":1,"brown_mushroom":1,"bowl":1},"has_target":false}
+{"type":"command","time_ms":1795625598095,"agent":1,"name":"!givePlayer"}
+{"type":"model_call","time_ms":1795625600975,"model":"gpt-6-luna","elapsed_ms":2878,"input_tokens":510,"output_tokens":218}
+{"type":"model_call","time_ms":1795625603308,"model":"gpt-6-luna","elapsed_ms":2083,"input_tokens":2604,"output_tokens":113}
+{"type":"message","time_ms":1795625603310,"from":"HandoffJill","to":"HandoffAndy","text":"!startConversation(\"HandoffAndy\", \"I have my beetroot_soup. You should now have the brown_mushroom—please craft your mushroom_stew with your red_mushroom and bowl.\")"}
+{"type":"command","time_ms":1795625603310,"agent":1,"name":"!startConversation"}
+{"type":"message","time_ms":1795625603311,"from":"HandoffJill","to":"HandoffAndy","text":"I have my beetroot_soup. You should now have the brown_mushroom—please craft your mushroom_stew with your red_mushroom and bowl."}
+{"type":"model_call","time_ms":1795625603452,"model":"gpt-6-luna","elapsed_ms":3345,"input_tokens":511,"output_tokens":320}
+{"type":"model_call","time_ms":1795625605363,"model":"gpt-6-luna","elapsed_ms":1728,"input_tokens":2616,"output_tokens":48}
+{"type":"message","time_ms":1795625605364,"from":"HandoffAndy","to":"HandoffJill","text":"!craftRecipe(\"mushroom_stew\", 1)"}
+{"type":"inventory","time_ms":1795625605367,"agent":0,"items":{"red_mushroom":1,"bowl":1},"has_target":false}
+{"type":"inventory","time_ms":1795625605372,"agent":0,"items":{"bowl":1},"has_target":false}
+{"type":"inventory","time_ms":1795625605377,"agent":0,"items":{},"has_target":false}
+{"type":"inventory","time_ms":1795625605382,"agent":0,"items":{"mushroom_stew":1},"has_target":true}
+{"type":"command","time_ms":1795625605386,"agent":0,"name":"!craftRecipe"}

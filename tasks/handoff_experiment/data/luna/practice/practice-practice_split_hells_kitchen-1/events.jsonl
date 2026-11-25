@@ -1,0 +1,31 @@
+{"type":"spawned","time_ms":1795623488300,"agent":0}
+{"type":"inventory","time_ms":1795623488300,"agent":0,"items":{},"has_target":false}
+{"type":"spawned","time_ms":1795623488478,"agent":1}
+{"type":"inventory","time_ms":1795623488478,"agent":1,"items":{},"has_target":false}
+{"type":"inventory","time_ms":1795623488776,"agent":0,"items":{"wheat":3,"gold_ingot":5},"has_target":false}
+{"type":"ready","time_ms":1795623488777,"agent":0}
+{"type":"inventory","time_ms":1795623488808,"agent":1,"items":{"apple":1,"gold_ingot":3},"has_target":false}
+{"type":"ready","time_ms":1795623488809,"agent":1}
+{"type":"model_call","time_ms":1795623492595,"model":"gpt-6-luna","elapsed_ms":3112,"input_tokens":2259,"output_tokens":125}
+{"type":"inventory","time_ms":1795623492748,"agent":0,"items":{"bread":1,"wheat":3,"gold_ingot":5},"has_target":true}
+{"type":"inventory","time_ms":1795623492751,"agent":0,"items":{"bread":1,"gold_ingot":5},"has_target":true}
+{"type":"command","time_ms":1795623492754,"agent":0,"name":"!craftRecipe"}
+{"type":"model_call","time_ms":1795623495395,"model":"gpt-6-luna","elapsed_ms":2366,"input_tokens":2296,"output_tokens":112}
+{"type":"command","time_ms":1795623495400,"agent":0,"name":"!startConversation"}
+{"type":"message","time_ms":1795623495402,"from":"HandoffAndy","to":"HandoffJill","text":"I have 5 gold_ingot for your golden_apple recipe. I'll give them to you; you'll still need 3 more gold_ingot and 1 apple."}
+{"type":"model_call","time_ms":1795623495935,"model":"gpt-6-luna","elapsed_ms":6368,"input_tokens":2246,"output_tokens":133}
+{"type":"model_call","time_ms":1795623499109,"model":"gpt-6-luna","elapsed_ms":3262,"input_tokens":2333,"output_tokens":116}
+{"type":"message","time_ms":1795623499111,"from":"HandoffJill","to":"HandoffAndy","text":"!startConversation(\"HandoffAndy\", \"Please give me your 5 gold_ingot; I have the apple and 3 more ingots, enough to craft the golden_apple.\")"}
+{"type":"command","time_ms":1795623499112,"agent":1,"name":"!startConversation"}
+{"type":"message","time_ms":1795623499113,"from":"HandoffJill","to":"HandoffAndy","text":"Please give me your 5 gold_ingot; I have the apple and 3 more ingots, enough to craft the golden_apple."}
+{"type":"model_call","time_ms":1795623501538,"model":"gpt-6-luna","elapsed_ms":2101,"input_tokens":2391,"output_tokens":30}
+{"type":"message","time_ms":1795623501540,"from":"HandoffAndy","to":"HandoffJill","text":"!givePlayer(\"HandoffJill\", \"gold_ingot\", 5)"}
+{"type":"inventory","time_ms":1795623502033,"agent":0,"items":{"bread":1},"has_target":true}
+{"type":"command","time_ms":1795623504036,"agent":0,"name":"!givePlayer"}
+{"type":"inventory","time_ms":1795623504043,"agent":1,"items":{"apple":1,"gold_ingot":8},"has_target":false}
+{"type":"model_call","time_ms":1795623508846,"model":"gpt-6-luna","elapsed_ms":2026,"input_tokens":2455,"output_tokens":47}
+{"type":"message","time_ms":1795623508849,"from":"HandoffJill","to":"HandoffAndy","text":"!craftRecipe(\"golden_apple\", 1)"}
+{"type":"inventory","time_ms":1795623509093,"agent":1,"items":{"golden_apple":1,"apple":1,"gold_ingot":8},"has_target":true}
+{"type":"inventory","time_ms":1795623509093,"agent":1,"items":{"golden_apple":1,"gold_ingot":8},"has_target":true}
+{"type":"inventory","time_ms":1795623509093,"agent":1,"items":{"golden_apple":1},"has_target":true}
+{"type":"command","time_ms":1795623509104,"agent":1,"name":"!craftRecipe"}

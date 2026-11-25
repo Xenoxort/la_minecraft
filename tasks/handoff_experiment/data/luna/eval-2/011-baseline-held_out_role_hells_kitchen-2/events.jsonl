@@ -1,0 +1,83 @@
+{"type":"spawned","time_ms":1795624584064,"agent":1}
+{"type":"inventory","time_ms":1795624584066,"agent":1,"items":{},"has_target":false}
+{"type":"spawned","time_ms":1795624584233,"agent":0}
+{"type":"inventory","time_ms":1795624584233,"agent":0,"items":{},"has_target":false}
+{"type":"inventory","time_ms":1795624584641,"agent":0,"items":{"wheat":1,"gold_ingot":2},"has_target":false}
+{"type":"ready","time_ms":1795624584642,"agent":0}
+{"type":"inventory","time_ms":1795624584681,"agent":1,"items":{"apple":1,"wheat":2,"gold_ingot":6},"has_target":false}
+{"type":"ready","time_ms":1795624584681,"agent":1}
+{"type":"model_call","time_ms":1795624587461,"model":"gpt-6-luna","elapsed_ms":2191,"input_tokens":2247,"output_tokens":73}
+{"type":"command","time_ms":1795624587465,"agent":0,"name":"!getCraftingPlan"}
+{"type":"model_call","time_ms":1795624587828,"model":"gpt-6-luna","elapsed_ms":2362,"input_tokens":2264,"output_tokens":122}
+{"type":"command","time_ms":1795624587834,"agent":1,"name":"!startConversation"}
+{"type":"message","time_ms":1795624587835,"from":"HandoffJill","to":"HandoffAndy","text":"I have 1 apple, 2 wheat, and 6 gold_ingot. I need 4 more wheat to make bread; do you have any wheat, and do you have the 2 extra gold ingots for your golden apple?"}
+{"type":"model_call","time_ms":1795624590341,"model":"gpt-6-luna","elapsed_ms":2368,"input_tokens":2321,"output_tokens":127}
+{"type":"model_call","time_ms":1795624593714,"model":"gpt-6-luna","elapsed_ms":2746,"input_tokens":2441,"output_tokens":214}
+{"type":"message","time_ms":1795624593717,"from":"HandoffAndy","to":"HandoffJill","text":"!startConversation(\"HandoffJill\", \"I have 1 wheat and 2 gold ingots. I’ll give you the wheat for bread; please give me your apple and 6 gold ingots so I can craft the golden apple.\")"}
+{"type":"command","time_ms":1795624593718,"agent":0,"name":"!startConversation"}
+{"type":"message","time_ms":1795624593719,"from":"HandoffAndy","to":"HandoffJill","text":"I have 1 wheat and 2 gold ingots. I’ll give you the wheat for bread; please give me your apple and 6 gold ingots so I can craft the golden apple."}
+{"type":"model_call","time_ms":1795624595970,"model":"gpt-6-luna","elapsed_ms":1866,"input_tokens":2384,"output_tokens":90}
+{"type":"message","time_ms":1795624595972,"from":"HandoffJill","to":"HandoffAndy","text":"!givePlayer(\"HandoffAndy\", \"apple\", 1)"}
+{"type":"inventory","time_ms":1795624597141,"agent":1,"items":{"wheat":2,"gold_ingot":6},"has_target":false}
+{"type":"inventory","time_ms":1795624599173,"agent":0,"items":{"wheat":1,"gold_ingot":2,"apple":1},"has_target":false}
+{"type":"command","time_ms":1795624599662,"agent":1,"name":"!givePlayer"}
+{"type":"model_call","time_ms":1795624600763,"model":"gpt-6-luna","elapsed_ms":1881,"input_tokens":2412,"output_tokens":62}
+{"type":"model_call","time_ms":1795624602734,"model":"gpt-6-luna","elapsed_ms":1587,"input_tokens":2578,"output_tokens":50}
+{"type":"message","time_ms":1795624602735,"from":"HandoffAndy","to":"HandoffJill","text":"!givePlayer(\"HandoffJill\", \"wheat\", 1)"}
+{"type":"inventory","time_ms":1795624602809,"agent":0,"items":{"gold_ingot":2,"apple":1},"has_target":false}
+{"type":"model_call","time_ms":1795624603468,"model":"gpt-6-luna","elapsed_ms":1622,"input_tokens":2476,"output_tokens":51}
+{"type":"inventory","time_ms":1795624604771,"agent":1,"items":{"wheat":3,"gold_ingot":6},"has_target":false}
+{"type":"command","time_ms":1795624604815,"agent":0,"name":"!givePlayer"}
+{"type":"model_call","time_ms":1795624606835,"model":"gpt-6-luna","elapsed_ms":1861,"input_tokens":2635,"output_tokens":76}
+{"type":"message","time_ms":1795624606837,"from":"HandoffAndy","to":"HandoffJill","text":"!inventory"}
+{"type":"command","time_ms":1795624606838,"agent":0,"name":"!inventory"}
+{"type":"model_call","time_ms":1795624612937,"model":"gpt-6-luna","elapsed_ms":4966,"input_tokens":2672,"output_tokens":519}
+{"type":"message","time_ms":1795624612938,"from":"HandoffAndy","to":"HandoffJill","text":"!craftable"}
+{"type":"command","time_ms":1795624613003,"agent":0,"name":"!craftable"}
+{"type":"model_call","time_ms":1795624614061,"model":"gpt-6-luna","elapsed_ms":2072,"input_tokens":2529,"output_tokens":106}
+{"type":"model_call","time_ms":1795624618648,"model":"gpt-6-luna","elapsed_ms":5486,"input_tokens":2706,"output_tokens":543}
+{"type":"message","time_ms":1795624618650,"from":"HandoffAndy","to":"HandoffJill","text":"!endConversation(\"HandoffJill\")"}
+{"type":"command","time_ms":1795624618656,"agent":0,"name":"!endConversation"}
+{"type":"model_call","time_ms":1795624620569,"model":"gpt-6-luna","elapsed_ms":2332,"input_tokens":2561,"output_tokens":132}
+{"type":"model_call","time_ms":1795624622035,"model":"gpt-6-luna","elapsed_ms":3376,"input_tokens":509,"output_tokens":271}
+{"type":"model_call","time_ms":1795624624081,"model":"gpt-6-luna","elapsed_ms":2221,"input_tokens":2388,"output_tokens":81}
+{"type":"model_call","time_ms":1795624625882,"model":"gpt-6-luna","elapsed_ms":2016,"input_tokens":2607,"output_tokens":105}
+{"type":"command","time_ms":1795624625885,"agent":1,"name":"!inventory"}
+{"type":"model_call","time_ms":1795624627188,"model":"gpt-6-luna","elapsed_ms":2379,"input_tokens":2676,"output_tokens":173}
+{"type":"command","time_ms":1795624627191,"agent":0,"name":"!startConversation"}
+{"type":"message","time_ms":1795624627193,"from":"HandoffAndy","to":"HandoffJill","text":"I have the apple and you have enough wheat for bread now. Please give me your 6 gold ingots so I can craft the golden apple; keep your wheat for bread."}
+{"type":"model_call","time_ms":1795624629155,"model":"gpt-6-luna","elapsed_ms":2217,"input_tokens":2644,"output_tokens":107}
+{"type":"message","time_ms":1795624629158,"from":"HandoffJill","to":"HandoffAndy","text":"!craftRecipe(\"bread\", 1)"}
+{"type":"inventory","time_ms":1795624629504,"agent":1,"items":{"bread":1,"wheat":3,"gold_ingot":6},"has_target":true}
+{"type":"inventory","time_ms":1795624629505,"agent":1,"items":{"bread":1,"gold_ingot":6},"has_target":true}
+{"type":"command","time_ms":1795624629515,"agent":1,"name":"!craftRecipe"}
+{"type":"model_call","time_ms":1795624631721,"model":"gpt-6-luna","elapsed_ms":1798,"input_tokens":2482,"output_tokens":63}
+{"type":"message","time_ms":1795624631724,"from":"HandoffJill","to":"HandoffAndy","text":"!givePlayer(\"HandoffAndy\", \"gold_ingot\", 6)"}
+{"type":"inventory","time_ms":1795624632374,"agent":1,"items":{"bread":1},"has_target":true}
+{"type":"model_call","time_ms":1795624634010,"model":"gpt-6-luna","elapsed_ms":4291,"input_tokens":481,"output_tokens":386}
+{"type":"inventory","time_ms":1795624634372,"agent":0,"items":{"gold_ingot":8,"apple":1},"has_target":false}
+{"type":"command","time_ms":1795624634381,"agent":1,"name":"!givePlayer"}
+{"type":"model_call","time_ms":1795624635712,"model":"gpt-6-luna","elapsed_ms":1463,"input_tokens":2586,"output_tokens":53}
+{"type":"model_call","time_ms":1795624638404,"model":"gpt-6-luna","elapsed_ms":1496,"input_tokens":2767,"output_tokens":29}
+{"type":"message","time_ms":1795624638406,"from":"HandoffAndy","to":"HandoffJill","text":"!inventory"}
+{"type":"command","time_ms":1795624638410,"agent":0,"name":"!inventory"}
+{"type":"model_call","time_ms":1795624638724,"model":"gpt-6-luna","elapsed_ms":1488,"input_tokens":2625,"output_tokens":34}
+{"type":"message","time_ms":1795624638725,"from":"HandoffJill","to":"HandoffAndy","text":"!inventory"}
+{"type":"command","time_ms":1795624638725,"agent":1,"name":"!inventory"}
+{"type":"model_call","time_ms":1795624641578,"model":"gpt-6-luna","elapsed_ms":1655,"input_tokens":2658,"output_tokens":27}
+{"type":"model_call","time_ms":1795624642489,"model":"gpt-6-luna","elapsed_ms":2208,"input_tokens":2515,"output_tokens":81}
+{"type":"message","time_ms":1795624642490,"from":"HandoffJill","to":"HandoffAndy","text":"!startConversation(\"HandoffAndy\", \"I crafted and am holding my bread, and gave you all 6 gold ingots. Please craft and hold the golden apple so we complete the task.\")"}
+{"type":"command","time_ms":1795624642494,"agent":1,"name":"!startConversation"}
+{"type":"message","time_ms":1795624642494,"from":"HandoffJill","to":"HandoffAndy","text":"I crafted and am holding my bread, and gave you all 6 gold ingots. Please craft and hold the golden apple so we complete the task."}
+{"type":"model_call","time_ms":1795624643355,"model":"gpt-6-luna","elapsed_ms":3428,"input_tokens":435,"output_tokens":314}
+{"type":"model_call","time_ms":1795624643777,"model":"gpt-6-luna","elapsed_ms":3495,"input_tokens":444,"output_tokens":222}
+{"type":"model_call","time_ms":1795624644860,"model":"gpt-6-luna","elapsed_ms":1746,"input_tokens":2723,"output_tokens":81}
+{"type":"message","time_ms":1795624644862,"from":"HandoffAndy","to":"HandoffJill","text":"!inventory"}
+{"type":"command","time_ms":1795624644887,"agent":0,"name":"!inventory"}
+{"type":"model_call","time_ms":1795624646120,"model":"gpt-6-luna","elapsed_ms":2508,"input_tokens":2607,"output_tokens":186}
+{"type":"model_call","time_ms":1795624648967,"model":"gpt-6-luna","elapsed_ms":2911,"input_tokens":2737,"output_tokens":92}
+{"type":"message","time_ms":1795624648969,"from":"HandoffAndy","to":"HandoffJill","text":"!craftRecipe(\"golden_apple\", 1)"}
+{"type":"inventory","time_ms":1795624649900,"agent":0,"items":{"golden_apple":1,"gold_ingot":8,"apple":1},"has_target":true}
+{"type":"inventory","time_ms":1795624649900,"agent":0,"items":{"golden_apple":1,"apple":1},"has_target":true}
+{"type":"inventory","time_ms":1795624649901,"agent":0,"items":{"golden_apple":1},"has_target":true}
+{"type":"command","time_ms":1795624649902,"agent":0,"name":"!craftRecipe"}

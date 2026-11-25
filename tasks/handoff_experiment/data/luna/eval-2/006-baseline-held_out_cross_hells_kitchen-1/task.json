@@ -1,0 +1,26 @@
+{
+  "held_out_cross_hells_kitchen": {
+    "type": "cooking",
+    "agent_count": 2,
+    "goal": {
+      "0": "You are HandoffAndy. Your assigned dish is mushroom_stew. HandoffJill's assigned dish is beetroot_soup. Their recipe needs 6 beetroot, 1 bowl. Use the crafting table between you. You may share recipes, ingredients and finished dishes. The team completes the task when each agent holds their own assigned dish at the same time.",
+      "1": "You are HandoffJill. Your assigned dish is beetroot_soup. HandoffAndy's assigned dish is mushroom_stew. Their recipe needs 1 red_mushroom, 1 brown_mushroom, 1 bowl. Use the crafting table between you. You may share recipes, ingredients and finished dishes. The team completes the task when each agent holds their own assigned dish at the same time."
+    },
+    "target": [
+      "mushroom_stew",
+      "beetroot_soup"
+    ],
+    "initial_inventory": {
+      "0": {
+        "red_mushroom": 1,
+        "beetroot": 6,
+        "bowl": 1
+      },
+      "1": {
+        "brown_mushroom": 1,
+        "bowl": 1
+      }
+    },
+    "handoff_experiment": true
+  }
+}

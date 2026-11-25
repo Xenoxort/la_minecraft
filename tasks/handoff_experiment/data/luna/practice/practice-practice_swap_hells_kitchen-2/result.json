@@ -1,0 +1,22 @@
+{
+  "status": "complete",
+  "error": null,
+  "objectives": 2,
+  "completion_seconds": 19.188,
+  "model_calls": 7,
+  "input_tokens": 16422,
+  "output_tokens": 614,
+  "model_latency_ms": [
+    2734,
+    3969,
+    2213,
+    1916,
+    2104,
+    1839,
+    1787
+  ],
+  "!craftRecipe_seconds": 3.814,
+  "first_message_seconds": 4.787,
+  "!givePlayer_seconds": 12.256,
+  "started_ms": 1795623672437
+}

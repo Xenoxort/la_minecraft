@@ -1,0 +1,50 @@
+{"type":"spawned","time_ms":1795624925331,"agent":1}
+{"type":"inventory","time_ms":1795624925332,"agent":1,"items":{},"has_target":false}
+{"type":"spawned","time_ms":1795624925927,"agent":0}
+{"type":"inventory","time_ms":1795624925928,"agent":0,"items":{},"has_target":false}
+{"type":"inventory","time_ms":1795624926936,"agent":1,"items":{"cocoa_beans":1,"pumpkin":1,"egg":1},"has_target":false}
+{"type":"ready","time_ms":1795624926936,"agent":1}
+{"type":"inventory","time_ms":1795624927043,"agent":0,"items":{"wheat":2,"sugar":1},"has_target":false}
+{"type":"ready","time_ms":1795624927111,"agent":0}
+{"type":"model_call","time_ms":1795624932899,"model":"gpt-6-luna","elapsed_ms":4424,"input_tokens":2261,"output_tokens":127}
+{"type":"command","time_ms":1795624932949,"agent":0,"name":"!startConversation"}
+{"type":"message","time_ms":1795624932962,"from":"HandoffAndy","to":"HandoffJill","text":"I have 2 wheat and 1 sugar. Pumpkin pie needs 1 pumpkin, 1 egg, and 1 sugar; I’ll work on getting cocoa beans for cookies. Let me know what ingredients you have."}
+{"type":"model_call","time_ms":1795624933184,"model":"gpt-6-luna","elapsed_ms":4547,"input_tokens":2264,"output_tokens":144}
+{"type":"model_call","time_ms":1795624936998,"model":"gpt-6-luna","elapsed_ms":3000,"input_tokens":2363,"output_tokens":166}
+{"type":"message","time_ms":1795624937002,"from":"HandoffJill","to":"HandoffAndy","text":"!startConversation(\"HandoffAndy\", \"I have 1 cocoa bean, plus the pumpkin and egg for my pie. Please give me your sugar, and I’ll give you the cocoa bean for your cookie.\")"}
+{"type":"command","time_ms":1795624937028,"agent":1,"name":"!startConversation"}
+{"type":"message","time_ms":1795624937031,"from":"HandoffJill","to":"HandoffAndy","text":"I have 1 cocoa bean, plus the pumpkin and egg for my pie. Please give me your sugar, and I’ll give you the cocoa bean for your cookie."}
+{"type":"model_call","time_ms":1795624939717,"model":"gpt-6-luna","elapsed_ms":2101,"input_tokens":2371,"output_tokens":88}
+{"type":"message","time_ms":1795624939719,"from":"HandoffAndy","to":"HandoffJill","text":"!givePlayer(\"HandoffJill\", \"sugar\", 1)"}
+{"type":"inventory","time_ms":1795624940172,"agent":0,"items":{"wheat":2},"has_target":false}
+{"type":"inventory","time_ms":1795624942162,"agent":1,"items":{"cocoa_beans":1,"pumpkin":1,"egg":1,"sugar":1},"has_target":false}
+{"type":"command","time_ms":1795624942353,"agent":0,"name":"!givePlayer"}
+{"type":"model_call","time_ms":1795624944376,"model":"gpt-6-luna","elapsed_ms":2036,"input_tokens":2406,"output_tokens":78}
+{"type":"model_call","time_ms":1795624946923,"model":"gpt-6-luna","elapsed_ms":1862,"input_tokens":2494,"output_tokens":82}
+{"type":"message","time_ms":1795624946926,"from":"HandoffJill","to":"HandoffAndy","text":"!craftRecipe(\"pumpkin_pie\", 1)"}
+{"type":"inventory","time_ms":1795624946932,"agent":1,"items":{"cocoa_beans":1,"egg":1,"sugar":1},"has_target":false}
+{"type":"inventory","time_ms":1795624946949,"agent":1,"items":{"cocoa_beans":1,"egg":1},"has_target":false}
+{"type":"inventory","time_ms":1795624946982,"agent":1,"items":{"cocoa_beans":1},"has_target":false}
+{"type":"inventory","time_ms":1795624947004,"agent":1,"items":{"pumpkin_pie":1,"cocoa_beans":1},"has_target":true}
+{"type":"command","time_ms":1795624947013,"agent":1,"name":"!craftRecipe"}
+{"type":"model_call","time_ms":1795624947092,"model":"gpt-6-luna","elapsed_ms":1787,"input_tokens":2470,"output_tokens":108}
+{"type":"model_call","time_ms":1795624949886,"model":"gpt-6-luna","elapsed_ms":1756,"input_tokens":2528,"output_tokens":68}
+{"type":"message","time_ms":1795624949888,"from":"HandoffJill","to":"HandoffAndy","text":"!givePlayer(\"HandoffAndy\", \"cocoa_beans\", 1)"}
+{"type":"inventory","time_ms":1795624950682,"agent":1,"items":{"pumpkin_pie":1},"has_target":true}
+{"type":"inventory","time_ms":1795624952660,"agent":1,"items":{"pumpkin_pie":1,"cocoa_beans":1},"has_target":true}
+{"type":"command","time_ms":1795624953688,"agent":1,"name":"!givePlayer"}
+{"type":"model_call","time_ms":1795624955361,"model":"gpt-6-luna","elapsed_ms":1471,"input_tokens":2602,"output_tokens":50}
+{"type":"message","time_ms":1795624955364,"from":"HandoffJill","to":"HandoffAndy","text":"!inventory"}
+{"type":"command","time_ms":1795624955366,"agent":1,"name":"!inventory"}
+{"type":"model_call","time_ms":1795624956964,"model":"gpt-6-luna","elapsed_ms":1696,"input_tokens":2544,"output_tokens":60}
+{"type":"model_call","time_ms":1795624958814,"model":"gpt-6-luna","elapsed_ms":1915,"input_tokens":2641,"output_tokens":75}
+{"type":"message","time_ms":1795624958815,"from":"HandoffJill","to":"HandoffAndy","text":"!givePlayer(\"HandoffAndy\", \"cocoa_beans\", 1)"}
+{"type":"inventory","time_ms":1795624958912,"agent":1,"items":{"pumpkin_pie":1},"has_target":true}
+{"type":"inventory","time_ms":1795624960924,"agent":0,"items":{"wheat":2,"cocoa_beans":1},"has_target":false}
+{"type":"command","time_ms":1795624961417,"agent":1,"name":"!givePlayer"}
+{"type":"model_call","time_ms":1795624965780,"model":"gpt-6-luna","elapsed_ms":1705,"input_tokens":2601,"output_tokens":61}
+{"type":"message","time_ms":1795624965784,"from":"HandoffAndy","to":"HandoffJill","text":"!craftRecipe(\"cookie\", 1)"}
+{"type":"inventory","time_ms":1795624965901,"agent":0,"items":{"cookie":8,"wheat":2,"cocoa_beans":1},"has_target":true}
+{"type":"inventory","time_ms":1795624965902,"agent":0,"items":{"cookie":8,"cocoa_beans":1},"has_target":true}
+{"type":"inventory","time_ms":1795624965902,"agent":0,"items":{"cookie":8},"has_target":true}
+{"type":"command","time_ms":1795624965904,"agent":0,"name":"!craftRecipe"}

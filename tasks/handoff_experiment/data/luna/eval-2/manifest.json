@@ -1,0 +1,334 @@
+{
+  "commit": "55ffb8e2cc0f1290aa865a5a95cb97b3e17ea6db",
+  "seed": 42,
+  "model": "gpt-6-luna",
+  "deadline_seconds": 300,
+  "repetitions": 5,
+  "mode": "evaluation",
+  "scenarios": {
+    "practice": {
+      "practice_split_hells_kitchen": {
+        "type": "cooking",
+        "agent_count": 2,
+        "goal": {
+          "0": "You are HandoffAndy. Your assigned dish is bread. HandoffJill's assigned dish is golden_apple. Their recipe needs 1 apple, 8 gold_ingot. Use the crafting table between you. You may share recipes, ingredients and finished dishes. The team completes the task when each agent holds their own assigned dish at the same time.",
+          "1": "You are HandoffJill. Your assigned dish is golden_apple. HandoffAndy's assigned dish is bread. Their recipe needs 3 wheat. Use the crafting table between you. You may share recipes, ingredients and finished dishes. The team completes the task when each agent holds their own assigned dish at the same time."
+        },
+        "target": [
+          "bread",
+          "golden_apple"
+        ],
+        "initial_inventory": {
+          "0": {
+            "wheat": 3,
+            "gold_ingot": 5
+          },
+          "1": {
+            "apple": 1,
+            "gold_ingot": 3
+          }
+        },
+        "handoff_experiment": true
+      },
+      "practice_swap_hells_kitchen": {
+        "type": "cooking",
+        "agent_count": 2,
+        "goal": {
+          "0": "You are HandoffAndy. Your assigned dish is golden_apple. HandoffJill's assigned dish is bread. Their recipe needs 3 wheat. Use the crafting table between you. You may share recipes, ingredients and finished dishes. The team completes the task when each agent holds their own assigned dish at the same time.",
+          "1": "You are HandoffJill. Your assigned dish is bread. HandoffAndy's assigned dish is golden_apple. Their recipe needs 1 apple, 8 gold_ingot. Use the crafting table between you. You may share recipes, ingredients and finished dishes. The team completes the task when each agent holds their own assigned dish at the same time."
+        },
+        "target": [
+          "golden_apple",
+          "bread"
+        ],
+        "initial_inventory": {
+          "0": {
+            "apple": 1,
+            "gold_ingot": 5
+          },
+          "1": {
+            "wheat": 3,
+            "gold_ingot": 3
+          }
+        },
+        "handoff_experiment": true
+      },
+      "practice_cross_hells_kitchen": {
+        "type": "cooking",
+        "agent_count": 2,
+        "goal": {
+          "0": "You are HandoffAndy. Your assigned dish is bread. HandoffJill's assigned dish is golden_apple. Their recipe needs 1 apple, 8 gold_ingot. Use the crafting table between you. You may share recipes, ingredients and finished dishes. The team completes the task when each agent holds their own assigned dish at the same time.",
+          "1": "You are HandoffJill. Your assigned dish is golden_apple. HandoffAndy's assigned dish is bread. Their recipe needs 3 wheat. Use the crafting table between you. You may share recipes, ingredients and finished dishes. The team completes the task when each agent holds their own assigned dish at the same time."
+        },
+        "target": [
+          "bread",
+          "golden_apple"
+        ],
+        "initial_inventory": {
+          "0": {
+            "apple": 1,
+            "gold_ingot": 8
+          },
+          "1": {
+            "wheat": 3
+          }
+        },
+        "handoff_experiment": true
+      },
+      "practice_even_hells_kitchen": {
+        "type": "cooking",
+        "agent_count": 2,
+        "goal": {
+          "0": "You are HandoffAndy. Your assigned dish is bread. HandoffJill's assigned dish is golden_apple. Their recipe needs 1 apple, 8 gold_ingot. Use the crafting table between you. You may share recipes, ingredients and finished dishes. The team completes the task when each agent holds their own assigned dish at the same time.",
+          "1": "You are HandoffJill. Your assigned dish is golden_apple. HandoffAndy's assigned dish is bread. Their recipe needs 3 wheat. Use the crafting table between you. You may share recipes, ingredients and finished dishes. The team completes the task when each agent holds their own assigned dish at the same time."
+        },
+        "target": [
+          "bread",
+          "golden_apple"
+        ],
+        "initial_inventory": {
+          "0": {
+            "wheat": 2,
+            "apple": 1,
+            "gold_ingot": 6
+          },
+          "1": {
+            "wheat": 1,
+            "gold_ingot": 2
+          }
+        },
+        "handoff_experiment": true
+      }
+    },
+    "held_out": {
+      "held_out_role_hells_kitchen": {
+        "type": "cooking",
+        "agent_count": 2,
+        "goal": {
+          "0": "You are HandoffAndy. Your assigned dish is golden_apple. HandoffJill's assigned dish is bread. Their recipe needs 3 wheat. Use the crafting table between you. You may share recipes, ingredients and finished dishes. The team completes the task when each agent holds their own assigned dish at the same time.",
+          "1": "You are HandoffJill. Your assigned dish is bread. HandoffAndy's assigned dish is golden_apple. Their recipe needs 1 apple, 8 gold_ingot. Use the crafting table between you. You may share recipes, ingredients and finished dishes. The team completes the task when each agent holds their own assigned dish at the same time."
+        },
+        "target": [
+          "golden_apple",
+          "bread"
+        ],
+        "initial_inventory": {
+          "0": {
+            "wheat": 1,
+            "gold_ingot": 2
+          },
+          "1": {
+            "apple": 1,
+            "wheat": 2,
+            "gold_ingot": 6
+          }
+        },
+        "handoff_experiment": true
+      },
+      "held_out_new_hells_kitchen": {
+        "type": "cooking",
+        "agent_count": 2,
+        "goal": {
+          "0": "You are HandoffAndy. Your assigned dish is cookie. HandoffJill's assigned dish is pumpkin_pie. Their recipe needs 1 pumpkin, 1 egg, 1 sugar. Use the crafting table between you. You may share recipes, ingredients and finished dishes. The team completes the task when each agent holds their own assigned dish at the same time.",
+          "1": "You are HandoffJill. Your assigned dish is pumpkin_pie. HandoffAndy's assigned dish is cookie. Their recipe needs 2 wheat, 1 cocoa_beans. Use the crafting table between you. You may share recipes, ingredients and finished dishes. The team completes the task when each agent holds their own assigned dish at the same time."
+        },
+        "target": [
+          "cookie",
+          "pumpkin_pie"
+        ],
+        "initial_inventory": {
+          "0": {
+            "wheat": 2,
+            "sugar": 1
+          },
+          "1": {
+            "cocoa_beans": 1,
+            "pumpkin": 1,
+            "egg": 1
+          }
+        },
+        "handoff_experiment": true
+      },
+      "held_out_cross_hells_kitchen": {
+        "type": "cooking",
+        "agent_count": 2,
+        "goal": {
+          "0": "You are HandoffAndy. Your assigned dish is mushroom_stew. HandoffJill's assigned dish is beetroot_soup. Their recipe needs 6 beetroot, 1 bowl. Use the crafting table between you. You may share recipes, ingredients and finished dishes. The team completes the task when each agent holds their own assigned dish at the same time.",
+          "1": "You are HandoffJill. Your assigned dish is beetroot_soup. HandoffAndy's assigned dish is mushroom_stew. Their recipe needs 1 red_mushroom, 1 brown_mushroom, 1 bowl. Use the crafting table between you. You may share recipes, ingredients and finished dishes. The team completes the task when each agent holds their own assigned dish at the same time."
+        },
+        "target": [
+          "mushroom_stew",
+          "beetroot_soup"
+        ],
+        "initial_inventory": {
+          "0": {
+            "red_mushroom": 1,
+            "beetroot": 6,
+            "bowl": 1
+          },
+          "1": {
+            "brown_mushroom": 1,
+            "bowl": 1
+          }
+        },
+        "handoff_experiment": true
+      }
+    }
+  },
+  "evaluation_order": [
+    [
+      "held_out_new_hells_kitchen",
+      1,
+      "learned"
+    ],
+    [
+      "held_out_new_hells_kitchen",
+      1,
+      "baseline"
+    ],
+    [
+      "held_out_role_hells_kitchen",
+      1,
+      "baseline"
+    ],
+    [
+      "held_out_role_hells_kitchen",
+      1,
+      "learned"
+    ],
+    [
+      "held_out_cross_hells_kitchen",
+      1,
+      "learned"
+    ],
+    [
+      "held_out_cross_hells_kitchen",
+      1,
+      "baseline"
+    ],
+    [
+      "held_out_new_hells_kitchen",
+      2,
+      "learned"
+    ],
+    [
+      "held_out_new_hells_kitchen",
+      2,
+      "baseline"
+    ],
+    [
+      "held_out_cross_hells_kitchen",
+      2,
+      "learned"
+    ],
+    [
+      "held_out_cross_hells_kitchen",
+      2,
+      "baseline"
+    ],
+    [
+      "held_out_role_hells_kitchen",
+      2,
+      "baseline"
+    ],
+    [
+      "held_out_role_hells_kitchen",
+      2,
+      "learned"
+    ],
+    [
+      "held_out_new_hells_kitchen",
+      3,
+      "learned"
+    ],
+    [
+      "held_out_new_hells_kitchen",
+      3,
+      "baseline"
+    ],
+    [
+      "held_out_cross_hells_kitchen",
+      3,
+      "learned"
+    ],
+    [
+      "held_out_cross_hells_kitchen",
+      3,
+      "baseline"
+    ],
+    [
+      "held_out_role_hells_kitchen",
+      3,
+      "learned"
+    ],
+    [
+      "held_out_role_hells_kitchen",
+      3,
+      "baseline"
+    ],
+    [
+      "held_out_new_hells_kitchen",
+      4,
+      "learned"
+    ],
+    [
+      "held_out_new_hells_kitchen",
+      4,
+      "baseline"
+    ],
+    [
+      "held_out_role_hells_kitchen",
+      4,
+      "baseline"
+    ],
+    [
+      "held_out_role_hells_kitchen",
+      4,
+      "learned"
+    ],
+    [
+      "held_out_cross_hells_kitchen",
+      4,
+      "learned"
+    ],
+    [
+      "held_out_cross_hells_kitchen",
+      4,
+      "baseline"
+    ],
+    [
+      "held_out_role_hells_kitchen",
+      5,
+      "learned"
+    ],
+    [
+      "held_out_role_hells_kitchen",
+      5,
+      "baseline"
+    ],
+    [
+      "held_out_cross_hells_kitchen",
+      5,
+      "learned"
+    ],
+    [
+      "held_out_cross_hells_kitchen",
+      5,
+      "baseline"
+    ],
+    [
+      "held_out_new_hells_kitchen",
+      5,
+      "baseline"
+    ],
+    [
+      "held_out_new_hells_kitchen",
+      5,
+      "learned"
+    ]
+  ],
+  "server_sha256": "08abf384c48afb9e822144ad8a99166482857994389269e26c6a04c6c91d9171",
+  "worker": 2,
+  "workers": 3,
+  "frozen_note_sha256": "b20eb13a2769eb8cf0bd310e47cac402640b1b099ac7cfb35bf138b46c316f6c"
+}

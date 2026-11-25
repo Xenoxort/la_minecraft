@@ -1,0 +1,13 @@
+{"type":"spawned","time_ms":1795625091460,"agent":0}
+{"type":"inventory","time_ms":1795625091461,"agent":0,"items":{},"has_target":false}
+{"type":"spawned","time_ms":1795625092192,"agent":1}
+{"type":"inventory","time_ms":1795625092193,"agent":1,"items":{},"has_target":false}
+{"type":"inventory","time_ms":1795625092511,"agent":0,"items":{"wheat":1,"gold_ingot":2},"has_target":false}
+{"type":"ready","time_ms":1795625092512,"agent":0}
+{"type":"inventory","time_ms":1795625092552,"agent":1,"items":{"apple":1,"wheat":2,"gold_ingot":6},"has_target":false}
+{"type":"ready","time_ms":1795625092553,"agent":1}
+{"type":"model_call","time_ms":1795625096131,"model":"gpt-6-luna","elapsed_ms":2971,"input_tokens":2247,"output_tokens":111}
+{"type":"command","time_ms":1795625096163,"agent":0,"name":"!startConversation"}
+{"type":"message","time_ms":1795625096165,"from":"HandoffAndy","to":"HandoffJill","text":"I have 1 wheat and 2 gold ingots. What ingredients do you have? I need 8 gold ingots and an apple for my golden apple; can you share if you have any?"}
+{"type":"provider_error","time_ms":1795625106607,"status":400,"code":"invalid_prompt"}
+{"type":"message","time_ms":1795625106609,"from":"HandoffJill","to":"HandoffAndy","text":"My brain disconnected, try again."}

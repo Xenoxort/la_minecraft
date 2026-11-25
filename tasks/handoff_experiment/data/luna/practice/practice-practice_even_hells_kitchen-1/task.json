@@ -1,0 +1,26 @@
+{
+  "practice_even_hells_kitchen": {
+    "type": "cooking",
+    "agent_count": 2,
+    "goal": {
+      "0": "You are HandoffAndy. Your assigned dish is bread. HandoffJill's assigned dish is golden_apple. Their recipe needs 1 apple, 8 gold_ingot. Use the crafting table between you. You may share recipes, ingredients and finished dishes. The team completes the task when each agent holds their own assigned dish at the same time.",
+      "1": "You are HandoffJill. Your assigned dish is golden_apple. HandoffAndy's assigned dish is bread. Their recipe needs 3 wheat. Use the crafting table between you. You may share recipes, ingredients and finished dishes. The team completes the task when each agent holds their own assigned dish at the same time."
+    },
+    "target": [
+      "bread",
+      "golden_apple"
+    ],
+    "initial_inventory": {
+      "0": {
+        "wheat": 2,
+        "apple": 1,
+        "gold_ingot": 6
+      },
+      "1": {
+        "wheat": 1,
+        "gold_ingot": 2
+      }
+    },
+    "handoff_experiment": true
+  }
+}
