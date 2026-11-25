@@ -27,8 +27,14 @@ NOTE_LIMIT = 250
 HOLD_MS = 250
 
 
+def write_text(path, text):
+    temporary = path.with_suffix(path.suffix + ".tmp")
+    temporary.write_text(text)
+    temporary.replace(path)
+
+
 def write_json(path, data):
-    path.write_text(json.dumps(data, indent=2) + "\n")
+    write_text(path, json.dumps(data, indent=2) + "\n")
 
 
 def tasks():
@@ -401,6 +407,28 @@ def summarize_pairs(rows, planned):
     }
 
 
+def recorded_episode(directory, scenario, task, model, jar, note=""):
+    """Reuse a scoreable episode on resume and retain failed or interrupted attempts."""
+    attempt = directory
+    index = 1
+    while attempt.exists():
+        result_file = attempt / "result.json"
+        if result_file.exists():
+            result = json.loads(result_file.read_text())
+            if result["status"] != "error":
+                return attempt, result
+        index += 1
+        attempt = directory.with_name(f"{directory.name}-attempt{index}")
+    result = run_episode(attempt, scenario, task, model, jar, note=note)
+    write_json(attempt / "result.json", result)
+    return attempt, result
+
+
+def evaluation_assignments(schedule, worker, workers):
+    """Keep both arms of each matched pair on the same worker."""
+    return [(i + 1, trial) for i, trial in enumerate(schedule) if i // 2 % workers == worker]
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--server-jar", type=Path, help="Local Minecraft Java 1.21.6 server JAR")
@@ -410,12 +438,21 @@ def main():
     parser.add_argument("--model", default=MODEL)
     parser.add_argument("--repetitions", type=int, default=5)
     parser.add_argument("--seed", type=int, default=42)
+    parser.add_argument("--resume", action="store_true", help="Resume an existing run with the same settings")
+    parser.add_argument("--worker", type=int, default=0)
+    parser.add_argument("--workers", type=int, default=1)
     mode = parser.add_mutually_exclusive_group()
     mode.add_argument("--plan", action="store_true", help="Generate scenarios and run order without API calls")
     mode.add_argument("--scripted-smoke", action="store_true", help="Verify live scoring without API calls")
+    mode.add_argument("--practice-only", action="store_true", help="Collect practice and freeze the note")
+    mode.add_argument("--evaluation-from", type=Path, help="Evaluate using a completed practice directory")
     args = parser.parse_args()
     if args.repetitions < 1:
         parser.error("--repetitions must be positive")
+    if not 0 <= args.worker < args.workers or (args.workers != 1 and not args.evaluation_from):
+        parser.error("Multiple workers require --evaluation-from and a worker index from 0 to workers-1")
+    if args.resume and (args.plan or args.scripted_smoke):
+        parser.error("--resume requires a live run")
     suite = tasks()
     scheduled = evaluation_schedule(suite["held_out"], args.repetitions, args.seed)
     headers = None
@@ -427,18 +464,42 @@ def main():
             if not headers:
                 parser.error("Set OPENAI_API_KEY for the credited API organization, or configure ignored keys.json")
     output = args.output.resolve()
-    output.mkdir(parents=True)
     commit = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip()
     server_hash = None
     if args.server_jar:
         with args.server_jar.open("rb") as server_file:
             server_hash = hashlib.file_digest(server_file, "sha256").hexdigest()
-    write_json(output / "manifest.json", {
+    # Canonicalize tuples to match the JSON manifest on a fresh run or resume.
+    manifest = json.loads(json.dumps({
         "commit": commit, "seed": args.seed, "model": args.model, "deadline_seconds": TIMEOUT,
-        "repetitions": args.repetitions, "mode": "plan" if args.plan else "smoke" if args.scripted_smoke else "live",
+        "repetitions": args.repetitions,
+        "mode": "plan" if args.plan else "smoke" if args.scripted_smoke else
+                "practice" if args.practice_only else "evaluation" if args.evaluation_from else "live",
         "scenarios": suite, "evaluation_order": scheduled,
         "server_sha256": server_hash,
-    })
+    }))
+    note = ""
+    assignments = evaluation_assignments(scheduled, args.worker, args.workers)
+    if args.evaluation_from:
+        source = args.evaluation_from.resolve()
+        source_manifest = json.loads((source / "manifest.json").read_text())
+        if source_manifest != {**manifest, "mode": "practice"}:
+            parser.error("Practice manifest differs from the evaluation settings")
+        practice = json.loads((source / "practice.json").read_text())
+        if len(practice) != 2 * len(suite["practice"]) or any(row["status"] == "error" for row in practice):
+            parser.error("Complete practice before evaluating")
+        note = (source / "frozen_note.md").read_text().strip()
+        if not note:
+            parser.error("Frozen practice note is empty")
+        manifest.update(worker=args.worker, workers=args.workers,
+                        frozen_note_sha256=hashlib.sha256(note.encode()).hexdigest())
+    manifest_file = output / "manifest.json"
+    if args.resume:
+        if not manifest_file.is_file() or json.loads(manifest_file.read_text()) != manifest:
+            parser.error("Existing run manifest differs from these settings")
+    else:
+        output.mkdir(parents=True)
+        write_json(manifest_file, manifest)
     if args.plan:
         return
     jar = args.server_jar.resolve()
@@ -456,33 +517,41 @@ def main():
                 raise SystemExit(f"Scripted smoke failed: {name}")
         return
 
-    note = ""
-    practice = []
-    for task_id, task in suite["practice"].items():
-        for repetition in (1, 2):
-            directory = output / f"practice-{task_id}-{repetition}"
-            result = run_episode(directory, task_id, task, args.model, jar)
-            practice.append({"scenario": task_id, "repetition": repetition, **result})
-            write_json(output / "practice.json", practice)
-            if result["status"] == "error":
-                raise SystemExit(f"Practice failed: {result['error']}. See {directory}")
-            note = update_note(note, directory, result, headers, args.model)
-            (directory / "updated_note.md").write_text(note + "\n")
-            print(directory.name, result["status"], flush=True)
-    (output / "frozen_note.md").write_text(note + "\n")
+    if not args.evaluation_from:
+        practice = []
+        for task_id, task in suite["practice"].items():
+            for repetition in (1, 2):
+                directory = output / f"practice-{task_id}-{repetition}"
+                attempt, result = recorded_episode(directory, task_id, task, args.model, jar)
+                practice.append({"scenario": task_id, "repetition": repetition, "directory": attempt.name, **result})
+                write_json(output / "practice.json", practice)
+                if result["status"] == "error":
+                    raise SystemExit(f"Practice failed: {result['error']}. See {attempt}")
+                note_file = attempt / "updated_note.md"
+                if note_file.is_file():
+                    note = note_file.read_text().strip()
+                else:
+                    note = update_note(note, attempt, result, headers, args.model)
+                    write_text(note_file, note + "\n")
+                print(attempt.name, result["status"], flush=True)
+        write_text(output / "frozen_note.md", note + "\n")
+    if args.practice_only:
+        return
 
     evaluation = []
-    for index, (task_id, repetition, arm) in enumerate(scheduled, 1):
+    selected = [trial for _, trial in assignments]
+    for index, (task_id, repetition, arm) in assignments:
         directory = output / f"{index:03d}-{arm}-{task_id}-{repetition}"
-        result = run_episode(directory, task_id, suite["held_out"][task_id], args.model, jar,
-                             note=note if arm == "learned" else "")
-        evaluation.append({"scenario": task_id, "repetition": repetition, "arm": arm, **result})
+        attempt, result = recorded_episode(directory, task_id, suite["held_out"][task_id], args.model, jar,
+                                           note=note if arm == "learned" else "")
+        evaluation.append({"scenario": task_id, "repetition": repetition, "arm": arm,
+                           "directory": attempt.name, **result})
         write_json(output / "evaluation.json", evaluation)
-        write_json(output / "summary.json", summarize(evaluation, scheduled))
-        write_json(output / "paired_summary.json", summarize_pairs(evaluation, scheduled))
-        print(directory.name, result["status"], flush=True)
+        write_json(output / "summary.json", summarize(evaluation, selected))
+        write_json(output / "paired_summary.json", summarize_pairs(evaluation, selected))
+        print(attempt.name, result["status"], flush=True)
         if result["status"] == "error":
-            raise SystemExit(f"Evaluation stopped: {result['error']}. See {directory}")
+            raise SystemExit(f"Evaluation stopped: {result['error']}. See {attempt}")
 
 
 if __name__ == "__main__":
