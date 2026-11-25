@@ -40,10 +40,13 @@ def checkpoint_monitor(work, scenario, checkpoints):
             due = start + checkpoint * 1000
             offset = server_log.stat().st_size
             asked = arena.stamp()
+            marker = f"STUDY_CHECKPOINT_{checkpoint}_END"
             arena.send(server, [*(f"data get entity {name} Inventory" for name in arena.NAMES),
-                                "say STUDY_CHECKPOINT_END"])
-            arena.wait_for(server, server_log, lambda s: "[Server] STUDY_CHECKPOINT_END" in s, 4)
+                                f"say {marker}"])
+            arena.wait_for(server, server_log, lambda s: f"[Server] {marker}" in s, 4)
             inventory = observed_inventory(server_log, offset)
+            if set(inventory) != set(arena.NAMES):
+                raise RuntimeError(f"Checkpoint at {checkpoint}s lacks an agent inventory: {work}")
             (work / filename).write_text(json.dumps(
                 {"dueMs": due, "requestedMs": asked, "observedMs": arena.stamp(),
                  "inventory": {k: sorted(v) for k, v in inventory.items()}}, indent=2))
