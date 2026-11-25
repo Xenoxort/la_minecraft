@@ -29,8 +29,9 @@ def main():
         dest.mkdir(exist_ok=True)
         for name in FILES:
             shutil.copyfile(source / name, dest / name)
-        if (source / "checkpoint.json").exists():
-            shutil.copyfile(source / "checkpoint.json", dest / "checkpoint.json")
+        for name in ("checkpoint.json", "checkpoint-180.json", "checkpoint-360.json"):
+            if (source / name).exists():
+                shutil.copyfile(source / name, dest / name)
         raw = (source / "agents.log").read_text(errors="replace")
         restart_lines = [line for line in raw.splitlines() if "Agent process exited" in line]
         health = {"restarts": raw.count("Restarting agent..."),

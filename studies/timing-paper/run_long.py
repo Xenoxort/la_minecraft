@@ -28,30 +28,36 @@ def design():
             for i, name in enumerate(cases)]
 
 
-def checkpoint_monitor(work, scenario, checkpoint):
+def checkpoint_monitor(work, scenario, checkpoints):
     observe = monitor(scenario)
-    saved = False
+    pending = iter(sorted(checkpoints.items()))
+    next_checkpoint = next(pending, None)
 
     def check(server, server_log, bot_log, start, deadline):
-        nonlocal saved
-        due = start + checkpoint * 1000
-        if not saved and arena.stamp() >= due:
+        nonlocal next_checkpoint
+        if next_checkpoint and arena.stamp() >= start + next_checkpoint[0] * 1000:
+            checkpoint, filename = next_checkpoint
+            due = start + checkpoint * 1000
             offset = server_log.stat().st_size
             asked = arena.stamp()
             arena.send(server, [*(f"data get entity {name} Inventory" for name in arena.NAMES),
                                 "say STUDY_CHECKPOINT_END"])
             arena.wait_for(server, server_log, lambda s: "[Server] STUDY_CHECKPOINT_END" in s, 4)
             inventory = observed_inventory(server_log, offset)
-            (work / "checkpoint.json").write_text(json.dumps(
+            (work / filename).write_text(json.dumps(
                 {"dueMs": due, "requestedMs": asked, "observedMs": arena.stamp(),
                  "inventory": {k: sorted(v) for k, v in inventory.items()}}, indent=2))
-            saved = True
+            next_checkpoint = next(pending, None)
         return observe(server, server_log, bot_log, start, deadline)
 
     return check
 
 
-def main():
+def main(*, duration=DURATION, schedules=None, checkpoints=None, probe_checkpoints=None):
+    if schedules is None:
+        schedules = SCHEDULES
+    if checkpoints is None:
+        checkpoints = {CHECKPOINT: "checkpoint.json"}
     p = argparse.ArgumentParser()
     p.add_argument("out", type=Path)
     p.add_argument("--worker", type=int, choices=range(3), default=0)
@@ -63,8 +69,11 @@ def main():
         return
     args.out.mkdir(parents=True, exist_ok=True)
     blocks = design()[args.worker::3]
+    trial_duration = duration
     if args.probe:
         blocks = [{"number": 0, "scenario": "metalwork", "mirror": 1, "order": ["alternating"]}]
+        trial_duration = 65
+        checkpoints = probe_checkpoints if probe_checkpoints is not None else {30: "checkpoint.json"}
     for block in blocks:
         scenario = SCENARIOS[block["scenario"]]
         for schedule in block["order"]:
@@ -78,17 +87,16 @@ def main():
             marker = work / "complete.json"
             if marker.exists():
                 continue
-            duration = 65 if args.probe else DURATION
-            windows = [[0, 12], [30, 50]] if args.probe else SCHEDULES[schedule]
+            windows = [[0, 12], [30, 50]] if args.probe else schedules[schedule]
             times = ", ".join(f"{a}–{b}" for a, b in windows)
             briefing = (f"Bot chat is open during these seconds after the episode starts: {times}. "
                         "Use open windows to exchange objective cards and coordinate handoffs. "
                         "When chat is closed, explore, gather, craft, or physically transfer items.")
             base_port = 100 + args.worker * 20
-            arena.run(args.out, label, 0, duration, block["mirror"], 55916 + base_port,
+            arena.run(args.out, label, 0, trial_duration, block["mirror"], 55916 + base_port,
                       8080 + base_port, False, study=scenario, chat_windows=windows,
                       configure_trial=lambda work, d, s: configure(work, d, s, scenario, "partner", briefing),
-                      observe=checkpoint_monitor(work, scenario, 30 if args.probe else CHECKPOINT))
+                      observe=checkpoint_monitor(work, scenario, checkpoints))
             temp = marker.with_suffix(".tmp")
             temp.write_text(json.dumps({"block": block, "cell": {"info": "partner", "delay": 0},
                                         "schedule": schedule, "probe": args.probe}))
