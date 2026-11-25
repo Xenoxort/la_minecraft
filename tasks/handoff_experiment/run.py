@@ -13,6 +13,7 @@ import re
 import shutil
 import signal
 import socket
+from statistics import mean
 import subprocess
 import time
 from urllib.request import Request, urlopen
@@ -284,7 +285,10 @@ def run_episode(directory, scenario_id, task, model, jar, note="", scripted=None
                 outcome = score(events, started, duration, time.time_ns() // 1_000_000)
                 ended = started + (round(outcome["completion_seconds"] * 1000)
                                    if outcome["status"] == "complete" else duration * 1000)
-                return {**outcome, **metrics(events, started, ended), "started_ms": started}
+                observed_metrics = metrics(events, started, ended)
+                if not scripted and outcome["status"] == "timeout" and not observed_metrics["model_calls"]:
+                    outcome.update(status="error", error="no_model_response")
+                return {**outcome, **observed_metrics, "started_ms": started}
     except (RuntimeError, OSError) as exc:
         return {"status": "error", "error": str(exc), "objectives": None,
                 "completion_seconds": None, "started_ms": started}
@@ -293,14 +297,24 @@ def run_episode(directory, scenario_id, task, model, jar, note="", scripted=None
         shutil.rmtree(world, ignore_errors=True)
 
 
-def credential():
-    key = os.environ.get("OPENAI_API_KEY")
-    if not key and (ROOT / "keys.json").exists():
-        key = json.loads((ROOT / "keys.json").read_text()).get("OPENAI_API_KEY")
-    return key
+def openai_headers():
+    path = ROOT / "keys.json"
+    keys = json.loads(path.read_text()) if path.is_file() else {}
+    # Match the bot client's key lookup so note updates use the same account.
+    key = keys.get("OPENAI_API_KEY") or os.environ.get("OPENAI_API_KEY")
+    if not key:
+        return None
+    headers = {"Authorization": f"Bearer {key}", "Content-Type": "application/json"}
+    organization = keys.get("OPENAI_ORG_ID") or os.environ.get("OPENAI_ORG_ID")
+    project = os.environ.get("OPENAI_PROJECT_ID")
+    if organization:
+        headers["OpenAI-Organization"] = organization
+    if project:
+        headers["OpenAI-Project"] = project
+    return headers
 
 
-def update_note(previous, directory, result, key, model):
+def update_note(previous, directory, result, headers, model):
     events = read_events(directory / "events.jsonl")
     start = result["started_ms"]
     evidence = [event for event in events if start <= event["time_ms"] <= start + TIMEOUT * 1000
@@ -319,8 +333,8 @@ def update_note(previous, directory, result, key, model):
         "input": json.dumps({"previous_note": previous, "run_id": directory.name,
                              "result": result, "events": evidence}, ensure_ascii=False),
     }
-    request = Request("https://api.openai.com/v1/responses", json.dumps(payload).encode(),
-                      {"Authorization": f"Bearer {key}", "Content-Type": "application/json"})
+    base_url = os.environ.get("OPENAI_BASE_URL") or "https://api.openai.com/v1"
+    request = Request(base_url.rstrip("/") + "/responses", json.dumps(payload).encode(), headers)
     with urlopen(request, timeout=90) as response:
         raw = json.load(response)
     note = "\n".join(part["text"] for item in raw.get("output", []) if item["type"] == "message"
@@ -349,6 +363,44 @@ def summarize(rows, planned):
     return report
 
 
+def summarize_pairs(rows, planned):
+    """Compare each learned run with its baseline on the same scenario and repetition."""
+    results = {(row["scenario"], row["repetition"], row["arm"]): row for row in rows}
+    planned_pairs = dict.fromkeys((scenario, repetition) for scenario, repetition, _ in planned)
+    by_scenario = {scenario: [] for scenario, _ in planned_pairs}
+    for scenario, repetition in planned_pairs:
+        baseline, learned = (results.get((scenario, repetition, arm)) for arm in ("baseline", "learned"))
+        if any(row and row["status"] == "error" for row in (baseline, learned)):
+            category, difference = "error", None
+        elif baseline is None or learned is None:
+            category, difference = "unpaired", None
+        else:
+            completed = tuple(row["status"] == "complete" for row in (baseline, learned))
+            category = {(True, True): "both_complete", (False, False): "neither_complete",
+                        (True, False): "baseline_only", (False, True): "learned_only"}[completed]
+            baseline_seconds, learned_seconds = (row["completion_seconds"] if done else TIMEOUT
+                                                 for row, done in zip((baseline, learned), completed))
+            difference = learned_seconds - baseline_seconds
+        by_scenario[scenario].append((category, difference))
+
+    def aggregate(pairs):
+        counts = Counter(category for category, _ in pairs)
+        valid = [difference for _, difference in pairs if difference is not None]
+        return {
+            "planned_pairs": len(pairs), "valid_pairs": len(valid),
+            **{name: counts[name] for name in ("both_complete", "learned_only", "baseline_only",
+                                             "neither_complete", "error", "unpaired")},
+            "learned_minus_baseline_completion_rate": (
+                (counts["learned_only"] - counts["baseline_only"]) / len(valid) if valid else None),
+            "mean_learned_minus_baseline_capped_seconds": round(mean(valid), 3) if valid else None,
+        }
+
+    return {
+        "overall": aggregate([pair for pairs in by_scenario.values() for pair in pairs]),
+        "scenarios": {name: aggregate(pairs) for name, pairs in by_scenario.items()},
+    }
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--server-jar", type=Path, help="Local Minecraft Java 1.21.6 server JAR")
@@ -366,13 +418,13 @@ def main():
         parser.error("--repetitions must be positive")
     suite = tasks()
     scheduled = evaluation_schedule(suite["held_out"], args.repetitions, args.seed)
-    key = None
+    headers = None
     if not args.plan:
         if not args.accept_minecraft_eula or not args.server_jar or not args.server_jar.is_file():
             parser.error("Live modes require --server-jar and --accept-minecraft-eula")
         if not args.scripted_smoke:
-            key = credential()
-            if not key:
+            headers = openai_headers()
+            if not headers:
                 parser.error("Set OPENAI_API_KEY for the credited API organization, or configure ignored keys.json")
     output = args.output.resolve()
     output.mkdir(parents=True)
@@ -414,7 +466,7 @@ def main():
             write_json(output / "practice.json", practice)
             if result["status"] == "error":
                 raise SystemExit(f"Practice failed: {result['error']}. See {directory}")
-            note = update_note(note, directory, result, key, args.model)
+            note = update_note(note, directory, result, headers, args.model)
             (directory / "updated_note.md").write_text(note + "\n")
             print(directory.name, result["status"], flush=True)
     (output / "frozen_note.md").write_text(note + "\n")
@@ -427,6 +479,7 @@ def main():
         evaluation.append({"scenario": task_id, "repetition": repetition, "arm": arm, **result})
         write_json(output / "evaluation.json", evaluation)
         write_json(output / "summary.json", summarize(evaluation, scheduled))
+        write_json(output / "paired_summary.json", summarize_pairs(evaluation, scheduled))
         print(directory.name, result["status"], flush=True)
         if result["status"] == "error":
             raise SystemExit(f"Evaluation stopped: {result['error']}. See {directory}")

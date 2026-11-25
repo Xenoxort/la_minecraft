@@ -1,8 +1,11 @@
+import json
+import os
 import tempfile
 from pathlib import Path
 import unittest
+from unittest.mock import patch
 
-from run import evaluation_schedule, read_events, score, summarize, tasks, write_profiles
+from run import evaluation_schedule, openai_headers, read_events, score, summarize, summarize_pairs, tasks, write_profiles
 
 
 def inventory(time_ms, agent, has_target):
@@ -54,8 +57,6 @@ class DesignTests(unittest.TestCase):
         self.assertEqual(result["completed_by_seconds"]["300"], 0)
 
     def test_treatment_only_adds_note_to_conversation_prompt(self):
-        import json
-
         with tempfile.TemporaryDirectory() as temporary:
             folder = Path(temporary)
             baseline = [json.loads(Path(p).read_text()) for p in write_profiles(folder, "model", "")]
@@ -64,6 +65,39 @@ class DesignTests(unittest.TestCase):
                 self.assertEqual(treatment.pop("conversing"),
                                  control.pop("conversing") + "\nLessons from previous episodes:\nLesson.")
                 self.assertEqual(control, treatment)
+
+    def test_pair_summary_keeps_timeouts_and_excludes_errors_and_missing_runs(self):
+        planned = [(scenario, rep, arm) for scenario, rep in (("s", 1), ("s", 2), ("s", 3), ("t", 1))
+                   for arm in ("learned", "baseline")]
+        outcomes = [
+            ("s", 1, "baseline", "timeout", None), ("s", 1, "learned", "complete", 80),
+            ("s", 2, "learned", "complete", 130), ("s", 2, "baseline", "complete", 110),
+            ("s", 3, "baseline", "complete", 100), ("s", 3, "learned", "error", None),
+            ("t", 1, "baseline", "timeout", None),
+        ]
+        rows = [dict(scenario=scenario, repetition=rep, arm=arm, status=status, completion_seconds=elapsed)
+                for scenario, rep, arm, status, elapsed in outcomes]
+        result = summarize_pairs(rows, planned)
+        overall = result["overall"]
+        self.assertEqual((overall["planned_pairs"], overall["valid_pairs"], overall["error"], overall["unpaired"]),
+                         (4, 2, 1, 1))
+        self.assertEqual((overall["both_complete"], overall["learned_only"], overall["baseline_only"]), (1, 1, 0))
+        self.assertEqual(overall["learned_minus_baseline_completion_rate"], .5)
+        self.assertEqual(overall["mean_learned_minus_baseline_capped_seconds"], -100)
+        self.assertIsNone(result["scenarios"]["t"]["learned_minus_baseline_completion_rate"])
+
+    def test_note_updater_uses_the_same_local_openai_configuration_as_the_bots(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            (root / "keys.json").write_text(json.dumps({"OPENAI_API_KEY": "file-key", "OPENAI_ORG_ID": "file-org"}))
+            with patch("run.ROOT", root), patch.dict(os.environ, {
+                "OPENAI_API_KEY": "environment-key", "OPENAI_ORG_ID": "environment-org",
+                "OPENAI_PROJECT_ID": "environment-project",
+            }, clear=True):
+                self.assertEqual(openai_headers(), {
+                    "Authorization": "Bearer file-key", "Content-Type": "application/json",
+                    "OpenAI-Organization": "file-org", "OpenAI-Project": "environment-project",
+                })
 
     def test_ignores_partially_written_event(self):
         with tempfile.TemporaryDirectory() as temporary:

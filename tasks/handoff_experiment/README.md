@@ -8,7 +8,7 @@ Each episode starts in a clean, deterministic Minecraft kitchen with one craftin
 
 Use Linux or macOS with Python 3.11+, Node.js, Java 21, and the official Minecraft Java 1.21.6 server JAR. Set `OPENAI_API_KEY` or use the fork's ignored `keys.json` for the intended OpenAI API organization. The live runner uses the Responses API for bot turns and note updates. The local Minecraft server binds to loopback and uses offline bot names.
 
-Install dependencies with `npm install`. For headless Linux without graphics build dependencies, use `npm install --ignore-scripts && npx --no-install patch-package`. Rendering and vision are disabled in this experiment.
+Install dependencies with `npm ci`. For headless Linux without graphics build dependencies, use `npm ci --ignore-scripts && npx --no-install patch-package`. Rendering and vision are disabled in this experiment. When both credential sources exist, the ignored `keys.json` takes precedence. The bots and note updater use the same OpenAI organization and project configuration.
 
 ```sh
 python3 -m unittest discover -s tasks/handoff_experiment -p 'test_*.py'
@@ -28,12 +28,13 @@ The plan and scripted smoke modes make zero API calls. The smoke test runs three
 
 ## Read results
 
-The clock starts when both agents have received their starting inventories. Full completion requires both agents to hold their assigned dishes together for an observed 250 ms, allowing for small packet timing differences. Completion time is the beginning of that confirmed hold. Timeouts retain partial scores. The runner records infrastructure errors separately and stops.
+The clock starts when both agents have received their starting inventories. Full completion requires both agents to hold their assigned dishes together for an observed 250 ms, allowing for small packet timing differences. Completion time is the beginning of that confirmed hold. Timeouts retain partial scores. The runner records infrastructure errors separately and stops. A live episode that times out without a model response is an infrastructure error.
 
 - `manifest.json` records the commit, model, scenario inputs, seed, run order, and server JAR hash.
 - `practice.json`, each episode's `updated_note.md`, and `frozen_note.md` preserve the intervention.
 - `evaluation.json` records each result, elapsed time, first message and relevant commands, and model call usage and latency.
 - `summary.json` reports planned and attempted runs, completions, timeouts, errors, and cumulative completions every 30 seconds per scenario and condition. Keep valid timeouts in completion-rate denominators. Report errors and unattempted runs separately.
+- `paired_summary.json` compares the two conditions on the same scenario and repetition. A valid pair has a result for both arms and no infrastructure error. It reports paired completion differences and mean time differences with timeouts counted at 300 seconds. Positive completion-rate differences favor the learned note. Negative time differences favor it.
 - Each episode retains raw events and both process logs. Its disposable world is removed after shutdown.
 
-The primary comparison is full completion by 300 seconds. The small sample is exploratory. A future length-matched advice condition could test whether the learned procedures outperform general teamwork advice.
+The primary comparison is full completion by 300 seconds. The small sample estimates the effect of this particular note on the held-out scenarios. A future length-matched advice condition could test whether the learned procedures outperform general teamwork advice.
