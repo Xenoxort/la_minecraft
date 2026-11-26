@@ -43,6 +43,35 @@ def check_phase(turn, trial, root, due):
     require(f"[Server] PHASE_{tag}_{label}_{want}" in proof["evidence"], "Missing authentic server marker")
 
 
+def check_prompt(text, trial, name, turn, before, unavailable, previous):
+    require(text.startswith(f"You are {name}. Turn {turn}.")
+            and f'Closed assembly bench: {unavailable or "none"}.' in text, "Prompt clock or identity mismatch")
+    lines = text.splitlines()
+    prep, assemble, ready = [], [], []
+    for id, order in trial["orders"].items():
+        row = before[id]
+        label = f'{id} {order["item"]} x{order["quantity"]}'
+        if row["done"]:
+            require(f"{label} delivered" in lines, "Delivered order missing from public board")
+            continue
+        parts = " ".join(f'{part}:{batch["cook"]}{"+" if part in row["parts"] else ""}'
+                         for part, batch in order["parts"].items())
+        require(f'{label} owner={row["owner"]} batches={parts}' in lines, "Public order board drifted")
+        prep.extend(f"{id}.{part}" for part, batch in order["parts"].items()
+                    if batch["cook"] == name and part not in row["parts"])
+        if len(row["parts"]) == len(order["parts"]):
+            ready.append(f'{id}={row["owner"]}')
+            if row["owner"] == name != unavailable:
+                assemble.append(id)
+    # The first unscored interface preflight preceded these three derived lists.
+    if trial["duration"] == 360 or "Your legal prep jobs:" in text:
+        for label, jobs in (("Ready orders (owner)", ready), ("Your legal prep jobs", prep),
+                            ("Your legal assembly jobs", assemble)):
+            require(f'{label}: {", ".join(jobs) or "none"}' in lines, "Derived action list drifted")
+    require(text.endswith(f'Previous actions and open chat: {" | ".join(previous) or "none"}'),
+            "Previous-turn chat was not visible")
+
+
 def replay(root, trial):
     trace = load(root / "trace.json")
     scripted = trial["scripted"]
@@ -58,6 +87,7 @@ def replay(root, trial):
     accepted = 0
     errors, outcomes, route_statuses, crafts_by = Counter(), Counter(), Counter(), Counter()
     used, reserved, responses = 0, 0, 0
+    previous = []
     for index, turn in enumerate(trace["turns"]):
         seconds = index * trial["step"]
         due = start + seconds * 1000
@@ -71,8 +101,7 @@ def replay(root, trial):
                 "Board is inconsistent with previous actions")
         for row in turn["attempts"]:
             decision, outcome, name = row["decision"], row["outcome"], row["name"]
-            require(f"You are {name}. Turn {index + 1}." in row["input"]
-                    and f'Closed assembly bench: {unavailable or "none"}.' in row["input"], "Prompt mismatch")
+            check_prompt(row["input"], trial, name, index + 1, before, unavailable, previous)
             outcomes[outcome] += 1
             if decision["status"] in ("completed", "incomplete"):
                 responses += 1
@@ -127,6 +156,12 @@ def replay(root, trial):
             accepted += 1
             routed.append(id)
         require(grants <= 1 and turn["done"] == [id for id in orders if state[id]["done"]], "Board update failed")
+        previous = []
+        for actor in turn["attempts"]:
+            action = actor["decision"]["action"] or {}
+            line = (f'{actor["name"]} {action.get("act", "none")} {action.get("job", "")} '
+                    f'{actor["outcome"]} {action.get("say", "")}')
+            previous.append(line.strip())
     complete = len(delivered) == len(orders)
     finish = start + max(delivered.values()) if complete else None
     require(trace["finish"] == finish and sorted(trace["done"]) == sorted(delivered), "Final trace mismatch")
