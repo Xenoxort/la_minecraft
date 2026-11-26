@@ -6,7 +6,7 @@
 
 Four GPT-6 Luna cooks complete ten Minecraft food orders. Small orders have two ingredient batches and larger orders have three or four. Two different cooks have exclusive access to each order’s supplies. They can stage the batches independently in a shared order chest. The current owner assembles the ingredients at their own bench, crafts the order, and deposits the result in the same chest. The server verifies the food and quantity in that order’s chest, so two orders for the same food still count separately.
 
-For each of ten matched menu seeds, run all six cells formed by the three decision rules and two kitchen environments. Every cell starts with the same batches, assignments, and actor names for that seed. One cook starts with four orders, and the others get two each. The four-order cook and coordinator identities rotate. Each cook sees the same progress board, including completed batches, ownership, station availability, prior actions, and short chat messages. Supply access, kitchen actions, the deadline, and the token ceiling are identical.
+For each of ten matched menu seeds, run all six cells formed by the three decision rules and two kitchen environments. Every cell starts with the same batches, assignments, and actor names for that seed. One cook starts with four orders, and the others get two each. The four-order cook and coordinator identities rotate. Each cook sees the same progress board, including completed batches, ownership, station availability, prior actions, and short chat messages. Each prompt also lists the cook’s legal actions, calculated from the shared board. Supply access, kitchen actions, the deadline, and the token ceiling are identical.
 
 | Rule | Who can change the owner of a ready order? |
 | --- | --- |
@@ -29,3 +29,5 @@ Report observed completion times among complete runs and mean time through finis
 A practically encouraging lead would be at least half an additional order on average during outages and a positive interaction with the outage. If both appear, run ten matched outage trials with the same models and a simple rule that sends the oldest ready blocked order to an open cook who has no ready work of their own. The secondary rule comparison is descriptive and triggered by the main results.
 
 Scripted smoke tests exercise physical handoffs, permissions, and the station outage before any scored run. A short model preflight checks live responses and is also separate from the 60 trials.
+
+The first live preflight produced 57 wrong-source actions in 156 decisions. The shared interface was clarified before scoring by listing each cook’s legal jobs and the ready orders. This clarification adds no private information and leaves handoff rules and endpoints unchanged.

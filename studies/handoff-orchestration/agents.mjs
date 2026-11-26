@@ -151,9 +151,18 @@ function prompt(name, turn, state, messages, unavailable) {
             .map(([part, data]) => `${part}:${data.cook}${row.parts.includes(part) ? "+" : ""}`).join(" ");
         return `${id} ${order.item} x${order.quantity} owner=${row.owner} batches=${parts}`;
     }).join("\n");
+    const front = orders.filter(([id, order]) => !state[id].done && ready(state[id], order));
+    const assemble = front.filter(([id]) => state[id].owner === name && unavailable !== name)
+        .map(([id]) => id);
+    const prep = orders.flatMap(([id, order]) => Object.entries(order.parts)
+        .filter(([part, source]) => source.cook === name && !state[id].parts.includes(part))
+        .map(([part]) => `${id}.${part}`));
     return `You are ${name}. Turn ${turn}. ${roles[trial.mode]}
 Closed assembly bench: ${unavailable ?? "none"}. "+" means that ingredient batch is staged.
 ${orderBoard}
+Ready orders (owner): ${front.map(([id]) => id + "=" + state[id].owner).join(", ") || "none"}
+Your legal prep jobs: ${prep.join(", ") || "none"}
+Your legal assembly jobs: ${assemble.join(", ") || "none"}
 Previous actions and open chat: ${messages.join(" | ") || "none"}`;
 }
 
