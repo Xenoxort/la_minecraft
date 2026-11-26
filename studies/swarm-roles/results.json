@@ -1,0 +1,1982 @@
+{
+  "verified_runs": 30,
+  "pending": [],
+  "groups": {
+    "swarm": {
+      "trials": 10,
+      "completed": 0,
+      "goals": 53,
+      "mean_goals": 5.3,
+      "mean_elapsed": 360.0,
+      "seconds_per_goal": 67.9245283018868,
+      "mean_duplicate_crafts": 2,
+      "mean_duplicate_kits": 2.3,
+      "counts": {
+        "all_wait_turns_while_unfinished": 136,
+        "slots": 1440,
+        "reserved_tokens": 629561,
+        "measured_tokens": 629561,
+        "responses": 1440,
+        "collected": 76,
+        "crafted": 73,
+        "craft_after_reported_completion": 11,
+        "wait": 1047,
+        "waiting_while_unfinished": 1047,
+        "already_crafted": 230,
+        "attempt_after_reported_completion": 247,
+        "invalid_reply": 10,
+        "kit_already_collected": 2,
+        "collect_kit_first": 2
+      }
+    },
+    "fixed": {
+      "trials": 10,
+      "completed": 10,
+      "goals": 80,
+      "mean_goals": 8,
+      "mean_elapsed": 45.35790000000001,
+      "seconds_per_goal": 5.669737500000001,
+      "mean_duplicate_crafts": 0,
+      "mean_duplicate_kits": 0,
+      "counts": {
+        "slots": 212,
+        "reserved_tokens": 100987,
+        "measured_tokens": 100987,
+        "responses": 212,
+        "collected": 80,
+        "crafted": 80,
+        "collect_kit_first": 1,
+        "already_crafted": 39,
+        "attempt_after_reported_completion": 39,
+        "wait": 8,
+        "waiting_while_unfinished": 8,
+        "invalid_reply": 1,
+        "kit_already_collected": 3
+      }
+    },
+    "orchestrator": {
+      "trials": 10,
+      "completed": 8,
+      "goals": 78,
+      "mean_goals": 7.8,
+      "mean_elapsed": 116.9057,
+      "seconds_per_goal": 14.987910256410256,
+      "mean_duplicate_crafts": 0,
+      "mean_duplicate_kits": 0,
+      "counts": {
+        "slots": 492,
+        "reserved_tokens": 241689,
+        "measured_tokens": 240729,
+        "responses": 491,
+        "collected": 78,
+        "reassigned_assignment": 3,
+        "crafted": 78,
+        "leader_crafts": 17,
+        "invalid_reply": 12,
+        "wait": 151,
+        "waiting_while_unfinished": 151,
+        "already_crafted": 170,
+        "attempt_after_reported_completion": 170,
+        "already_done_assignment": 1,
+        "collect_kit_first": 2,
+        "all_wait_turns_while_unfinished": 7,
+        "kit_already_collected": 1,
+        "provider_failures": 1,
+        "http_400": 1,
+        "unchanged_assignment": 1
+      }
+    }
+  },
+  "contrasts": {
+    "fixed_minus_swarm": [
+      {
+        "seed": 3211,
+        "elapsed_difference": -327.273,
+        "goal_difference": 2,
+        "duplicate_craft_difference": -2
+      },
+      {
+        "seed": 3212,
+        "elapsed_difference": -317.618,
+        "goal_difference": 3,
+        "duplicate_craft_difference": -1
+      },
+      {
+        "seed": 3213,
+        "elapsed_difference": -327.537,
+        "goal_difference": 2,
+        "duplicate_craft_difference": 0
+      },
+      {
+        "seed": 3214,
+        "elapsed_difference": -317.727,
+        "goal_difference": 3,
+        "duplicate_craft_difference": -3
+      },
+      {
+        "seed": 3215,
+        "elapsed_difference": -307.654,
+        "goal_difference": 3,
+        "duplicate_craft_difference": -1
+      },
+      {
+        "seed": 3216,
+        "elapsed_difference": -317.685,
+        "goal_difference": 4,
+        "duplicate_craft_difference": -2
+      },
+      {
+        "seed": 3217,
+        "elapsed_difference": -297.871,
+        "goal_difference": 4,
+        "duplicate_craft_difference": -1
+      },
+      {
+        "seed": 3218,
+        "elapsed_difference": -327.347,
+        "goal_difference": 2,
+        "duplicate_craft_difference": -1
+      },
+      {
+        "seed": 3219,
+        "elapsed_difference": -317.765,
+        "goal_difference": 2,
+        "duplicate_craft_difference": -4
+      },
+      {
+        "seed": 3220,
+        "elapsed_difference": -287.944,
+        "goal_difference": 2,
+        "duplicate_craft_difference": -5
+      }
+    ],
+    "orchestrator_minus_swarm": [
+      {
+        "seed": 3211,
+        "elapsed_difference": 0,
+        "goal_difference": 1,
+        "duplicate_craft_difference": -2
+      },
+      {
+        "seed": 3212,
+        "elapsed_difference": -327.064,
+        "goal_difference": 3,
+        "duplicate_craft_difference": -1
+      },
+      {
+        "seed": 3213,
+        "elapsed_difference": -327.364,
+        "goal_difference": 2,
+        "duplicate_craft_difference": 0
+      },
+      {
+        "seed": 3214,
+        "elapsed_difference": -267.907,
+        "goal_difference": 3,
+        "duplicate_craft_difference": -3
+      },
+      {
+        "seed": 3215,
+        "elapsed_difference": -327.553,
+        "goal_difference": 3,
+        "duplicate_craft_difference": -1
+      },
+      {
+        "seed": 3216,
+        "elapsed_difference": -227.851,
+        "goal_difference": 4,
+        "duplicate_craft_difference": -2
+      },
+      {
+        "seed": 3217,
+        "elapsed_difference": -327.683,
+        "goal_difference": 4,
+        "duplicate_craft_difference": -1
+      },
+      {
+        "seed": 3218,
+        "elapsed_difference": -327.721,
+        "goal_difference": 2,
+        "duplicate_craft_difference": -1
+      },
+      {
+        "seed": 3219,
+        "elapsed_difference": 0,
+        "goal_difference": 1,
+        "duplicate_craft_difference": -4
+      },
+      {
+        "seed": 3220,
+        "elapsed_difference": -297.8,
+        "goal_difference": 2,
+        "duplicate_craft_difference": -5
+      }
+    ],
+    "orchestrator_minus_fixed": [
+      {
+        "seed": 3211,
+        "elapsed_difference": 327.273,
+        "goal_difference": -1,
+        "duplicate_craft_difference": 0
+      },
+      {
+        "seed": 3212,
+        "elapsed_difference": -9.445999999999998,
+        "goal_difference": 0,
+        "duplicate_craft_difference": 0
+      },
+      {
+        "seed": 3213,
+        "elapsed_difference": 0.17300000000000182,
+        "goal_difference": 0,
+        "duplicate_craft_difference": 0
+      },
+      {
+        "seed": 3214,
+        "elapsed_difference": 49.82,
+        "goal_difference": 0,
+        "duplicate_craft_difference": 0
+      },
+      {
+        "seed": 3215,
+        "elapsed_difference": -19.898999999999994,
+        "goal_difference": 0,
+        "duplicate_craft_difference": 0
+      },
+      {
+        "seed": 3216,
+        "elapsed_difference": 89.834,
+        "goal_difference": 0,
+        "duplicate_craft_difference": 0
+      },
+      {
+        "seed": 3217,
+        "elapsed_difference": -29.811999999999998,
+        "goal_difference": 0,
+        "duplicate_craft_difference": 0
+      },
+      {
+        "seed": 3218,
+        "elapsed_difference": -0.3739999999999952,
+        "goal_difference": 0,
+        "duplicate_craft_difference": 0
+      },
+      {
+        "seed": 3219,
+        "elapsed_difference": 317.765,
+        "goal_difference": -1,
+        "duplicate_craft_difference": 0
+      },
+      {
+        "seed": 3220,
+        "elapsed_difference": -9.855999999999995,
+        "goal_difference": 0,
+        "duplicate_craft_difference": 0
+      }
+    ]
+  },
+  "trials": [
+    {
+      "trial": "3211-swarm",
+      "seed": 3211,
+      "mode": "swarm",
+      "leader": null,
+      "elapsed": 360,
+      "goals": 6,
+      "full": false,
+      "duplicate_crafts": 2,
+      "duplicate_kits": 2,
+      "reassignments": [],
+      "client_match": true,
+      "verified": [
+        "bone_meal",
+        "bread",
+        "cookie",
+        "golden_apple",
+        "paper",
+        "pumpkin_pie"
+      ],
+      "crafts_by_player": {
+        "Andy": [
+          "bread"
+        ],
+        "Jill": [
+          "golden_apple"
+        ],
+        "Alex": [
+          "bread",
+          "cookie",
+          "pumpkin_pie"
+        ],
+        "Sam": [
+          "bone_meal",
+          "golden_apple",
+          "paper"
+        ]
+      },
+      "counts": {
+        "all_wait_turns_while_unfinished": 19,
+        "slots": 144,
+        "reserved_tokens": 63215,
+        "measured_tokens": 63215,
+        "responses": 144,
+        "collected": 8,
+        "crafted": 8,
+        "leader_crafts": 0,
+        "craft_outside_assignment": 0,
+        "craft_after_reported_completion": 1,
+        "wait": 114,
+        "waiting_while_unfinished": 114,
+        "waiting_for_instruction": 0,
+        "already_crafted": 14,
+        "attempt_after_reported_completion": 15
+      }
+    },
+    {
+      "trial": "3211-fixed",
+      "seed": 3211,
+      "mode": "fixed",
+      "leader": null,
+      "elapsed": 32.727,
+      "goals": 8,
+      "full": true,
+      "duplicate_crafts": 0,
+      "duplicate_kits": 0,
+      "reassignments": [],
+      "client_match": true,
+      "verified": [
+        "bone_meal",
+        "bread",
+        "cookie",
+        "golden_apple",
+        "hay_block",
+        "packed_mud",
+        "paper",
+        "pumpkin_pie"
+      ],
+      "crafts_by_player": {
+        "Andy": [
+          "cookie",
+          "paper"
+        ],
+        "Jill": [
+          "bone_meal",
+          "golden_apple"
+        ],
+        "Alex": [
+          "hay_block",
+          "pumpkin_pie"
+        ],
+        "Sam": [
+          "bread",
+          "packed_mud"
+        ]
+      },
+      "counts": {
+        "all_wait_turns_while_unfinished": 0,
+        "slots": 16,
+        "reserved_tokens": 7658,
+        "measured_tokens": 7658,
+        "responses": 16,
+        "collected": 8,
+        "crafted": 8,
+        "leader_crafts": 0,
+        "craft_outside_assignment": 0,
+        "craft_after_reported_completion": 0
+      }
+    },
+    {
+      "trial": "3216-orchestrator",
+      "seed": 3216,
+      "mode": "orchestrator",
+      "leader": "Jill",
+      "elapsed": 132.149,
+      "goals": 8,
+      "full": true,
+      "duplicate_crafts": 0,
+      "duplicate_kits": 0,
+      "reassignments": [
+        {
+          "status": "reassigned",
+          "recipe": "golden_apple",
+          "from": "Jill",
+          "to": "Andy",
+          "turn": 1
+        }
+      ],
+      "client_match": true,
+      "verified": [
+        "bone_meal",
+        "bread",
+        "cookie",
+        "golden_apple",
+        "hay_block",
+        "packed_mud",
+        "paper",
+        "pumpkin_pie"
+      ],
+      "crafts_by_player": {
+        "Andy": [
+          "cookie",
+          "golden_apple",
+          "pumpkin_pie"
+        ],
+        "Jill": [
+          "paper"
+        ],
+        "Alex": [
+          "hay_block",
+          "packed_mud"
+        ],
+        "Sam": [
+          "bone_meal",
+          "bread"
+        ]
+      },
+      "counts": {
+        "all_wait_turns_while_unfinished": 0,
+        "slots": 56,
+        "reserved_tokens": 27460,
+        "measured_tokens": 27460,
+        "responses": 56,
+        "collected": 8,
+        "reassigned_assignment": 1,
+        "crafted": 8,
+        "leader_crafts": 1,
+        "craft_outside_assignment": 0,
+        "craft_after_reported_completion": 0,
+        "invalid_reply": 4,
+        "wait": 16,
+        "waiting_while_unfinished": 16,
+        "waiting_for_instruction": 0,
+        "already_crafted": 20,
+        "attempt_after_reported_completion": 20
+      }
+    },
+    {
+      "trial": "3213-fixed",
+      "seed": 3213,
+      "mode": "fixed",
+      "leader": null,
+      "elapsed": 32.463,
+      "goals": 8,
+      "full": true,
+      "duplicate_crafts": 0,
+      "duplicate_kits": 0,
+      "reassignments": [],
+      "client_match": true,
+      "verified": [
+        "bone_meal",
+        "bread",
+        "cookie",
+        "golden_apple",
+        "hay_block",
+        "packed_mud",
+        "paper",
+        "pumpkin_pie"
+      ],
+      "crafts_by_player": {
+        "Andy": [
+          "bone_meal",
+          "bread"
+        ],
+        "Jill": [
+          "hay_block",
+          "packed_mud"
+        ],
+        "Alex": [
+          "cookie",
+          "paper"
+        ],
+        "Sam": [
+          "golden_apple",
+          "pumpkin_pie"
+        ]
+      },
+      "counts": {
+        "all_wait_turns_while_unfinished": 0,
+        "slots": 16,
+        "reserved_tokens": 7663,
+        "measured_tokens": 7663,
+        "responses": 16,
+        "collected": 8,
+        "crafted": 8,
+        "leader_crafts": 0,
+        "craft_outside_assignment": 0,
+        "craft_after_reported_completion": 0
+      }
+    },
+    {
+      "trial": "3216-fixed",
+      "seed": 3216,
+      "mode": "fixed",
+      "leader": null,
+      "elapsed": 42.315,
+      "goals": 8,
+      "full": true,
+      "duplicate_crafts": 0,
+      "duplicate_kits": 0,
+      "reassignments": [],
+      "client_match": true,
+      "verified": [
+        "bone_meal",
+        "bread",
+        "cookie",
+        "golden_apple",
+        "hay_block",
+        "packed_mud",
+        "paper",
+        "pumpkin_pie"
+      ],
+      "crafts_by_player": {
+        "Andy": [
+          "cookie",
+          "pumpkin_pie"
+        ],
+        "Jill": [
+          "golden_apple",
+          "paper"
+        ],
+        "Alex": [
+          "hay_block",
+          "packed_mud"
+        ],
+        "Sam": [
+          "bone_meal",
+          "bread"
+        ]
+      },
+      "counts": {
+        "all_wait_turns_while_unfinished": 0,
+        "slots": 20,
+        "reserved_tokens": 9415,
+        "measured_tokens": 9415,
+        "responses": 20,
+        "collected": 8,
+        "crafted": 8,
+        "leader_crafts": 0,
+        "craft_outside_assignment": 0,
+        "craft_after_reported_completion": 0,
+        "collect_kit_first": 1,
+        "already_crafted": 3,
+        "attempt_after_reported_completion": 3
+      }
+    },
+    {
+      "trial": "3218-swarm",
+      "seed": 3218,
+      "mode": "swarm",
+      "leader": null,
+      "elapsed": 360,
+      "goals": 6,
+      "full": false,
+      "duplicate_crafts": 1,
+      "duplicate_kits": 1,
+      "reassignments": [],
+      "client_match": true,
+      "verified": [
+        "bone_meal",
+        "bread",
+        "cookie",
+        "golden_apple",
+        "paper",
+        "pumpkin_pie"
+      ],
+      "crafts_by_player": {
+        "Andy": [
+          "golden_apple",
+          "paper"
+        ],
+        "Jill": [
+          "bone_meal",
+          "bread"
+        ],
+        "Alex": [
+          "cookie",
+          "pumpkin_pie"
+        ],
+        "Sam": [
+          "golden_apple"
+        ]
+      },
+      "counts": {
+        "all_wait_turns_while_unfinished": 10,
+        "slots": 144,
+        "reserved_tokens": 63097,
+        "measured_tokens": 63097,
+        "responses": 144,
+        "collected": 7,
+        "crafted": 7,
+        "leader_crafts": 0,
+        "craft_outside_assignment": 0,
+        "craft_after_reported_completion": 1,
+        "wait": 96,
+        "waiting_while_unfinished": 96,
+        "waiting_for_instruction": 0,
+        "attempt_after_reported_completion": 35,
+        "already_crafted": 34
+      }
+    },
+    {
+      "trial": "3219-fixed",
+      "seed": 3219,
+      "mode": "fixed",
+      "leader": null,
+      "elapsed": 42.235,
+      "goals": 8,
+      "full": true,
+      "duplicate_crafts": 0,
+      "duplicate_kits": 0,
+      "reassignments": [],
+      "client_match": true,
+      "verified": [
+        "bone_meal",
+        "bread",
+        "cookie",
+        "golden_apple",
+        "hay_block",
+        "packed_mud",
+        "paper",
+        "pumpkin_pie"
+      ],
+      "crafts_by_player": {
+        "Andy": [
+          "bone_meal",
+          "pumpkin_pie"
+        ],
+        "Jill": [
+          "bread",
+          "golden_apple"
+        ],
+        "Alex": [
+          "cookie",
+          "paper"
+        ],
+        "Sam": [
+          "hay_block",
+          "packed_mud"
+        ]
+      },
+      "counts": {
+        "all_wait_turns_while_unfinished": 0,
+        "slots": 20,
+        "reserved_tokens": 9541,
+        "measured_tokens": 9541,
+        "responses": 20,
+        "collected": 8,
+        "crafted": 8,
+        "leader_crafts": 0,
+        "craft_outside_assignment": 0,
+        "craft_after_reported_completion": 0,
+        "already_crafted": 4,
+        "attempt_after_reported_completion": 4
+      }
+    },
+    {
+      "trial": "3217-swarm",
+      "seed": 3217,
+      "mode": "swarm",
+      "leader": null,
+      "elapsed": 360,
+      "goals": 4,
+      "full": false,
+      "duplicate_crafts": 1,
+      "duplicate_kits": 2,
+      "reassignments": [],
+      "client_match": true,
+      "verified": [
+        "bread",
+        "golden_apple",
+        "paper",
+        "pumpkin_pie"
+      ],
+      "crafts_by_player": {
+        "Andy": [
+          "golden_apple"
+        ],
+        "Jill": [
+          "pumpkin_pie"
+        ],
+        "Alex": [
+          "bread",
+          "paper"
+        ],
+        "Sam": [
+          "golden_apple"
+        ]
+      },
+      "counts": {
+        "all_wait_turns_while_unfinished": 18,
+        "slots": 144,
+        "reserved_tokens": 62297,
+        "measured_tokens": 62297,
+        "responses": 144,
+        "collected": 6,
+        "wait": 120,
+        "waiting_while_unfinished": 120,
+        "waiting_for_instruction": 0,
+        "crafted": 5,
+        "leader_crafts": 0,
+        "craft_outside_assignment": 0,
+        "craft_after_reported_completion": 1,
+        "already_crafted": 11,
+        "attempt_after_reported_completion": 12,
+        "invalid_reply": 2
+      }
+    },
+    {
+      "trial": "3213-swarm",
+      "seed": 3213,
+      "mode": "swarm",
+      "leader": null,
+      "elapsed": 360,
+      "goals": 6,
+      "full": false,
+      "duplicate_crafts": 0,
+      "duplicate_kits": 1,
+      "reassignments": [],
+      "client_match": true,
+      "verified": [
+        "bone_meal",
+        "bread",
+        "cookie",
+        "golden_apple",
+        "packed_mud",
+        "pumpkin_pie"
+      ],
+      "crafts_by_player": {
+        "Andy": [
+          "bone_meal",
+          "packed_mud"
+        ],
+        "Jill": [
+          "bread"
+        ],
+        "Alex": [
+          "cookie",
+          "golden_apple"
+        ],
+        "Sam": [
+          "pumpkin_pie"
+        ]
+      },
+      "counts": {
+        "all_wait_turns_while_unfinished": 2,
+        "slots": 144,
+        "reserved_tokens": 63295,
+        "measured_tokens": 63295,
+        "responses": 144,
+        "collected": 7,
+        "crafted": 6,
+        "leader_crafts": 0,
+        "craft_outside_assignment": 0,
+        "craft_after_reported_completion": 0,
+        "wait": 76,
+        "waiting_while_unfinished": 76,
+        "waiting_for_instruction": 0,
+        "already_crafted": 51,
+        "attempt_after_reported_completion": 52,
+        "invalid_reply": 3,
+        "kit_already_collected": 1
+      }
+    },
+    {
+      "trial": "3215-orchestrator",
+      "seed": 3215,
+      "mode": "orchestrator",
+      "leader": "Andy",
+      "elapsed": 32.447,
+      "goals": 8,
+      "full": true,
+      "duplicate_crafts": 0,
+      "duplicate_kits": 0,
+      "reassignments": [],
+      "client_match": true,
+      "verified": [
+        "bone_meal",
+        "bread",
+        "cookie",
+        "golden_apple",
+        "hay_block",
+        "packed_mud",
+        "paper",
+        "pumpkin_pie"
+      ],
+      "crafts_by_player": {
+        "Andy": [
+          "bone_meal",
+          "cookie"
+        ],
+        "Jill": [
+          "golden_apple",
+          "hay_block"
+        ],
+        "Alex": [
+          "paper",
+          "pumpkin_pie"
+        ],
+        "Sam": [
+          "bread",
+          "packed_mud"
+        ]
+      },
+      "counts": {
+        "all_wait_turns_while_unfinished": 0,
+        "slots": 16,
+        "reserved_tokens": 7955,
+        "measured_tokens": 7955,
+        "responses": 16,
+        "collected": 8,
+        "crafted": 8,
+        "leader_crafts": 2,
+        "craft_outside_assignment": 0,
+        "craft_after_reported_completion": 0,
+        "already_done_assignment": 1
+      }
+    },
+    {
+      "trial": "3214-orchestrator",
+      "seed": 3214,
+      "mode": "orchestrator",
+      "leader": "Sam",
+      "elapsed": 92.093,
+      "goals": 8,
+      "full": true,
+      "duplicate_crafts": 0,
+      "duplicate_kits": 0,
+      "reassignments": [],
+      "client_match": true,
+      "verified": [
+        "bone_meal",
+        "bread",
+        "cookie",
+        "golden_apple",
+        "hay_block",
+        "packed_mud",
+        "paper",
+        "pumpkin_pie"
+      ],
+      "crafts_by_player": {
+        "Andy": [
+          "bone_meal",
+          "packed_mud"
+        ],
+        "Jill": [
+          "bread",
+          "pumpkin_pie"
+        ],
+        "Alex": [
+          "golden_apple",
+          "paper"
+        ],
+        "Sam": [
+          "cookie",
+          "hay_block"
+        ]
+      },
+      "counts": {
+        "all_wait_turns_while_unfinished": 0,
+        "slots": 40,
+        "reserved_tokens": 19756,
+        "measured_tokens": 19756,
+        "responses": 40,
+        "collected": 8,
+        "invalid_reply": 2,
+        "crafted": 8,
+        "leader_crafts": 2,
+        "craft_outside_assignment": 0,
+        "craft_after_reported_completion": 0,
+        "already_crafted": 19,
+        "attempt_after_reported_completion": 19,
+        "wait": 2,
+        "waiting_while_unfinished": 2,
+        "waiting_for_instruction": 0,
+        "collect_kit_first": 1
+      }
+    },
+    {
+      "trial": "3212-fixed",
+      "seed": 3212,
+      "mode": "fixed",
+      "leader": null,
+      "elapsed": 42.382,
+      "goals": 8,
+      "full": true,
+      "duplicate_crafts": 0,
+      "duplicate_kits": 0,
+      "reassignments": [],
+      "client_match": true,
+      "verified": [
+        "bone_meal",
+        "bread",
+        "cookie",
+        "golden_apple",
+        "hay_block",
+        "packed_mud",
+        "paper",
+        "pumpkin_pie"
+      ],
+      "crafts_by_player": {
+        "Andy": [
+          "paper",
+          "pumpkin_pie"
+        ],
+        "Jill": [
+          "bread",
+          "packed_mud"
+        ],
+        "Alex": [
+          "cookie",
+          "golden_apple"
+        ],
+        "Sam": [
+          "bone_meal",
+          "hay_block"
+        ]
+      },
+      "counts": {
+        "all_wait_turns_while_unfinished": 0,
+        "slots": 20,
+        "reserved_tokens": 9508,
+        "measured_tokens": 9508,
+        "responses": 20,
+        "collected": 8,
+        "crafted": 8,
+        "leader_crafts": 0,
+        "craft_outside_assignment": 0,
+        "craft_after_reported_completion": 0,
+        "already_crafted": 2,
+        "attempt_after_reported_completion": 2,
+        "wait": 2,
+        "waiting_while_unfinished": 2,
+        "waiting_for_instruction": 0
+      }
+    },
+    {
+      "trial": "3212-orchestrator",
+      "seed": 3212,
+      "mode": "orchestrator",
+      "leader": "Jill",
+      "elapsed": 32.936,
+      "goals": 8,
+      "full": true,
+      "duplicate_crafts": 0,
+      "duplicate_kits": 0,
+      "reassignments": [],
+      "client_match": true,
+      "verified": [
+        "bone_meal",
+        "bread",
+        "cookie",
+        "golden_apple",
+        "hay_block",
+        "packed_mud",
+        "paper",
+        "pumpkin_pie"
+      ],
+      "crafts_by_player": {
+        "Andy": [
+          "paper",
+          "pumpkin_pie"
+        ],
+        "Jill": [
+          "bread",
+          "packed_mud"
+        ],
+        "Alex": [
+          "cookie",
+          "golden_apple"
+        ],
+        "Sam": [
+          "bone_meal",
+          "hay_block"
+        ]
+      },
+      "counts": {
+        "all_wait_turns_while_unfinished": 0,
+        "slots": 16,
+        "reserved_tokens": 7865,
+        "measured_tokens": 7865,
+        "responses": 16,
+        "collected": 8,
+        "crafted": 8,
+        "leader_crafts": 2,
+        "craft_outside_assignment": 0,
+        "craft_after_reported_completion": 0
+      }
+    },
+    {
+      "trial": "3219-orchestrator",
+      "seed": 3219,
+      "mode": "orchestrator",
+      "leader": "Andy",
+      "elapsed": 360,
+      "goals": 7,
+      "full": false,
+      "duplicate_crafts": 0,
+      "duplicate_kits": 0,
+      "reassignments": [
+        {
+          "status": "reassigned",
+          "recipe": "bone_meal",
+          "from": "Andy",
+          "to": "Sam",
+          "turn": 2
+        }
+      ],
+      "client_match": true,
+      "verified": [
+        "bread",
+        "cookie",
+        "golden_apple",
+        "hay_block",
+        "packed_mud",
+        "paper",
+        "pumpkin_pie"
+      ],
+      "crafts_by_player": {
+        "Andy": [
+          "pumpkin_pie"
+        ],
+        "Jill": [
+          "bread",
+          "golden_apple"
+        ],
+        "Alex": [
+          "cookie",
+          "paper"
+        ],
+        "Sam": [
+          "hay_block",
+          "packed_mud"
+        ]
+      },
+      "counts": {
+        "all_wait_turns_while_unfinished": 7,
+        "slots": 144,
+        "reserved_tokens": 70213,
+        "measured_tokens": 70213,
+        "responses": 144,
+        "invalid_reply": 2,
+        "collected": 7,
+        "crafted": 7,
+        "leader_crafts": 1,
+        "craft_outside_assignment": 0,
+        "craft_after_reported_completion": 0,
+        "reassigned_assignment": 1,
+        "wait": 80,
+        "waiting_while_unfinished": 80,
+        "waiting_for_instruction": 0,
+        "already_crafted": 47,
+        "attempt_after_reported_completion": 47,
+        "kit_already_collected": 1
+      }
+    },
+    {
+      "trial": "3217-fixed",
+      "seed": 3217,
+      "mode": "fixed",
+      "leader": null,
+      "elapsed": 62.129,
+      "goals": 8,
+      "full": true,
+      "duplicate_crafts": 0,
+      "duplicate_kits": 0,
+      "reassignments": [],
+      "client_match": true,
+      "verified": [
+        "bone_meal",
+        "bread",
+        "cookie",
+        "golden_apple",
+        "hay_block",
+        "packed_mud",
+        "paper",
+        "pumpkin_pie"
+      ],
+      "crafts_by_player": {
+        "Andy": [
+          "packed_mud",
+          "pumpkin_pie"
+        ],
+        "Jill": [
+          "bread",
+          "cookie"
+        ],
+        "Alex": [
+          "bone_meal",
+          "paper"
+        ],
+        "Sam": [
+          "golden_apple",
+          "hay_block"
+        ]
+      },
+      "counts": {
+        "all_wait_turns_while_unfinished": 0,
+        "slots": 28,
+        "reserved_tokens": 13217,
+        "measured_tokens": 13217,
+        "responses": 28,
+        "collected": 8,
+        "crafted": 8,
+        "leader_crafts": 0,
+        "craft_outside_assignment": 0,
+        "craft_after_reported_completion": 0,
+        "wait": 3,
+        "waiting_while_unfinished": 3,
+        "waiting_for_instruction": 0,
+        "already_crafted": 9,
+        "attempt_after_reported_completion": 9
+      }
+    },
+    {
+      "trial": "3220-fixed",
+      "seed": 3220,
+      "mode": "fixed",
+      "leader": null,
+      "elapsed": 72.056,
+      "goals": 8,
+      "full": true,
+      "duplicate_crafts": 0,
+      "duplicate_kits": 0,
+      "reassignments": [],
+      "client_match": true,
+      "verified": [
+        "bone_meal",
+        "bread",
+        "cookie",
+        "golden_apple",
+        "hay_block",
+        "packed_mud",
+        "paper",
+        "pumpkin_pie"
+      ],
+      "crafts_by_player": {
+        "Andy": [
+          "cookie",
+          "golden_apple"
+        ],
+        "Jill": [
+          "packed_mud",
+          "paper"
+        ],
+        "Alex": [
+          "bread",
+          "hay_block"
+        ],
+        "Sam": [
+          "bone_meal",
+          "pumpkin_pie"
+        ]
+      },
+      "counts": {
+        "all_wait_turns_while_unfinished": 0,
+        "slots": 32,
+        "reserved_tokens": 15506,
+        "measured_tokens": 15506,
+        "responses": 32,
+        "collected": 8,
+        "crafted": 8,
+        "leader_crafts": 0,
+        "craft_outside_assignment": 0,
+        "craft_after_reported_completion": 0,
+        "invalid_reply": 1,
+        "already_crafted": 11,
+        "attempt_after_reported_completion": 11,
+        "wait": 3,
+        "waiting_while_unfinished": 3,
+        "waiting_for_instruction": 0,
+        "kit_already_collected": 1
+      }
+    },
+    {
+      "trial": "3217-orchestrator",
+      "seed": 3217,
+      "mode": "orchestrator",
+      "leader": "Alex",
+      "elapsed": 32.317,
+      "goals": 8,
+      "full": true,
+      "duplicate_crafts": 0,
+      "duplicate_kits": 0,
+      "reassignments": [],
+      "client_match": true,
+      "verified": [
+        "bone_meal",
+        "bread",
+        "cookie",
+        "golden_apple",
+        "hay_block",
+        "packed_mud",
+        "paper",
+        "pumpkin_pie"
+      ],
+      "crafts_by_player": {
+        "Andy": [
+          "packed_mud",
+          "pumpkin_pie"
+        ],
+        "Jill": [
+          "bread",
+          "cookie"
+        ],
+        "Alex": [
+          "bone_meal",
+          "paper"
+        ],
+        "Sam": [
+          "golden_apple",
+          "hay_block"
+        ]
+      },
+      "counts": {
+        "all_wait_turns_while_unfinished": 0,
+        "slots": 16,
+        "reserved_tokens": 7775,
+        "measured_tokens": 7775,
+        "responses": 16,
+        "collected": 8,
+        "crafted": 8,
+        "leader_crafts": 2,
+        "craft_outside_assignment": 0,
+        "craft_after_reported_completion": 0
+      }
+    },
+    {
+      "trial": "3213-orchestrator",
+      "seed": 3213,
+      "mode": "orchestrator",
+      "leader": "Alex",
+      "elapsed": 32.636,
+      "goals": 8,
+      "full": true,
+      "duplicate_crafts": 0,
+      "duplicate_kits": 0,
+      "reassignments": [],
+      "client_match": true,
+      "verified": [
+        "bone_meal",
+        "bread",
+        "cookie",
+        "golden_apple",
+        "hay_block",
+        "packed_mud",
+        "paper",
+        "pumpkin_pie"
+      ],
+      "crafts_by_player": {
+        "Andy": [
+          "bone_meal",
+          "bread"
+        ],
+        "Jill": [
+          "hay_block",
+          "packed_mud"
+        ],
+        "Alex": [
+          "cookie",
+          "paper"
+        ],
+        "Sam": [
+          "golden_apple",
+          "pumpkin_pie"
+        ]
+      },
+      "counts": {
+        "all_wait_turns_while_unfinished": 0,
+        "slots": 16,
+        "reserved_tokens": 7677,
+        "measured_tokens": 7677,
+        "responses": 16,
+        "collected": 8,
+        "crafted": 8,
+        "leader_crafts": 2,
+        "craft_outside_assignment": 0,
+        "craft_after_reported_completion": 0
+      }
+    },
+    {
+      "trial": "3218-fixed",
+      "seed": 3218,
+      "mode": "fixed",
+      "leader": null,
+      "elapsed": 32.653,
+      "goals": 8,
+      "full": true,
+      "duplicate_crafts": 0,
+      "duplicate_kits": 0,
+      "reassignments": [],
+      "client_match": true,
+      "verified": [
+        "bone_meal",
+        "bread",
+        "cookie",
+        "golden_apple",
+        "hay_block",
+        "packed_mud",
+        "paper",
+        "pumpkin_pie"
+      ],
+      "crafts_by_player": {
+        "Andy": [
+          "bone_meal",
+          "pumpkin_pie"
+        ],
+        "Jill": [
+          "hay_block",
+          "packed_mud"
+        ],
+        "Alex": [
+          "bread",
+          "cookie"
+        ],
+        "Sam": [
+          "golden_apple",
+          "paper"
+        ]
+      },
+      "counts": {
+        "all_wait_turns_while_unfinished": 0,
+        "slots": 16,
+        "reserved_tokens": 7695,
+        "measured_tokens": 7695,
+        "responses": 16,
+        "collected": 8,
+        "crafted": 8,
+        "leader_crafts": 0,
+        "craft_outside_assignment": 0,
+        "craft_after_reported_completion": 0
+      }
+    },
+    {
+      "trial": "3214-swarm",
+      "seed": 3214,
+      "mode": "swarm",
+      "leader": null,
+      "elapsed": 360,
+      "goals": 5,
+      "full": false,
+      "duplicate_crafts": 3,
+      "duplicate_kits": 3,
+      "reassignments": [],
+      "client_match": true,
+      "verified": [
+        "bone_meal",
+        "bread",
+        "hay_block",
+        "paper",
+        "pumpkin_pie"
+      ],
+      "crafts_by_player": {
+        "Andy": [
+          "bone_meal",
+          "hay_block",
+          "paper"
+        ],
+        "Jill": [
+          "bone_meal",
+          "pumpkin_pie"
+        ],
+        "Alex": [
+          "bone_meal",
+          "pumpkin_pie"
+        ],
+        "Sam": [
+          "bread"
+        ]
+      },
+      "counts": {
+        "all_wait_turns_while_unfinished": 9,
+        "slots": 144,
+        "reserved_tokens": 63531,
+        "measured_tokens": 63531,
+        "responses": 144,
+        "collected": 8,
+        "crafted": 8,
+        "leader_crafts": 0,
+        "craft_outside_assignment": 0,
+        "craft_after_reported_completion": 0,
+        "wait": 101,
+        "waiting_while_unfinished": 101,
+        "waiting_for_instruction": 0,
+        "already_crafted": 26,
+        "attempt_after_reported_completion": 26,
+        "invalid_reply": 1
+      }
+    },
+    {
+      "trial": "3211-orchestrator",
+      "seed": 3211,
+      "mode": "orchestrator",
+      "leader": "Andy",
+      "elapsed": 360,
+      "goals": 7,
+      "full": false,
+      "duplicate_crafts": 0,
+      "duplicate_kits": 0,
+      "reassignments": [
+        {
+          "status": "reassigned",
+          "recipe": "paper",
+          "from": "Andy",
+          "to": "Jill",
+          "turn": 1
+        }
+      ],
+      "client_match": true,
+      "verified": [
+        "bread",
+        "cookie",
+        "golden_apple",
+        "hay_block",
+        "packed_mud",
+        "paper",
+        "pumpkin_pie"
+      ],
+      "crafts_by_player": {
+        "Andy": [
+          "cookie"
+        ],
+        "Jill": [
+          "golden_apple",
+          "paper"
+        ],
+        "Alex": [
+          "hay_block",
+          "pumpkin_pie"
+        ],
+        "Sam": [
+          "bread",
+          "packed_mud"
+        ]
+      },
+      "counts": {
+        "all_wait_turns_while_unfinished": 0,
+        "slots": 144,
+        "reserved_tokens": 71385,
+        "measured_tokens": 70425,
+        "responses": 143,
+        "collected": 7,
+        "reassigned_assignment": 1,
+        "crafted": 7,
+        "leader_crafts": 1,
+        "craft_outside_assignment": 0,
+        "craft_after_reported_completion": 0,
+        "wait": 51,
+        "waiting_while_unfinished": 51,
+        "waiting_for_instruction": 0,
+        "provider_failures": 1,
+        "http_400": 1,
+        "invalid_reply": 3,
+        "already_crafted": 76,
+        "attempt_after_reported_completion": 76
+      }
+    },
+    {
+      "trial": "3218-orchestrator",
+      "seed": 3218,
+      "mode": "orchestrator",
+      "leader": "Sam",
+      "elapsed": 32.279,
+      "goals": 8,
+      "full": true,
+      "duplicate_crafts": 0,
+      "duplicate_kits": 0,
+      "reassignments": [],
+      "client_match": true,
+      "verified": [
+        "bone_meal",
+        "bread",
+        "cookie",
+        "golden_apple",
+        "hay_block",
+        "packed_mud",
+        "paper",
+        "pumpkin_pie"
+      ],
+      "crafts_by_player": {
+        "Andy": [
+          "bone_meal",
+          "pumpkin_pie"
+        ],
+        "Jill": [
+          "hay_block",
+          "packed_mud"
+        ],
+        "Alex": [
+          "bread",
+          "cookie"
+        ],
+        "Sam": [
+          "golden_apple",
+          "paper"
+        ]
+      },
+      "counts": {
+        "all_wait_turns_while_unfinished": 0,
+        "slots": 16,
+        "reserved_tokens": 7747,
+        "measured_tokens": 7747,
+        "responses": 16,
+        "collected": 8,
+        "unchanged_assignment": 1,
+        "crafted": 8,
+        "leader_crafts": 2,
+        "craft_outside_assignment": 0,
+        "craft_after_reported_completion": 0
+      }
+    },
+    {
+      "trial": "3216-swarm",
+      "seed": 3216,
+      "mode": "swarm",
+      "leader": null,
+      "elapsed": 360,
+      "goals": 4,
+      "full": false,
+      "duplicate_crafts": 2,
+      "duplicate_kits": 2,
+      "reassignments": [],
+      "client_match": true,
+      "verified": [
+        "bread",
+        "golden_apple",
+        "hay_block",
+        "pumpkin_pie"
+      ],
+      "crafts_by_player": {
+        "Andy": [
+          "bread"
+        ],
+        "Jill": [
+          "golden_apple",
+          "hay_block"
+        ],
+        "Alex": [
+          "pumpkin_pie"
+        ],
+        "Sam": [
+          "golden_apple",
+          "pumpkin_pie"
+        ]
+      },
+      "counts": {
+        "all_wait_turns_while_unfinished": 26,
+        "slots": 144,
+        "reserved_tokens": 62281,
+        "measured_tokens": 62281,
+        "responses": 144,
+        "collected": 6,
+        "wait": 127,
+        "waiting_while_unfinished": 127,
+        "waiting_for_instruction": 0,
+        "crafted": 6,
+        "leader_crafts": 0,
+        "craft_outside_assignment": 0,
+        "craft_after_reported_completion": 1,
+        "already_crafted": 5,
+        "attempt_after_reported_completion": 6
+      }
+    },
+    {
+      "trial": "3219-swarm",
+      "seed": 3219,
+      "mode": "swarm",
+      "leader": null,
+      "elapsed": 360,
+      "goals": 6,
+      "full": false,
+      "duplicate_crafts": 4,
+      "duplicate_kits": 5,
+      "reassignments": [],
+      "client_match": true,
+      "verified": [
+        "bone_meal",
+        "bread",
+        "cookie",
+        "golden_apple",
+        "paper",
+        "pumpkin_pie"
+      ],
+      "crafts_by_player": {
+        "Andy": [
+          "bread",
+          "pumpkin_pie"
+        ],
+        "Jill": [
+          "golden_apple",
+          "pumpkin_pie"
+        ],
+        "Alex": [
+          "bone_meal",
+          "bread",
+          "pumpkin_pie"
+        ],
+        "Sam": [
+          "bread",
+          "cookie",
+          "paper"
+        ]
+      },
+      "counts": {
+        "all_wait_turns_while_unfinished": 6,
+        "slots": 144,
+        "reserved_tokens": 64509,
+        "measured_tokens": 64509,
+        "responses": 144,
+        "collected": 11,
+        "crafted": 10,
+        "leader_crafts": 0,
+        "craft_outside_assignment": 0,
+        "craft_after_reported_completion": 1,
+        "wait": 88,
+        "waiting_while_unfinished": 88,
+        "waiting_for_instruction": 0,
+        "already_crafted": 31,
+        "attempt_after_reported_completion": 33,
+        "kit_already_collected": 1,
+        "collect_kit_first": 1,
+        "invalid_reply": 2
+      }
+    },
+    {
+      "trial": "3215-fixed",
+      "seed": 3215,
+      "mode": "fixed",
+      "leader": null,
+      "elapsed": 52.346,
+      "goals": 8,
+      "full": true,
+      "duplicate_crafts": 0,
+      "duplicate_kits": 0,
+      "reassignments": [],
+      "client_match": true,
+      "verified": [
+        "bone_meal",
+        "bread",
+        "cookie",
+        "golden_apple",
+        "hay_block",
+        "packed_mud",
+        "paper",
+        "pumpkin_pie"
+      ],
+      "crafts_by_player": {
+        "Andy": [
+          "bone_meal",
+          "cookie"
+        ],
+        "Jill": [
+          "golden_apple",
+          "hay_block"
+        ],
+        "Alex": [
+          "paper",
+          "pumpkin_pie"
+        ],
+        "Sam": [
+          "bread",
+          "packed_mud"
+        ]
+      },
+      "counts": {
+        "all_wait_turns_while_unfinished": 0,
+        "slots": 24,
+        "reserved_tokens": 11459,
+        "measured_tokens": 11459,
+        "responses": 24,
+        "collected": 8,
+        "crafted": 8,
+        "leader_crafts": 0,
+        "craft_outside_assignment": 0,
+        "craft_after_reported_completion": 0,
+        "already_crafted": 6,
+        "attempt_after_reported_completion": 6,
+        "kit_already_collected": 2
+      }
+    },
+    {
+      "trial": "3215-swarm",
+      "seed": 3215,
+      "mode": "swarm",
+      "leader": null,
+      "elapsed": 360,
+      "goals": 5,
+      "full": false,
+      "duplicate_crafts": 1,
+      "duplicate_kits": 1,
+      "reassignments": [],
+      "client_match": true,
+      "verified": [
+        "bone_meal",
+        "bread",
+        "golden_apple",
+        "paper",
+        "pumpkin_pie"
+      ],
+      "crafts_by_player": {
+        "Andy": [
+          "bread"
+        ],
+        "Jill": [
+          "golden_apple"
+        ],
+        "Alex": [
+          "bone_meal",
+          "paper"
+        ],
+        "Sam": [
+          "bread",
+          "pumpkin_pie"
+        ]
+      },
+      "counts": {
+        "all_wait_turns_while_unfinished": 20,
+        "slots": 144,
+        "reserved_tokens": 61927,
+        "measured_tokens": 61927,
+        "responses": 144,
+        "collected": 6,
+        "crafted": 6,
+        "leader_crafts": 0,
+        "craft_outside_assignment": 0,
+        "craft_after_reported_completion": 1,
+        "wait": 113,
+        "waiting_while_unfinished": 113,
+        "waiting_for_instruction": 0,
+        "already_crafted": 19,
+        "attempt_after_reported_completion": 20
+      }
+    },
+    {
+      "trial": "3220-swarm",
+      "seed": 3220,
+      "mode": "swarm",
+      "leader": null,
+      "elapsed": 360,
+      "goals": 6,
+      "full": false,
+      "duplicate_crafts": 5,
+      "duplicate_kits": 5,
+      "reassignments": [],
+      "client_match": true,
+      "verified": [
+        "bone_meal",
+        "bread",
+        "cookie",
+        "golden_apple",
+        "paper",
+        "pumpkin_pie"
+      ],
+      "crafts_by_player": {
+        "Andy": [
+          "golden_apple"
+        ],
+        "Jill": [
+          "golden_apple",
+          "paper"
+        ],
+        "Alex": [
+          "bread",
+          "cookie",
+          "paper",
+          "pumpkin_pie"
+        ],
+        "Sam": [
+          "bone_meal",
+          "bread",
+          "golden_apple",
+          "pumpkin_pie"
+        ]
+      },
+      "counts": {
+        "all_wait_turns_while_unfinished": 19,
+        "slots": 144,
+        "reserved_tokens": 63863,
+        "measured_tokens": 63863,
+        "responses": 144,
+        "collected": 11,
+        "wait": 120,
+        "waiting_while_unfinished": 120,
+        "waiting_for_instruction": 0,
+        "crafted": 11,
+        "leader_crafts": 0,
+        "craft_outside_assignment": 0,
+        "craft_after_reported_completion": 5,
+        "already_crafted": 1,
+        "attempt_after_reported_completion": 10,
+        "collect_kit_first": 1
+      }
+    },
+    {
+      "trial": "3220-orchestrator",
+      "seed": 3220,
+      "mode": "orchestrator",
+      "leader": "Jill",
+      "elapsed": 62.2,
+      "goals": 8,
+      "full": true,
+      "duplicate_crafts": 0,
+      "duplicate_kits": 0,
+      "reassignments": [],
+      "client_match": true,
+      "verified": [
+        "bone_meal",
+        "bread",
+        "cookie",
+        "golden_apple",
+        "hay_block",
+        "packed_mud",
+        "paper",
+        "pumpkin_pie"
+      ],
+      "crafts_by_player": {
+        "Andy": [
+          "cookie",
+          "golden_apple"
+        ],
+        "Jill": [
+          "packed_mud",
+          "paper"
+        ],
+        "Alex": [
+          "bread",
+          "hay_block"
+        ],
+        "Sam": [
+          "bone_meal",
+          "pumpkin_pie"
+        ]
+      },
+      "counts": {
+        "all_wait_turns_while_unfinished": 0,
+        "slots": 28,
+        "reserved_tokens": 13856,
+        "measured_tokens": 13856,
+        "responses": 28,
+        "collected": 8,
+        "crafted": 8,
+        "leader_crafts": 2,
+        "craft_outside_assignment": 0,
+        "craft_after_reported_completion": 0,
+        "already_crafted": 8,
+        "attempt_after_reported_completion": 8,
+        "collect_kit_first": 1,
+        "wait": 2,
+        "waiting_while_unfinished": 2,
+        "waiting_for_instruction": 0,
+        "invalid_reply": 1
+      }
+    },
+    {
+      "trial": "3212-swarm",
+      "seed": 3212,
+      "mode": "swarm",
+      "leader": null,
+      "elapsed": 360,
+      "goals": 5,
+      "full": false,
+      "duplicate_crafts": 1,
+      "duplicate_kits": 1,
+      "reassignments": [],
+      "client_match": true,
+      "verified": [
+        "bone_meal",
+        "bread",
+        "cookie",
+        "paper",
+        "pumpkin_pie"
+      ],
+      "crafts_by_player": {
+        "Andy": [
+          "bone_meal",
+          "paper"
+        ],
+        "Jill": [
+          "bread",
+          "cookie"
+        ],
+        "Alex": [
+          "bread"
+        ],
+        "Sam": [
+          "pumpkin_pie"
+        ]
+      },
+      "counts": {
+        "all_wait_turns_while_unfinished": 7,
+        "slots": 144,
+        "reserved_tokens": 61546,
+        "measured_tokens": 61546,
+        "responses": 144,
+        "collected": 6,
+        "crafted": 6,
+        "leader_crafts": 0,
+        "craft_outside_assignment": 0,
+        "craft_after_reported_completion": 0,
+        "wait": 92,
+        "waiting_while_unfinished": 92,
+        "waiting_for_instruction": 0,
+        "already_crafted": 38,
+        "attempt_after_reported_completion": 38,
+        "invalid_reply": 2
+      }
+    },
+    {
+      "trial": "3214-fixed",
+      "seed": 3214,
+      "mode": "fixed",
+      "leader": null,
+      "elapsed": 42.273,
+      "goals": 8,
+      "full": true,
+      "duplicate_crafts": 0,
+      "duplicate_kits": 0,
+      "reassignments": [],
+      "client_match": true,
+      "verified": [
+        "bone_meal",
+        "bread",
+        "cookie",
+        "golden_apple",
+        "hay_block",
+        "packed_mud",
+        "paper",
+        "pumpkin_pie"
+      ],
+      "crafts_by_player": {
+        "Andy": [
+          "bone_meal",
+          "packed_mud"
+        ],
+        "Jill": [
+          "bread",
+          "pumpkin_pie"
+        ],
+        "Alex": [
+          "golden_apple",
+          "paper"
+        ],
+        "Sam": [
+          "cookie",
+          "hay_block"
+        ]
+      },
+      "counts": {
+        "all_wait_turns_while_unfinished": 0,
+        "slots": 20,
+        "reserved_tokens": 9325,
+        "measured_tokens": 9325,
+        "responses": 20,
+        "collected": 8,
+        "crafted": 8,
+        "leader_crafts": 0,
+        "craft_outside_assignment": 0,
+        "craft_after_reported_completion": 0,
+        "already_crafted": 4,
+        "attempt_after_reported_completion": 4
+      }
+    }
+  ]
+}
