@@ -271,7 +271,7 @@ def analyze(root):
         for rule in ("peer", "leader"):
             require(groups[f"{rule}-outage"]["routed_delivered"] > 0,
                     "Smoke test did not prepare, reroute, and deliver actual food")
-    pairs = {}
+    pairs, timing = {}, {}
     if kind == "main":
         scores = {(r["seed"], r["mode"], r["environment"]): r["orders"] for r in rows}
         for environment in ENVIRONMENTS:
@@ -282,7 +282,13 @@ def analyze(root):
             pairs[f"{a}_minus_{b}_interaction"] = contrast([
                 disrupted - normal for disrupted, normal in zip(pairs[f"{a}_minus_{b}_outage"]["values"],
                                                                  pairs[f"{a}_minus_{b}_normal"]["values"])])
+        elapsed = {(r["seed"], r["mode"], r["environment"]): r["elapsed"] for r in rows}
+        for env in ENVIRONMENTS:
+            timing[env] = contrast([round(elapsed[s, "leader", env] - elapsed[s, "peer", env], 3) for s in SEEDS])
+        timing["interaction"] = contrast([round(disrupted - normal, 3) for disrupted, normal in
+                                         zip(timing["outage"]["values"], timing["normal"]["values"])])
     return {"kind": kind, "groups": groups, "contrasts_orders": pairs,
+            "leader_minus_peer_seconds": timing,
             "dispatch_trigger": bool(pairs and pairs["leader_minus_peer_outage"]["mean"] >= 0.5
                                      and pairs["leader_minus_peer_interaction"]["mean"] > 0), "trials": rows}
 

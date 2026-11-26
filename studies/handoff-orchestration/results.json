@@ -1,0 +1,4443 @@
+{
+  "contrasts_orders": {
+    "leader_minus_fixed_interaction": {
+      "interval": [
+        1.0,
+        1.8
+      ],
+      "mean": 1.4,
+      "values": [
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2
+      ]
+    },
+    "leader_minus_fixed_normal": {
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "mean": 0,
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "leader_minus_fixed_outage": {
+      "interval": [
+        1.0,
+        1.8
+      ],
+      "mean": 1.4,
+      "values": [
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2
+      ]
+    },
+    "leader_minus_peer_interaction": {
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "mean": 0,
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "leader_minus_peer_normal": {
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "mean": 0,
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "leader_minus_peer_outage": {
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "mean": 0,
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "peer_minus_fixed_interaction": {
+      "interval": [
+        1.0,
+        1.8
+      ],
+      "mean": 1.4,
+      "values": [
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2
+      ]
+    },
+    "peer_minus_fixed_normal": {
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "mean": 0,
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "peer_minus_fixed_outage": {
+      "interval": [
+        1.0,
+        1.8
+      ],
+      "mean": 1.4,
+      "values": [
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2
+      ]
+    }
+  },
+  "dispatch_trigger": false,
+  "groups": {
+    "fixed-normal": {
+      "accepted": 0,
+      "capped_mean": 141.0032,
+      "finish_median": 135.5265,
+      "finish_range": [
+        122.883,
+        170.913
+      ],
+      "full": 10,
+      "mean_orders": 10,
+      "model_errors": {},
+      "outcomes": {
+        "delivered": 100,
+        "invalid_reply": 4,
+        "staged": 290,
+        "wait": 103,
+        "wrong_source": 3
+      },
+      "range_orders": [
+        10,
+        10
+      ],
+      "responses": 500,
+      "route_statuses": {
+        "forbidden": 2
+      },
+      "routed_delivered": 0,
+      "runs": 10,
+      "tokens": 313956,
+      "watched_capped": 0,
+      "watched_count": 31,
+      "watched_in_window": 31,
+      "watched_median_wait": 10.693
+    },
+    "fixed-outage": {
+      "accepted": 0,
+      "capped_mean": 359.0037,
+      "finish_median": 350.037,
+      "finish_range": [
+        350.037,
+        350.037
+      ],
+      "full": 1,
+      "mean_orders": 8.6,
+      "model_errors": {
+        "response_incomplete": 1
+      },
+      "outcomes": {
+        "delivered": 86,
+        "invalid_reply": 6,
+        "staged": 290,
+        "wait": 818
+      },
+      "range_orders": [
+        8,
+        10
+      ],
+      "responses": 1200,
+      "route_statuses": {
+        "forbidden": 41
+      },
+      "routed_delivered": 0,
+      "runs": 10,
+      "tokens": 742566,
+      "watched_capped": 14,
+      "watched_count": 33,
+      "watched_in_window": 0,
+      "watched_median_wait": 284.92
+    },
+    "leader-normal": {
+      "accepted": 2,
+      "capped_mean": 134.003,
+      "finish_median": 134.486,
+      "finish_range": [
+        122.938,
+        159.938
+      ],
+      "full": 10,
+      "mean_orders": 10,
+      "model_errors": {},
+      "outcomes": {
+        "delivered": 100,
+        "invalid_reply": 1,
+        "staged": 290,
+        "wait": 82,
+        "wrong_source": 3
+      },
+      "range_orders": [
+        10,
+        10
+      ],
+      "responses": 476,
+      "route_statuses": {
+        "not_ready": 14,
+        "routed": 2
+      },
+      "routed_delivered": 2,
+      "runs": 10,
+      "tokens": 290086,
+      "watched_capped": 0,
+      "watched_count": 32,
+      "watched_in_window": 32,
+      "watched_median_wait": 10.9775
+    },
+    "leader-outage": {
+      "accepted": 32,
+      "capped_mean": 194.8575,
+      "finish_median": 183.1675,
+      "finish_range": [
+        137.293,
+        338.332
+      ],
+      "full": 10,
+      "mean_orders": 10,
+      "model_errors": {},
+      "outcomes": {
+        "delivered": 100,
+        "invalid_reply": 1,
+        "staged": 290,
+        "wait": 289
+      },
+      "range_orders": [
+        10,
+        10
+      ],
+      "responses": 680,
+      "route_statuses": {
+        "not_ready": 23,
+        "routed": 32
+      },
+      "routed_delivered": 32,
+      "runs": 10,
+      "tokens": 413792,
+      "watched_capped": 0,
+      "watched_count": 29,
+      "watched_in_window": 28,
+      "watched_median_wait": 81.596
+    },
+    "peer-normal": {
+      "accepted": 0,
+      "capped_mean": 135.181,
+      "finish_median": 134.7145,
+      "finish_range": [
+        121.787,
+        159.746
+      ],
+      "full": 10,
+      "mean_orders": 10,
+      "model_errors": {},
+      "outcomes": {
+        "already_staged": 1,
+        "delivered": 100,
+        "invalid_reply": 3,
+        "staged": 290,
+        "wait": 81,
+        "wrong_source": 5
+      },
+      "range_orders": [
+        10,
+        10
+      ],
+      "responses": 480,
+      "route_statuses": {
+        "not_ready": 1
+      },
+      "routed_delivered": 0,
+      "runs": 10,
+      "tokens": 285824,
+      "watched_capped": 0,
+      "watched_count": 29,
+      "watched_in_window": 29,
+      "watched_median_wait": 10.776
+    },
+    "peer-outage": {
+      "accepted": 29,
+      "capped_mean": 230.2545,
+      "finish_median": 195.872,
+      "finish_range": [
+        147.029,
+        339.286
+      ],
+      "full": 10,
+      "mean_orders": 10,
+      "model_errors": {},
+      "outcomes": {
+        "delivered": 100,
+        "invalid_reply": 12,
+        "staged": 290,
+        "wait": 390,
+        "wrong_owner": 1,
+        "wrong_source": 3
+      },
+      "range_orders": [
+        10,
+        10
+      ],
+      "responses": 796,
+      "route_statuses": {
+        "forbidden": 22,
+        "not_ready": 6,
+        "routed": 29,
+        "turn_limit": 13
+      },
+      "routed_delivered": 29,
+      "runs": 10,
+      "tokens": 471873,
+      "watched_capped": 0,
+      "watched_count": 30,
+      "watched_in_window": 29,
+      "watched_median_wait": 119.015
+    }
+  },
+  "kind": "main",
+  "leader_minus_peer_seconds": {
+    "interaction": {
+      "interval": [
+        -68.72442,
+        -3.2782200000000077
+      ],
+      "mean": -34.219,
+      "values": [
+        -81.73,
+        -122.168,
+        14.178,
+        22.009,
+        11.415,
+        -1.61,
+        -122.348,
+        -35.673,
+        -36.721,
+        10.458
+      ]
+    },
+    "normal": {
+      "interval": [
+        -7.5678475,
+        4.364742499999997
+      ],
+      "mean": -1.1780000000000002,
+      "values": [
+        9.778,
+        0.731,
+        -23.914,
+        12.225,
+        -0.121,
+        0.192,
+        1.151,
+        -0.38,
+        0.33,
+        -11.772
+      ]
+    },
+    "outage": {
+      "interval": [
+        -68.2970425,
+        -5.389899999999999
+      ],
+      "mean": -35.397,
+      "values": [
+        -71.952,
+        -121.437,
+        -9.736,
+        34.234,
+        11.294,
+        -1.418,
+        -121.197,
+        -36.053,
+        -36.391,
+        -1.314
+      ]
+    }
+  },
+  "trials": [
+    {
+      "accepted": 0,
+      "affected": "Andy",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 2,
+        "Andy": 4,
+        "Jill": 2,
+        "Sam": 2
+      },
+      "dir": "6140-fixed-normal",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 146.166,
+      "environment": "normal",
+      "leader": "Jill",
+      "mode": "fixed",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "invalid_reply": 1,
+        "staged": 29,
+        "wait": 12
+      },
+      "reserved_tokens": 32429,
+      "responses": 52,
+      "route_statuses": {
+        "forbidden": 1
+      },
+      "routed_delivered": 0,
+      "seed": 6140,
+      "tokens": 32429,
+      "watched_orders": {
+        "o10": {
+          "assembly": 121.271,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 110.357,
+          "wait": 10.914
+        },
+        "o3": {
+          "assembly": 49.462,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 38.466,
+          "wait": 1.462
+        },
+        "o6": {
+          "assembly": 61.304,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 50.584,
+          "wait": 10.72
+        },
+        "o7": {
+          "assembly": 85.285,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 63.185,
+          "wait": 22.1
+        }
+      }
+    },
+    {
+      "accepted": 0,
+      "affected": "Andy",
+      "completed": false,
+      "crafts_by": {
+        "Alex": 2,
+        "Andy": 2,
+        "Jill": 2,
+        "Sam": 2
+      },
+      "dir": "6140-fixed-outage",
+      "done": [
+        "o1",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 360,
+      "environment": "outage",
+      "leader": "Jill",
+      "mode": "fixed",
+      "model_errors": {
+        "response_incomplete": 1
+      },
+      "orders": 8,
+      "outcomes": {
+        "delivered": 8,
+        "invalid_reply": 2,
+        "staged": 29,
+        "wait": 81
+      },
+      "reserved_tokens": 75876,
+      "responses": 120,
+      "route_statuses": {
+        "forbidden": 1
+      },
+      "routed_delivered": 0,
+      "seed": 6140,
+      "tokens": 75876,
+      "watched_orders": {
+        "o10": {
+          "assembly": null,
+          "capped": true,
+          "delivered_in_window": false,
+          "ready": 50.345,
+          "wait": 309.655
+        },
+        "o3": {
+          "assembly": 337.65,
+          "capped": false,
+          "delivered_in_window": false,
+          "ready": 110.397,
+          "wait": 227.253
+        },
+        "o6": {
+          "assembly": 349.381,
+          "capped": false,
+          "delivered_in_window": false,
+          "ready": 62.516,
+          "wait": 286.865
+        },
+        "o7": {
+          "assembly": null,
+          "capped": true,
+          "delivered_in_window": false,
+          "ready": 75.08,
+          "wait": 284.92
+        }
+      }
+    },
+    {
+      "accepted": 0,
+      "affected": "Andy",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 2,
+        "Andy": 4,
+        "Jill": 2,
+        "Sam": 2
+      },
+      "dir": "6140-leader-normal",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 133.862,
+      "environment": "normal",
+      "leader": "Jill",
+      "mode": "leader",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "staged": 29,
+        "wait": 9
+      },
+      "reserved_tokens": 29201,
+      "responses": 48,
+      "route_statuses": {
+        "not_ready": 1
+      },
+      "routed_delivered": 0,
+      "seed": 6140,
+      "tokens": 29201,
+      "watched_orders": {
+        "o10": {
+          "assembly": 109.408,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 98.133,
+          "wait": 11.275
+        },
+        "o3": {
+          "assembly": 85.116,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 74.454,
+          "wait": 10.662
+        },
+        "o6": {
+          "assembly": 61.305,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 50.655,
+          "wait": 10.65
+        },
+        "o7": {
+          "assembly": 97.369,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 73.887,
+          "wait": 23.482
+        }
+      }
+    },
+    {
+      "accepted": 5,
+      "affected": "Andy",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 4,
+        "Jill": 3,
+        "Sam": 3
+      },
+      "dir": "6140-leader-outage",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 183.486,
+      "environment": "outage",
+      "leader": "Jill",
+      "mode": "leader",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "staged": 29,
+        "wait": 25
+      },
+      "reserved_tokens": 39164,
+      "responses": 64,
+      "route_statuses": {
+        "not_ready": 1,
+        "routed": 5
+      },
+      "routed_delivered": 5,
+      "seed": 6140,
+      "tokens": 39164,
+      "watched_orders": {
+        "o10": {
+          "assembly": 181.304,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 86.428,
+          "wait": 94.876
+        },
+        "o3": {
+          "assembly": 121.61,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 98.102,
+          "wait": 23.508
+        },
+        "o6": {
+          "assembly": 145.518,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 74.73,
+          "wait": 70.788
+        },
+        "o7": {
+          "assembly": 157.366,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 63.014,
+          "wait": 94.352
+        }
+      }
+    },
+    {
+      "accepted": 0,
+      "affected": "Andy",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 2,
+        "Andy": 4,
+        "Jill": 2,
+        "Sam": 2
+      },
+      "dir": "6140-peer-normal",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 124.084,
+      "environment": "normal",
+      "leader": "Jill",
+      "mode": "peer",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "already_staged": 1,
+        "delivered": 10,
+        "staged": 29,
+        "wait": 3,
+        "wrong_source": 1
+      },
+      "reserved_tokens": 27071,
+      "responses": 44,
+      "route_statuses": {},
+      "routed_delivered": 0,
+      "seed": 6140,
+      "tokens": 27071,
+      "watched_orders": {
+        "o10": {
+          "assembly": 121.436,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 110.299,
+          "wait": 11.137
+        },
+        "o3": {
+          "assembly": 73.178,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 62.488,
+          "wait": 10.69
+        },
+        "o6": {
+          "assembly": 85.373,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 50.999,
+          "wait": 34.374
+        },
+        "o7": {
+          "assembly": 97.326,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 61.869,
+          "wait": 35.457
+        }
+      }
+    },
+    {
+      "accepted": 4,
+      "affected": "Andy",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 3,
+        "Jill": 4,
+        "Sam": 3
+      },
+      "dir": "6140-peer-outage",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 255.438,
+      "environment": "outage",
+      "leader": "Jill",
+      "mode": "peer",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "staged": 29,
+        "wait": 48,
+        "wrong_owner": 1
+      },
+      "reserved_tokens": 50944,
+      "responses": 88,
+      "route_statuses": {
+        "forbidden": 5,
+        "routed": 4
+      },
+      "routed_delivered": 4,
+      "seed": 6140,
+      "tokens": 50944,
+      "watched_orders": {
+        "o10": {
+          "assembly": 253.275,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 98.426,
+          "wait": 154.849
+        },
+        "o3": {
+          "assembly": 133.43,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 109.988,
+          "wait": 23.442
+        },
+        "o6": {
+          "assembly": 169.345,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 50.917,
+          "wait": 118.428
+        },
+        "o7": {
+          "assembly": 205.218,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 73.843,
+          "wait": 131.375
+        }
+      }
+    },
+    {
+      "accepted": 0,
+      "affected": "Jill",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 2,
+        "Andy": 2,
+        "Jill": 4,
+        "Sam": 2
+      },
+      "dir": "6141-fixed-normal",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 122.883,
+      "environment": "normal",
+      "leader": "Andy",
+      "mode": "fixed",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "staged": 29,
+        "wait": 5
+      },
+      "reserved_tokens": 27632,
+      "responses": 44,
+      "route_statuses": {},
+      "routed_delivered": 0,
+      "seed": 6141,
+      "tokens": 27632,
+      "watched_orders": {
+        "o4": {
+          "assembly": 97.228,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 86.363,
+          "wait": 10.865
+        },
+        "o5": {
+          "assembly": 109.274,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 98.038,
+          "wait": 11.236
+        },
+        "o8": {
+          "assembly": 121.267,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 110.121,
+          "wait": 11.146
+        }
+      }
+    },
+    {
+      "accepted": 0,
+      "affected": "Jill",
+      "completed": false,
+      "crafts_by": {
+        "Alex": 2,
+        "Andy": 2,
+        "Jill": 2,
+        "Sam": 2
+      },
+      "dir": "6141-fixed-outage",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o9"
+      ],
+      "elapsed": 360,
+      "environment": "outage",
+      "leader": "Andy",
+      "mode": "fixed",
+      "model_errors": {},
+      "orders": 8,
+      "outcomes": {
+        "delivered": 8,
+        "staged": 29,
+        "wait": 83
+      },
+      "reserved_tokens": 76244,
+      "responses": 120,
+      "route_statuses": {
+        "forbidden": 9
+      },
+      "routed_delivered": 0,
+      "seed": 6141,
+      "tokens": 76244,
+      "watched_orders": {
+        "o4": {
+          "assembly": 337.702,
+          "capped": false,
+          "delivered_in_window": false,
+          "ready": 74.322,
+          "wait": 263.38
+        },
+        "o5": {
+          "assembly": 349.333,
+          "capped": false,
+          "delivered_in_window": false,
+          "ready": 38.236,
+          "wait": 301.333
+        },
+        "o7": {
+          "assembly": null,
+          "capped": true,
+          "delivered_in_window": false,
+          "ready": 86.412,
+          "wait": 273.588
+        },
+        "o8": {
+          "assembly": null,
+          "capped": true,
+          "delivered_in_window": false,
+          "ready": 98.669,
+          "wait": 261.331
+        }
+      }
+    },
+    {
+      "accepted": 0,
+      "affected": "Jill",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 2,
+        "Andy": 2,
+        "Jill": 4,
+        "Sam": 2
+      },
+      "dir": "6141-leader-normal",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 136.517,
+      "environment": "normal",
+      "leader": "Andy",
+      "mode": "leader",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "staged": 29,
+        "wait": 9
+      },
+      "reserved_tokens": 29246,
+      "responses": 48,
+      "route_statuses": {
+        "not_ready": 1
+      },
+      "routed_delivered": 0,
+      "seed": 6141,
+      "tokens": 29246,
+      "watched_orders": {
+        "o4": {
+          "assembly": 49.637,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 38.505,
+          "wait": 1.637
+        },
+        "o5": {
+          "assembly": 85.416,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 74.433,
+          "wait": 10.983
+        },
+        "o7": {
+          "assembly": 97.338,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 86.584,
+          "wait": 10.754
+        },
+        "o8": {
+          "assembly": 121.554,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 98.61,
+          "wait": 22.944
+        }
+      }
+    },
+    {
+      "accepted": 4,
+      "affected": "Jill",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 3,
+        "Andy": 4,
+        "Sam": 3
+      },
+      "dir": "6141-leader-outage",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 170.316,
+      "environment": "outage",
+      "leader": "Andy",
+      "mode": "leader",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "staged": 29,
+        "wait": 21
+      },
+      "reserved_tokens": 37190,
+      "responses": 60,
+      "route_statuses": {
+        "not_ready": 3,
+        "routed": 4
+      },
+      "routed_delivered": 4,
+      "seed": 6141,
+      "tokens": 37190,
+      "watched_orders": {
+        "o4": {
+          "assembly": 97.252,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 74.385,
+          "wait": 22.867
+        },
+        "o5": {
+          "assembly": 121.327,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 85.772,
+          "wait": 35.555
+        },
+        "o7": {
+          "assembly": 145.579,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 86.457,
+          "wait": 59.122
+        },
+        "o8": {
+          "assembly": 169.279,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 110.289,
+          "wait": 58.99
+        }
+      }
+    },
+    {
+      "accepted": 0,
+      "affected": "Jill",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 2,
+        "Andy": 2,
+        "Jill": 4,
+        "Sam": 2
+      },
+      "dir": "6141-peer-normal",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 135.786,
+      "environment": "normal",
+      "leader": "Andy",
+      "mode": "peer",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "staged": 29,
+        "wait": 9
+      },
+      "reserved_tokens": 28625,
+      "responses": 48,
+      "route_statuses": {},
+      "routed_delivered": 0,
+      "seed": 6141,
+      "tokens": 28625,
+      "watched_orders": {
+        "o4": {
+          "assembly": 61.505,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 50.894,
+          "wait": 10.611
+        },
+        "o5": {
+          "assembly": 85.466,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 74.241,
+          "wait": 11.225
+        },
+        "o7": {
+          "assembly": 73.265,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 62.591,
+          "wait": 10.674
+        },
+        "o8": {
+          "assembly": 97.654,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 86.789,
+          "wait": 10.865
+        }
+      }
+    },
+    {
+      "accepted": 4,
+      "affected": "Jill",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 4,
+        "Andy": 3,
+        "Sam": 3
+      },
+      "dir": "6141-peer-outage",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 291.753,
+      "environment": "outage",
+      "leader": "Andy",
+      "mode": "peer",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "invalid_reply": 3,
+        "staged": 29,
+        "wait": 58
+      },
+      "reserved_tokens": 60932,
+      "responses": 100,
+      "route_statuses": {
+        "forbidden": 2,
+        "not_ready": 2,
+        "routed": 4,
+        "turn_limit": 1
+      },
+      "routed_delivered": 4,
+      "seed": 6141,
+      "tokens": 60932,
+      "watched_orders": {
+        "o4": {
+          "assembly": 217.476,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 50.382,
+          "wait": 167.094
+        },
+        "o5": {
+          "assembly": 229.202,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 74.052,
+          "wait": 155.15
+        },
+        "o7": {
+          "assembly": 289.472,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 74.467,
+          "wait": 215.005
+        },
+        "o8": {
+          "assembly": 253.974,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 86.198,
+          "wait": 167.776
+        }
+      }
+    },
+    {
+      "accepted": 0,
+      "affected": "Alex",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 4,
+        "Andy": 2,
+        "Jill": 2,
+        "Sam": 2
+      },
+      "dir": "6142-fixed-normal",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 147.398,
+      "environment": "normal",
+      "leader": "Sam",
+      "mode": "fixed",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "invalid_reply": 1,
+        "staged": 29,
+        "wait": 12
+      },
+      "reserved_tokens": 32594,
+      "responses": 52,
+      "route_statuses": {},
+      "routed_delivered": 0,
+      "seed": 6142,
+      "tokens": 32594,
+      "watched_orders": {
+        "o3": {
+          "assembly": 73.281,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 26.37,
+          "wait": 25.281
+        },
+        "o4": {
+          "assembly": 85.856,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 38.43,
+          "wait": 37.856
+        }
+      }
+    },
+    {
+      "accepted": 0,
+      "affected": "Alex",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 4,
+        "Andy": 2,
+        "Jill": 2,
+        "Sam": 2
+      },
+      "dir": "6142-fixed-outage",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 350.037,
+      "environment": "outage",
+      "leader": "Sam",
+      "mode": "fixed",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "invalid_reply": 1,
+        "staged": 29,
+        "wait": 80
+      },
+      "reserved_tokens": 70374,
+      "responses": 120,
+      "route_statuses": {
+        "forbidden": 1
+      },
+      "routed_delivered": 0,
+      "seed": 6142,
+      "tokens": 70374,
+      "watched_orders": {
+        "o2": {
+          "assembly": 337.705,
+          "capped": false,
+          "delivered_in_window": false,
+          "ready": 14.106,
+          "wait": 289.705
+        },
+        "o4": {
+          "assembly": 349.262,
+          "capped": false,
+          "delivered_in_window": false,
+          "ready": 40.864,
+          "wait": 301.262
+        }
+      }
+    },
+    {
+      "accepted": 2,
+      "affected": "Alex",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 2,
+        "Andy": 2,
+        "Jill": 3,
+        "Sam": 3
+      },
+      "dir": "6142-leader-normal",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 123.42,
+      "environment": "normal",
+      "leader": "Sam",
+      "mode": "leader",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "staged": 29,
+        "wait": 5
+      },
+      "reserved_tokens": 26678,
+      "responses": 44,
+      "route_statuses": {
+        "not_ready": 3,
+        "routed": 2
+      },
+      "routed_delivered": 2,
+      "seed": 6142,
+      "tokens": 26678,
+      "watched_orders": {
+        "o3": {
+          "assembly": 49.462,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 26.475,
+          "wait": 1.462
+        },
+        "o4": {
+          "assembly": 61.18,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 27.695,
+          "wait": 13.18
+        }
+      }
+    },
+    {
+      "accepted": 2,
+      "affected": "Alex",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 3,
+        "Andy": 4,
+        "Jill": 1,
+        "Sam": 2
+      },
+      "dir": "6142-leader-outage",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 137.293,
+      "environment": "outage",
+      "leader": "Sam",
+      "mode": "leader",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "staged": 29,
+        "wait": 9
+      },
+      "reserved_tokens": 29845,
+      "responses": 48,
+      "route_statuses": {
+        "not_ready": 4,
+        "routed": 2
+      },
+      "routed_delivered": 2,
+      "seed": 6142,
+      "tokens": 29845,
+      "watched_orders": {
+        "o4": {
+          "assembly": 109.247,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 62.471,
+          "wait": 46.776
+        }
+      }
+    },
+    {
+      "accepted": 0,
+      "affected": "Alex",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 4,
+        "Andy": 2,
+        "Jill": 2,
+        "Sam": 2
+      },
+      "dir": "6142-peer-normal",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 147.334,
+      "environment": "normal",
+      "leader": "Sam",
+      "mode": "peer",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "staged": 29,
+        "wait": 13
+      },
+      "reserved_tokens": 30438,
+      "responses": 52,
+      "route_statuses": {},
+      "routed_delivered": 0,
+      "seed": 6142,
+      "tokens": 30438,
+      "watched_orders": {
+        "o4": {
+          "assembly": 49.947,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 27.449,
+          "wait": 1.947
+        }
+      }
+    },
+    {
+      "accepted": 2,
+      "affected": "Alex",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 2,
+        "Andy": 3,
+        "Jill": 2,
+        "Sam": 3
+      },
+      "dir": "6142-peer-outage",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 147.029,
+      "environment": "outage",
+      "leader": "Sam",
+      "mode": "peer",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "staged": 29,
+        "wait": 13
+      },
+      "reserved_tokens": 31009,
+      "responses": 52,
+      "route_statuses": {
+        "not_ready": 1,
+        "routed": 2
+      },
+      "routed_delivered": 2,
+      "seed": 6142,
+      "tokens": 31009,
+      "watched_orders": {
+        "o3": {
+          "assembly": 121.402,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 26.776,
+          "wait": 73.402
+        },
+        "o4": {
+          "assembly": 145.439,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 50.785,
+          "wait": 94.654
+        }
+      }
+    },
+    {
+      "accepted": 0,
+      "affected": "Sam",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 2,
+        "Andy": 2,
+        "Jill": 2,
+        "Sam": 4
+      },
+      "dir": "6143-fixed-normal",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 133.86,
+      "environment": "normal",
+      "leader": "Alex",
+      "mode": "fixed",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "staged": 29,
+        "wait": 9
+      },
+      "reserved_tokens": 30329,
+      "responses": 48,
+      "route_statuses": {},
+      "routed_delivered": 0,
+      "seed": 6143,
+      "tokens": 30329,
+      "watched_orders": {
+        "o10": {
+          "assembly": 133.347,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 122.644,
+          "wait": 10.703
+        },
+        "o4": {
+          "assembly": 73.374,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 62.578,
+          "wait": 10.796
+        },
+        "o9": {
+          "assembly": 109.491,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 98.871,
+          "wait": 10.62
+        }
+      }
+    },
+    {
+      "accepted": 0,
+      "affected": "Sam",
+      "completed": false,
+      "crafts_by": {
+        "Alex": 2,
+        "Andy": 2,
+        "Jill": 2,
+        "Sam": 3
+      },
+      "dir": "6143-fixed-outage",
+      "done": [
+        "o1",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 360,
+      "environment": "outage",
+      "leader": "Alex",
+      "mode": "fixed",
+      "model_errors": {},
+      "orders": 9,
+      "outcomes": {
+        "delivered": 9,
+        "staged": 29,
+        "wait": 82
+      },
+      "reserved_tokens": 72733,
+      "responses": 120,
+      "route_statuses": {
+        "forbidden": 1
+      },
+      "routed_delivered": 0,
+      "seed": 6143,
+      "tokens": 72733,
+      "watched_orders": {
+        "o10": {
+          "assembly": null,
+          "capped": true,
+          "delivered_in_window": false,
+          "ready": 122.808,
+          "wait": 237.192
+        },
+        "o6": {
+          "assembly": 337.775,
+          "capped": false,
+          "delivered_in_window": false,
+          "ready": 50.887,
+          "wait": 286.888
+        },
+        "o9": {
+          "assembly": 349.441,
+          "capped": false,
+          "delivered_in_window": false,
+          "ready": 114.46,
+          "wait": 234.981
+        }
+      }
+    },
+    {
+      "accepted": 0,
+      "affected": "Sam",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 2,
+        "Andy": 2,
+        "Jill": 2,
+        "Sam": 4
+      },
+      "dir": "6143-leader-normal",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 145.868,
+      "environment": "normal",
+      "leader": "Alex",
+      "mode": "leader",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "staged": 29,
+        "wait": 12,
+        "wrong_source": 1
+      },
+      "reserved_tokens": 30694,
+      "responses": 52,
+      "route_statuses": {
+        "not_ready": 3
+      },
+      "routed_delivered": 0,
+      "seed": 6143,
+      "tokens": 30694,
+      "watched_orders": {
+        "o10": {
+          "assembly": 145.346,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 134.882,
+          "wait": 10.464
+        },
+        "o6": {
+          "assembly": 61.329,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 51.12,
+          "wait": 10.209
+        },
+        "o9": {
+          "assembly": 121.669,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 110.779,
+          "wait": 10.89
+        }
+      }
+    },
+    {
+      "accepted": 3,
+      "affected": "Sam",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 2,
+        "Andy": 4,
+        "Jill": 3,
+        "Sam": 1
+      },
+      "dir": "6143-leader-outage",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 338.332,
+      "environment": "outage",
+      "leader": "Alex",
+      "mode": "leader",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "staged": 29,
+        "wait": 77
+      },
+      "reserved_tokens": 68430,
+      "responses": 116,
+      "route_statuses": {
+        "not_ready": 3,
+        "routed": 3
+      },
+      "routed_delivered": 3,
+      "seed": 6143,
+      "tokens": 68430,
+      "watched_orders": {
+        "o10": {
+          "assembly": 337.503,
+          "capped": false,
+          "delivered_in_window": false,
+          "ready": 86.094,
+          "wait": 251.409
+        },
+        "o4": {
+          "assembly": 121.162,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 51.054,
+          "wait": 70.108
+        },
+        "o6": {
+          "assembly": 145.637,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 39.357,
+          "wait": 97.637
+        },
+        "o9": {
+          "assembly": 157.169,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 122.35,
+          "wait": 34.819
+        }
+      }
+    },
+    {
+      "accepted": 0,
+      "affected": "Sam",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 2,
+        "Andy": 2,
+        "Jill": 2,
+        "Sam": 4
+      },
+      "dir": "6143-peer-normal",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 133.643,
+      "environment": "normal",
+      "leader": "Alex",
+      "mode": "peer",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "staged": 29,
+        "wait": 9
+      },
+      "reserved_tokens": 28148,
+      "responses": 48,
+      "route_statuses": {},
+      "routed_delivered": 0,
+      "seed": 6143,
+      "tokens": 28148,
+      "watched_orders": {
+        "o10": {
+          "assembly": 133.113,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 122.416,
+          "wait": 10.697
+        },
+        "o6": {
+          "assembly": 62.323,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 52.366,
+          "wait": 9.957
+        },
+        "o9": {
+          "assembly": 97.125,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 86.525,
+          "wait": 10.6
+        }
+      }
+    },
+    {
+      "accepted": 3,
+      "affected": "Sam",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 3,
+        "Andy": 3,
+        "Jill": 3,
+        "Sam": 1
+      },
+      "dir": "6143-peer-outage",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 304.098,
+      "environment": "outage",
+      "leader": "Alex",
+      "mode": "peer",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "staged": 29,
+        "wait": 65
+      },
+      "reserved_tokens": 61262,
+      "responses": 104,
+      "route_statuses": {
+        "forbidden": 4,
+        "not_ready": 1,
+        "routed": 3,
+        "turn_limit": 3
+      },
+      "routed_delivered": 3,
+      "seed": 6143,
+      "tokens": 61262,
+      "watched_orders": {
+        "o10": {
+          "assembly": 301.38,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 110.555,
+          "wait": 190.825
+        },
+        "o6": {
+          "assembly": 229.436,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 51.148,
+          "wait": 178.288
+        },
+        "o9": {
+          "assembly": 217.335,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 98.319,
+          "wait": 119.016
+        }
+      }
+    },
+    {
+      "accepted": 0,
+      "affected": "Andy",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 2,
+        "Andy": 4,
+        "Jill": 2,
+        "Sam": 2
+      },
+      "dir": "6144-fixed-normal",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 123.444,
+      "environment": "normal",
+      "leader": "Alex",
+      "mode": "fixed",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "staged": 29,
+        "wait": 5
+      },
+      "reserved_tokens": 28176,
+      "responses": 44,
+      "route_statuses": {},
+      "routed_delivered": 0,
+      "seed": 6144,
+      "tokens": 28176,
+      "watched_orders": {
+        "o3": {
+          "assembly": 61.394,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 50.705,
+          "wait": 10.689
+        },
+        "o4": {
+          "assembly": 49.589,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 38.873,
+          "wait": 1.589
+        },
+        "o5": {
+          "assembly": 73.471,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 63.041,
+          "wait": 10.43
+        },
+        "o9": {
+          "assembly": 121.215,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 110.64,
+          "wait": 10.575
+        }
+      }
+    },
+    {
+      "accepted": 0,
+      "affected": "Andy",
+      "completed": false,
+      "crafts_by": {
+        "Alex": 2,
+        "Andy": 3,
+        "Jill": 2,
+        "Sam": 2
+      },
+      "dir": "6144-fixed-outage",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8"
+      ],
+      "elapsed": 360,
+      "environment": "outage",
+      "leader": "Alex",
+      "mode": "fixed",
+      "model_errors": {},
+      "orders": 9,
+      "outcomes": {
+        "delivered": 9,
+        "staged": 29,
+        "wait": 82
+      },
+      "reserved_tokens": 74173,
+      "responses": 120,
+      "route_statuses": {
+        "forbidden": 11
+      },
+      "routed_delivered": 0,
+      "seed": 6144,
+      "tokens": 74173,
+      "watched_orders": {
+        "o4": {
+          "assembly": 337.458,
+          "capped": false,
+          "delivered_in_window": false,
+          "ready": 38.567,
+          "wait": 289.458
+        },
+        "o5": {
+          "assembly": 349.611,
+          "capped": false,
+          "delivered_in_window": false,
+          "ready": 50.784,
+          "wait": 298.827
+        },
+        "o9": {
+          "assembly": null,
+          "capped": true,
+          "delivered_in_window": false,
+          "ready": 110.604,
+          "wait": 249.396
+        }
+      }
+    },
+    {
+      "accepted": 0,
+      "affected": "Andy",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 2,
+        "Andy": 4,
+        "Jill": 2,
+        "Sam": 2
+      },
+      "dir": "6144-leader-normal",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 123.206,
+      "environment": "normal",
+      "leader": "Alex",
+      "mode": "leader",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "staged": 29,
+        "wait": 4,
+        "wrong_source": 1
+      },
+      "reserved_tokens": 27204,
+      "responses": 44,
+      "route_statuses": {},
+      "routed_delivered": 0,
+      "seed": 6144,
+      "tokens": 27204,
+      "watched_orders": {
+        "o3": {
+          "assembly": 61.326,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 50.26,
+          "wait": 11.066
+        },
+        "o4": {
+          "assembly": 85.5,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 50.915,
+          "wait": 34.585
+        },
+        "o5": {
+          "assembly": 49.652,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 39.101,
+          "wait": 1.652
+        },
+        "o9": {
+          "assembly": 121.092,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 110.441,
+          "wait": 10.651
+        }
+      }
+    },
+    {
+      "accepted": 4,
+      "affected": "Andy",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 4,
+        "Jill": 3,
+        "Sam": 3
+      },
+      "dir": "6144-leader-outage",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 205.823,
+      "environment": "outage",
+      "leader": "Alex",
+      "mode": "leader",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "invalid_reply": 1,
+        "staged": 29,
+        "wait": 32
+      },
+      "reserved_tokens": 45138,
+      "responses": 72,
+      "route_statuses": {
+        "not_ready": 2,
+        "routed": 4
+      },
+      "routed_delivered": 4,
+      "seed": 6144,
+      "tokens": 45138,
+      "watched_orders": {
+        "o3": {
+          "assembly": 157.331,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 26.466,
+          "wait": 109.331
+        },
+        "o4": {
+          "assembly": 181.525,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 50.882,
+          "wait": 130.643
+        },
+        "o5": {
+          "assembly": 193.253,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 62.233,
+          "wait": 131.02
+        },
+        "o9": {
+          "assembly": 205.186,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 122.461,
+          "wait": 82.725
+        }
+      }
+    },
+    {
+      "accepted": 0,
+      "affected": "Andy",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 2,
+        "Andy": 4,
+        "Jill": 2,
+        "Sam": 2
+      },
+      "dir": "6144-peer-normal",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 123.327,
+      "environment": "normal",
+      "leader": "Alex",
+      "mode": "peer",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "staged": 29,
+        "wait": 5
+      },
+      "reserved_tokens": 26225,
+      "responses": 44,
+      "route_statuses": {},
+      "routed_delivered": 0,
+      "seed": 6144,
+      "tokens": 26225,
+      "watched_orders": {
+        "o3": {
+          "assembly": 61.087,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 50.382,
+          "wait": 10.705
+        },
+        "o5": {
+          "assembly": 49.763,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 38.372,
+          "wait": 1.763
+        },
+        "o9": {
+          "assembly": 121.239,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 110.463,
+          "wait": 10.776
+        }
+      }
+    },
+    {
+      "accepted": 3,
+      "affected": "Andy",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 2,
+        "Andy": 1,
+        "Jill": 3,
+        "Sam": 4
+      },
+      "dir": "6144-peer-outage",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 194.529,
+      "environment": "outage",
+      "leader": "Alex",
+      "mode": "peer",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "invalid_reply": 3,
+        "staged": 29,
+        "wait": 26
+      },
+      "reserved_tokens": 40106,
+      "responses": 68,
+      "route_statuses": {
+        "routed": 3
+      },
+      "routed_delivered": 3,
+      "seed": 6144,
+      "tokens": 40106,
+      "watched_orders": {
+        "o4": {
+          "assembly": 169.282,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 38.466,
+          "wait": 121.282
+        },
+        "o5": {
+          "assembly": 181.28,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 50.909,
+          "wait": 130.371
+        },
+        "o9": {
+          "assembly": 193.372,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 110.634,
+          "wait": 82.738
+        }
+      }
+    },
+    {
+      "accepted": 0,
+      "affected": "Jill",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 2,
+        "Andy": 2,
+        "Jill": 4,
+        "Sam": 2
+      },
+      "dir": "6145-fixed-normal",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 159.902,
+      "environment": "normal",
+      "leader": "Jill",
+      "mode": "fixed",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "staged": 29,
+        "wait": 17
+      },
+      "reserved_tokens": 34536,
+      "responses": 56,
+      "route_statuses": {
+        "forbidden": 1
+      },
+      "routed_delivered": 0,
+      "seed": 6145,
+      "tokens": 34536,
+      "watched_orders": {
+        "o3": {
+          "assembly": 49.539,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 26.905,
+          "wait": 1.539
+        },
+        "o4": {
+          "assembly": 61.19,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 39.132,
+          "wait": 13.19
+        },
+        "o8": {
+          "assembly": 109.446,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 86.238,
+          "wait": 23.208
+        }
+      }
+    },
+    {
+      "accepted": 0,
+      "affected": "Jill",
+      "completed": false,
+      "crafts_by": {
+        "Alex": 2,
+        "Andy": 2,
+        "Jill": 2,
+        "Sam": 2
+      },
+      "dir": "6145-fixed-outage",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o5",
+        "o6",
+        "o7",
+        "o9"
+      ],
+      "elapsed": 360,
+      "environment": "outage",
+      "leader": "Jill",
+      "mode": "fixed",
+      "model_errors": {},
+      "orders": 8,
+      "outcomes": {
+        "delivered": 8,
+        "invalid_reply": 1,
+        "staged": 29,
+        "wait": 82
+      },
+      "reserved_tokens": 76040,
+      "responses": 120,
+      "route_statuses": {
+        "forbidden": 1
+      },
+      "routed_delivered": 0,
+      "seed": 6145,
+      "tokens": 76040,
+      "watched_orders": {
+        "o1": {
+          "assembly": 337.843,
+          "capped": false,
+          "delivered_in_window": false,
+          "ready": 50.906,
+          "wait": 286.937
+        },
+        "o3": {
+          "assembly": 349.446,
+          "capped": false,
+          "delivered_in_window": false,
+          "ready": 26.519,
+          "wait": 301.446
+        },
+        "o4": {
+          "assembly": null,
+          "capped": true,
+          "delivered_in_window": false,
+          "ready": 74.744,
+          "wait": 285.256
+        },
+        "o8": {
+          "assembly": null,
+          "capped": true,
+          "delivered_in_window": false,
+          "ready": 98.45,
+          "wait": 261.55
+        }
+      }
+    },
+    {
+      "accepted": 0,
+      "affected": "Jill",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 2,
+        "Andy": 2,
+        "Jill": 4,
+        "Sam": 2
+      },
+      "dir": "6145-leader-normal",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 159.938,
+      "environment": "normal",
+      "leader": "Jill",
+      "mode": "leader",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "staged": 29,
+        "wait": 17
+      },
+      "reserved_tokens": 34137,
+      "responses": 56,
+      "route_statuses": {
+        "not_ready": 1
+      },
+      "routed_delivered": 0,
+      "seed": 6145,
+      "tokens": 34137,
+      "watched_orders": {
+        "o4": {
+          "assembly": 49.876,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 38.44,
+          "wait": 1.876
+        },
+        "o8": {
+          "assembly": 109.648,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 98.437,
+          "wait": 11.211
+        }
+      }
+    },
+    {
+      "accepted": 1,
+      "affected": "Jill",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 2,
+        "Andy": 3,
+        "Jill": 3,
+        "Sam": 2
+      },
+      "dir": "6145-leader-outage",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 195.283,
+      "environment": "outage",
+      "leader": "Jill",
+      "mode": "leader",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "staged": 29,
+        "wait": 29
+      },
+      "reserved_tokens": 40423,
+      "responses": 68,
+      "route_statuses": {
+        "routed": 1
+      },
+      "routed_delivered": 1,
+      "seed": 6145,
+      "tokens": 40423,
+      "watched_orders": {
+        "o8": {
+          "assembly": 193.187,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 98.476,
+          "wait": 94.711
+        }
+      }
+    },
+    {
+      "accepted": 0,
+      "affected": "Jill",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 2,
+        "Andy": 2,
+        "Jill": 4,
+        "Sam": 2
+      },
+      "dir": "6145-peer-normal",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 159.746,
+      "environment": "normal",
+      "leader": "Jill",
+      "mode": "peer",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "invalid_reply": 2,
+        "staged": 29,
+        "wait": 13,
+        "wrong_source": 2
+      },
+      "reserved_tokens": 32921,
+      "responses": 56,
+      "route_statuses": {},
+      "routed_delivered": 0,
+      "seed": 6145,
+      "tokens": 32921,
+      "watched_orders": {
+        "o3": {
+          "assembly": 49.437,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 38.732,
+          "wait": 1.437
+        },
+        "o4": {
+          "assembly": 61.291,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 38.337,
+          "wait": 13.291
+        },
+        "o8": {
+          "assembly": 109.388,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 98.294,
+          "wait": 11.094
+        }
+      }
+    },
+    {
+      "accepted": 3,
+      "affected": "Jill",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 3,
+        "Andy": 4,
+        "Jill": 1,
+        "Sam": 2
+      },
+      "dir": "6145-peer-outage",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 196.701,
+      "environment": "outage",
+      "leader": "Jill",
+      "mode": "peer",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "invalid_reply": 1,
+        "staged": 29,
+        "wait": 27,
+        "wrong_source": 1
+      },
+      "reserved_tokens": 40328,
+      "responses": 68,
+      "route_statuses": {
+        "forbidden": 4,
+        "not_ready": 1,
+        "routed": 3,
+        "turn_limit": 2
+      },
+      "routed_delivered": 3,
+      "seed": 6145,
+      "tokens": 40328,
+      "watched_orders": {
+        "o1": {
+          "assembly": 145.34,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 39.083,
+          "wait": 97.34
+        },
+        "o4": {
+          "assembly": 169.485,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 62.131,
+          "wait": 107.354
+        },
+        "o8": {
+          "assembly": 194.032,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 110.336,
+          "wait": 83.696
+        }
+      }
+    },
+    {
+      "accepted": 0,
+      "affected": "Alex",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 4,
+        "Andy": 2,
+        "Jill": 2,
+        "Sam": 2
+      },
+      "dir": "6146-fixed-normal",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 134.812,
+      "environment": "normal",
+      "leader": "Andy",
+      "mode": "fixed",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "invalid_reply": 1,
+        "staged": 29,
+        "wait": 8
+      },
+      "reserved_tokens": 30148,
+      "responses": 48,
+      "route_statuses": {},
+      "routed_delivered": 0,
+      "seed": 6146,
+      "tokens": 30148,
+      "watched_orders": {
+        "o4": {
+          "assembly": 61.524,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 50.968,
+          "wait": 10.556
+        },
+        "o7": {
+          "assembly": 121.273,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 98.066,
+          "wait": 23.207
+        },
+        "o8": {
+          "assembly": 85.302,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 75.859,
+          "wait": 9.443
+        },
+        "o9": {
+          "assembly": 109.29,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 98.962,
+          "wait": 10.328
+        }
+      }
+    },
+    {
+      "accepted": 0,
+      "affected": "Alex",
+      "completed": false,
+      "crafts_by": {
+        "Alex": 2,
+        "Andy": 2,
+        "Jill": 2,
+        "Sam": 2
+      },
+      "dir": "6146-fixed-outage",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7"
+      ],
+      "elapsed": 360,
+      "environment": "outage",
+      "leader": "Andy",
+      "mode": "fixed",
+      "model_errors": {},
+      "orders": 8,
+      "outcomes": {
+        "delivered": 8,
+        "staged": 29,
+        "wait": 83
+      },
+      "reserved_tokens": 75349,
+      "responses": 120,
+      "route_statuses": {
+        "forbidden": 2
+      },
+      "routed_delivered": 0,
+      "seed": 6146,
+      "tokens": 75349,
+      "watched_orders": {
+        "o4": {
+          "assembly": 337.62,
+          "capped": false,
+          "delivered_in_window": false,
+          "ready": 41.764,
+          "wait": 289.62
+        },
+        "o7": {
+          "assembly": 349.314,
+          "capped": false,
+          "delivered_in_window": false,
+          "ready": 74.556,
+          "wait": 274.758
+        },
+        "o8": {
+          "assembly": null,
+          "capped": true,
+          "delivered_in_window": false,
+          "ready": 86.417,
+          "wait": 273.583
+        },
+        "o9": {
+          "assembly": null,
+          "capped": true,
+          "delivered_in_window": false,
+          "ready": 99.989,
+          "wait": 260.011
+        }
+      }
+    },
+    {
+      "accepted": 0,
+      "affected": "Alex",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 4,
+        "Andy": 2,
+        "Jill": 2,
+        "Sam": 2
+      },
+      "dir": "6146-leader-normal",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 122.938,
+      "environment": "normal",
+      "leader": "Andy",
+      "mode": "leader",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "staged": 29,
+        "wait": 5
+      },
+      "reserved_tokens": 27533,
+      "responses": 44,
+      "route_statuses": {},
+      "routed_delivered": 0,
+      "seed": 6146,
+      "tokens": 27533,
+      "watched_orders": {
+        "o4": {
+          "assembly": 73.393,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 50.548,
+          "wait": 22.845
+        },
+        "o7": {
+          "assembly": 85.182,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 74.298,
+          "wait": 10.884
+        },
+        "o8": {
+          "assembly": 109.394,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 98.676,
+          "wait": 10.718
+        },
+        "o9": {
+          "assembly": 121.331,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 99.396,
+          "wait": 21.935
+        }
+      }
+    },
+    {
+      "accepted": 5,
+      "affected": "Alex",
+      "completed": true,
+      "crafts_by": {
+        "Andy": 1,
+        "Jill": 4,
+        "Sam": 5
+      },
+      "dir": "6146-leader-outage",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 218.089,
+      "environment": "outage",
+      "leader": "Andy",
+      "mode": "leader",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "staged": 29,
+        "wait": 37
+      },
+      "reserved_tokens": 46164,
+      "responses": 76,
+      "route_statuses": {
+        "not_ready": 5,
+        "routed": 5
+      },
+      "routed_delivered": 5,
+      "seed": 6146,
+      "tokens": 46164,
+      "watched_orders": {
+        "o4": {
+          "assembly": 133.292,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 75.344,
+          "wait": 57.948
+        },
+        "o7": {
+          "assembly": 169.503,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 86.433,
+          "wait": 83.07
+        },
+        "o8": {
+          "assembly": 193.229,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 75.557,
+          "wait": 117.672
+        },
+        "o9": {
+          "assembly": 217.511,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 110.67,
+          "wait": 106.841
+        }
+      }
+    },
+    {
+      "accepted": 0,
+      "affected": "Alex",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 4,
+        "Andy": 2,
+        "Jill": 2,
+        "Sam": 2
+      },
+      "dir": "6146-peer-normal",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 121.787,
+      "environment": "normal",
+      "leader": "Andy",
+      "mode": "peer",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "staged": 29,
+        "wait": 4,
+        "wrong_source": 1
+      },
+      "reserved_tokens": 25895,
+      "responses": 44,
+      "route_statuses": {},
+      "routed_delivered": 0,
+      "seed": 6146,
+      "tokens": 25895,
+      "watched_orders": {
+        "o7": {
+          "assembly": 85.391,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 74.248,
+          "wait": 11.143
+        },
+        "o8": {
+          "assembly": 97.097,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 86.639,
+          "wait": 10.458
+        },
+        "o9": {
+          "assembly": 109.327,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 98.91,
+          "wait": 10.417
+        }
+      }
+    },
+    {
+      "accepted": 2,
+      "affected": "Alex",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 2,
+        "Andy": 3,
+        "Jill": 3,
+        "Sam": 2
+      },
+      "dir": "6146-peer-outage",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 339.286,
+      "environment": "outage",
+      "leader": "Andy",
+      "mode": "peer",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "invalid_reply": 1,
+        "staged": 29,
+        "wait": 76
+      },
+      "reserved_tokens": 68712,
+      "responses": 116,
+      "route_statuses": {
+        "forbidden": 1,
+        "routed": 2,
+        "turn_limit": 1
+      },
+      "routed_delivered": 2,
+      "seed": 6146,
+      "tokens": 68712,
+      "watched_orders": {
+        "o7": {
+          "assembly": 277.618,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 74.405,
+          "wait": 203.213
+        },
+        "o8": {
+          "assembly": 325.281,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 98.686,
+          "wait": 226.595
+        },
+        "o9": {
+          "assembly": 337.768,
+          "capped": false,
+          "delivered_in_window": false,
+          "ready": 99.195,
+          "wait": 238.573
+        }
+      }
+    },
+    {
+      "accepted": 0,
+      "affected": "Sam",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 2,
+        "Andy": 2,
+        "Jill": 2,
+        "Sam": 4
+      },
+      "dir": "6147-fixed-normal",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 136.241,
+      "environment": "normal",
+      "leader": "Sam",
+      "mode": "fixed",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "staged": 29,
+        "wait": 9
+      },
+      "reserved_tokens": 30176,
+      "responses": 48,
+      "route_statuses": {},
+      "routed_delivered": 0,
+      "seed": 6147,
+      "tokens": 30176,
+      "watched_orders": {
+        "o4": {
+          "assembly": 49.467,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 38.776,
+          "wait": 1.467
+        },
+        "o9": {
+          "assembly": 73.421,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 62.728,
+          "wait": 10.693
+        }
+      }
+    },
+    {
+      "accepted": 0,
+      "affected": "Sam",
+      "completed": false,
+      "crafts_by": {
+        "Alex": 2,
+        "Andy": 2,
+        "Jill": 2,
+        "Sam": 3
+      },
+      "dir": "6147-fixed-outage",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8"
+      ],
+      "elapsed": 360,
+      "environment": "outage",
+      "leader": "Sam",
+      "mode": "fixed",
+      "model_errors": {},
+      "orders": 9,
+      "outcomes": {
+        "delivered": 9,
+        "invalid_reply": 1,
+        "staged": 29,
+        "wait": 81
+      },
+      "reserved_tokens": 73064,
+      "responses": 120,
+      "route_statuses": {
+        "forbidden": 2
+      },
+      "routed_delivered": 0,
+      "seed": 6147,
+      "tokens": 73064,
+      "watched_orders": {
+        "o3": {
+          "assembly": 337.763,
+          "capped": false,
+          "delivered_in_window": false,
+          "ready": 73.984,
+          "wait": 263.779
+        },
+        "o4": {
+          "assembly": 349.099,
+          "capped": false,
+          "delivered_in_window": false,
+          "ready": 39.344,
+          "wait": 301.099
+        },
+        "o9": {
+          "assembly": null,
+          "capped": true,
+          "delivered_in_window": false,
+          "ready": 76.127,
+          "wait": 283.873
+        }
+      }
+    },
+    {
+      "accepted": 0,
+      "affected": "Sam",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 2,
+        "Andy": 2,
+        "Jill": 2,
+        "Sam": 4
+      },
+      "dir": "6147-leader-normal",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 135.454,
+      "environment": "normal",
+      "leader": "Sam",
+      "mode": "leader",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "staged": 29,
+        "wait": 8,
+        "wrong_source": 1
+      },
+      "reserved_tokens": 29337,
+      "responses": 48,
+      "route_statuses": {
+        "not_ready": 1
+      },
+      "routed_delivered": 0,
+      "seed": 6147,
+      "tokens": 29337,
+      "watched_orders": {
+        "o3": {
+          "assembly": 85.183,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 73.878,
+          "wait": 11.305
+        },
+        "o4": {
+          "assembly": 133.314,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 122.169,
+          "wait": 11.145
+        },
+        "o9": {
+          "assembly": 110.007,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 98.624,
+          "wait": 11.383
+        }
+      }
+    },
+    {
+      "accepted": 3,
+      "affected": "Sam",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 4,
+        "Andy": 2,
+        "Jill": 3,
+        "Sam": 1
+      },
+      "dir": "6147-leader-outage",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 158.452,
+      "environment": "outage",
+      "leader": "Sam",
+      "mode": "leader",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "staged": 29,
+        "wait": 17
+      },
+      "reserved_tokens": 35038,
+      "responses": 56,
+      "route_statuses": {
+        "not_ready": 3,
+        "routed": 3
+      },
+      "routed_delivered": 3,
+      "seed": 6147,
+      "tokens": 35038,
+      "watched_orders": {
+        "o4": {
+          "assembly": 133.429,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 26.038,
+          "wait": 85.429
+        },
+        "o9": {
+          "assembly": 157.148,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 63.684,
+          "wait": 93.464
+        }
+      }
+    },
+    {
+      "accepted": 0,
+      "affected": "Sam",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 2,
+        "Andy": 2,
+        "Jill": 2,
+        "Sam": 4
+      },
+      "dir": "6147-peer-normal",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 135.834,
+      "environment": "normal",
+      "leader": "Sam",
+      "mode": "peer",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "invalid_reply": 1,
+        "staged": 29,
+        "wait": 7,
+        "wrong_source": 1
+      },
+      "reserved_tokens": 28666,
+      "responses": 48,
+      "route_statuses": {
+        "not_ready": 1
+      },
+      "routed_delivered": 0,
+      "seed": 6147,
+      "tokens": 28666,
+      "watched_orders": {
+        "o4": {
+          "assembly": 97.377,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 86.787,
+          "wait": 10.59
+        },
+        "o9": {
+          "assembly": 85.599,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 74.412,
+          "wait": 11.187
+        }
+      }
+    },
+    {
+      "accepted": 3,
+      "affected": "Sam",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 2,
+        "Andy": 4,
+        "Jill": 3,
+        "Sam": 1
+      },
+      "dir": "6147-peer-outage",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 194.505,
+      "environment": "outage",
+      "leader": "Sam",
+      "mode": "peer",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "invalid_reply": 1,
+        "staged": 29,
+        "wait": 28
+      },
+      "reserved_tokens": 40261,
+      "responses": 68,
+      "route_statuses": {
+        "forbidden": 3,
+        "not_ready": 1,
+        "routed": 3,
+        "turn_limit": 3
+      },
+      "routed_delivered": 3,
+      "seed": 6147,
+      "tokens": 40261,
+      "watched_orders": {
+        "o3": {
+          "assembly": 145.262,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 38.421,
+          "wait": 97.262
+        },
+        "o4": {
+          "assembly": 193.306,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 73.483,
+          "wait": 119.823
+        },
+        "o9": {
+          "assembly": 169.193,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 74.593,
+          "wait": 94.6
+        }
+      }
+    },
+    {
+      "accepted": 0,
+      "affected": "Andy",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 2,
+        "Andy": 4,
+        "Jill": 2,
+        "Sam": 2
+      },
+      "dir": "6148-fixed-normal",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 134.413,
+      "environment": "normal",
+      "leader": "Sam",
+      "mode": "fixed",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "staged": 29,
+        "wait": 9
+      },
+      "reserved_tokens": 30173,
+      "responses": 48,
+      "route_statuses": {},
+      "routed_delivered": 0,
+      "seed": 6148,
+      "tokens": 30173,
+      "watched_orders": {
+        "o3": {
+          "assembly": 97.238,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 86.193,
+          "wait": 11.045
+        },
+        "o5": {
+          "assembly": 49.537,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 38.15,
+          "wait": 1.537
+        },
+        "o8": {
+          "assembly": 121.48,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 111.184,
+          "wait": 10.296
+        },
+        "o9": {
+          "assembly": 73.198,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 63.834,
+          "wait": 9.364
+        }
+      }
+    },
+    {
+      "accepted": 0,
+      "affected": "Andy",
+      "completed": false,
+      "crafts_by": {
+        "Alex": 2,
+        "Andy": 3,
+        "Jill": 2,
+        "Sam": 2
+      },
+      "dir": "6148-fixed-outage",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8"
+      ],
+      "elapsed": 360,
+      "environment": "outage",
+      "leader": "Sam",
+      "mode": "fixed",
+      "model_errors": {},
+      "orders": 9,
+      "outcomes": {
+        "delivered": 9,
+        "staged": 29,
+        "wait": 82
+      },
+      "reserved_tokens": 74261,
+      "responses": 120,
+      "route_statuses": {
+        "forbidden": 7
+      },
+      "routed_delivered": 0,
+      "seed": 6148,
+      "tokens": 74261,
+      "watched_orders": {
+        "o5": {
+          "assembly": 337.337,
+          "capped": false,
+          "delivered_in_window": false,
+          "ready": 38.112,
+          "wait": 289.337
+        },
+        "o8": {
+          "assembly": 349.303,
+          "capped": false,
+          "delivered_in_window": false,
+          "ready": 87.692,
+          "wait": 261.611
+        },
+        "o9": {
+          "assembly": null,
+          "capped": true,
+          "delivered_in_window": false,
+          "ready": 110.313,
+          "wait": 249.687
+        }
+      }
+    },
+    {
+      "accepted": 0,
+      "affected": "Andy",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 2,
+        "Andy": 4,
+        "Jill": 2,
+        "Sam": 2
+      },
+      "dir": "6148-leader-normal",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 123.717,
+      "environment": "normal",
+      "leader": "Sam",
+      "mode": "leader",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "staged": 29,
+        "wait": 5
+      },
+      "reserved_tokens": 26646,
+      "responses": 44,
+      "route_statuses": {
+        "not_ready": 2
+      },
+      "routed_delivered": 0,
+      "seed": 6148,
+      "tokens": 26646,
+      "watched_orders": {
+        "o3": {
+          "assembly": 85.357,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 74.385,
+          "wait": 10.972
+        },
+        "o5": {
+          "assembly": 61.393,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 50.343,
+          "wait": 11.05
+        },
+        "o8": {
+          "assembly": 109.217,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 99.572,
+          "wait": 9.645
+        },
+        "o9": {
+          "assembly": 121.548,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 110.379,
+          "wait": 11.169
+        }
+      }
+    },
+    {
+      "accepted": 3,
+      "affected": "Andy",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 2,
+        "Andy": 1,
+        "Jill": 5,
+        "Sam": 2
+      },
+      "dir": "6148-leader-outage",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 158.652,
+      "environment": "outage",
+      "leader": "Sam",
+      "mode": "leader",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "staged": 29,
+        "wait": 17
+      },
+      "reserved_tokens": 33832,
+      "responses": 56,
+      "route_statuses": {
+        "not_ready": 2,
+        "routed": 3
+      },
+      "routed_delivered": 3,
+      "seed": 6148,
+      "tokens": 33832,
+      "watched_orders": {
+        "o5": {
+          "assembly": 85.312,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 50.458,
+          "wait": 34.854
+        },
+        "o8": {
+          "assembly": 133.4,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 98.679,
+          "wait": 34.721
+        },
+        "o9": {
+          "assembly": 157.523,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 110.463,
+          "wait": 47.06
+        }
+      }
+    },
+    {
+      "accepted": 0,
+      "affected": "Andy",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 2,
+        "Andy": 4,
+        "Jill": 2,
+        "Sam": 2
+      },
+      "dir": "6148-peer-normal",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 123.387,
+      "environment": "normal",
+      "leader": "Sam",
+      "mode": "peer",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "staged": 29,
+        "wait": 5
+      },
+      "reserved_tokens": 26712,
+      "responses": 44,
+      "route_statuses": {},
+      "routed_delivered": 0,
+      "seed": 6148,
+      "tokens": 26712,
+      "watched_orders": {
+        "o3": {
+          "assembly": 49.274,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 38.324,
+          "wait": 1.274
+        },
+        "o5": {
+          "assembly": 61.137,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 50.191,
+          "wait": 10.946
+        },
+        "o8": {
+          "assembly": 109.183,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 86.46,
+          "wait": 22.723
+        },
+        "o9": {
+          "assembly": 121.203,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 110.181,
+          "wait": 11.022
+        }
+      }
+    },
+    {
+      "accepted": 3,
+      "affected": "Andy",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 3,
+        "Andy": 1,
+        "Jill": 4,
+        "Sam": 2
+      },
+      "dir": "6148-peer-outage",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 195.043,
+      "environment": "outage",
+      "leader": "Sam",
+      "mode": "peer",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "invalid_reply": 1,
+        "staged": 29,
+        "wait": 27,
+        "wrong_source": 1
+      },
+      "reserved_tokens": 40769,
+      "responses": 68,
+      "route_statuses": {
+        "forbidden": 3,
+        "routed": 3
+      },
+      "routed_delivered": 3,
+      "seed": 6148,
+      "tokens": 40769,
+      "watched_orders": {
+        "o5": {
+          "assembly": 169.359,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 50.345,
+          "wait": 119.014
+        },
+        "o8": {
+          "assembly": 181.429,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 86.569,
+          "wait": 94.86
+        },
+        "o9": {
+          "assembly": 193.372,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 110.471,
+          "wait": 82.901
+        }
+      }
+    },
+    {
+      "accepted": 0,
+      "affected": "Jill",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 2,
+        "Andy": 2,
+        "Jill": 4,
+        "Sam": 2
+      },
+      "dir": "6149-fixed-normal",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 170.913,
+      "environment": "normal",
+      "leader": "Alex",
+      "mode": "fixed",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "invalid_reply": 1,
+        "staged": 29,
+        "wait": 17,
+        "wrong_source": 3
+      },
+      "reserved_tokens": 37763,
+      "responses": 60,
+      "route_statuses": {},
+      "routed_delivered": 0,
+      "seed": 6149,
+      "tokens": 37763,
+      "watched_orders": {
+        "o4": {
+          "assembly": 49.7,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 26.985,
+          "wait": 1.7
+        },
+        "o9": {
+          "assembly": 97.581,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 75.794,
+          "wait": 21.787
+        }
+      }
+    },
+    {
+      "accepted": 0,
+      "affected": "Jill",
+      "completed": false,
+      "crafts_by": {
+        "Alex": 2,
+        "Andy": 2,
+        "Jill": 2,
+        "Sam": 2
+      },
+      "dir": "6149-fixed-outage",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o5",
+        "o6",
+        "o7",
+        "o8"
+      ],
+      "elapsed": 360,
+      "environment": "outage",
+      "leader": "Alex",
+      "mode": "fixed",
+      "model_errors": {},
+      "orders": 8,
+      "outcomes": {
+        "delivered": 8,
+        "invalid_reply": 1,
+        "staged": 29,
+        "wait": 82
+      },
+      "reserved_tokens": 74452,
+      "responses": 120,
+      "route_statuses": {
+        "forbidden": 6
+      },
+      "routed_delivered": 0,
+      "seed": 6149,
+      "tokens": 74452,
+      "watched_orders": {
+        "o2": {
+          "assembly": 349.138,
+          "capped": false,
+          "delivered_in_window": false,
+          "ready": 51.181,
+          "wait": 297.957
+        },
+        "o4": {
+          "assembly": null,
+          "capped": true,
+          "delivered_in_window": false,
+          "ready": 26.547,
+          "wait": 312.0
+        },
+        "o9": {
+          "assembly": null,
+          "capped": true,
+          "delivered_in_window": false,
+          "ready": 99.002,
+          "wait": 260.998
+        }
+      }
+    },
+    {
+      "accepted": 0,
+      "affected": "Jill",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 2,
+        "Andy": 2,
+        "Jill": 4,
+        "Sam": 2
+      },
+      "dir": "6149-leader-normal",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 135.11,
+      "environment": "normal",
+      "leader": "Alex",
+      "mode": "leader",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "invalid_reply": 1,
+        "staged": 29,
+        "wait": 8
+      },
+      "reserved_tokens": 29410,
+      "responses": 48,
+      "route_statuses": {
+        "not_ready": 2
+      },
+      "routed_delivered": 0,
+      "seed": 6149,
+      "tokens": 29410,
+      "watched_orders": {
+        "o4": {
+          "assembly": 49.581,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 38.27,
+          "wait": 1.581
+        },
+        "o9": {
+          "assembly": 133.4,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 98.599,
+          "wait": 34.801
+        }
+      }
+    },
+    {
+      "accepted": 2,
+      "affected": "Jill",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 3,
+        "Andy": 2,
+        "Jill": 2,
+        "Sam": 3
+      },
+      "dir": "6149-leader-outage",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 182.849,
+      "environment": "outage",
+      "leader": "Alex",
+      "mode": "leader",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "staged": 29,
+        "wait": 25
+      },
+      "reserved_tokens": 38568,
+      "responses": 64,
+      "route_statuses": {
+        "routed": 2
+      },
+      "routed_delivered": 2,
+      "seed": 6149,
+      "tokens": 38568,
+      "watched_orders": {
+        "o4": {
+          "assembly": 109.259,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 26.442,
+          "wait": 61.259
+        },
+        "o9": {
+          "assembly": 181.303,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 99.707,
+          "wait": 81.596
+        }
+      }
+    },
+    {
+      "accepted": 0,
+      "affected": "Jill",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 2,
+        "Andy": 2,
+        "Jill": 4,
+        "Sam": 2
+      },
+      "dir": "6149-peer-normal",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 146.882,
+      "environment": "normal",
+      "leader": "Alex",
+      "mode": "peer",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "staged": 29,
+        "wait": 13
+      },
+      "reserved_tokens": 31123,
+      "responses": 52,
+      "route_statuses": {},
+      "routed_delivered": 0,
+      "seed": 6149,
+      "tokens": 31123,
+      "watched_orders": {
+        "o4": {
+          "assembly": 85.389,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 62.572,
+          "wait": 22.817
+        },
+        "o9": {
+          "assembly": 110.699,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 99.888,
+          "wait": 10.811
+        }
+      }
+    },
+    {
+      "accepted": 2,
+      "affected": "Jill",
+      "completed": true,
+      "crafts_by": {
+        "Alex": 2,
+        "Andy": 4,
+        "Jill": 2,
+        "Sam": 2
+      },
+      "dir": "6149-peer-outage",
+      "done": [
+        "o1",
+        "o10",
+        "o2",
+        "o3",
+        "o4",
+        "o5",
+        "o6",
+        "o7",
+        "o8",
+        "o9"
+      ],
+      "elapsed": 184.163,
+      "environment": "outage",
+      "leader": "Alex",
+      "mode": "peer",
+      "model_errors": {},
+      "orders": 10,
+      "outcomes": {
+        "delivered": 10,
+        "invalid_reply": 2,
+        "staged": 29,
+        "wait": 22,
+        "wrong_source": 1
+      },
+      "reserved_tokens": 37550,
+      "responses": 64,
+      "route_statuses": {
+        "routed": 2,
+        "turn_limit": 3
+      },
+      "routed_delivered": 2,
+      "seed": 6149,
+      "tokens": 37550,
+      "watched_orders": {
+        "o4": {
+          "assembly": 133.319,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 38.036,
+          "wait": 85.319
+        },
+        "o9": {
+          "assembly": 181.369,
+          "capped": false,
+          "delivered_in_window": true,
+          "ready": 110.663,
+          "wait": 70.706
+        }
+      }
+    }
+  ]
+}
