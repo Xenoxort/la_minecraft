@@ -48,6 +48,9 @@ raw=$(mktemp -d)
 tar -xzf "$study/evidence.tar.gz" -C "$raw"
 python3 -B "$study/analyze.py" "$raw" > "$raw/regenerated.json"
 cmp "$raw/regenerated.json" "$study/results.json"
+
+# With Matplotlib installed, rebuild the figure.
+python3 -B "$study/plot.py" "$raw/regenerated.json" "$raw/recipe-transfer"
 ```
 
 The verifier reconstructs every prompt, independently checks each test and delivered item against the Minecraft evidence, verifies that teacher and novel recipe triples are disjoint, and reconstructs the cards from teacher deliveries. It checks all playbook references against logged training turns. Offline verification requires no credentials or model calls.

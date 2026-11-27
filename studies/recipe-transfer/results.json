@@ -1,0 +1,1644 @@
+{
+  "contrasts": {
+    "novel_playbook": {
+      "count": {
+        "interval": [
+          -0.3,
+          0.3
+        ],
+        "mean": 0,
+        "values": [
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      "elapsed": {
+        "interval": [
+          -37.9161,
+          41.8189
+        ],
+        "mean": 3.8843999999999994,
+        "values": [
+          -106.511,
+          74.425,
+          65.743,
+          66.788,
+          17.906,
+          57.45,
+          -0.287,
+          -83.784,
+          16.75,
+          -69.636
+        ]
+      },
+      "first_capped": {
+        "interval": [
+          -28.8857,
+          42.4218
+        ],
+        "mean": 6.660800000000001,
+        "values": [
+          -53.173,
+          71.731,
+          -71.282,
+          89.17,
+          -17.661,
+          -36.035,
+          17.587,
+          -54.663,
+          87.284,
+          33.65
+        ]
+      },
+      "tests": {
+        "interval": [
+          -2.1,
+          2.2
+        ],
+        "mean": 0.2,
+        "values": [
+          -6,
+          4,
+          4,
+          3,
+          1,
+          3,
+          0,
+          -4,
+          1,
+          -4
+        ]
+      }
+    },
+    "reuse_cards": {
+      "count": {
+        "interval": [
+          0,
+          0
+        ],
+        "mean": 0,
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "elapsed": {
+        "interval": [
+          -244.8667,
+          -176.9373
+        ],
+        "mean": -212.7198,
+        "values": [
+          -218.982,
+          -218.82,
+          -234.633,
+          -92.312,
+          -182.447,
+          -147.565,
+          -252.239,
+          -234.854,
+          -290.372,
+          -254.974
+        ]
+      },
+      "first_capped": {
+        "interval": [
+          -71.23610000000001,
+          -33.6252
+        ],
+        "mean": -52.7658,
+        "values": [
+          -72.212,
+          -94.864,
+          -72.956,
+          -2.104,
+          -39.098,
+          -22.25,
+          -22.664,
+          -36.883,
+          -91.225,
+          -73.402
+        ]
+      },
+      "tests": {
+        "interval": [
+          -13.5,
+          -9.7
+        ],
+        "mean": -11.7,
+        "values": [
+          -12,
+          -12,
+          -13,
+          -5,
+          -10,
+          -8,
+          -14,
+          -13,
+          -16,
+          -14
+        ]
+      }
+    }
+  },
+  "groups": {
+    "novel_playbook": {
+      "candidate_eliminations": 653,
+      "duplicates": 1,
+      "finish_capped_mean": 290.6621,
+      "finish_median": 294.848,
+      "finish_range": [
+        204.113,
+        314.467
+      ],
+      "first_capped_mean": 92.9944,
+      "first_median": 95.86449999999999,
+      "first_observed": 10,
+      "first_range": [
+        5.858,
+        168.411
+      ],
+      "full": 9,
+      "mean_orders": 3.9,
+      "n": 10,
+      "order_range": [
+        3,
+        4
+      ],
+      "outcomes": {
+        "delivered": 39,
+        "tested": 128
+      },
+      "statuses": {
+        "completed": 167
+      },
+      "tests": 167,
+      "usage": {
+        "cached": 0,
+        "input": 90671,
+        "output": 98887
+      }
+    },
+    "novel_solo": {
+      "candidate_eliminations": 650,
+      "duplicates": 2,
+      "finish_capped_mean": 286.7777,
+      "finish_median": 294.981,
+      "finish_range": [
+        227.754,
+        310.747
+      ],
+      "first_capped_mean": 86.3336,
+      "first_median": 80.055,
+      "first_observed": 10,
+      "first_range": [
+        43.671,
+        135.494
+      ],
+      "full": 9,
+      "mean_orders": 3.9,
+      "n": 10,
+      "order_range": [
+        3,
+        4
+      ],
+      "outcomes": {
+        "delivered": 39,
+        "tested": 126
+      },
+      "statuses": {
+        "completed": 165
+      },
+      "tests": 165,
+      "usage": {
+        "cached": 0,
+        "input": 76775,
+        "output": 93833
+      }
+    },
+    "reuse_cards": {
+      "candidate_eliminations": 656,
+      "duplicates": 0,
+      "finish_capped_mean": 57.8927,
+      "finish_median": 57.843,
+      "finish_range": [
+        57.596,
+        58.475
+      ],
+      "first_capped_mean": 4.0677,
+      "first_median": 4.086,
+      "first_observed": 10,
+      "first_range": [
+        3.564,
+        4.423
+      ],
+      "full": 10,
+      "mean_orders": 4,
+      "n": 10,
+      "order_range": [
+        4,
+        4
+      ],
+      "outcomes": {
+        "delivered": 40
+      },
+      "statuses": {
+        "completed": 40
+      },
+      "tests": 40,
+      "usage": {
+        "cached": 0,
+        "input": 16680,
+        "output": 4225
+      }
+    },
+    "reuse_solo": {
+      "candidate_eliminations": 656,
+      "duplicates": 1,
+      "finish_capped_mean": 270.6125,
+      "finish_median": 284.501,
+      "finish_range": [
+        150.438,
+        348.143
+      ],
+      "first_capped_mean": 56.8335,
+      "first_median": 59.741,
+      "first_observed": 10,
+      "first_range": [
+        6.527,
+        98.428
+      ],
+      "full": 10,
+      "mean_orders": 4,
+      "n": 10,
+      "order_range": [
+        4,
+        4
+      ],
+      "outcomes": {
+        "delivered": 40,
+        "tested": 117
+      },
+      "statuses": {
+        "completed": 157
+      },
+      "tests": 157,
+      "usage": {
+        "cached": 0,
+        "input": 72514,
+        "output": 83404
+      }
+    },
+    "teacher": {
+      "candidate_eliminations": 632,
+      "duplicates": 0,
+      "finish_capped_mean": 257.2084,
+      "finish_median": 257.16700000000003,
+      "finish_range": [
+        220.258,
+        294.352
+      ],
+      "first_capped_mean": 55.1476,
+      "first_median": 58.9835,
+      "first_observed": 10,
+      "first_range": [
+        28.285,
+        77.984
+      ],
+      "full": 10,
+      "mean_orders": 4,
+      "n": 10,
+      "order_range": [
+        4,
+        4
+      ],
+      "outcomes": {
+        "delivered": 40,
+        "tested": 110
+      },
+      "statuses": {
+        "completed": 150
+      },
+      "tests": 150,
+      "usage": {
+        "cached": 0,
+        "input": 68015,
+        "output": 11514
+      }
+    }
+  },
+  "playbook": [
+    "sum",
+    "ledger",
+    "finish"
+  ],
+  "recipes_transferred": 40,
+  "trials": [
+    {
+      "arm": "teacher",
+      "candidate_eliminations": 65,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 257.534,
+      "first": 43.126,
+      "first_capped": 43.126,
+      "folder": "7280-teacher",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 11
+      },
+      "reserved": 7888,
+      "seed": 7280,
+      "statuses": {
+        "completed": 15
+      },
+      "tests": 15,
+      "usage": {
+        "cached": 0,
+        "input": 6782,
+        "output": 1106
+      }
+    },
+    {
+      "arm": "teacher",
+      "candidate_eliminations": 63,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 292.542,
+      "first": 41.513,
+      "first_capped": 41.513,
+      "folder": "7281-teacher",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 13
+      },
+      "reserved": 9210,
+      "seed": 7281,
+      "statuses": {
+        "completed": 17
+      },
+      "tests": 17,
+      "usage": {
+        "cached": 0,
+        "input": 7941,
+        "output": 1269
+      }
+    },
+    {
+      "arm": "teacher",
+      "candidate_eliminations": 62,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 238.38,
+      "first": 77.56,
+      "first_capped": 77.56,
+      "folder": "7282-teacher",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 10
+      },
+      "reserved": 7396,
+      "seed": 7282,
+      "statuses": {
+        "completed": 14
+      },
+      "tests": 14,
+      "usage": {
+        "cached": 0,
+        "input": 6225,
+        "output": 1171
+      }
+    },
+    {
+      "arm": "teacher",
+      "candidate_eliminations": 63,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 292.124,
+      "first": 77.984,
+      "first_capped": 77.984,
+      "folder": "7283-teacher",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 13
+      },
+      "reserved": 9265,
+      "seed": 7283,
+      "statuses": {
+        "completed": 17
+      },
+      "tests": 17,
+      "usage": {
+        "cached": 0,
+        "input": 7941,
+        "output": 1324
+      }
+    },
+    {
+      "arm": "teacher",
+      "candidate_eliminations": 63,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 256.8,
+      "first": 59.16,
+      "first_capped": 59.16,
+      "folder": "7284-teacher",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 11
+      },
+      "reserved": 7863,
+      "seed": 7284,
+      "statuses": {
+        "completed": 15
+      },
+      "tests": 15,
+      "usage": {
+        "cached": 0,
+        "input": 6782,
+        "output": 1081
+      }
+    },
+    {
+      "arm": "teacher",
+      "candidate_eliminations": 59,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 221.771,
+      "first": 28.285,
+      "first_capped": 28.285,
+      "folder": "7285-teacher",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 9
+      },
+      "reserved": 6651,
+      "seed": 7285,
+      "statuses": {
+        "completed": 13
+      },
+      "tests": 13,
+      "usage": {
+        "cached": 0,
+        "input": 5683,
+        "output": 968
+      }
+    },
+    {
+      "arm": "teacher",
+      "candidate_eliminations": 62,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 294.352,
+      "first": 41.861,
+      "first_capped": 41.861,
+      "folder": "7286-teacher",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 13
+      },
+      "reserved": 9111,
+      "seed": 7286,
+      "statuses": {
+        "completed": 17
+      },
+      "tests": 17,
+      "usage": {
+        "cached": 0,
+        "input": 7941,
+        "output": 1170
+      }
+    },
+    {
+      "arm": "teacher",
+      "candidate_eliminations": 62,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 274.729,
+      "first": 60.742,
+      "first_capped": 60.742,
+      "folder": "7287-teacher",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 12
+      },
+      "reserved": 8853,
+      "seed": 7287,
+      "statuses": {
+        "completed": 16
+      },
+      "tests": 16,
+      "usage": {
+        "cached": 0,
+        "input": 7354,
+        "output": 1499
+      }
+    },
+    {
+      "arm": "teacher",
+      "candidate_eliminations": 66,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 220.258,
+      "first": 58.807,
+      "first_capped": 58.807,
+      "folder": "7288-teacher",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 9
+      },
+      "reserved": 6495,
+      "seed": 7288,
+      "statuses": {
+        "completed": 13
+      },
+      "tests": 13,
+      "usage": {
+        "cached": 0,
+        "input": 5683,
+        "output": 812
+      }
+    },
+    {
+      "arm": "teacher",
+      "candidate_eliminations": 67,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 223.594,
+      "first": 62.438,
+      "first_capped": 62.438,
+      "folder": "7289-teacher",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 9
+      },
+      "reserved": 6797,
+      "seed": 7289,
+      "statuses": {
+        "completed": 13
+      },
+      "tests": 13,
+      "usage": {
+        "cached": 0,
+        "input": 5683,
+        "output": 1114
+      }
+    },
+    {
+      "arm": "novel_playbook",
+      "candidate_eliminations": 65,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 204.113,
+      "first": 41.691,
+      "first_capped": 41.691,
+      "folder": "7280-novel_playbook",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 8
+      },
+      "reserved": 12234,
+      "seed": 7280,
+      "statuses": {
+        "completed": 12
+      },
+      "tests": 12,
+      "usage": {
+        "cached": 0,
+        "input": 6068,
+        "output": 6166
+      }
+    },
+    {
+      "arm": "novel_solo",
+      "candidate_eliminations": 65,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 310.624,
+      "first": 94.864,
+      "first_capped": 94.864,
+      "folder": "7280-novel_solo",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 14
+      },
+      "reserved": 17945,
+      "seed": 7280,
+      "statuses": {
+        "completed": 18
+      },
+      "tests": 18,
+      "usage": {
+        "cached": 0,
+        "input": 8543,
+        "output": 9402
+      }
+    },
+    {
+      "arm": "reuse_cards",
+      "candidate_eliminations": 62,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 57.659,
+      "first": 4.161,
+      "first_capped": 4.161,
+      "folder": "7280-reuse_cards",
+      "full": true,
+      "outcomes": {
+        "delivered": 4
+      },
+      "reserved": 2084,
+      "seed": 7280,
+      "statuses": {
+        "completed": 4
+      },
+      "tests": 4,
+      "usage": {
+        "cached": 0,
+        "input": 1684,
+        "output": 400
+      }
+    },
+    {
+      "arm": "reuse_solo",
+      "candidate_eliminations": 62,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 276.641,
+      "first": 76.373,
+      "first_capped": 76.373,
+      "folder": "7280-reuse_solo",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 12
+      },
+      "reserved": 15959,
+      "seed": 7280,
+      "statuses": {
+        "completed": 16
+      },
+      "tests": 16,
+      "usage": {
+        "cached": 0,
+        "input": 7354,
+        "output": 8605
+      }
+    },
+    {
+      "arm": "novel_playbook",
+      "candidate_eliminations": 65,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 314.467,
+      "first": 115.402,
+      "first_capped": 115.402,
+      "folder": "7281-novel_playbook",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 14
+      },
+      "reserved": 21470,
+      "seed": 7281,
+      "statuses": {
+        "completed": 18
+      },
+      "tests": 18,
+      "usage": {
+        "cached": 0,
+        "input": 9911,
+        "output": 11559
+      }
+    },
+    {
+      "arm": "novel_solo",
+      "candidate_eliminations": 65,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 240.042,
+      "first": 43.671,
+      "first_capped": 43.671,
+      "folder": "7281-novel_solo",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 10
+      },
+      "reserved": 13319,
+      "seed": 7281,
+      "statuses": {
+        "completed": 14
+      },
+      "tests": 14,
+      "usage": {
+        "cached": 0,
+        "input": 6225,
+        "output": 7094
+      }
+    },
+    {
+      "arm": "reuse_cards",
+      "candidate_eliminations": 59,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 57.596,
+      "first": 3.564,
+      "first_capped": 3.564,
+      "folder": "7281-reuse_cards",
+      "full": true,
+      "outcomes": {
+        "delivered": 4
+      },
+      "reserved": 2082,
+      "seed": 7281,
+      "statuses": {
+        "completed": 4
+      },
+      "tests": 4,
+      "usage": {
+        "cached": 0,
+        "input": 1680,
+        "output": 402
+      }
+    },
+    {
+      "arm": "reuse_solo",
+      "candidate_eliminations": 59,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 276.416,
+      "first": 98.428,
+      "first_capped": 98.428,
+      "folder": "7281-reuse_solo",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 12
+      },
+      "reserved": 16463,
+      "seed": 7281,
+      "statuses": {
+        "completed": 16
+      },
+      "tests": 16,
+      "usage": {
+        "cached": 0,
+        "input": 7354,
+        "output": 9109
+      }
+    },
+    {
+      "arm": "novel_playbook",
+      "candidate_eliminations": 63,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 293.497,
+      "first": 5.858,
+      "first_capped": 5.858,
+      "folder": "7282-novel_playbook",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 13
+      },
+      "reserved": 19003,
+      "seed": 7282,
+      "statuses": {
+        "completed": 17
+      },
+      "tests": 17,
+      "usage": {
+        "cached": 0,
+        "input": 9233,
+        "output": 9770
+      }
+    },
+    {
+      "arm": "novel_solo",
+      "candidate_eliminations": 63,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 227.754,
+      "first": 77.14,
+      "first_capped": 77.14,
+      "folder": "7282-novel_solo",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 9
+      },
+      "reserved": 12965,
+      "seed": 7282,
+      "statuses": {
+        "completed": 13
+      },
+      "tests": 13,
+      "usage": {
+        "cached": 0,
+        "input": 5683,
+        "output": 7282
+      }
+    },
+    {
+      "arm": "reuse_cards",
+      "candidate_eliminations": 66,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 57.728,
+      "first": 3.913,
+      "first_capped": 3.913,
+      "folder": "7282-reuse_cards",
+      "full": true,
+      "outcomes": {
+        "delivered": 4
+      },
+      "reserved": 2102,
+      "seed": 7282,
+      "statuses": {
+        "completed": 4
+      },
+      "tests": 4,
+      "usage": {
+        "cached": 0,
+        "input": 1668,
+        "output": 434
+      }
+    },
+    {
+      "arm": "reuse_solo",
+      "candidate_eliminations": 66,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 292.361,
+      "first": 76.869,
+      "first_capped": 76.869,
+      "folder": "7282-reuse_solo",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 13
+      },
+      "reserved": 16177,
+      "seed": 7282,
+      "statuses": {
+        "completed": 17
+      },
+      "tests": 17,
+      "usage": {
+        "cached": 0,
+        "input": 7941,
+        "output": 8236
+      }
+    },
+    {
+      "arm": "novel_playbook",
+      "candidate_eliminations": 66,
+      "count": 3,
+      "duplicates": 0,
+      "elapsed": 360,
+      "first": 150.455,
+      "first_capped": 150.455,
+      "folder": "7283-novel_playbook",
+      "full": false,
+      "outcomes": {
+        "delivered": 3,
+        "tested": 17
+      },
+      "reserved": 25138,
+      "seed": 7283,
+      "statuses": {
+        "completed": 20
+      },
+      "tests": 20,
+      "usage": {
+        "cached": 0,
+        "input": 11312,
+        "output": 13826
+      }
+    },
+    {
+      "arm": "novel_solo",
+      "candidate_eliminations": 66,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 293.212,
+      "first": 61.285,
+      "first_capped": 61.285,
+      "folder": "7283-novel_solo",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 13
+      },
+      "reserved": 17643,
+      "seed": 7283,
+      "statuses": {
+        "completed": 17
+      },
+      "tests": 17,
+      "usage": {
+        "cached": 0,
+        "input": 7941,
+        "output": 9702
+      }
+    },
+    {
+      "arm": "reuse_cards",
+      "candidate_eliminations": 69,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 58.126,
+      "first": 4.423,
+      "first_capped": 4.423,
+      "folder": "7283-reuse_cards",
+      "full": true,
+      "outcomes": {
+        "delivered": 4
+      },
+      "reserved": 2109,
+      "seed": 7283,
+      "statuses": {
+        "completed": 4
+      },
+      "tests": 4,
+      "usage": {
+        "cached": 0,
+        "input": 1668,
+        "output": 441
+      }
+    },
+    {
+      "arm": "reuse_solo",
+      "candidate_eliminations": 69,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 150.438,
+      "first": 6.527,
+      "first_capped": 6.527,
+      "folder": "7283-reuse_solo",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 5
+      },
+      "reserved": 7708,
+      "seed": 7283,
+      "statuses": {
+        "completed": 9
+      },
+      "tests": 9,
+      "usage": {
+        "cached": 0,
+        "input": 3665,
+        "output": 4043
+      }
+    },
+    {
+      "arm": "novel_playbook",
+      "candidate_eliminations": 69,
+      "count": 4,
+      "duplicates": 1,
+      "elapsed": 313.854,
+      "first": 97.026,
+      "first_capped": 97.026,
+      "folder": "7284-novel_playbook",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 14
+      },
+      "reserved": 21467,
+      "seed": 7284,
+      "statuses": {
+        "completed": 18
+      },
+      "tests": 18,
+      "usage": {
+        "cached": 0,
+        "input": 9911,
+        "output": 11556
+      }
+    },
+    {
+      "arm": "novel_solo",
+      "candidate_eliminations": 69,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 295.948,
+      "first": 114.687,
+      "first_capped": 114.687,
+      "folder": "7284-novel_solo",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 13
+      },
+      "reserved": 17101,
+      "seed": 7284,
+      "statuses": {
+        "completed": 17
+      },
+      "tests": 17,
+      "usage": {
+        "cached": 0,
+        "input": 7941,
+        "output": 9160
+      }
+    },
+    {
+      "arm": "reuse_cards",
+      "candidate_eliminations": 66,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 57.993,
+      "first": 4.011,
+      "first_capped": 4.011,
+      "folder": "7284-reuse_cards",
+      "full": true,
+      "outcomes": {
+        "delivered": 4
+      },
+      "reserved": 2084,
+      "seed": 7284,
+      "statuses": {
+        "completed": 4
+      },
+      "tests": 4,
+      "usage": {
+        "cached": 0,
+        "input": 1656,
+        "output": 428
+      }
+    },
+    {
+      "arm": "reuse_solo",
+      "candidate_eliminations": 66,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 240.44,
+      "first": 43.109,
+      "first_capped": 43.109,
+      "folder": "7284-reuse_solo",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 10
+      },
+      "reserved": 13704,
+      "seed": 7284,
+      "statuses": {
+        "completed": 14
+      },
+      "tests": 14,
+      "usage": {
+        "cached": 0,
+        "input": 6225,
+        "output": 7479
+      }
+    },
+    {
+      "arm": "novel_playbook",
+      "candidate_eliminations": 70,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 296.784,
+      "first": 78.541,
+      "first_capped": 78.541,
+      "folder": "7285-novel_playbook",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 13
+      },
+      "reserved": 19223,
+      "seed": 7285,
+      "statuses": {
+        "completed": 17
+      },
+      "tests": 17,
+      "usage": {
+        "cached": 0,
+        "input": 9233,
+        "output": 9990
+      }
+    },
+    {
+      "arm": "novel_solo",
+      "candidate_eliminations": 70,
+      "count": 4,
+      "duplicates": 1,
+      "elapsed": 239.334,
+      "first": 114.576,
+      "first_capped": 114.576,
+      "folder": "7285-novel_solo",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 10
+      },
+      "reserved": 13840,
+      "seed": 7285,
+      "statuses": {
+        "completed": 14
+      },
+      "tests": 14,
+      "usage": {
+        "cached": 0,
+        "input": 6225,
+        "output": 7615
+      }
+    },
+    {
+      "arm": "reuse_cards",
+      "candidate_eliminations": 67,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 57.871,
+      "first": 3.821,
+      "first_capped": 3.821,
+      "folder": "7285-reuse_cards",
+      "full": true,
+      "outcomes": {
+        "delivered": 4
+      },
+      "reserved": 2150,
+      "seed": 7285,
+      "statuses": {
+        "completed": 4
+      },
+      "tests": 4,
+      "usage": {
+        "cached": 0,
+        "input": 1668,
+        "output": 482
+      }
+    },
+    {
+      "arm": "reuse_solo",
+      "candidate_eliminations": 67,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 205.436,
+      "first": 26.071,
+      "first_capped": 26.071,
+      "folder": "7285-reuse_solo",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 8
+      },
+      "reserved": 11302,
+      "seed": 7285,
+      "statuses": {
+        "completed": 12
+      },
+      "tests": 12,
+      "usage": {
+        "cached": 0,
+        "input": 5156,
+        "output": 6146
+      }
+    },
+    {
+      "arm": "novel_playbook",
+      "candidate_eliminations": 60,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 294.848,
+      "first": 96.57,
+      "first_capped": 96.57,
+      "folder": "7286-novel_playbook",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 13
+      },
+      "reserved": 18309,
+      "seed": 7286,
+      "statuses": {
+        "completed": 17
+      },
+      "tests": 17,
+      "usage": {
+        "cached": 0,
+        "input": 9233,
+        "output": 9076
+      }
+    },
+    {
+      "arm": "novel_solo",
+      "candidate_eliminations": 60,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 295.135,
+      "first": 78.983,
+      "first_capped": 78.983,
+      "folder": "7286-novel_solo",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 13
+      },
+      "reserved": 17474,
+      "seed": 7286,
+      "statuses": {
+        "completed": 17
+      },
+      "tests": 17,
+      "usage": {
+        "cached": 0,
+        "input": 7941,
+        "output": 9533
+      }
+    },
+    {
+      "arm": "reuse_cards",
+      "candidate_eliminations": 69,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 57.815,
+      "first": 4.263,
+      "first_capped": 4.263,
+      "folder": "7286-reuse_cards",
+      "full": true,
+      "outcomes": {
+        "delivered": 4
+      },
+      "reserved": 2100,
+      "seed": 7286,
+      "statuses": {
+        "completed": 4
+      },
+      "tests": 4,
+      "usage": {
+        "cached": 0,
+        "input": 1676,
+        "output": 424
+      }
+    },
+    {
+      "arm": "reuse_solo",
+      "candidate_eliminations": 69,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 310.054,
+      "first": 26.927,
+      "first_capped": 26.927,
+      "folder": "7286-reuse_solo",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 14
+      },
+      "reserved": 18513,
+      "seed": 7286,
+      "statuses": {
+        "completed": 18
+      },
+      "tests": 18,
+      "usage": {
+        "cached": 0,
+        "input": 8543,
+        "output": 9970
+      }
+    },
+    {
+      "arm": "novel_playbook",
+      "candidate_eliminations": 66,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 276.216,
+      "first": 80.831,
+      "first_capped": 80.831,
+      "folder": "7287-novel_playbook",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 12
+      },
+      "reserved": 16834,
+      "seed": 7287,
+      "statuses": {
+        "completed": 16
+      },
+      "tests": 16,
+      "usage": {
+        "cached": 0,
+        "input": 8570,
+        "output": 8264
+      }
+    },
+    {
+      "arm": "novel_solo",
+      "candidate_eliminations": 63,
+      "count": 3,
+      "duplicates": 0,
+      "elapsed": 360,
+      "first": 135.494,
+      "first_capped": 135.494,
+      "folder": "7287-novel_solo",
+      "full": false,
+      "outcomes": {
+        "delivered": 3,
+        "tested": 17
+      },
+      "reserved": 24140,
+      "seed": 7287,
+      "statuses": {
+        "completed": 20
+      },
+      "tests": 20,
+      "usage": {
+        "cached": 0,
+        "input": 9792,
+        "output": 14348
+      }
+    },
+    {
+      "arm": "reuse_cards",
+      "candidate_eliminations": 69,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 58.475,
+      "first": 4.412,
+      "first_capped": 4.412,
+      "folder": "7287-reuse_cards",
+      "full": true,
+      "outcomes": {
+        "delivered": 4
+      },
+      "reserved": 2110,
+      "seed": 7287,
+      "statuses": {
+        "completed": 4
+      },
+      "tests": 4,
+      "usage": {
+        "cached": 0,
+        "input": 1672,
+        "output": 438
+      }
+    },
+    {
+      "arm": "reuse_solo",
+      "candidate_eliminations": 69,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 293.329,
+      "first": 41.295,
+      "first_capped": 41.295,
+      "folder": "7287-reuse_solo",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 13
+      },
+      "reserved": 16516,
+      "seed": 7287,
+      "statuses": {
+        "completed": 17
+      },
+      "tests": 17,
+      "usage": {
+        "cached": 0,
+        "input": 7941,
+        "output": 8575
+      }
+    },
+    {
+      "arm": "novel_playbook",
+      "candidate_eliminations": 66,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 311.731,
+      "first": 168.411,
+      "first_capped": 168.411,
+      "folder": "7288-novel_playbook",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 14
+      },
+      "reserved": 21397,
+      "seed": 7288,
+      "statuses": {
+        "completed": 18
+      },
+      "tests": 18,
+      "usage": {
+        "cached": 0,
+        "input": 9911,
+        "output": 11486
+      }
+    },
+    {
+      "arm": "novel_solo",
+      "candidate_eliminations": 66,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 294.981,
+      "first": 81.127,
+      "first_capped": 81.127,
+      "folder": "7288-novel_solo",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 13
+      },
+      "reserved": 17895,
+      "seed": 7288,
+      "statuses": {
+        "completed": 17
+      },
+      "tests": 17,
+      "usage": {
+        "cached": 0,
+        "input": 7941,
+        "output": 9954
+      }
+    },
+    {
+      "arm": "reuse_cards",
+      "candidate_eliminations": 67,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 57.771,
+      "first": 4.178,
+      "first_capped": 4.178,
+      "folder": "7288-reuse_cards",
+      "full": true,
+      "outcomes": {
+        "delivered": 4
+      },
+      "reserved": 2069,
+      "seed": 7288,
+      "statuses": {
+        "completed": 4
+      },
+      "tests": 4,
+      "usage": {
+        "cached": 0,
+        "input": 1656,
+        "output": 413
+      }
+    },
+    {
+      "arm": "reuse_solo",
+      "candidate_eliminations": 67,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 348.143,
+      "first": 95.403,
+      "first_capped": 95.403,
+      "folder": "7288-reuse_solo",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 16
+      },
+      "reserved": 19969,
+      "seed": 7288,
+      "statuses": {
+        "completed": 20
+      },
+      "tests": 20,
+      "usage": {
+        "cached": 0,
+        "input": 9792,
+        "output": 10177
+      }
+    },
+    {
+      "arm": "novel_playbook",
+      "candidate_eliminations": 63,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 241.111,
+      "first": 95.159,
+      "first_capped": 95.159,
+      "folder": "7289-novel_playbook",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 10
+      },
+      "reserved": 14483,
+      "seed": 7289,
+      "statuses": {
+        "completed": 14
+      },
+      "tests": 14,
+      "usage": {
+        "cached": 0,
+        "input": 7289,
+        "output": 7194
+      }
+    },
+    {
+      "arm": "novel_solo",
+      "candidate_eliminations": 63,
+      "count": 4,
+      "duplicates": 1,
+      "elapsed": 310.747,
+      "first": 61.509,
+      "first_capped": 61.509,
+      "folder": "7289-novel_solo",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 14
+      },
+      "reserved": 18286,
+      "seed": 7289,
+      "statuses": {
+        "completed": 18
+      },
+      "tests": 18,
+      "usage": {
+        "cached": 0,
+        "input": 8543,
+        "output": 9743
+      }
+    },
+    {
+      "arm": "reuse_cards",
+      "candidate_eliminations": 62,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 57.893,
+      "first": 3.931,
+      "first_capped": 3.931,
+      "folder": "7289-reuse_cards",
+      "full": true,
+      "outcomes": {
+        "delivered": 4
+      },
+      "reserved": 2015,
+      "seed": 7289,
+      "statuses": {
+        "completed": 4
+      },
+      "tests": 4,
+      "usage": {
+        "cached": 0,
+        "input": 1652,
+        "output": 363
+      }
+    },
+    {
+      "arm": "reuse_solo",
+      "candidate_eliminations": 62,
+      "count": 4,
+      "duplicates": 1,
+      "elapsed": 312.867,
+      "first": 77.333,
+      "first_capped": 77.333,
+      "folder": "7289-reuse_solo",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 14
+      },
+      "reserved": 19607,
+      "seed": 7289,
+      "statuses": {
+        "completed": 18
+      },
+      "tests": 18,
+      "usage": {
+        "cached": 0,
+        "input": 8543,
+        "output": 11064
+      }
+    }
+  ]
+}
