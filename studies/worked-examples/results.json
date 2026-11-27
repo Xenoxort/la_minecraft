@@ -1,0 +1,2034 @@
+{
+  "contrasts": {
+    "astra_examples_minus_luna_examples": {
+      "count": {
+        "interval": [
+          -1.5,
+          0
+        ],
+        "mean": -0.75,
+        "negative": 7,
+        "positive": 3,
+        "values": [
+          -2,
+          1,
+          -1,
+          1,
+          1,
+          -1,
+          -1,
+          0,
+          -3,
+          -3,
+          -1,
+          0
+        ]
+      },
+      "elapsed": {
+        "interval": [
+          -7.04625,
+          2.68925
+        ],
+        "mean": -1.4523333333333333,
+        "negative": 1,
+        "positive": 1,
+        "values": [
+          0,
+          0,
+          0,
+          -28.185,
+          0,
+          0,
+          10.757,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "first_capped": {
+        "interval": [
+          17.923416666666668,
+          158.31316666666666
+        ],
+        "mean": 87.84033333333333,
+        "negative": 3,
+        "positive": 9,
+        "values": [
+          270.389,
+          -125.171,
+          234.461,
+          1.577,
+          92.684,
+          3.273,
+          -2.604,
+          56.572,
+          154.414,
+          262.28,
+          164.466,
+          -58.257
+        ]
+      },
+      "tests": {
+        "interval": [
+          -0.25,
+          0.25
+        ],
+        "mean": 0,
+        "negative": 1,
+        "positive": 1,
+        "values": [
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "astra_examples_minus_solo": {
+      "count": {
+        "interval": [
+          -1.6666666666666667,
+          -0.08333333333333333
+        ],
+        "mean": -0.8333333333333334,
+        "negative": 5,
+        "positive": 1,
+        "values": [
+          -2,
+          0,
+          0,
+          1,
+          0,
+          -2,
+          0,
+          0,
+          -2,
+          -4,
+          -1,
+          0
+        ]
+      },
+      "elapsed": {
+        "interval": [
+          -7.04625,
+          6.24875
+        ],
+        "mean": -0.26583333333333314,
+        "negative": 1,
+        "positive": 1,
+        "values": [
+          0,
+          0,
+          0,
+          -28.185,
+          0,
+          0,
+          0,
+          0,
+          0,
+          24.995,
+          0,
+          0
+        ]
+      },
+      "first_capped": {
+        "interval": [
+          17.744166666666665,
+          150.40366666666665
+        ],
+        "mean": 82.015,
+        "negative": 4,
+        "positive": 8,
+        "values": [
+          233.411,
+          18.527,
+          88.914,
+          -86.681,
+          111.103,
+          -19.042,
+          -17.109,
+          93.263,
+          189.927,
+          318.513,
+          110.657,
+          -57.303
+        ]
+      },
+      "tests": {
+        "interval": [
+          -0.16666666666666666,
+          0.3333333333333333
+        ],
+        "mean": 0.08333333333333333,
+        "negative": 1,
+        "positive": 2,
+        "values": [
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      }
+    },
+    "luna_examples_minus_solo": {
+      "count": {
+        "interval": [
+          -0.5,
+          0.3333333333333333
+        ],
+        "mean": -0.08333333333333333,
+        "negative": 4,
+        "positive": 3,
+        "values": [
+          0,
+          -1,
+          1,
+          0,
+          -1,
+          -1,
+          1,
+          0,
+          1,
+          -1,
+          0,
+          0
+        ]
+      },
+      "elapsed": {
+        "interval": [
+          -2.68925,
+          6.24875
+        ],
+        "mean": 1.1865,
+        "negative": 1,
+        "positive": 1,
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -10.757,
+          0,
+          0,
+          24.995,
+          0,
+          0
+        ]
+      },
+      "first_capped": {
+        "interval": [
+          -46.22441666666666,
+          34.54016666666667
+        ],
+        "mean": -5.825333333333332,
+        "negative": 6,
+        "positive": 6,
+        "values": [
+          -36.978,
+          143.698,
+          -145.547,
+          -88.258,
+          18.419,
+          -22.315,
+          -14.505,
+          36.691,
+          35.513,
+          56.233,
+          -53.809,
+          0.954
+        ]
+      },
+      "tests": {
+        "interval": [
+          -0.16666666666666666,
+          0.3333333333333333
+        ],
+        "mean": 0.08333333333333333,
+        "negative": 1,
+        "positive": 2,
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          -1,
+          0,
+          1,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "difficulty": {
+    "calibration": {
+      "4": {
+        "mean": 4,
+        "orders": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      "5": {
+        "mean": 2.75,
+        "orders": [
+          3,
+          2,
+          3,
+          3
+        ]
+      },
+      "6": {
+        "mean": 2.25,
+        "orders": [
+          2,
+          3,
+          2,
+          2
+        ]
+      }
+    },
+    "width": 6
+  },
+  "donor_trials": [
+    {
+      "arm": "astra",
+      "candidate_eliminations": 532,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 329.566,
+      "first": 77.09,
+      "first_capped": 77.09,
+      "folder": "8040-astra",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 15
+      },
+      "reserved": 11567,
+      "seed": 8040,
+      "statuses": {
+        "completed": 19
+      },
+      "tests": 19,
+      "usage": {
+        "cached": 0,
+        "input": 10604,
+        "output": 963
+      }
+    },
+    {
+      "arm": "luna",
+      "candidate_eliminations": 408,
+      "count": 2,
+      "duplicates": 0,
+      "elapsed": 540,
+      "first": 170.37,
+      "first_capped": 170.37,
+      "folder": "8040-luna",
+      "full": false,
+      "outcomes": {
+        "delivered": 2,
+        "invalid_reply": 3,
+        "tested": 25
+      },
+      "reserved": 34179,
+      "seed": 8040,
+      "statuses": {
+        "completed": 27,
+        "input_transport_error": 3
+      },
+      "tests": 27,
+      "usage": {
+        "cached": 0,
+        "input": 16904,
+        "output": 17275
+      }
+    },
+    {
+      "arm": "astra",
+      "candidate_eliminations": 547,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 366.995,
+      "first": 96.766,
+      "first_capped": 96.766,
+      "folder": "8041-astra",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 17
+      },
+      "reserved": 13716,
+      "seed": 8041,
+      "statuses": {
+        "completed": 21
+      },
+      "tests": 21,
+      "usage": {
+        "cached": 0,
+        "input": 12077,
+        "output": 1639
+      }
+    },
+    {
+      "arm": "luna",
+      "candidate_eliminations": 547,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 438.717,
+      "first": 61.247,
+      "first_capped": 61.247,
+      "folder": "8041-luna",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 21
+      },
+      "reserved": 31178,
+      "seed": 8041,
+      "statuses": {
+        "completed": 25
+      },
+      "tests": 25,
+      "usage": {
+        "cached": 0,
+        "input": 15227,
+        "output": 15951
+      }
+    },
+    {
+      "arm": "astra",
+      "candidate_eliminations": 541,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 329.315,
+      "first": 40.915,
+      "first_capped": 40.915,
+      "folder": "8042-astra",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 15
+      },
+      "reserved": 11947,
+      "seed": 8042,
+      "statuses": {
+        "completed": 19
+      },
+      "tests": 19,
+      "usage": {
+        "cached": 0,
+        "input": 10604,
+        "output": 1343
+      }
+    },
+    {
+      "arm": "luna",
+      "candidate_eliminations": 541,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 366.839,
+      "first": 41.647,
+      "first_capped": 41.647,
+      "folder": "8042-luna",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 17
+      },
+      "reserved": 25249,
+      "seed": 8042,
+      "statuses": {
+        "completed": 21
+      },
+      "tests": 21,
+      "usage": {
+        "cached": 0,
+        "input": 12077,
+        "output": 13172
+      }
+    },
+    {
+      "arm": "astra",
+      "candidate_eliminations": 553,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 401.167,
+      "first": 115.945,
+      "first_capped": 115.945,
+      "folder": "8043-astra",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 19
+      },
+      "reserved": 15395,
+      "seed": 8043,
+      "statuses": {
+        "completed": 23
+      },
+      "tests": 23,
+      "usage": {
+        "cached": 0,
+        "input": 13618,
+        "output": 1777
+      }
+    },
+    {
+      "arm": "luna",
+      "candidate_eliminations": 553,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 368.185,
+      "first": 79.88,
+      "first_capped": 79.88,
+      "folder": "8043-luna",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "invalid_reply": 1,
+        "tested": 16
+      },
+      "reserved": 26462,
+      "seed": 8043,
+      "statuses": {
+        "completed": 20,
+        "timeout": 1
+      },
+      "tests": 20,
+      "usage": {
+        "cached": 0,
+        "input": 11332,
+        "output": 11930
+      }
+    },
+    {
+      "arm": "astra",
+      "candidate_eliminations": 511,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 312.735,
+      "first": 80.683,
+      "first_capped": 80.683,
+      "folder": "8044-astra",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 14
+      },
+      "reserved": 11063,
+      "seed": 8044,
+      "statuses": {
+        "completed": 18
+      },
+      "tests": 18,
+      "usage": {
+        "cached": 0,
+        "input": 9893,
+        "output": 1170
+      }
+    },
+    {
+      "arm": "luna",
+      "candidate_eliminations": 511,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 418.92,
+      "first": 80.17,
+      "first_capped": 80.17,
+      "folder": "8044-luna",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 20
+      },
+      "reserved": 30018,
+      "seed": 8044,
+      "statuses": {
+        "completed": 24
+      },
+      "tests": 24,
+      "usage": {
+        "cached": 0,
+        "input": 14414,
+        "output": 15604
+      }
+    },
+    {
+      "arm": "astra",
+      "candidate_eliminations": 541,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 220.52,
+      "first": 81.866,
+      "first_capped": 81.866,
+      "folder": "8045-astra",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 9
+      },
+      "reserved": 7273,
+      "seed": 8045,
+      "statuses": {
+        "completed": 13
+      },
+      "tests": 13,
+      "usage": {
+        "cached": 0,
+        "input": 6593,
+        "output": 680
+      }
+    },
+    {
+      "arm": "luna",
+      "candidate_eliminations": 539,
+      "count": 3,
+      "duplicates": 0,
+      "elapsed": 540,
+      "first": 224.656,
+      "first_capped": 224.656,
+      "folder": "8045-luna",
+      "full": false,
+      "outcomes": {
+        "delivered": 3,
+        "tested": 27
+      },
+      "reserved": 43653,
+      "seed": 8045,
+      "statuses": {
+        "completed": 30
+      },
+      "tests": 30,
+      "usage": {
+        "cached": 0,
+        "input": 19547,
+        "output": 24106
+      }
+    },
+    {
+      "arm": "astra",
+      "candidate_eliminations": 532,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 312.535,
+      "first": 39.692,
+      "first_capped": 39.692,
+      "folder": "8046-astra",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 14
+      },
+      "reserved": 10930,
+      "seed": 8046,
+      "statuses": {
+        "completed": 18
+      },
+      "tests": 18,
+      "usage": {
+        "cached": 0,
+        "input": 9893,
+        "output": 1037
+      }
+    },
+    {
+      "arm": "luna",
+      "candidate_eliminations": 532,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 477.639,
+      "first": 152.706,
+      "first_capped": 152.706,
+      "folder": "8046-luna",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 23
+      },
+      "reserved": 34754,
+      "seed": 8046,
+      "statuses": {
+        "completed": 27
+      },
+      "tests": 27,
+      "usage": {
+        "cached": 0,
+        "input": 16904,
+        "output": 17850
+      }
+    },
+    {
+      "arm": "astra",
+      "candidate_eliminations": 511,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 382.86,
+      "first": 115.168,
+      "first_capped": 115.168,
+      "folder": "8047-astra",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 18
+      },
+      "reserved": 14115,
+      "seed": 8047,
+      "statuses": {
+        "completed": 22
+      },
+      "tests": 22,
+      "usage": {
+        "cached": 0,
+        "input": 12839,
+        "output": 1276
+      }
+    },
+    {
+      "arm": "luna",
+      "candidate_eliminations": 496,
+      "count": 3,
+      "duplicates": 1,
+      "elapsed": 540,
+      "first": 137.239,
+      "first_capped": 137.239,
+      "folder": "8047-luna",
+      "full": false,
+      "outcomes": {
+        "delivered": 3,
+        "tested": 27
+      },
+      "reserved": 40204,
+      "seed": 8047,
+      "statuses": {
+        "completed": 30
+      },
+      "tests": 30,
+      "usage": {
+        "cached": 0,
+        "input": 19547,
+        "output": 20657
+      }
+    }
+  ],
+  "donors": {
+    "astra": {
+      "attempts_per_delivery": 4.78125,
+      "candidate_eliminations": 4268,
+      "duplicates": 0,
+      "finish_capped_mean": 331.961625,
+      "finish_median": 329.4405,
+      "finish_range": [
+        220.52,
+        401.167
+      ],
+      "first_capped_mean": 81.015625,
+      "first_median": 81.2745,
+      "first_observed": 8,
+      "first_range": [
+        39.692,
+        115.945
+      ],
+      "full": 8,
+      "list_cost_usd": 1.084368,
+      "max_request_seconds": 10.973,
+      "mean_attempts": 19.125,
+      "mean_orders": 4,
+      "mean_tokens": 12000.75,
+      "median_non_model_seconds": 0.232,
+      "median_request_seconds": 3.027,
+      "n": 8,
+      "order_range": [
+        4,
+        4
+      ],
+      "orders": 32,
+      "outcomes": {
+        "delivered": 32,
+        "tested": 121
+      },
+      "statuses": {
+        "completed": 153
+      },
+      "tests": 153,
+      "tokens": 96006,
+      "usage": {
+        "cached": 0,
+        "input": 86121,
+        "output": 9885
+      }
+    },
+    "luna": {
+      "attempts_per_delivery": 7.285714285714286,
+      "candidate_eliminations": 4127,
+      "duplicates": 1,
+      "finish_capped_mean": 461.2875,
+      "finish_median": 418.92,
+      "finish_range": [
+        366.839,
+        477.639
+      ],
+      "first_capped_mean": 118.489375,
+      "first_median": 108.7045,
+      "first_observed": 8,
+      "first_range": [
+        41.647,
+        224.656
+      ],
+      "full": 5,
+      "list_cost_usd": 0.080868,
+      "max_request_seconds": 13.504,
+      "mean_attempts": 25.5,
+      "mean_orders": 3.5,
+      "mean_tokens": 32812.125,
+      "median_non_model_seconds": 0.2135,
+      "median_request_seconds": 5.737500000000001,
+      "n": 8,
+      "order_range": [
+        2,
+        4
+      ],
+      "orders": 28,
+      "outcomes": {
+        "delivered": 28,
+        "invalid_reply": 4,
+        "tested": 176
+      },
+      "statuses": {
+        "completed": 204,
+        "input_transport_error": 3,
+        "timeout": 1
+      },
+      "tests": 204,
+      "tokens": 262497,
+      "usage": {
+        "cached": 0,
+        "input": 125952,
+        "output": 136545
+      }
+    }
+  },
+  "example_packs": {
+    "astra": {
+      "characters": 1209,
+      "examples": 4,
+      "informative_third_steps": 4,
+      "mean_candidates_after_third": 7.25
+    },
+    "luna": {
+      "characters": 1209,
+      "examples": 4,
+      "informative_third_steps": 4,
+      "mean_candidates_after_third": 6.5
+    }
+  },
+  "first_input_tokens": [
+    [
+      407,
+      909,
+      909
+    ],
+    [
+      407,
+      909,
+      909
+    ],
+    [
+      407,
+      909,
+      909
+    ],
+    [
+      407,
+      909,
+      909
+    ],
+    [
+      407,
+      909,
+      909
+    ],
+    [
+      407,
+      909,
+      909
+    ],
+    [
+      407,
+      909,
+      909
+    ],
+    [
+      407,
+      909,
+      909
+    ],
+    [
+      407,
+      909,
+      909
+    ],
+    [
+      407,
+      909,
+      909
+    ],
+    [
+      407,
+      909,
+      909
+    ],
+    [
+      407,
+      909,
+      909
+    ]
+  ],
+  "first_input_tokens_order": [
+    "solo",
+    "luna_examples",
+    "astra_examples"
+  ],
+  "source_orders": [
+    [
+      8040,
+      "o1"
+    ],
+    [
+      8041,
+      "o1"
+    ],
+    [
+      8042,
+      "o1"
+    ],
+    [
+      8043,
+      "o1"
+    ]
+  ],
+  "students": {
+    "astra_examples": {
+      "attempts_per_delivery": 9.958333333333334,
+      "candidate_eliminations": 5974,
+      "duplicates": 0,
+      "finish_capped_mean": 357.65125,
+      "finish_median": 331.815,
+      "finish_range": [
+        331.815,
+        331.815
+      ],
+      "first_capped_mean": 193.02833333333334,
+      "first_median": 107.5385,
+      "first_observed": 10,
+      "first_range": [
+        59.201,
+        349.508
+      ],
+      "full": 1,
+      "list_cost_usd": 0.097981,
+      "max_request_seconds": 12.22,
+      "mean_attempts": 19.916666666666668,
+      "mean_orders": 2,
+      "mean_tokens": 33345.75,
+      "median_non_model_seconds": 0.216,
+      "median_request_seconds": 5.189,
+      "n": 12,
+      "order_range": [
+        0,
+        4
+      ],
+      "orders": 24,
+      "outcomes": {
+        "delivered": 24,
+        "tested": 215
+      },
+      "statuses": {
+        "completed": 239
+      },
+      "tests": 239,
+      "tokens": 400149,
+      "usage": {
+        "cached": 0,
+        "input": 255234,
+        "output": 144915
+      }
+    },
+    "luna_examples": {
+      "attempts_per_delivery": 7.242424242424242,
+      "candidate_eliminations": 5910,
+      "duplicates": 3,
+      "finish_capped_mean": 359.10358333333335,
+      "finish_median": 349.243,
+      "finish_range": [
+        349.243,
+        349.243
+      ],
+      "first_capped_mean": 105.188,
+      "first_median": 88.232,
+      "first_observed": 12,
+      "first_range": [
+        59.707,
+        205.586
+      ],
+      "full": 1,
+      "list_cost_usd": 0.099117,
+      "max_request_seconds": 13.501,
+      "mean_attempts": 19.916666666666668,
+      "mean_orders": 2.75,
+      "mean_tokens": 33535.166666666664,
+      "median_non_model_seconds": 0.216,
+      "median_request_seconds": 5.245,
+      "n": 12,
+      "order_range": [
+        2,
+        4
+      ],
+      "orders": 33,
+      "outcomes": {
+        "delivered": 33,
+        "invalid_reply": 1,
+        "tested": 206
+      },
+      "statuses": {
+        "completed": 239,
+        "timeout": 1
+      },
+      "tests": 239,
+      "tokens": 402422,
+      "usage": {
+        "cached": 0,
+        "input": 255234,
+        "output": 147188
+      }
+    },
+    "solo": {
+      "attempts_per_delivery": 7.0,
+      "candidate_eliminations": 5992,
+      "duplicates": 1,
+      "finish_capped_mean": 357.9170833333333,
+      "finish_median": 335.005,
+      "finish_range": [
+        335.005,
+        335.005
+      ],
+      "first_capped_mean": 111.01333333333334,
+      "first_median": 115.28,
+      "first_observed": 12,
+      "first_range": [
+        23.016,
+        225.713
+      ],
+      "full": 1,
+      "list_cost_usd": 0.088998,
+      "max_request_seconds": 13.504,
+      "mean_attempts": 19.833333333333332,
+      "mean_orders": 2.8333333333333335,
+      "mean_tokens": 23801.583333333332,
+      "median_non_model_seconds": 0.22,
+      "median_request_seconds": 5.541,
+      "n": 12,
+      "order_range": [
+        1,
+        4
+      ],
+      "orders": 34,
+      "outcomes": {
+        "delivered": 34,
+        "invalid_reply": 1,
+        "tested": 204
+      },
+      "statuses": {
+        "completed": 238,
+        "timeout": 1
+      },
+      "tests": 238,
+      "tokens": 285619,
+      "usage": {
+        "cached": 0,
+        "input": 134528,
+        "output": 151091
+      }
+    }
+  },
+  "teacher_plus_students": {
+    "astra_examples": {
+      "list_cost_usd": 1.182349,
+      "tokens": 496155
+    },
+    "luna_examples": {
+      "list_cost_usd": 0.179985,
+      "tokens": 664919
+    },
+    "solo": {
+      "list_cost_usd": 0.088998,
+      "tokens": 285619
+    }
+  },
+  "trials": [
+    {
+      "arm": "astra_examples",
+      "candidate_eliminations": 485,
+      "count": 1,
+      "duplicates": 0,
+      "elapsed": 360,
+      "first": 349.508,
+      "first_capped": 349.508,
+      "folder": "8050-astra_examples",
+      "full": false,
+      "outcomes": {
+        "delivered": 1,
+        "tested": 19
+      },
+      "reserved": 33324,
+      "seed": 8050,
+      "statuses": {
+        "completed": 20
+      },
+      "tests": 20,
+      "usage": {
+        "cached": 0,
+        "input": 21372,
+        "output": 11952
+      }
+    },
+    {
+      "arm": "luna_examples",
+      "candidate_eliminations": 524,
+      "count": 3,
+      "duplicates": 0,
+      "elapsed": 360,
+      "first": 79.119,
+      "first_capped": 79.119,
+      "folder": "8050-luna_examples",
+      "full": false,
+      "outcomes": {
+        "delivered": 3,
+        "tested": 17
+      },
+      "reserved": 32208,
+      "seed": 8050,
+      "statuses": {
+        "completed": 20
+      },
+      "tests": 20,
+      "usage": {
+        "cached": 0,
+        "input": 21372,
+        "output": 10836
+      }
+    },
+    {
+      "arm": "solo",
+      "candidate_eliminations": 543,
+      "count": 3,
+      "duplicates": 0,
+      "elapsed": 360,
+      "first": 116.097,
+      "first_capped": 116.097,
+      "folder": "8050-solo",
+      "full": false,
+      "outcomes": {
+        "delivered": 3,
+        "tested": 17
+      },
+      "reserved": 23175,
+      "seed": 8050,
+      "statuses": {
+        "completed": 20
+      },
+      "tests": 20,
+      "usage": {
+        "cached": 0,
+        "input": 11332,
+        "output": 11843
+      }
+    },
+    {
+      "arm": "astra_examples",
+      "candidate_eliminations": 490,
+      "count": 3,
+      "duplicates": 0,
+      "elapsed": 360,
+      "first": 80.321,
+      "first_capped": 80.321,
+      "folder": "8051-astra_examples",
+      "full": false,
+      "outcomes": {
+        "delivered": 3,
+        "tested": 17
+      },
+      "reserved": 32658,
+      "seed": 8051,
+      "statuses": {
+        "completed": 20
+      },
+      "tests": 20,
+      "usage": {
+        "cached": 0,
+        "input": 21372,
+        "output": 11286
+      }
+    },
+    {
+      "arm": "luna_examples",
+      "candidate_eliminations": 528,
+      "count": 2,
+      "duplicates": 0,
+      "elapsed": 360,
+      "first": 205.492,
+      "first_capped": 205.492,
+      "folder": "8051-luna_examples",
+      "full": false,
+      "outcomes": {
+        "delivered": 2,
+        "tested": 18
+      },
+      "reserved": 34965,
+      "seed": 8051,
+      "statuses": {
+        "completed": 20
+      },
+      "tests": 20,
+      "usage": {
+        "cached": 0,
+        "input": 21372,
+        "output": 13593
+      }
+    },
+    {
+      "arm": "solo",
+      "candidate_eliminations": 539,
+      "count": 3,
+      "duplicates": 0,
+      "elapsed": 360,
+      "first": 61.794,
+      "first_capped": 61.794,
+      "folder": "8051-solo",
+      "full": false,
+      "outcomes": {
+        "delivered": 3,
+        "tested": 17
+      },
+      "reserved": 23663,
+      "seed": 8051,
+      "statuses": {
+        "completed": 20
+      },
+      "tests": 20,
+      "usage": {
+        "cached": 0,
+        "input": 11332,
+        "output": 12331
+      }
+    },
+    {
+      "arm": "astra_examples",
+      "candidate_eliminations": 563,
+      "count": 1,
+      "duplicates": 0,
+      "elapsed": 360,
+      "first": 314.627,
+      "first_capped": 314.627,
+      "folder": "8052-astra_examples",
+      "full": false,
+      "outcomes": {
+        "delivered": 1,
+        "tested": 19
+      },
+      "reserved": 34108,
+      "seed": 8052,
+      "statuses": {
+        "completed": 20
+      },
+      "tests": 20,
+      "usage": {
+        "cached": 0,
+        "input": 21372,
+        "output": 12736
+      }
+    },
+    {
+      "arm": "luna_examples",
+      "candidate_eliminations": 510,
+      "count": 2,
+      "duplicates": 2,
+      "elapsed": 360,
+      "first": 80.166,
+      "first_capped": 80.166,
+      "folder": "8052-luna_examples",
+      "full": false,
+      "outcomes": {
+        "delivered": 2,
+        "tested": 18
+      },
+      "reserved": 34177,
+      "seed": 8052,
+      "statuses": {
+        "completed": 20
+      },
+      "tests": 20,
+      "usage": {
+        "cached": 0,
+        "input": 21372,
+        "output": 12805
+      }
+    },
+    {
+      "arm": "solo",
+      "candidate_eliminations": 515,
+      "count": 1,
+      "duplicates": 0,
+      "elapsed": 360,
+      "first": 225.713,
+      "first_capped": 225.713,
+      "folder": "8052-solo",
+      "full": false,
+      "outcomes": {
+        "delivered": 1,
+        "tested": 19
+      },
+      "reserved": 27595,
+      "seed": 8052,
+      "statuses": {
+        "completed": 20
+      },
+      "tests": 20,
+      "usage": {
+        "cached": 0,
+        "input": 11332,
+        "output": 16263
+      }
+    },
+    {
+      "arm": "astra_examples",
+      "candidate_eliminations": 547,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 331.815,
+      "first": 82.516,
+      "first_capped": 82.516,
+      "folder": "8053-astra_examples",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 15
+      },
+      "reserved": 30250,
+      "seed": 8053,
+      "statuses": {
+        "completed": 19
+      },
+      "tests": 19,
+      "usage": {
+        "cached": 0,
+        "input": 20142,
+        "output": 10108
+      }
+    },
+    {
+      "arm": "luna_examples",
+      "candidate_eliminations": 408,
+      "count": 3,
+      "duplicates": 0,
+      "elapsed": 360,
+      "first": 80.939,
+      "first_capped": 80.939,
+      "folder": "8053-luna_examples",
+      "full": false,
+      "outcomes": {
+        "delivered": 3,
+        "tested": 17
+      },
+      "reserved": 34566,
+      "seed": 8053,
+      "statuses": {
+        "completed": 20
+      },
+      "tests": 20,
+      "usage": {
+        "cached": 0,
+        "input": 21372,
+        "output": 13194
+      }
+    },
+    {
+      "arm": "solo",
+      "candidate_eliminations": 408,
+      "count": 3,
+      "duplicates": 0,
+      "elapsed": 360,
+      "first": 169.197,
+      "first_capped": 169.197,
+      "folder": "8053-solo",
+      "full": false,
+      "outcomes": {
+        "delivered": 3,
+        "tested": 17
+      },
+      "reserved": 24238,
+      "seed": 8053,
+      "statuses": {
+        "completed": 20
+      },
+      "tests": 20,
+      "usage": {
+        "cached": 0,
+        "input": 11332,
+        "output": 12906
+      }
+    },
+    {
+      "arm": "astra_examples",
+      "candidate_eliminations": 408,
+      "count": 3,
+      "duplicates": 0,
+      "elapsed": 360,
+      "first": 207.862,
+      "first_capped": 207.862,
+      "folder": "8054-astra_examples",
+      "full": false,
+      "outcomes": {
+        "delivered": 3,
+        "tested": 17
+      },
+      "reserved": 33968,
+      "seed": 8054,
+      "statuses": {
+        "completed": 20
+      },
+      "tests": 20,
+      "usage": {
+        "cached": 0,
+        "input": 21372,
+        "output": 12596
+      }
+    },
+    {
+      "arm": "luna_examples",
+      "candidate_eliminations": 406,
+      "count": 2,
+      "duplicates": 1,
+      "elapsed": 360,
+      "first": 115.178,
+      "first_capped": 115.178,
+      "folder": "8054-luna_examples",
+      "full": false,
+      "outcomes": {
+        "delivered": 2,
+        "tested": 18
+      },
+      "reserved": 34269,
+      "seed": 8054,
+      "statuses": {
+        "completed": 20
+      },
+      "tests": 20,
+      "usage": {
+        "cached": 0,
+        "input": 21372,
+        "output": 12897
+      }
+    },
+    {
+      "arm": "solo",
+      "candidate_eliminations": 476,
+      "count": 3,
+      "duplicates": 0,
+      "elapsed": 360,
+      "first": 96.759,
+      "first_capped": 96.759,
+      "folder": "8054-solo",
+      "full": false,
+      "outcomes": {
+        "delivered": 3,
+        "tested": 17
+      },
+      "reserved": 23095,
+      "seed": 8054,
+      "statuses": {
+        "completed": 20
+      },
+      "tests": 20,
+      "usage": {
+        "cached": 0,
+        "input": 11332,
+        "output": 11763
+      }
+    },
+    {
+      "arm": "astra_examples",
+      "candidate_eliminations": 422,
+      "count": 1,
+      "duplicates": 0,
+      "elapsed": 360,
+      "first": 98.798,
+      "first_capped": 98.798,
+      "folder": "8055-astra_examples",
+      "full": false,
+      "outcomes": {
+        "delivered": 1,
+        "tested": 19
+      },
+      "reserved": 33531,
+      "seed": 8055,
+      "statuses": {
+        "completed": 20
+      },
+      "tests": 20,
+      "usage": {
+        "cached": 0,
+        "input": 21372,
+        "output": 12159
+      }
+    },
+    {
+      "arm": "luna_examples",
+      "candidate_eliminations": 414,
+      "count": 2,
+      "duplicates": 0,
+      "elapsed": 360,
+      "first": 95.525,
+      "first_capped": 95.525,
+      "folder": "8055-luna_examples",
+      "full": false,
+      "outcomes": {
+        "delivered": 2,
+        "tested": 18
+      },
+      "reserved": 33338,
+      "seed": 8055,
+      "statuses": {
+        "completed": 20
+      },
+      "tests": 20,
+      "usage": {
+        "cached": 0,
+        "input": 21372,
+        "output": 11966
+      }
+    },
+    {
+      "arm": "solo",
+      "candidate_eliminations": 499,
+      "count": 3,
+      "duplicates": 0,
+      "elapsed": 360,
+      "first": 117.84,
+      "first_capped": 117.84,
+      "folder": "8055-solo",
+      "full": false,
+      "outcomes": {
+        "delivered": 3,
+        "tested": 17
+      },
+      "reserved": 23382,
+      "seed": 8055,
+      "statuses": {
+        "completed": 20
+      },
+      "tests": 20,
+      "usage": {
+        "cached": 0,
+        "input": 11332,
+        "output": 12050
+      }
+    },
+    {
+      "arm": "astra_examples",
+      "candidate_eliminations": 523,
+      "count": 3,
+      "duplicates": 0,
+      "elapsed": 360,
+      "first": 62.108,
+      "first_capped": 62.108,
+      "folder": "8056-astra_examples",
+      "full": false,
+      "outcomes": {
+        "delivered": 3,
+        "tested": 17
+      },
+      "reserved": 33456,
+      "seed": 8056,
+      "statuses": {
+        "completed": 20
+      },
+      "tests": 20,
+      "usage": {
+        "cached": 0,
+        "input": 21372,
+        "output": 12084
+      }
+    },
+    {
+      "arm": "luna_examples",
+      "candidate_eliminations": 526,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 349.243,
+      "first": 64.712,
+      "first_capped": 64.712,
+      "folder": "8056-luna_examples",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 16
+      },
+      "reserved": 35894,
+      "seed": 8056,
+      "statuses": {
+        "completed": 20
+      },
+      "tests": 20,
+      "usage": {
+        "cached": 0,
+        "input": 21372,
+        "output": 14522
+      }
+    },
+    {
+      "arm": "solo",
+      "candidate_eliminations": 475,
+      "count": 3,
+      "duplicates": 0,
+      "elapsed": 360,
+      "first": 79.217,
+      "first_capped": 79.217,
+      "folder": "8056-solo",
+      "full": false,
+      "outcomes": {
+        "delivered": 3,
+        "invalid_reply": 1,
+        "tested": 16
+      },
+      "reserved": 26498,
+      "seed": 8056,
+      "statuses": {
+        "completed": 19,
+        "timeout": 1
+      },
+      "tests": 19,
+      "usage": {
+        "cached": 0,
+        "input": 10604,
+        "output": 12694
+      }
+    },
+    {
+      "arm": "astra_examples",
+      "candidate_eliminations": 423,
+      "count": 3,
+      "duplicates": 0,
+      "elapsed": 360,
+      "first": 116.279,
+      "first_capped": 116.279,
+      "folder": "8057-astra_examples",
+      "full": false,
+      "outcomes": {
+        "delivered": 3,
+        "tested": 17
+      },
+      "reserved": 32759,
+      "seed": 8057,
+      "statuses": {
+        "completed": 20
+      },
+      "tests": 20,
+      "usage": {
+        "cached": 0,
+        "input": 21372,
+        "output": 11387
+      }
+    },
+    {
+      "arm": "luna_examples",
+      "candidate_eliminations": 500,
+      "count": 3,
+      "duplicates": 0,
+      "elapsed": 360,
+      "first": 59.707,
+      "first_capped": 59.707,
+      "folder": "8057-luna_examples",
+      "full": false,
+      "outcomes": {
+        "delivered": 3,
+        "invalid_reply": 1,
+        "tested": 16
+      },
+      "reserved": 33860,
+      "seed": 8057,
+      "statuses": {
+        "completed": 19,
+        "timeout": 1
+      },
+      "tests": 19,
+      "usage": {
+        "cached": 0,
+        "input": 20142,
+        "output": 10518
+      }
+    },
+    {
+      "arm": "solo",
+      "candidate_eliminations": 546,
+      "count": 3,
+      "duplicates": 1,
+      "elapsed": 360,
+      "first": 23.016,
+      "first_capped": 23.016,
+      "folder": "8057-solo",
+      "full": false,
+      "outcomes": {
+        "delivered": 3,
+        "tested": 17
+      },
+      "reserved": 24473,
+      "seed": 8057,
+      "statuses": {
+        "completed": 20
+      },
+      "tests": 20,
+      "usage": {
+        "cached": 0,
+        "input": 11332,
+        "output": 13141
+      }
+    },
+    {
+      "arm": "astra_examples",
+      "candidate_eliminations": 539,
+      "count": 0,
+      "duplicates": 0,
+      "elapsed": 360,
+      "first": null,
+      "first_capped": 360,
+      "folder": "8058-astra_examples",
+      "full": false,
+      "outcomes": {
+        "tested": 20
+      },
+      "reserved": 33005,
+      "seed": 8058,
+      "statuses": {
+        "completed": 20
+      },
+      "tests": 20,
+      "usage": {
+        "cached": 0,
+        "input": 21372,
+        "output": 11633
+      }
+    },
+    {
+      "arm": "luna_examples",
+      "candidate_eliminations": 541,
+      "count": 3,
+      "duplicates": 0,
+      "elapsed": 360,
+      "first": 205.586,
+      "first_capped": 205.586,
+      "folder": "8058-luna_examples",
+      "full": false,
+      "outcomes": {
+        "delivered": 3,
+        "tested": 17
+      },
+      "reserved": 34603,
+      "seed": 8058,
+      "statuses": {
+        "completed": 20
+      },
+      "tests": 20,
+      "usage": {
+        "cached": 0,
+        "input": 21372,
+        "output": 13231
+      }
+    },
+    {
+      "arm": "solo",
+      "candidate_eliminations": 406,
+      "count": 2,
+      "duplicates": 0,
+      "elapsed": 360,
+      "first": 170.073,
+      "first_capped": 170.073,
+      "folder": "8058-solo",
+      "full": false,
+      "outcomes": {
+        "delivered": 2,
+        "tested": 18
+      },
+      "reserved": 24566,
+      "seed": 8058,
+      "statuses": {
+        "completed": 20
+      },
+      "tests": 20,
+      "usage": {
+        "cached": 0,
+        "input": 11332,
+        "output": 13234
+      }
+    },
+    {
+      "arm": "astra_examples",
+      "candidate_eliminations": 523,
+      "count": 0,
+      "duplicates": 0,
+      "elapsed": 360,
+      "first": null,
+      "first_capped": 360,
+      "folder": "8059-astra_examples",
+      "full": false,
+      "outcomes": {
+        "tested": 20
+      },
+      "reserved": 34411,
+      "seed": 8059,
+      "statuses": {
+        "completed": 20
+      },
+      "tests": 20,
+      "usage": {
+        "cached": 0,
+        "input": 21372,
+        "output": 13039
+      }
+    },
+    {
+      "arm": "luna_examples",
+      "candidate_eliminations": 526,
+      "count": 3,
+      "duplicates": 0,
+      "elapsed": 360,
+      "first": 97.72,
+      "first_capped": 97.72,
+      "folder": "8059-luna_examples",
+      "full": false,
+      "outcomes": {
+        "delivered": 3,
+        "tested": 17
+      },
+      "reserved": 32241,
+      "seed": 8059,
+      "statuses": {
+        "completed": 20
+      },
+      "tests": 20,
+      "usage": {
+        "cached": 0,
+        "input": 21372,
+        "output": 10869
+      }
+    },
+    {
+      "arm": "solo",
+      "candidate_eliminations": 526,
+      "count": 4,
+      "duplicates": 0,
+      "elapsed": 335.005,
+      "first": 41.487,
+      "first_capped": 41.487,
+      "folder": "8059-solo",
+      "full": true,
+      "outcomes": {
+        "delivered": 4,
+        "tested": 15
+      },
+      "reserved": 20271,
+      "seed": 8059,
+      "statuses": {
+        "completed": 19
+      },
+      "tests": 19,
+      "usage": {
+        "cached": 0,
+        "input": 10604,
+        "output": 9667
+      }
+    },
+    {
+      "arm": "astra_examples",
+      "candidate_eliminations": 516,
+      "count": 2,
+      "duplicates": 0,
+      "elapsed": 360,
+      "first": 225.12,
+      "first_capped": 225.12,
+      "folder": "8060-astra_examples",
+      "full": false,
+      "outcomes": {
+        "delivered": 2,
+        "tested": 18
+      },
+      "reserved": 34832,
+      "seed": 8060,
+      "statuses": {
+        "completed": 20
+      },
+      "tests": 20,
+      "usage": {
+        "cached": 0,
+        "input": 21372,
+        "output": 13460
+      }
+    },
+    {
+      "arm": "luna_examples",
+      "candidate_eliminations": 516,
+      "count": 3,
+      "duplicates": 0,
+      "elapsed": 360,
+      "first": 60.654,
+      "first_capped": 60.654,
+      "folder": "8060-luna_examples",
+      "full": false,
+      "outcomes": {
+        "delivered": 3,
+        "tested": 17
+      },
+      "reserved": 32993,
+      "seed": 8060,
+      "statuses": {
+        "completed": 20
+      },
+      "tests": 20,
+      "usage": {
+        "cached": 0,
+        "input": 21372,
+        "output": 11621
+      }
+    },
+    {
+      "arm": "solo",
+      "candidate_eliminations": 525,
+      "count": 3,
+      "duplicates": 0,
+      "elapsed": 360,
+      "first": 114.463,
+      "first_capped": 114.463,
+      "folder": "8060-solo",
+      "full": false,
+      "outcomes": {
+        "delivered": 3,
+        "tested": 17
+      },
+      "reserved": 23443,
+      "seed": 8060,
+      "statuses": {
+        "completed": 20
+      },
+      "tests": 20,
+      "usage": {
+        "cached": 0,
+        "input": 11332,
+        "output": 12111
+      }
+    },
+    {
+      "arm": "astra_examples",
+      "candidate_eliminations": 535,
+      "count": 3,
+      "duplicates": 0,
+      "elapsed": 360,
+      "first": 59.201,
+      "first_capped": 59.201,
+      "folder": "8061-astra_examples",
+      "full": false,
+      "outcomes": {
+        "delivered": 3,
+        "tested": 17
+      },
+      "reserved": 33847,
+      "seed": 8061,
+      "statuses": {
+        "completed": 20
+      },
+      "tests": 20,
+      "usage": {
+        "cached": 0,
+        "input": 21372,
+        "output": 12475
+      }
+    },
+    {
+      "arm": "luna_examples",
+      "candidate_eliminations": 511,
+      "count": 3,
+      "duplicates": 0,
+      "elapsed": 360,
+      "first": 117.458,
+      "first_capped": 117.458,
+      "folder": "8061-luna_examples",
+      "full": false,
+      "outcomes": {
+        "delivered": 3,
+        "tested": 17
+      },
+      "reserved": 32508,
+      "seed": 8061,
+      "statuses": {
+        "completed": 20
+      },
+      "tests": 20,
+      "usage": {
+        "cached": 0,
+        "input": 21372,
+        "output": 11136
+      }
+    },
+    {
+      "arm": "solo",
+      "candidate_eliminations": 534,
+      "count": 3,
+      "duplicates": 0,
+      "elapsed": 360,
+      "first": 116.504,
+      "first_capped": 116.504,
+      "folder": "8061-solo",
+      "full": false,
+      "outcomes": {
+        "delivered": 3,
+        "tested": 17
+      },
+      "reserved": 24420,
+      "seed": 8061,
+      "statuses": {
+        "completed": 20
+      },
+      "tests": 20,
+      "usage": {
+        "cached": 0,
+        "input": 11332,
+        "output": 13088
+      }
+    }
+  ]
+}

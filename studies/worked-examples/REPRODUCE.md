@@ -13,9 +13,9 @@ done
 docker exec "$container" python -B "/app/$study/study.py" run /tmp/examples-probe --phase probe --servers 1 --lanes 3
 docker exec "$container" python -B "/app/$study/study.py" run /tmp/examples-run/calibration --phase calibration
 docker exec "$container" python -B "/app/$study/study.py" calibrate /tmp/examples-run/calibration /tmp/examples-run/difficulty.json
-docker exec "$container" python -B "/app/$study/study.py" run /tmp/examples-run/donors --phase donors --difficulty /tmp/examples-run/difficulty.json
+docker exec "$container" python -B "/app/$study/study.py" run /tmp/examples-run/donors --phase donors --difficulty /tmp/examples-run/difficulty.json --lanes 6
 docker exec "$container" python -B "/app/$study/study.py" derive /tmp/examples-run/donors /tmp/examples-run/difficulty.json /tmp/examples-run/material.json
-docker exec "$container" python -B "/app/$study/study.py" run /tmp/examples-run/students --phase students --difficulty /tmp/examples-run/difficulty.json --material /tmp/examples-run/material.json
+docker exec "$container" python -B "/app/$study/study.py" run /tmp/examples-run/students --phase students --difficulty /tmp/examples-run/difficulty.json --material /tmp/examples-run/material.json --lanes 6
 output=$(mktemp -d)
 docker cp "$container:/tmp/examples-run/." "$output"
 python3 -B "$study/report.py" "$output" > "$output/results.json"
