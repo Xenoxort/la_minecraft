@@ -23,7 +23,7 @@ def need(ok, text):
 def prompt(trial, turn, done, past):
     public = trial["public"]
     lines = [f"Turn {turn} of {trial['duration'] // trial['step']}."]
-    for slot, shelf in zip("ABC", public["shelves"]):
+    for slot, shelf in zip("ABCDEFGHI", public["shelves"]):
         lines.append(f"{slot}: " + " ".join(f"{i}={item}" for i, item in enumerate(shelf, 1)))
     for id, row in public["orders"].items():
         label = "Delivered." if id in done else "Open."
@@ -33,17 +33,20 @@ def prompt(trial, turn, done, past):
     return "\n".join(lines)
 
 
-def replay(folder, case, phase, material):
+def replay(folder, case, phase, material, fixture=trial_spec):
     trial = read(folder / "trial.json")
     lane = (trial["positions"]["home"][0] - 64) // 80
     retry = int(folder.name.split("-attempt")[-1]) if "-attempt" in folder.name else 1
-    need(trial == trial_spec(*case, lane, retry, phase, material), f"Scenario mismatch for {folder.name}")
+    need(trial == fixture(*case, lane, retry, phase, material), f"Scenario mismatch for {folder.name}")
     trace = read(folder / "trace.json")
     start, deadline = trace["start"], trace["deadline"]
     need(start == read(folder / "start.json")["start"] and deadline - start == trial["duration"] * 1000,
          "Wrong measurement window")
-    need(trace["slot"] == SLOT and trace["model"] == trial["model"], "Wrong model or token ceiling")
-    remaining = {id: {p for p in product(range(1, 6), repeat=3) if sum(p) == public["sum"]}
+    slot = trial.get("slot", SLOT)
+    size = len(trial["public"]["shelves"])
+    width = len(trial["public"]["shelves"][0])
+    need(trace["slot"] == slot and trace["model"] == trial["model"], "Wrong model or token ceiling")
+    remaining = {id: {p for p in product(range(1, width+1), repeat=size) if sum(p) == public["sum"]}
                  for id, public in trial["public"]["orders"].items()}
     tests, done, past, seen = [], {}, [], set()
     usage, statuses, outcomes = Counter(), Counter(), Counter()
@@ -55,7 +58,7 @@ def replay(folder, case, phase, material):
         need(row["input"] == prompt(trial, turn, done, past), "Model saw extra or missing information")
         decision, action, outcome = row["decision"], row["action"], row["outcome"]
         need(decision["action"] == action, "Executed action differs from recorded decision")
-        need(0 <= decision["reserved"] <= SLOT, "Slot token budget exceeded")
+        need(0 <= decision["reserved"] <= slot, "Slot token budget exceeded")
         reserved += decision["reserved"]
         statuses[decision["status"]] += 1
         outcomes[outcome] += 1
@@ -74,9 +77,9 @@ def replay(folder, case, phase, material):
         hits = sum(i == j for i, j in zip(shelf_items, order["ingredients"]))
         need(row["ingredients"] == shelf_items and row["matches"] == hits and id not in done, "Wrong craft feedback")
         need(due <= row["at"] < deadline, "Physical test outside the trial clock")
-        need(row["craft"] == (order["food"] if hits == 3 else None)
-             and outcome == ("delivered" if hits == 3 else "tested"), "Expected a genuine Minecraft recipe result")
-        if hits == 3:
+        need(row["craft"] == (order["food"] if hits == size else None)
+             and outcome == ("delivered" if hits == size else "tested"), "Expected a genuine Minecraft recipe result")
+        if hits == size:
             done[id] = {"turn": turn, "seconds": (row["at"] - start) / 1000, "ingredients": shelf_items}
         duplicate += (id, ranks) in seen
         seen.add((id, ranks))
@@ -85,12 +88,12 @@ def replay(folder, case, phase, material):
         eliminated += len(remaining[id]) - len(survivors)
         remaining[id] = survivors
         tests.append({"turn": turn, "order": id, "ranks": list(ranks), "hits": hits, "candidates_left": len(survivors)})
-        past.append(f'{id} [{",".join(map(str, ranks))}] => {hits}/3')
+        past.append(f'{id} [{",".join(map(str, ranks))}] => {hits}/{size}')
     complete = len(done) == len(trial["orders"])
     duration = trial["duration"]
     max_turns = duration // trial["step"]
     need(complete or len(trace["history"]) == max_turns, "Trial ended before the cutoff")
-    need(sum(usage.values()) - usage["cached"] <= reserved <= max_turns * SLOT, "Team token budget exceeded")
+    need(sum(usage.values()) - usage["cached"] <= reserved <= max_turns * slot, "Team token budget exceeded")
     first = min((row["seconds"] for row in done.values()), default=None)
     elapsed = max(row["seconds"] for row in done.values()) if complete else duration
     need(sorted(done) == trace["done"] and (trace["finish"] is not None) == complete
@@ -103,17 +106,17 @@ def replay(folder, case, phase, material):
          and stock == {trial["orders"][id]["food"]: 1 for id in done}, "Terminal inventory disagrees with traces")
     need(trial["scripted"] or statuses["completed"] > 0, "Empty model trial")
     if trial["scripted"]:
-        need([row["hits"] for row in tests] == [0, 2, 3, 3, 3, 3], "Probe failed negative and positive controls")
+        need([row["hits"] for row in tests] == [0, size - 1] + [size] * len(trial["orders"]), "Probe failed negative and positive controls")
     return {"seed": case[0], "arm": case[1], "folder": folder.name, "count": len(done), "full": complete,
             "first": first, "first_capped": duration if first is None else first, "elapsed": elapsed,
             "usage": dict(usage), "statuses": dict(statuses), "outcomes": dict(outcomes), "reserved": reserved,
             "tests": len(tests), "duplicates": duplicate, "candidate_eliminations": eliminated}, done, tests
 
 
-def verify_batch(root, phase, material=None):
-    plan = cases(phase)
-    need(read(root / "design.json") == {"phase": phase, "cases": [list(pair) for pair in plan]},
-         "Wrong trial manifest")
+def verify_batch(root, phase, material=None, *, plan=None, manifest=None, fixture=trial_spec):
+    plan = cases(phase) if plan is None else plan
+    manifest = {"phase": phase, "cases": [list(pair) for pair in plan]} if manifest is None else manifest
+    need(read(root / "design.json") == manifest, "Wrong trial manifest")
     folders = {p.parent for p in root.glob("*/complete.json")}
     data = []
     for case in sorted(plan):
@@ -121,7 +124,7 @@ def verify_batch(root, phase, material=None):
         matches = {path for path in folders if path.name == label or path.name.startswith(label + "-attempt")}
         need(len(matches) == 1, f"Expected a single terminal record for {label}")
         folder = matches.pop()
-        data.append(replay(folder, case, phase, material or {}))
+        data.append(replay(folder, case, phase, material or {}, fixture=fixture))
         folders.remove(folder)
     need(not folders, "Unexpected completed runs")
     return data

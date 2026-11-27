@@ -106,16 +106,22 @@ def trial_spec(seed, arm, lane, attempt, phase, material):
 
 
 def datapack(folder, plan):
+    available = formulas()
+    entries = {f"{family}_{seed}_{id}": row
+               for family, seed in sorted({(family_of(arm), seed) for seed, arm in plan})
+               for id, row in available[family, seed].items()}
+    write_pack(folder, entries)
+
+
+def write_pack(folder, entries):
     pack = folder / "Superflat" / "datapacks" / "hells-kitchen-recipes"
     recipes = pack / "data" / "hells_kitchen" / "recipe"
     recipes.mkdir(parents=True, exist_ok=True)
     dump(pack / "pack.mcmeta", {"pack": {"pack_format": 48, "description": "Hidden Hell's Kitchen orders"}})
-    available = formulas()
-    for family, seed in sorted({(family_of(arm), seed) for seed, arm in plan}):
-        for id, row in available[family, seed].items():
-            dump(recipes / f"{family}_{seed}_{id}.json", {
-                "type": "minecraft:crafting_shapeless", "category": "misc",
-                "ingredients": [{"item": f"minecraft:{item}"} for item in [row["ticket"], *row["ingredients"]]],
-                "result": {"id": "minecraft:" + row["food"], "count": 1},
-            })
+    for id, row in entries.items():
+        dump(recipes / f"{id}.json", {
+            "type": "minecraft:crafting_shapeless", "category": "misc",
+            "ingredients": [{"item": f"minecraft:{item}"} for item in [row["ticket"], *row["ingredients"]]],
+            "result": {"id": "minecraft:" + row["food"], "count": 1},
+        })
     return pack

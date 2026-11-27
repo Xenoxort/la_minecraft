@@ -7,9 +7,14 @@ const trial = JSON.parse(await readFile(specPath, "utf8"));
 const key = JSON.parse(await readFile(keyPath, "utf8"));
 const headers = { "Content-Type": "application/json", Authorization: "Bearer " + key.OPENAI_API_KEY };
 if (key.OPENAI_ORG_ID) headers["OpenAI-Organization"] = key.OPENAI_ORG_ID;
-const SLOT = 2500;
-const SYSTEM = `Complete four hidden Minecraft food orders. An order uses one ingredient from each shelf A, B, C. Shelf ranks are numbered 1 to 5 in the order shown. For each order the clue gives the sum of the three correct ranks. Each test uses one chosen ingredient per shelf at the Minecraft crafting table. You may test a combination even if it does not fit the clue. The feedback says how many choices were correct in their own shelf, without naming which ones. A 3/3 test makes the food and delivers the order automatically. All ingredients remain available until the deadline. You get one test per turn.
-Reply as a single JSON object: {"order":"o1","ranks":[1,2,3],"note":"optional brief action rationale"}. Choose an unfinished order. All three ranks are integers between 1 and 5. Finish as many as you can.`;
+const SLOT = trial.slot ?? 2500;
+const size = trial.public.shelves.length;
+const width = trial.public.shelves[0].length;
+const shelves = Array.from({ length: size }, (_, i) => String.fromCharCode(65 + i)).join(", ");
+const countWord = size === 3 ? "three" : "four";
+const exampleRanks = Array.from({ length: size }, (_, i) => i + 1).join(",");
+const SYSTEM = `Complete four hidden Minecraft food orders. An order uses one ingredient from each shelf ${shelves}. Shelf ranks are numbered 1 to ${width} in the order shown. For each order the clue gives the sum of the ${countWord} correct ranks. Each test uses one chosen ingredient per shelf at the Minecraft crafting table. You may test a combination even if it does not fit the clue. The feedback says how many choices were correct in their own shelf, without naming which ones. A ${size}/${size} test makes the food and delivers the order automatically. All ingredients remain available until the deadline. You get one test per turn.
+Reply as a single JSON object: {"order":"o1","ranks":[${exampleRanks}],"note":"optional brief action rationale"}. Choose an unfinished order. All ${countWord} ranks are integers between 1 and ${width}. Finish as many as you can.`;
 const event = (name, data = {}) => console.log(JSON.stringify({ event: name, ms: Date.now(), ...data }));
 
 function getPrompt(turn, history, done) {
@@ -19,7 +24,7 @@ function getPrompt(turn, history, done) {
     const clues = Object.entries(orders).map(([id, clue]) =>
         `${id} makes ${clue.food}. Rank sum ${clue.sum}. ${done.has(id) ? "Delivered." : "Open."}`);
     const evidence = history.filter(row => row.action && row.matches !== null)
-        .map(row => `${row.action.order} [${row.action.ranks.join(",")}] => ${row.matches}/3`);
+        .map(row => `${row.action.order} [${row.action.ranks.join(",")}] => ${row.matches}/${size}`);
     return [`Turn ${turn} of ${trial.duration / trial.step}.`, ...lines, ...clues,
         trial.knowledge ? "Transferred notes:\n" + trial.knowledge : "Transferred notes: none.",
         "Your observed tests: " + (evidence.join("; ") || "none")].join("\n");
@@ -45,8 +50,8 @@ function parse(text) {
     if (start < 0 || end < start) return null;
     try {
         const raw = JSON.parse(text.slice(start, end + 1));
-        if (typeof raw?.order !== "string" || !Array.isArray(raw.ranks) || raw.ranks.length !== 3 ||
-            raw.ranks.some(n => !Number.isInteger(n) || n < 1 || n > 5)) return null;
+        if (typeof raw?.order !== "string" || !Array.isArray(raw.ranks) || raw.ranks.length !== size ||
+            raw.ranks.some(n => !Number.isInteger(n) || n < 1 || n > width)) return null;
         return { order: raw.order.trim().toLowerCase().slice(0, 12), ranks: raw.ranks,
             note: typeof raw.note === "string" ? raw.note.trim().slice(0, 160) : "" };
     } catch {
@@ -80,7 +85,7 @@ function scripted(turn) {
     const ids = Object.keys(trial.orders);
     const id = ids[Math.max(0, turn - 3)];
     const correct = trial.orders[id].ingredients.map((ingredient, i) => trial.public.shelves[i].indexOf(ingredient) + 1);
-    const ranks = correct.map((n, i) => turn === 1 || (turn === 2 && i === 0) ? n % 5 + 1 : n);
+    const ranks = correct.map((n, i) => turn === 1 || (turn === 2 && i === 0) ? n % width + 1 : n);
     return { status: "scripted", reserved: 0, action: { order: id, ranks, note: "" } };
 }
 
@@ -109,8 +114,8 @@ async function tryRecipe(bot, order, ingredients, matches) {
         for (let i = 0; i < grid.length; i++) await putOne(bot, table, grid[i], i + 1);
         await bot.waitForTicks(4);
         output = table.slots[0]?.name ?? null;
-        if (output !== (matches === 3 ? order.food : null)) {
-            throw new Error(`Server craft grid returned ${output} for a ${matches}/3 test of ${order.food}`);
+        if (output !== (matches === size ? order.food : null)) {
+            throw new Error(`Server craft grid returned ${output} for a ${matches}/${size} test of ${order.food}`);
         }
         if (output) await bot.putAway(0);
     } finally {
@@ -161,9 +166,10 @@ try {
         const due = start + (turn - 1) * trial.step * 1000;
         await sleep(Math.max(0, due - Date.now()));
         const input = getPrompt(turn, history, done);
+        const decisionStart = Date.now();
         const decision = trial.scripted ? scripted(turn) : await decide(input, due + 13500);
         const action = decision.action;
-        const row = { turn, due, input, decision, action, matches: null, craft: null, at: null };
+        const row = { turn, due, input, decision, action, decision_ms: Date.now() - decisionStart, matches: null, craft: null, at: null };
         if (!action || !Object.hasOwn(trial.orders, action.order)) row.outcome = "invalid_reply";
         else if (done.has(action.order)) row.outcome = "already_delivered";
         else if (Date.now() >= Math.min(due + trial.step * 1000, deadline) - 1700) row.outcome = "action_window_closed";

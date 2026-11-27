@@ -49,7 +49,7 @@ def preparation(trial):
     ]
 
 
-def episode(root, server, lane, case, args, material):
+def episode(root, server, lane, case, args, material, fixture):
     name = "-".join(map(str, case))
     attempt = 1
     while True:
@@ -60,7 +60,7 @@ def episode(root, server, lane, case, args, material):
             break
         attempt += 1
     folder.mkdir()
-    trial = trial_spec(*case, lane, attempt, args.phase, material)
+    trial = fixture(*case, lane, attempt, args.phase, material)
     dump(folder / "trial.json", trial)
     player = trial["player"]
     log = folder / "agents.log"
@@ -72,7 +72,7 @@ def episode(root, server, lane, case, args, material):
                                      str(server.port), str(args.key.resolve()), "trial.json"], folder, log)
         arena.wait_for(child, log, lambda text: '"event":"ready"' in text, 70)
         x, y, z = trial["positions"]["home"]
-        give = [f"give {player} minecraft:{item} 12" for shelf in SHELVES for item in shelf]
+        give = [f"give {player} minecraft:{item} 12" for shelf in trial.get("stock_shelves", SHELVES) for item in shelf]
         give += [f'give {player} minecraft:{row["ticket"]} 2' for row in trial["orders"].values()]
         server.send([f"clear {player}", f"gamemode survival {player}", f"tp {player} {x+.5} {y} {z+.5}",
                      *give, f"say START_{player}"])
@@ -116,8 +116,12 @@ def main():
         parser.error("The student cohort requires its verified knowledge material")
     material = json.loads(args.material.read_text()) if args.material else {}
     plan = cases(args.phase)
-    args.root.mkdir(parents=True, exist_ok=True)
     manifest = {"phase": args.phase, "cases": [list(case) for case in plan]}
+    run_phase(args, plan, manifest, material, trial_spec, datapack)
+
+
+def run_phase(args, plan, manifest, material, fixture, write_recipes):
+    args.root.mkdir(parents=True, exist_ok=True)
     plan_path = args.root / "design.json"
     if plan_path.exists() and json.loads(plan_path.read_text()) != manifest:
         raise ValueError("Output folder belongs to a different experiment")
@@ -134,7 +138,7 @@ def main():
             except Empty:
                 return failures
             try:
-                episode(args.root, server, lane, case, args, material)
+                episode(args.root, server, lane, case, args, material, fixture)
             except (RuntimeError, ValueError, OSError) as error:
                 print(f"FAIL {case[0]}-{case[1]} {error}", flush=True)
                 failures.append(case)
@@ -145,7 +149,7 @@ def main():
             (archive / item).symlink_to((args.archive / item).resolve())
         shutil.copytree(args.archive / "Superflat", archive / "Superflat",
                         ignore=shutil.ignore_patterns("session.lock", "playerdata", "stats", "advancements"))
-        datapack(archive, plan)
+        write_recipes(archive, plan)
         def start_server(index):
             server = kitchen.Server(args.root, archive, index, args.lanes)
             try:
